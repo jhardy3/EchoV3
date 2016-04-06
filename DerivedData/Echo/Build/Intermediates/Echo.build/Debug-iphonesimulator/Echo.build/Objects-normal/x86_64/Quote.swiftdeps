@@ -1,0 +1,40 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Quote"
+provides-nominal:
+- "C4Echo5Quote"
+provides-member:
+- ["C4Echo5Quote", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Quote"
+- "String"
+- "UIImage"
+depends-member:
+- !private ["Ps9AnyObject", "author"]
+- !private ["Ps9AnyObject", "image"]
+- !private ["Ps9AnyObject", "length"]
+- !private ["Ps9AnyObject", "quote"]
+- ["Ps9AnyObject", ""]
+- ["C4Echo5Quote", "String"]
+- ["C4Echo5Quote", "UIImage"]
+- ["C4Echo5Quote", "author"]
+- ["C4Echo5Quote", "deinit"]
+- ["C4Echo5Quote", "image"]
+- ["C4Echo5Quote", "init"]
+- ["C4Echo5Quote", "length"]
+- ["C4Echo5Quote", "quote"]
+depends-nominal:
+- "Ps9AnyObject"
+- "C4Echo5Quote"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "219cfff7b74a89323138866345b7308a"

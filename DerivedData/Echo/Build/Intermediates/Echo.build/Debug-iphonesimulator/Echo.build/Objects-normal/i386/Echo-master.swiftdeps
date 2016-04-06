@@ -1,0 +1,9 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+options: "c8e31d60d33f9ec2bcda3f866a4fc946"
+build_time: [513300547, 262547000]
+inputs:
+  "/Users/JLH/Desktop/Personal Projects/Echo/Echo/QuoteController.swift": [513300440, 0]
+  "/Users/JLH/Desktop/Personal Projects/Echo/Echo/Quote.swift": [513300283, 0]
+  "/Users/JLH/Desktop/Personal Projects/Echo/Echo/AppDelegate.swift": [513295520, 0]
+  "/Users/JLH/Desktop/Personal Projects/Echo/Echo/EchoViewController.swift": [513300474, 0]
+  "/Users/JLH/Desktop/Personal Projects/Echo/Echo/NetworkController.swift": [509177934, 0]
