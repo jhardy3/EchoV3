@@ -113,8 +113,11 @@ SWIFT_CLASS("_TtC4Echo11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITapGestureRecognizer;
 @class UIImageView;
 @class UILabel;
+@class UIView;
+@class NSLayoutConstraint;
 @class NSBundle;
 @class NSCoder;
 
@@ -122,8 +125,13 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 @interface EchoViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified backgroundImage;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified quoteLabel;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified quoteView;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified drawerView;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified drawerYConstraint;
+@property (nonatomic) BOOL drawerShown;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (IBAction)toggleDrawer:(UITapGestureRecognizer * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

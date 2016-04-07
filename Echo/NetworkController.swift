@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+let imageURL = "https://unsplash.it/800/1600?random"
+let quoteURL = NSURL(string: "http://quotes.rest/qod.json")!
+
 class NetworkController {
 
     // MARK: - Fetching Data with URL

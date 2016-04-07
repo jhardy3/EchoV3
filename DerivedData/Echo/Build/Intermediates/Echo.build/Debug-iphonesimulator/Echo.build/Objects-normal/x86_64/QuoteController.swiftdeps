@@ -12,20 +12,20 @@ provides-member:
 - ["C4Echo15QuoteController", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "kContentKey"
+- "Void"
+- "kQuoteKey"
 - "kQuotesKey"
-- "Quote"
+- "NSURL"
 - !private "String"
 - "QuoteController"
-- !private "NSJSONSerialization"
-- !private "AnyObject"
-- !private "NetworkController"
-- "kContentKey"
-- "kQuoteKey"
 - "StringLiteralType"
-- "NSURL"
-- "kAuthorKey"
-- "Void"
+- !private "NSJSONSerialization"
+- !private "NetworkController"
 - "kLengthKey"
+- "Quote"
+- !private "AnyObject"
+- "kAuthorKey"
 depends-member:
 - !private ["Ps9AnyObject", "JSONObjectWithData"]
 - !private ["Ps9AnyObject", "NSJSONSerialization"]
@@ -318,4 +318,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "17b02f434b8a8d5e5b19a5cb80f66ce0"
+interface-hash: "3337083179c480365951af4e121a0ef4"
