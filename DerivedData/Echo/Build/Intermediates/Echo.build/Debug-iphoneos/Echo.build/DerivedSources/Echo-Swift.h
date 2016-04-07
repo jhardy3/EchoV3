@@ -115,6 +115,8 @@ SWIFT_CLASS("_TtC4Echo11AppDelegate")
 
 @class UIButton;
 @class UITapGestureRecognizer;
+@class UITouch;
+@class UIEvent;
 @class UIImageView;
 @class UILabel;
 @class UIView;
@@ -130,6 +132,8 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified drawerView;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified drawerYConstraint;
 @property (nonatomic) BOOL drawerShown;
+@property (nonatomic) BOOL notYetSet;
+@property (nonatomic) BOOL isInButton;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)previousPictureTapped:(UIButton * _Nonnull)sender;
@@ -137,8 +141,10 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 - (IBAction)shareButtonTapped:(UIButton * _Nonnull)sender;
 - (IBAction)nextPictureButtonTapped:(UIButton * _Nonnull)sender;
 - (IBAction)toggleDrawer:(UITapGestureRecognizer * _Nonnull)sender;
-- (void)firstLoad;
 - (void)setUpView;
+- (void)firstLoad;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (void)touchesMoved:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

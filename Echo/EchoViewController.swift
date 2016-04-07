@@ -17,9 +17,15 @@ class EchoViewController: UIViewController {
     @IBOutlet weak var drawerYConstraint: NSLayoutConstraint!
     
     var drawerShown = true
+    var buttonY: CGFloat?
+    var newLocation: CGFloat?
+    var notYetSet = true
+    var isInButton = false
+    var locationInView: CGFloat?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setUpView()
     }
     
@@ -61,14 +67,52 @@ class EchoViewController: UIViewController {
         drawerShown = !drawerShown
     }
     
-    func firstLoad() {
-        QuoteController.sharedInstance.firstLoad(self)
-    }
-    
     func setUpView() {
         quoteLabel.layer.cornerRadius = 7.0
         quoteLabel.clipsToBounds = true
         backgroundImage.userInteractionEnabled = true
         firstLoad()
+    }
+    
+    func firstLoad() {
+        QuoteController.sharedInstance.firstLoad(self)
+    }
+    
+    
+    // MARK: - Touch Functions
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        let location = touches.first!.preciseLocationInView(quoteView)
+        print(location)
+        
+        if quoteView.pointInside(location, withEvent: event) {
+            if notYetSet {
+                newLocation = touches.first?.preciseLocationInView(self.view).y
+                notYetSet = false
+            }
+            locationInView = location.y
+            isInButton = true
+        } else {
+            isInButton = false
+        }
+    }
+    
+    
+    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        if isInButton {
+            guard let totalYMovement = touches.first?.preciseLocationInView(self.view).y,
+                newLocation = self.newLocation else { return }
+            
+            
+            
+            let yMovement = totalYMovement - newLocation
+//            if locationInView >= 40 {
+//                yMovement = yMovement  + ( 80 - locationInView!)
+//            } else {
+//                yMovement = yMovement + locationInView!
+//            }
+            
+            self.quoteView.transform.ty = yMovement
+        }
     }
 }

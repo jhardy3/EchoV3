@@ -191,7 +191,7 @@
                                             <constraint firstAttribute="width" priority="250" constant="340" id="FaU-IA-Pnc"/>
                                             <constraint firstAttribute="height" priority="250" constant="157" id="d5v-mh-C4d"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="21"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Light" family="American Typewriter" pointSize="22"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="default">
