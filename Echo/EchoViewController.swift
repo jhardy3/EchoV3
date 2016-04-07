@@ -18,8 +18,11 @@ class EchoViewController: UIViewController {
     
     var drawerShown = true
     var buttonY: CGFloat?
-    var newLocation: CGFloat?
-    var notYetSet = true
+    
+    var quoteViewLocation: CGFloat {
+        return self.view.frame.height / 2
+    }
+    
     var isInButton = false
     var locationInView: CGFloat?
     
@@ -82,14 +85,9 @@ class EchoViewController: UIViewController {
     // MARK: - Touch Functions
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        let location = touches.first!.preciseLocationInView(quoteView)
-        print(location)
+        guard let location = touches.first?.preciseLocationInView(quoteView) else { return }
         
         if quoteView.pointInside(location, withEvent: event) {
-            if notYetSet {
-                newLocation = touches.first?.preciseLocationInView(self.view).y
-                notYetSet = false
-            }
             locationInView = location.y
             isInButton = true
         } else {
@@ -100,17 +98,17 @@ class EchoViewController: UIViewController {
     
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
         if isInButton {
+            
             guard let totalYMovement = touches.first?.preciseLocationInView(self.view).y,
-                newLocation = self.newLocation else { return }
-            
-            
-            
-            let yMovement = totalYMovement - newLocation
-//            if locationInView >= 40 {
-//                yMovement = yMovement  + ( 80 - locationInView!)
-//            } else {
-//                yMovement = yMovement + locationInView!
-//            }
+            locationInView = self.locationInView else { return }
+
+            var yMovement = totalYMovement - quoteViewLocation
+            if locationInView >= (self.quoteView.frame.height / 2) {
+                // Works!
+                yMovement = yMovement - (locationInView - (self.quoteView.frame.height / 2))
+            } else {
+                yMovement = yMovement + ((self.quoteView.frame.height / 2) - locationInView)
+            }
             
             self.quoteView.transform.ty = yMovement
         }

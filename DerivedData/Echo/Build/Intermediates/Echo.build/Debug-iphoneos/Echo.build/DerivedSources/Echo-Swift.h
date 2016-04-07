@@ -93,6 +93,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -132,7 +133,7 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified drawerView;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified drawerYConstraint;
 @property (nonatomic) BOOL drawerShown;
-@property (nonatomic) BOOL notYetSet;
+@property (nonatomic, readonly) CGFloat quoteViewLocation;
 @property (nonatomic) BOOL isInButton;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;

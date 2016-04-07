@@ -253,6 +253,7 @@
                             <constraint firstItem="xf7-I3-CqP" firstAttribute="centerX" secondItem="W3w-2M-KEE" secondAttribute="centerX" id="6tX-k7-Ygj"/>
                             <constraint firstItem="xf7-I3-CqP" firstAttribute="width" secondItem="W3w-2M-KEE" secondAttribute="width" id="AAv-ET-bnq"/>
                             <constraint firstItem="xf7-I3-CqP" firstAttribute="leading" secondItem="W3w-2M-KEE" secondAttribute="leading" id="BbU-QR-ZUa"/>
+                            <constraint firstItem="3gD-It-Yp7" firstAttribute="centerY" secondItem="W3w-2M-KEE" secondAttribute="centerY" id="DMp-ji-nyh"/>
                             <constraint firstItem="3gD-It-Yp7" firstAttribute="top" secondItem="cAC-K7-A3N" secondAttribute="bottom" constant="140" id="JAC-zt-AR9">
                                 <variation key="heightClass=regular-widthClass=compact" constant="258"/>
                             </constraint>
@@ -285,6 +286,7 @@
                                 <exclude reference="pXW-Fv-2YY"/>
                                 <exclude reference="zkw-sW-yhE"/>
                                 <exclude reference="66t-9W-J8A"/>
+                                <exclude reference="DMp-ji-nyh"/>
                                 <exclude reference="JAC-zt-AR9"/>
                                 <exclude reference="KI1-Bw-H4g"/>
                                 <exclude reference="Lqy-hY-5mg"/>
@@ -310,7 +312,8 @@
                                 <exclude reference="pXW-Fv-2YY"/>
                                 <include reference="zkw-sW-yhE"/>
                                 <exclude reference="66t-9W-J8A"/>
-                                <include reference="JAC-zt-AR9"/>
+                                <include reference="DMp-ji-nyh"/>
+                                <exclude reference="JAC-zt-AR9"/>
                                 <include reference="KI1-Bw-H4g"/>
                                 <include reference="Lqy-hY-5mg"/>
                                 <exclude reference="e3l-8N-Qxt"/>

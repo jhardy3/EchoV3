@@ -6,45 +6,47 @@ provides-nominal:
 provides-member:
 - ["C4Echo18EchoViewController", ""]
 provides-dynamic-lookup:
-- "nextPictureButtonTapped"
-- "quoteView"
-- "backgroundImage"
-- "quoteLabel"
-- "isInButton"
-- "drawerShown"
-- "drawerYConstraint"
-- "shareButtonTapped"
-- "notYetSet"
-- "viewDidLoad"
-- "didReceiveMemoryWarning"
-- "customTextButtonTapped"
-- "touchesMoved"
-- "toggleDrawer"
-- "previousPictureTapped"
 - "setUpView"
+- "shareButtonTapped"
 - "touchesBegan"
-- "firstLoad"
+- "touchesMoved"
 - "drawerView"
+- "previousPictureTapped"
+- "backgroundImage"
+- "nextPictureButtonTapped"
+- "quoteLabel"
+- "customTextButtonTapped"
+- "viewDidLoad"
+- "quoteViewLocation"
+- "didReceiveMemoryWarning"
+- "drawerYConstraint"
+- "firstLoad"
+- "quoteView"
+- "isInButton"
+- "toggleDrawer"
+- "drawerShown"
 depends-top-level:
-- "UITapGestureRecognizer"
-- !private "print"
-- "EchoViewController"
-- "BooleanLiteralType"
-- "UIViewController"
-- "UITouch"
-- "NSLayoutConstraint"
-- !private "ImageController"
 - "UIView"
-- "UIEvent"
-- "Set"
+- "EchoViewController"
+- !private "ImageController"
+- "UITapGestureRecognizer"
+- !private ">="
 - "CGFloat"
+- "Set"
+- "UIViewController"
 - "UIButton"
-- !private "-"
-- !private "Void"
-- !private "!"
+- !private "/"
 - "UIImageView"
-- !private "QuoteController"
+- !private "Void"
+- "BooleanLiteralType"
+- "NSLayoutConstraint"
 - "UILabel"
+- !private "!"
+- "UITouch"
+- !private "QuoteController"
+- "UIEvent"
+- !private "+"
+- !private "-"
 depends-member:
 - !private ["Ps9AnyObject", "ImageController"]
 - !private ["Ps9AnyObject", "QuoteController"]
@@ -63,21 +65,20 @@ depends-member:
 - !private ["Ps9AnyObject", "fetchNextImage"]
 - !private ["Ps9AnyObject", "fetchPreviousImage"]
 - ["Ps9AnyObject", "firstLoad"]
+- !private ["Ps9AnyObject", "frame"]
 - !private ["Ps9AnyObject", "image"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "isInButton"]
 - !private ["Ps9AnyObject", "layer"]
 - !private ["Ps9AnyObject", "layoutIfNeeded"]
 - ["Ps9AnyObject", "locationInView"]
-- ["Ps9AnyObject", "newLocation"]
 - ["Ps9AnyObject", "nextPictureButtonTapped"]
-- ["Ps9AnyObject", "notYetSet"]
 - !private ["Ps9AnyObject", "pointInside"]
 - !private ["Ps9AnyObject", "preciseLocationInView"]
 - ["Ps9AnyObject", "previousPictureTapped"]
-- !private ["Ps9AnyObject", "print"]
 - ["Ps9AnyObject", "quoteLabel"]
 - ["Ps9AnyObject", "quoteView"]
+- ["Ps9AnyObject", "quoteViewLocation"]
 - ["Ps9AnyObject", "setUpView"]
 - ["Ps9AnyObject", "shareButtonTapped"]
 - !private ["Ps9AnyObject", "sharedInstance"]
@@ -104,6 +105,7 @@ depends-member:
 - !private ["VSC17CGAffineTransform", "ty"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["VSC7CGPoint", "y"]
+- !private ["VSC6CGRect", "height"]
 - !private ["Ps11CVarArgType", "ImageController"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "QuoteController"]
@@ -120,21 +122,20 @@ depends-member:
 - ["Ps11CVarArgType", "drawerView"]
 - ["Ps11CVarArgType", "drawerYConstraint"]
 - ["Ps11CVarArgType", "firstLoad"]
+- !private ["Ps11CVarArgType", "frame"]
 - !private ["Ps11CVarArgType", "image"]
 - ["Ps11CVarArgType", "init"]
 - ["Ps11CVarArgType", "isInButton"]
 - !private ["Ps11CVarArgType", "layer"]
 - !private ["Ps11CVarArgType", "layoutIfNeeded"]
 - ["Ps11CVarArgType", "locationInView"]
-- ["Ps11CVarArgType", "newLocation"]
 - ["Ps11CVarArgType", "nextPictureButtonTapped"]
-- ["Ps11CVarArgType", "notYetSet"]
 - !private ["Ps11CVarArgType", "pointInside"]
 - !private ["Ps11CVarArgType", "preciseLocationInView"]
 - ["Ps11CVarArgType", "previousPictureTapped"]
-- !private ["Ps11CVarArgType", "print"]
 - ["Ps11CVarArgType", "quoteLabel"]
 - ["Ps11CVarArgType", "quoteView"]
+- ["Ps11CVarArgType", "quoteViewLocation"]
 - ["Ps11CVarArgType", "setUpView"]
 - ["Ps11CVarArgType", "shareButtonTapped"]
 - ["Ps11CVarArgType", "toggleDrawer"]
@@ -174,21 +175,20 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "drawerYConstraint"]
 - !private ["Ps28CustomDebugStringConvertible", "first"]
 - ["Ps28CustomDebugStringConvertible", "firstLoad"]
+- !private ["Ps28CustomDebugStringConvertible", "frame"]
 - !private ["Ps28CustomDebugStringConvertible", "image"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "isInButton"]
 - !private ["Ps28CustomDebugStringConvertible", "layer"]
 - !private ["Ps28CustomDebugStringConvertible", "layoutIfNeeded"]
 - ["Ps28CustomDebugStringConvertible", "locationInView"]
-- ["Ps28CustomDebugStringConvertible", "newLocation"]
 - ["Ps28CustomDebugStringConvertible", "nextPictureButtonTapped"]
-- ["Ps28CustomDebugStringConvertible", "notYetSet"]
 - !private ["Ps28CustomDebugStringConvertible", "pointInside"]
 - !private ["Ps28CustomDebugStringConvertible", "preciseLocationInView"]
 - ["Ps28CustomDebugStringConvertible", "previousPictureTapped"]
-- !private ["Ps28CustomDebugStringConvertible", "print"]
 - ["Ps28CustomDebugStringConvertible", "quoteLabel"]
 - ["Ps28CustomDebugStringConvertible", "quoteView"]
+- ["Ps28CustomDebugStringConvertible", "quoteViewLocation"]
 - ["Ps28CustomDebugStringConvertible", "setUpView"]
 - ["Ps28CustomDebugStringConvertible", "shareButtonTapped"]
 - ["Ps28CustomDebugStringConvertible", "toggleDrawer"]
@@ -222,21 +222,20 @@ depends-member:
 - ["Ps23CustomStringConvertible", "drawerYConstraint"]
 - !private ["Ps23CustomStringConvertible", "first"]
 - ["Ps23CustomStringConvertible", "firstLoad"]
+- !private ["Ps23CustomStringConvertible", "frame"]
 - !private ["Ps23CustomStringConvertible", "image"]
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "isInButton"]
 - !private ["Ps23CustomStringConvertible", "layer"]
 - !private ["Ps23CustomStringConvertible", "layoutIfNeeded"]
 - ["Ps23CustomStringConvertible", "locationInView"]
-- ["Ps23CustomStringConvertible", "newLocation"]
 - ["Ps23CustomStringConvertible", "nextPictureButtonTapped"]
-- ["Ps23CustomStringConvertible", "notYetSet"]
 - !private ["Ps23CustomStringConvertible", "pointInside"]
 - !private ["Ps23CustomStringConvertible", "preciseLocationInView"]
 - ["Ps23CustomStringConvertible", "previousPictureTapped"]
-- !private ["Ps23CustomStringConvertible", "print"]
 - ["Ps23CustomStringConvertible", "quoteLabel"]
 - ["Ps23CustomStringConvertible", "quoteView"]
+- ["Ps23CustomStringConvertible", "quoteViewLocation"]
 - ["Ps23CustomStringConvertible", "setUpView"]
 - ["Ps23CustomStringConvertible", "shareButtonTapped"]
 - ["Ps23CustomStringConvertible", "toggleDrawer"]
@@ -272,13 +271,11 @@ depends-member:
 - ["C4Echo18EchoViewController", "init"]
 - ["C4Echo18EchoViewController", "isInButton"]
 - ["C4Echo18EchoViewController", "locationInView"]
-- ["C4Echo18EchoViewController", "newLocation"]
 - ["C4Echo18EchoViewController", "nextPictureButtonTapped"]
-- ["C4Echo18EchoViewController", "notYetSet"]
 - ["C4Echo18EchoViewController", "previousPictureTapped"]
-- !private ["C4Echo18EchoViewController", "print"]
 - ["C4Echo18EchoViewController", "quoteLabel"]
 - ["C4Echo18EchoViewController", "quoteView"]
+- ["C4Echo18EchoViewController", "quoteViewLocation"]
 - ["C4Echo18EchoViewController", "setUpView"]
 - ["C4Echo18EchoViewController", "shareButtonTapped"]
 - ["C4Echo18EchoViewController", "toggleDrawer"]
@@ -310,21 +307,21 @@ depends-member:
 - ["Ps9Equatable", "drawerYConstraint"]
 - !private ["Ps9Equatable", "first"]
 - ["Ps9Equatable", "firstLoad"]
+- !private ["Ps9Equatable", "frame"]
+- !private ["Ps9Equatable", "height"]
 - !private ["Ps9Equatable", "image"]
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "isInButton"]
 - !private ["Ps9Equatable", "layer"]
 - !private ["Ps9Equatable", "layoutIfNeeded"]
 - ["Ps9Equatable", "locationInView"]
-- ["Ps9Equatable", "newLocation"]
 - ["Ps9Equatable", "nextPictureButtonTapped"]
-- ["Ps9Equatable", "notYetSet"]
 - !private ["Ps9Equatable", "pointInside"]
 - !private ["Ps9Equatable", "preciseLocationInView"]
 - ["Ps9Equatable", "previousPictureTapped"]
-- !private ["Ps9Equatable", "print"]
 - ["Ps9Equatable", "quoteLabel"]
 - ["Ps9Equatable", "quoteView"]
+- ["Ps9Equatable", "quoteViewLocation"]
 - ["Ps9Equatable", "setUpView"]
 - ["Ps9Equatable", "shareButtonTapped"]
 - ["Ps9Equatable", "toggleDrawer"]
@@ -362,21 +359,20 @@ depends-member:
 - ["Ps8Hashable", "drawerYConstraint"]
 - !private ["Ps8Hashable", "first"]
 - ["Ps8Hashable", "firstLoad"]
+- !private ["Ps8Hashable", "frame"]
 - !private ["Ps8Hashable", "image"]
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "isInButton"]
 - !private ["Ps8Hashable", "layer"]
 - !private ["Ps8Hashable", "layoutIfNeeded"]
 - ["Ps8Hashable", "locationInView"]
-- ["Ps8Hashable", "newLocation"]
 - ["Ps8Hashable", "nextPictureButtonTapped"]
-- ["Ps8Hashable", "notYetSet"]
 - !private ["Ps8Hashable", "pointInside"]
 - !private ["Ps8Hashable", "preciseLocationInView"]
 - ["Ps8Hashable", "previousPictureTapped"]
-- !private ["Ps8Hashable", "print"]
 - ["Ps8Hashable", "quoteLabel"]
 - ["Ps8Hashable", "quoteView"]
+- ["Ps8Hashable", "quoteViewLocation"]
 - ["Ps8Hashable", "setUpView"]
 - ["Ps8Hashable", "shareButtonTapped"]
 - ["Ps8Hashable", "toggleDrawer"]
@@ -415,20 +411,19 @@ depends-member:
 - ["PSo8NSCoding", "drawerView"]
 - ["PSo8NSCoding", "drawerYConstraint"]
 - ["PSo8NSCoding", "firstLoad"]
+- !private ["PSo8NSCoding", "frame"]
 - !private ["PSo8NSCoding", "image"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "isInButton"]
 - !private ["PSo8NSCoding", "layer"]
 - !private ["PSo8NSCoding", "layoutIfNeeded"]
 - ["PSo8NSCoding", "locationInView"]
-- ["PSo8NSCoding", "newLocation"]
 - ["PSo8NSCoding", "nextPictureButtonTapped"]
-- ["PSo8NSCoding", "notYetSet"]
 - !private ["PSo8NSCoding", "pointInside"]
 - ["PSo8NSCoding", "previousPictureTapped"]
-- !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "quoteLabel"]
 - ["PSo8NSCoding", "quoteView"]
+- ["PSo8NSCoding", "quoteViewLocation"]
 - ["PSo8NSCoding", "setUpView"]
 - ["PSo8NSCoding", "shareButtonTapped"]
 - ["PSo8NSCoding", "toggleDrawer"]
@@ -453,13 +448,11 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "isInButton"]
 - ["PSo26NSExtensionRequestHandling", "locationInView"]
-- ["PSo26NSExtensionRequestHandling", "newLocation"]
 - ["PSo26NSExtensionRequestHandling", "nextPictureButtonTapped"]
-- ["PSo26NSExtensionRequestHandling", "notYetSet"]
 - ["PSo26NSExtensionRequestHandling", "previousPictureTapped"]
-- !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "quoteLabel"]
 - ["PSo26NSExtensionRequestHandling", "quoteView"]
+- ["PSo26NSExtensionRequestHandling", "quoteViewLocation"]
 - ["PSo26NSExtensionRequestHandling", "setUpView"]
 - ["PSo26NSExtensionRequestHandling", "shareButtonTapped"]
 - ["PSo26NSExtensionRequestHandling", "toggleDrawer"]
@@ -494,21 +487,20 @@ depends-member:
 - ["CSo8NSObject", "drawerView"]
 - ["CSo8NSObject", "drawerYConstraint"]
 - ["CSo8NSObject", "firstLoad"]
+- !private ["CSo8NSObject", "frame"]
 - !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "isInButton"]
 - !private ["CSo8NSObject", "layer"]
 - !private ["CSo8NSObject", "layoutIfNeeded"]
 - ["CSo8NSObject", "locationInView"]
-- ["CSo8NSObject", "newLocation"]
 - ["CSo8NSObject", "nextPictureButtonTapped"]
-- ["CSo8NSObject", "notYetSet"]
 - !private ["CSo8NSObject", "pointInside"]
 - !private ["CSo8NSObject", "preciseLocationInView"]
 - ["CSo8NSObject", "previousPictureTapped"]
-- !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "quoteLabel"]
 - ["CSo8NSObject", "quoteView"]
+- ["CSo8NSObject", "quoteViewLocation"]
 - ["CSo8NSObject", "setUpView"]
 - ["CSo8NSObject", "shareButtonTapped"]
 - ["CSo8NSObject", "toggleDrawer"]
@@ -533,21 +525,20 @@ depends-member:
 - ["PSo16NSObjectProtocol", "drawerView"]
 - ["PSo16NSObjectProtocol", "drawerYConstraint"]
 - ["PSo16NSObjectProtocol", "firstLoad"]
+- !private ["PSo16NSObjectProtocol", "frame"]
 - !private ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "isInButton"]
 - !private ["PSo16NSObjectProtocol", "layer"]
 - !private ["PSo16NSObjectProtocol", "layoutIfNeeded"]
 - ["PSo16NSObjectProtocol", "locationInView"]
-- ["PSo16NSObjectProtocol", "newLocation"]
 - ["PSo16NSObjectProtocol", "nextPictureButtonTapped"]
-- ["PSo16NSObjectProtocol", "notYetSet"]
 - !private ["PSo16NSObjectProtocol", "pointInside"]
 - !private ["PSo16NSObjectProtocol", "preciseLocationInView"]
 - ["PSo16NSObjectProtocol", "previousPictureTapped"]
-- !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "quoteLabel"]
 - ["PSo16NSObjectProtocol", "quoteView"]
+- ["PSo16NSObjectProtocol", "quoteViewLocation"]
 - ["PSo16NSObjectProtocol", "setUpView"]
 - ["PSo16NSObjectProtocol", "shareButtonTapped"]
 - ["PSo16NSObjectProtocol", "toggleDrawer"]
@@ -583,6 +574,7 @@ depends-member:
 - !private ["Ps10Strideable", "IntegerLiteralType"]
 - !private ["PSo29UIAccessibilityIdentification", "animateWithDuration"]
 - !private ["PSo29UIAccessibilityIdentification", "clipsToBounds"]
+- !private ["PSo29UIAccessibilityIdentification", "frame"]
 - !private ["PSo29UIAccessibilityIdentification", "image"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
 - !private ["PSo29UIAccessibilityIdentification", "layoutIfNeeded"]
@@ -591,6 +583,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "userInteractionEnabled"]
 - !private ["PSo12UIAppearance", "animateWithDuration"]
 - !private ["PSo12UIAppearance", "clipsToBounds"]
+- !private ["PSo12UIAppearance", "frame"]
 - !private ["PSo12UIAppearance", "image"]
 - !private ["PSo12UIAppearance", "layer"]
 - !private ["PSo12UIAppearance", "layoutIfNeeded"]
@@ -610,20 +603,19 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "drawerView"]
 - ["PSo21UIAppearanceContainer", "drawerYConstraint"]
 - ["PSo21UIAppearanceContainer", "firstLoad"]
+- !private ["PSo21UIAppearanceContainer", "frame"]
 - !private ["PSo21UIAppearanceContainer", "image"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "isInButton"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
 - !private ["PSo21UIAppearanceContainer", "layoutIfNeeded"]
 - ["PSo21UIAppearanceContainer", "locationInView"]
-- ["PSo21UIAppearanceContainer", "newLocation"]
 - ["PSo21UIAppearanceContainer", "nextPictureButtonTapped"]
-- ["PSo21UIAppearanceContainer", "notYetSet"]
 - !private ["PSo21UIAppearanceContainer", "pointInside"]
 - ["PSo21UIAppearanceContainer", "previousPictureTapped"]
-- !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "quoteLabel"]
 - ["PSo21UIAppearanceContainer", "quoteView"]
+- ["PSo21UIAppearanceContainer", "quoteViewLocation"]
 - ["PSo21UIAppearanceContainer", "setUpView"]
 - ["PSo21UIAppearanceContainer", "shareButtonTapped"]
 - ["PSo21UIAppearanceContainer", "toggleDrawer"]
@@ -648,13 +640,11 @@ depends-member:
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "isInButton"]
 - ["PSo18UIContentContainer", "locationInView"]
-- ["PSo18UIContentContainer", "newLocation"]
 - ["PSo18UIContentContainer", "nextPictureButtonTapped"]
-- ["PSo18UIContentContainer", "notYetSet"]
 - ["PSo18UIContentContainer", "previousPictureTapped"]
-- !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "quoteLabel"]
 - ["PSo18UIContentContainer", "quoteView"]
+- ["PSo18UIContentContainer", "quoteViewLocation"]
 - ["PSo18UIContentContainer", "setUpView"]
 - ["PSo18UIContentContainer", "shareButtonTapped"]
 - ["PSo18UIContentContainer", "toggleDrawer"]
@@ -665,6 +655,7 @@ depends-member:
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo17UICoordinateSpace", "animateWithDuration"]
 - !private ["PSo17UICoordinateSpace", "clipsToBounds"]
+- !private ["PSo17UICoordinateSpace", "frame"]
 - !private ["PSo17UICoordinateSpace", "image"]
 - !private ["PSo17UICoordinateSpace", "layer"]
 - !private ["PSo17UICoordinateSpace", "layoutIfNeeded"]
@@ -673,6 +664,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "userInteractionEnabled"]
 - !private ["PSo13UIDynamicItem", "animateWithDuration"]
 - !private ["PSo13UIDynamicItem", "clipsToBounds"]
+- !private ["PSo13UIDynamicItem", "frame"]
 - !private ["PSo13UIDynamicItem", "image"]
 - !private ["PSo13UIDynamicItem", "layer"]
 - !private ["PSo13UIDynamicItem", "layoutIfNeeded"]
@@ -692,20 +684,19 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "drawerView"]
 - ["PSo18UIFocusEnvironment", "drawerYConstraint"]
 - ["PSo18UIFocusEnvironment", "firstLoad"]
+- !private ["PSo18UIFocusEnvironment", "frame"]
 - !private ["PSo18UIFocusEnvironment", "image"]
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "isInButton"]
 - !private ["PSo18UIFocusEnvironment", "layer"]
 - !private ["PSo18UIFocusEnvironment", "layoutIfNeeded"]
 - ["PSo18UIFocusEnvironment", "locationInView"]
-- ["PSo18UIFocusEnvironment", "newLocation"]
 - ["PSo18UIFocusEnvironment", "nextPictureButtonTapped"]
-- ["PSo18UIFocusEnvironment", "notYetSet"]
 - !private ["PSo18UIFocusEnvironment", "pointInside"]
 - ["PSo18UIFocusEnvironment", "previousPictureTapped"]
-- !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "quoteLabel"]
 - ["PSo18UIFocusEnvironment", "quoteView"]
+- ["PSo18UIFocusEnvironment", "quoteViewLocation"]
 - ["PSo18UIFocusEnvironment", "setUpView"]
 - ["PSo18UIFocusEnvironment", "shareButtonTapped"]
 - ["PSo18UIFocusEnvironment", "toggleDrawer"]
@@ -743,20 +734,19 @@ depends-member:
 - ["CSo11UIResponder", "drawerView"]
 - ["CSo11UIResponder", "drawerYConstraint"]
 - ["CSo11UIResponder", "firstLoad"]
+- !private ["CSo11UIResponder", "frame"]
 - !private ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "isInButton"]
 - !private ["CSo11UIResponder", "layer"]
 - !private ["CSo11UIResponder", "layoutIfNeeded"]
 - ["CSo11UIResponder", "locationInView"]
-- ["CSo11UIResponder", "newLocation"]
 - ["CSo11UIResponder", "nextPictureButtonTapped"]
-- ["CSo11UIResponder", "notYetSet"]
 - !private ["CSo11UIResponder", "pointInside"]
 - ["CSo11UIResponder", "previousPictureTapped"]
-- !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "quoteLabel"]
 - ["CSo11UIResponder", "quoteView"]
+- ["CSo11UIResponder", "quoteViewLocation"]
 - ["CSo11UIResponder", "setUpView"]
 - ["CSo11UIResponder", "shareButtonTapped"]
 - ["CSo11UIResponder", "toggleDrawer"]
@@ -780,13 +770,11 @@ depends-member:
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "isInButton"]
 - ["PSo16UIStateRestoring", "locationInView"]
-- ["PSo16UIStateRestoring", "newLocation"]
 - ["PSo16UIStateRestoring", "nextPictureButtonTapped"]
-- ["PSo16UIStateRestoring", "notYetSet"]
 - ["PSo16UIStateRestoring", "previousPictureTapped"]
-- !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "quoteLabel"]
 - ["PSo16UIStateRestoring", "quoteView"]
+- ["PSo16UIStateRestoring", "quoteViewLocation"]
 - ["PSo16UIStateRestoring", "setUpView"]
 - ["PSo16UIStateRestoring", "shareButtonTapped"]
 - ["PSo16UIStateRestoring", "toggleDrawer"]
@@ -809,20 +797,19 @@ depends-member:
 - ["PSo18UITraitEnvironment", "drawerView"]
 - ["PSo18UITraitEnvironment", "drawerYConstraint"]
 - ["PSo18UITraitEnvironment", "firstLoad"]
+- !private ["PSo18UITraitEnvironment", "frame"]
 - !private ["PSo18UITraitEnvironment", "image"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "isInButton"]
 - !private ["PSo18UITraitEnvironment", "layer"]
 - !private ["PSo18UITraitEnvironment", "layoutIfNeeded"]
 - ["PSo18UITraitEnvironment", "locationInView"]
-- ["PSo18UITraitEnvironment", "newLocation"]
 - ["PSo18UITraitEnvironment", "nextPictureButtonTapped"]
-- ["PSo18UITraitEnvironment", "notYetSet"]
 - !private ["PSo18UITraitEnvironment", "pointInside"]
 - ["PSo18UITraitEnvironment", "previousPictureTapped"]
-- !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "quoteLabel"]
 - ["PSo18UITraitEnvironment", "quoteView"]
+- ["PSo18UITraitEnvironment", "quoteViewLocation"]
 - ["PSo18UITraitEnvironment", "setUpView"]
 - ["PSo18UITraitEnvironment", "shareButtonTapped"]
 - ["PSo18UITraitEnvironment", "toggleDrawer"]
@@ -835,6 +822,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "animateWithDuration"]
 - !private ["CSo6UIView", "clipsToBounds"]
+- !private ["CSo6UIView", "frame"]
 - !private ["CSo6UIView", "image"]
 - !private ["CSo6UIView", "layer"]
 - !private ["CSo6UIView", "layoutIfNeeded"]
@@ -865,13 +853,11 @@ depends-member:
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "isInButton"]
 - ["CSo16UIViewController", "locationInView"]
-- ["CSo16UIViewController", "newLocation"]
 - ["CSo16UIViewController", "nextPictureButtonTapped"]
-- ["CSo16UIViewController", "notYetSet"]
 - ["CSo16UIViewController", "previousPictureTapped"]
-- !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "quoteLabel"]
 - ["CSo16UIViewController", "quoteView"]
+- ["CSo16UIViewController", "quoteViewLocation"]
 - ["CSo16UIViewController", "setUpView"]
 - ["CSo16UIViewController", "shareButtonTapped"]
 - ["CSo16UIViewController", "toggleDrawer"]
@@ -906,6 +892,8 @@ depends-member:
 - !private ["Ps12_Reflectable", "animateWithDuration"]
 - !private ["Ps12_Reflectable", "clipsToBounds"]
 - !private ["Ps12_Reflectable", "first"]
+- !private ["Ps12_Reflectable", "frame"]
+- !private ["Ps12_Reflectable", "height"]
 - !private ["Ps12_Reflectable", "image"]
 - !private ["Ps12_Reflectable", "layer"]
 - !private ["Ps12_Reflectable", "layoutIfNeeded"]
@@ -927,6 +915,7 @@ depends-nominal:
 - !private "VSC17CGAffineTransform"
 - !private "V12CoreGraphics7CGFloat"
 - !private "VSC7CGPoint"
+- !private "VSC6CGRect"
 - "Ps11CVarArgType"
 - !private "Ps14CollectionType"
 - !private "Ps10Comparable"
@@ -996,4 +985,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-interface-hash: "56f3e80e1f2381b894c04645dbbbdb38"
+interface-hash: "8f9d1455e2934473fe8a7c3916977b19"

@@ -1,5 +1,7 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "imageURL"
+- "quoteURL"
 - "NetworkController"
 provides-nominal:
 - "C4Echo17NetworkController"
@@ -7,71 +9,74 @@ provides-member:
 - ["C4Echo17NetworkController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
-- "NetworkController"
-- !private "NSURLSession"
-- !private "print"
-- "NSURL"
-- "NSData"
+- "StringLiteralType"
 - "Void"
+- "quoteURL"
+- !private "print"
+- "String"
+- !private "NSURLSession"
+- "imageURL"
 - "UIImage"
+- "NSURL"
+- "NetworkController"
+- "NSData"
 depends-member:
 - !private ["Ps9AnyObject", "NSURL"]
 - !private ["Ps9AnyObject", "NSURLSession"]
 - !private ["Ps9AnyObject", "UIImage"]
 - !private ["Ps9AnyObject", "dataTaskWithURL"]
 - !private ["Ps9AnyObject", "description"]
-- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "resume"]
 - !private ["Ps9AnyObject", "sharedSession"]
 - ["Ps9AnyObject", ""]
 - !private ["Ps11CVarArgType", "dataTaskWithURL"]
 - !private ["Ps11CVarArgType", "description"]
-- !private ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "init"]
 - !private ["Ps11CVarArgType", "resume"]
 - !private ["Ps11CVarArgType", "sharedSession"]
 - ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "dataTaskWithURL"]
 - !private ["Ps28CustomDebugStringConvertible", "description"]
-- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "resume"]
 - !private ["Ps28CustomDebugStringConvertible", "sharedSession"]
 - !private ["Ps23CustomStringConvertible", "dataTaskWithURL"]
 - !private ["Ps23CustomStringConvertible", "description"]
-- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "resume"]
 - !private ["Ps23CustomStringConvertible", "sharedSession"]
 - !private ["Ps9Equatable", "dataTaskWithURL"]
 - !private ["Ps9Equatable", "description"]
-- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "resume"]
 - !private ["Ps9Equatable", "sharedSession"]
 - !private ["Ps9ErrorType", "description"]
 - !private ["Ps8Hashable", "dataTaskWithURL"]
 - !private ["Ps8Hashable", "description"]
-- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "resume"]
 - !private ["Ps8Hashable", "sharedSession"]
 - !private ["PSo8NSCoding", "description"]
-- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "init"]
 - !private ["PSo9NSCopying", "description"]
-- !private ["PSo9NSCopying", "init"]
+- ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "resume"]
 - !private ["CSo7NSError", "description"]
 - !private ["CSo8NSObject", "dataTaskWithURL"]
 - !private ["CSo8NSObject", "description"]
-- !private ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "resume"]
 - !private ["CSo8NSObject", "sharedSession"]
 - !private ["PSo16NSObjectProtocol", "dataTaskWithURL"]
 - !private ["PSo16NSObjectProtocol", "description"]
-- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "resume"]
 - !private ["PSo16NSObjectProtocol", "sharedSession"]
 - !private ["PSo14NSSecureCoding", "description"]
-- !private ["PSo14NSSecureCoding", "init"]
-- !private ["CSo5NSURL", "init"]
+- ["PSo14NSSecureCoding", "init"]
+- ["CSo5NSURL", "init"]
 - !private ["CSo12NSURLSession", "dataTaskWithURL"]
 - !private ["CSo12NSURLSession", "sharedSession"]
 - !private ["CSo20NSURLSessionDataTask", "resume"]
@@ -91,25 +96,25 @@ depends-member:
 - ["Sq", "Some"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["CSo7UIImage", "init"]
-- !private ["Ps32_FileReferenceLiteralConvertible", "init"]
+- ["Ps32_FileReferenceLiteralConvertible", "init"]
 - !private ["Ps24_ImageLiteralConvertible", "init"]
 - ["Ps12_Reflectable", "Some"]
-- !private ["Ps12_Reflectable", "init"]
+- ["Ps12_Reflectable", "init"]
 depends-nominal:
 - "Ps9AnyObject"
-- !private "Ps11CVarArgType"
+- "Ps11CVarArgType"
 - "Ps28CustomDebugStringConvertible"
-- !private "Ps23CustomStringConvertible"
-- !private "Ps9Equatable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
 - !private "Ps9ErrorType"
-- !private "Ps8Hashable"
-- !private "PSo8NSCoding"
-- !private "PSo9NSCopying"
+- "Ps8Hashable"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
 - !private "CSo7NSError"
-- !private "CSo8NSObject"
-- !private "PSo16NSObjectProtocol"
-- !private "PSo14NSSecureCoding"
-- !private "CSo5NSURL"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo5NSURL"
 - !private "CSo12NSURLSession"
 - !private "CSo20NSURLSessionDataTask"
 - !private "CSo16NSURLSessionTask"
@@ -118,7 +123,7 @@ depends-nominal:
 - "Sq"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "CSo7UIImage"
-- !private "Ps32_FileReferenceLiteralConvertible"
+- "Ps32_FileReferenceLiteralConvertible"
 - !private "Ps24_ImageLiteralConvertible"
 - "Ps12_Reflectable"
 depends-dynamic-lookup:
@@ -131,4 +136,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
-interface-hash: "6c1245d1acd864d7dc4fb909a6eb2596"
+interface-hash: "f1860ed5f6669d12853b846484f68eb4"

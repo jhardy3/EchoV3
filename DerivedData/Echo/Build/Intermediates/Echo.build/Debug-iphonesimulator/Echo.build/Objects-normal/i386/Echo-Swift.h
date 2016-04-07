@@ -93,6 +93,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -113,8 +114,14 @@ SWIFT_CLASS("_TtC4Echo11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIButton;
+@class UITapGestureRecognizer;
+@class UITouch;
+@class UIEvent;
 @class UIImageView;
 @class UILabel;
+@class UIView;
+@class NSLayoutConstraint;
 @class NSBundle;
 @class NSCoder;
 
@@ -122,8 +129,23 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 @interface EchoViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified backgroundImage;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified quoteLabel;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified quoteView;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified drawerView;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified drawerYConstraint;
+@property (nonatomic) BOOL drawerShown;
+@property (nonatomic, readonly) CGFloat quoteViewLocation;
+@property (nonatomic) BOOL isInButton;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (IBAction)previousPictureTapped:(UIButton * _Nonnull)sender;
+- (IBAction)customTextButtonTapped:(UIButton * _Nonnull)sender;
+- (IBAction)shareButtonTapped:(UIButton * _Nonnull)sender;
+- (IBAction)nextPictureButtonTapped:(UIButton * _Nonnull)sender;
+- (IBAction)toggleDrawer:(UITapGestureRecognizer * _Nonnull)sender;
+- (void)setUpView;
+- (void)firstLoad;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (void)touchesMoved:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
