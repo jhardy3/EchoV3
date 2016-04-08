@@ -9,17 +9,17 @@ provides-member:
 - ["C4Echo17NetworkController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "NetworkController"
-- "NSURL"
-- "NSData"
-- "imageURL"
-- "UIImage"
 - !private "NSURLSession"
+- !private "print"
+- "NSData"
+- "NSURL"
+- "Void"
+- "StringLiteralType"
 - "String"
 - "quoteURL"
-- "StringLiteralType"
-- "Void"
-- !private "print"
+- "UIImage"
+- "NetworkController"
+- "imageURL"
 depends-member:
 - !private ["Ps9AnyObject", "NSURL"]
 - !private ["Ps9AnyObject", "NSURLSession"]

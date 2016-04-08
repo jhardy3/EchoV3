@@ -8,6 +8,16 @@
 
 import UIKit
 
+enum ViewMode {
+    case EditMode
+    case ViewMode
+}
+
+enum DrawerMode {
+    case Top
+    case Bottom
+}
+
 class EchoViewController: UIViewController {
     
     @IBOutlet weak var backgroundImage: UIImageView!
@@ -15,6 +25,25 @@ class EchoViewController: UIViewController {
     @IBOutlet weak var quoteView: UIView!
     @IBOutlet weak var drawerView: UIView!
     @IBOutlet weak var drawerYConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var topDrawerView: UIView!
+    @IBOutlet weak var topDrawerYConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var widthSlider: UISlider!
+    @IBOutlet weak var heightSlider: UISlider!
+    @IBOutlet weak var junkSlider: UISlider!
+    
+    @IBOutlet weak var topWidthSlider: UISlider!
+    @IBOutlet weak var topHeightSlider: UISlider!
+    @IBOutlet weak var topJunkSlider: UISlider!
+    
+    var viewIsLoaded = false
+    var viewMode = ViewMode.EditMode
+    var drawerMode = DrawerMode.Bottom {
+        didSet {
+            moveDrawersBasedOnView()
+        }
+    }
     
     var drawerShown = true
     var buttonY: CGFloat?
@@ -29,14 +58,40 @@ class EchoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        widthSlider.maximumValue = Float(self.view.frame.width)
+        widthSlider.value = Float(quoteView.frame.width)
+        heightSlider.maximumValue = Float(self.view.frame.height)
+        heightSlider.value = Float(quoteView.frame.height)
+        junkSlider.maximumValue = 1.0
+        junkSlider.value = Float(quoteView.alpha)
+        
+        widthSlider.minimumValue = 30
+        heightSlider.minimumValue = 30
+        junkSlider.minimumValue = 0.0
+        
+        topWidthSlider.maximumValue = Float(self.view.frame.width)
+        topWidthSlider.value = Float(quoteView.frame.width)
+        topHeightSlider.maximumValue = Float(self.view.frame.height)
+        topHeightSlider.value = Float(quoteView.frame.height)
+        topJunkSlider.maximumValue = 1.0
+        topJunkSlider.value = Float(quoteView.alpha)
+        
+        topWidthSlider.minimumValue = 30
+        topHeightSlider.minimumValue = 30
+        topJunkSlider.minimumValue = 0.0
+        
+        quoteLabel.adjustsFontSizeToFitWidth = true
+        quoteLabel.autoresizesSubviews = true
+        
         setUpView()
+        
+        viewIsLoaded = true
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
     @IBAction func previousPictureTapped(sender: UIButton) {
         backgroundImage.image = ImageController.sharedInstance.fetchPreviousImage()
@@ -53,6 +108,93 @@ class EchoViewController: UIViewController {
         backgroundImage.image = image
     }
     
+    func moveDrawersBasedOnView() {
+        switch viewMode {
+        case .EditMode:
+            moveDrawers()
+        default:
+            return
+        }
+    }
+    
+    func moveDrawers() {
+        switch drawerMode {
+        case .Bottom:
+            toggleTopDrawer()
+            toggleBottomDrawer()
+        case .Top:
+            toggleBottomDrawer()
+            toggleTopDrawer()
+        }
+    }
+    
+    func toggleBottomDrawer() {
+        guard let yConstraint = drawerYConstraint else { return }
+        view.layoutIfNeeded()
+        
+        switch drawerMode {
+        case .Top:
+            yConstraint.constant = -200
+        case .Bottom:
+            yConstraint.constant = 0
+        }
+        
+        UIView.animateWithDuration(0.75) { () -> Void in
+            self.view.layoutIfNeeded()
+        }
+        
+    }
+    
+    func toggleTopDrawer() {
+        guard let yConstraint = topDrawerYConstraint else { return }
+        view.layoutIfNeeded()
+        switch drawerMode {
+        case .Top:
+            yConstraint.constant = 0
+        case .Bottom:
+            yConstraint.constant = -200
+        }
+        
+        UIView.animateWithDuration(0.75) {
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    
+    @IBAction func widthSliderChanged(sender: UISlider) {
+        quoteView.frame.size.width = CGFloat(sender.value)
+        quoteLabel.frame.size.height = CGFloat(sender.value)
+        quoteView.center = view.center
+        quoteLabel.center.x = quoteView.frame.width / 2
+        quoteLabel.center.y = quoteView.frame.height / 2
+        
+        view.layoutIfNeeded()
+        
+    }
+    
+    @IBAction func topWidthSlider(sender: UISlider) {
+    }
+    
+    
+    @IBAction func heightSliderChanged(sender: UISlider) {
+        quoteView.frame.size.height = CGFloat(sender.value)
+        quoteLabel.frame.size.height = CGFloat(sender.value)
+        quoteView.center = view.center
+        quoteLabel.center.x = quoteView.frame.width / 2
+        quoteLabel.center.y = quoteView.frame.height / 2
+        
+        view.layoutIfNeeded()
+    }
+    
+    @IBAction func topHeightSlider(sender: UISlider) {
+    }
+    
+    @IBAction func junkSliderChanged(sender: UISlider) {
+        quoteView.alpha = CGFloat(sender.value)
+    }
+    
+    @IBAction func topJunkSlider(sender: UISlider) {
+    }
     
     @IBAction func toggleDrawer(sender: UITapGestureRecognizer) {
         guard let yConstraint = drawerYConstraint else { return }
@@ -60,7 +202,7 @@ class EchoViewController: UIViewController {
         if drawerShown {
             yConstraint.constant = 0
         } else {
-            yConstraint.constant = -80
+            yConstraint.constant = -200
         }
         
         UIView.animateWithDuration(0.75) { () -> Void in
@@ -100,8 +242,17 @@ class EchoViewController: UIViewController {
         if isInButton {
             
             guard let totalYMovement = touches.first?.preciseLocationInView(self.view).y,
-            locationInView = self.locationInView else { return }
-
+                locationInView = self.locationInView else { return }
+            
+            if viewIsLoaded {
+                if totalYMovement > view.frame.height / 2 && drawerMode == .Bottom {
+                    drawerMode = .Top
+                } else if totalYMovement < view.frame.height / 2 && drawerMode == .Top {
+                    drawerMode = .Bottom
+                }
+            }
+            
+            
             var yMovement = totalYMovement - quoteViewLocation
             if locationInView >= (self.quoteView.frame.height / 2) {
                 // Works!

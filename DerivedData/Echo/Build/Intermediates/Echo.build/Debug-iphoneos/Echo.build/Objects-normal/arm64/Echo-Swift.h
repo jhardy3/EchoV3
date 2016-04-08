@@ -115,6 +115,7 @@ SWIFT_CLASS("_TtC4Echo11AppDelegate")
 @end
 
 @class UIButton;
+@class UISlider;
 @class UITapGestureRecognizer;
 @class UITouch;
 @class UIEvent;
@@ -132,6 +133,15 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified quoteView;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified drawerView;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified drawerYConstraint;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified topDrawerView;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified topDrawerYConstraint;
+@property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified widthSlider;
+@property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified heightSlider;
+@property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified junkSlider;
+@property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified topWidthSlider;
+@property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified topHeightSlider;
+@property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified topJunkSlider;
+@property (nonatomic) BOOL viewIsLoaded;
 @property (nonatomic) BOOL drawerShown;
 @property (nonatomic, readonly) CGFloat quoteViewLocation;
 @property (nonatomic) BOOL isInButton;
@@ -141,6 +151,16 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 - (IBAction)customTextButtonTapped:(UIButton * _Nonnull)sender;
 - (IBAction)shareButtonTapped:(UIButton * _Nonnull)sender;
 - (IBAction)nextPictureButtonTapped:(UIButton * _Nonnull)sender;
+- (void)moveDrawersBasedOnView;
+- (void)moveDrawers;
+- (void)toggleBottomDrawer;
+- (void)toggleTopDrawer;
+- (IBAction)widthSliderChanged:(UISlider * _Nonnull)sender;
+- (IBAction)topWidthSlider:(UISlider * _Nonnull)sender;
+- (IBAction)heightSliderChanged:(UISlider * _Nonnull)sender;
+- (IBAction)topHeightSlider:(UISlider * _Nonnull)sender;
+- (IBAction)junkSliderChanged:(UISlider * _Nonnull)sender;
+- (IBAction)topJunkSlider:(UISlider * _Nonnull)sender;
 - (IBAction)toggleDrawer:(UITapGestureRecognizer * _Nonnull)sender;
 - (void)setUpView;
 - (void)firstLoad;

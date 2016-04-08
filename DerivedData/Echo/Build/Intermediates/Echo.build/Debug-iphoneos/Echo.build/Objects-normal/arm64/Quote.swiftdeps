@@ -8,8 +8,8 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "UIImage"
-- "Quote"
 - "String"
+- "Quote"
 depends-member:
 - !private ["Ps9AnyObject", "author"]
 - !private ["Ps9AnyObject", "image"]

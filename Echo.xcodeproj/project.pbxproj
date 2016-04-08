@@ -64,7 +64,6 @@
 			children = (
 				74F8C8E91CB5BFA000C02079 /* AppDelegate.swift */,
 				74F8C8F01CB5BFA000C02079 /* Assets.xcassets */,
-				74F8C8ED1CB5BFA000C02079 /* Main.storyboard */,
 				74F8C8FB1CB5C6D700C02079 /* EchoViewController.swift */,
 				74F8C8FD1CB5C75D00C02079 /* NetworkController.swift */,
 				74F8C8FF1CB5C79300C02079 /* Quote.swift */,
@@ -72,6 +71,7 @@
 				74F8C9031CB5EAEE00C02079 /* ImageController.swift */,
 				74F8C8F21CB5BFA000C02079 /* LaunchScreen.storyboard */,
 				74F8C8F51CB5BFA000C02079 /* Info.plist */,
+				74F8C8ED1CB5BFA000C02079 /* Main.storyboard */,
 			);
 			path = Echo;
 			sourceTree = "<group>";
