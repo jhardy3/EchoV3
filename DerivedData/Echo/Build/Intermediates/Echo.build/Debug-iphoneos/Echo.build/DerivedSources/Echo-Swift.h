@@ -145,7 +145,6 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified quoteLabelWidth;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified quoteViewHeight;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified quoteViewWidth;
-@property (nonatomic) BOOL viewIsLoaded;
 @property (nonatomic) double animationInterval;
 @property (nonatomic) BOOL drawerShown;
 @property (nonatomic, readonly) CGFloat quoteViewLocation;
@@ -158,9 +157,7 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 - (IBAction)shareButtonTapped:(UIButton * _Nonnull)sender;
 - (IBAction)nextPictureButtonTapped:(UIButton * _Nonnull)sender;
 - (void)moveDrawersBasedOnView;
-- (void)moveDrawers;
-- (void)toggleBottomDrawer;
-- (void)toggleTopDrawer;
+- (void)toggleDrawer;
 - (IBAction)widthSliderChanged:(UISlider * _Nonnull)sender;
 - (IBAction)topWidthSlider:(UISlider * _Nonnull)sender;
 - (IBAction)heightSliderChanged:(UISlider * _Nonnull)sender;

@@ -3,96 +3,97 @@ provides-top-level:
 - "ViewMode"
 - "DrawerMode"
 - "EditMode"
+- "Dimension"
 - "EchoViewController"
 provides-nominal:
 - "O4Echo8ViewMode"
 - "O4Echo10DrawerMode"
 - "O4Echo8EditMode"
+- "O4Echo9Dimension"
 - "C4Echo18EchoViewController"
 provides-member:
 - ["O4Echo8ViewMode", ""]
 - ["O4Echo10DrawerMode", ""]
 - ["O4Echo8EditMode", ""]
+- ["O4Echo9Dimension", ""]
 - ["C4Echo18EchoViewController", ""]
 provides-dynamic-lookup:
+- "updateViewForBoxScale"
+- "quoteView"
 - "widthSlider"
-- "animationInterval"
-- "isInButton"
-- "moveDrawers"
-- "touchesMoved"
-- "junkSliderChanged"
-- "nextPictureButtonTapped"
-- "updateViewForTextFont"
+- "touchesBegan"
 - "topJunkSlider"
 - "topJunkSlider"
-- "drawerShown"
-- "toggleDrawer"
-- "topDrawerView"
-- "quoteLabelHeight"
-- "quoteLabel"
-- "moveDrawersBasedOnView"
+- "shareButtonTapped"
 - "updateSlidersWithView"
-- "previousPictureTapped"
-- "drawerView"
+- "updateViewForTextFont"
+- "widthSliderChanged"
+- "topDrawerYConstraint"
+- "quoteViewWidth"
 - "topHeightSlider"
 - "topHeightSlider"
 - "setUpView"
-- "heightSliderChanged"
-- "topDrawerYConstraint"
-- "updateViewForBoxScale"
-- "returnObjectForManipulation"
-- "drawerYConstraint"
-- "shareButtonTapped"
-- "widthSliderChanged"
-- "touchesBegan"
-- "quoteViewHeight"
 - "firstLoad"
-- "quoteViewLocation"
-- "toggleTopDrawer"
-- "topWidthSlider"
-- "topWidthSlider"
-- "updateViewForTextScale"
-- "heightSlider"
+- "isInButton"
 - "backgroundImage"
-- "quoteViewWidth"
+- "toggleDrawer"
+- "toggleDrawer"
+- "moveDrawersBasedOnView"
+- "touchesMoved"
+- "junkSliderChanged"
+- "drawerShown"
+- "topWidthSlider"
+- "topWidthSlider"
+- "topDrawerView"
 - "updateViewConstraints"
-- "customTextButtonTapped"
-- "junkSlider"
-- "viewDidLoad"
-- "toggleBottomDrawer"
-- "quoteView"
-- "quoteLabelWidth"
-- "viewIsLoaded"
 - "layoutViewBasedOnEditMode"
+- "quoteViewHeight"
+- "quoteLabelWidth"
+- "drawerYConstraint"
+- "nextPictureButtonTapped"
+- "animationInterval"
+- "viewDidLoad"
+- "customTextButtonTapped"
+- "quoteViewLocation"
+- "junkSlider"
+- "heightSliderChanged"
+- "updateViewForTextScale"
+- "previousPictureTapped"
+- "quoteLabel"
+- "returnObjectForManipulation"
+- "heightSlider"
+- "quoteLabelHeight"
+- "drawerView"
 depends-top-level:
-- "=="
-- "UIView"
-- "EchoViewController"
-- "UITapGestureRecognizer"
-- "BooleanLiteralType"
-- !private "ImageController"
-- "EditMode"
 - !private "QuoteController"
-- "ViewMode"
-- "UIViewController"
+- "EchoViewController"
 - "UIButton"
-- "UILabel"
-- "DrawerMode"
+- "ViewMode"
+- !private "-"
+- !private "+"
+- "UIView"
+- "EditMode"
 - "CGFloat"
-- "UITouch"
-- "UIImageView"
+- "BooleanLiteralType"
 - !private "/"
+- "UIViewController"
+- "UIImageView"
+- "Set"
 - !private "Void"
+- "NSLayoutConstraint"
+- !private "ImageController"
+- "=="
+- "UITouch"
+- !private "&&"
+- "UILabel"
+- "UITapGestureRecognizer"
+- "Dimension"
+- "UIEvent"
+- !private ">="
+- "Float"
+- "DrawerMode"
 - !private "<"
 - "UISlider"
-- !private "Float"
-- "Set"
-- !private "-"
-- !private ">="
-- !private "+"
-- !private "&&"
-- "NSLayoutConstraint"
-- "UIEvent"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -103,6 +104,7 @@ depends-member:
 - !private ["Ps9AnyObject", "QuoteController"]
 - !private ["Ps9AnyObject", "UIView"]
 - ["Ps9AnyObject", "ViewMode"]
+- ["Ps9AnyObject", "adjustFrameBasedOnDimension"]
 - !private ["Ps9AnyObject", "adjustsFontSizeToFitWidth"]
 - !private ["Ps9AnyObject", "alpha"]
 - !private ["Ps9AnyObject", "animateWithDuration"]
@@ -137,7 +139,6 @@ depends-member:
 - ["Ps9AnyObject", "locationInView"]
 - !private ["Ps9AnyObject", "maximumValue"]
 - !private ["Ps9AnyObject", "minimumValue"]
-- ["Ps9AnyObject", "moveDrawers"]
 - ["Ps9AnyObject", "moveDrawersBasedOnView"]
 - ["Ps9AnyObject", "nextPictureButtonTapped"]
 - !private ["Ps9AnyObject", "pointInside"]
@@ -156,9 +157,7 @@ depends-member:
 - ["Ps9AnyObject", "setUpView"]
 - ["Ps9AnyObject", "shareButtonTapped"]
 - !private ["Ps9AnyObject", "sharedInstance"]
-- ["Ps9AnyObject", "toggleBottomDrawer"]
 - ["Ps9AnyObject", "toggleDrawer"]
-- ["Ps9AnyObject", "toggleTopDrawer"]
 - ["Ps9AnyObject", "topDrawerView"]
 - ["Ps9AnyObject", "topDrawerYConstraint"]
 - ["Ps9AnyObject", "topHeightSlider"]
@@ -176,7 +175,6 @@ depends-member:
 - !private ["Ps9AnyObject", "value"]
 - !private ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", "viewDidLoad"]
-- ["Ps9AnyObject", "viewIsLoaded"]
 - ["Ps9AnyObject", "viewMode"]
 - ["Ps9AnyObject", "widthSlider"]
 - ["Ps9AnyObject", "widthSliderChanged"]
@@ -216,6 +214,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "QuoteController"]
 - !private ["Ps11CVarArgType", "UIView"]
 - ["Ps11CVarArgType", "ViewMode"]
+- ["Ps11CVarArgType", "adjustFrameBasedOnDimension"]
 - !private ["Ps11CVarArgType", "adjustsFontSizeToFitWidth"]
 - !private ["Ps11CVarArgType", "alpha"]
 - !private ["Ps11CVarArgType", "animateWithDuration"]
@@ -249,7 +248,6 @@ depends-member:
 - ["Ps11CVarArgType", "locationInView"]
 - !private ["Ps11CVarArgType", "maximumValue"]
 - !private ["Ps11CVarArgType", "minimumValue"]
-- ["Ps11CVarArgType", "moveDrawers"]
 - ["Ps11CVarArgType", "moveDrawersBasedOnView"]
 - ["Ps11CVarArgType", "nextPictureButtonTapped"]
 - !private ["Ps11CVarArgType", "pointInside"]
@@ -267,9 +265,7 @@ depends-member:
 - ["Ps11CVarArgType", "returnObjectForManipulation"]
 - ["Ps11CVarArgType", "setUpView"]
 - ["Ps11CVarArgType", "shareButtonTapped"]
-- ["Ps11CVarArgType", "toggleBottomDrawer"]
 - ["Ps11CVarArgType", "toggleDrawer"]
-- ["Ps11CVarArgType", "toggleTopDrawer"]
 - ["Ps11CVarArgType", "topDrawerView"]
 - ["Ps11CVarArgType", "topDrawerYConstraint"]
 - ["Ps11CVarArgType", "topHeightSlider"]
@@ -287,7 +283,6 @@ depends-member:
 - !private ["Ps11CVarArgType", "value"]
 - !private ["Ps11CVarArgType", "view"]
 - ["Ps11CVarArgType", "viewDidLoad"]
-- ["Ps11CVarArgType", "viewIsLoaded"]
 - ["Ps11CVarArgType", "viewMode"]
 - ["Ps11CVarArgType", "widthSlider"]
 - ["Ps11CVarArgType", "widthSliderChanged"]
@@ -315,6 +310,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIView"]
 - ["Ps28CustomDebugStringConvertible", "ViewMode"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- ["Ps28CustomDebugStringConvertible", "adjustFrameBasedOnDimension"]
 - !private ["Ps28CustomDebugStringConvertible", "adjustsFontSizeToFitWidth"]
 - !private ["Ps28CustomDebugStringConvertible", "alpha"]
 - !private ["Ps28CustomDebugStringConvertible", "animateWithDuration"]
@@ -348,7 +344,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "locationInView"]
 - !private ["Ps28CustomDebugStringConvertible", "maximumValue"]
 - !private ["Ps28CustomDebugStringConvertible", "minimumValue"]
-- ["Ps28CustomDebugStringConvertible", "moveDrawers"]
 - ["Ps28CustomDebugStringConvertible", "moveDrawersBasedOnView"]
 - ["Ps28CustomDebugStringConvertible", "nextPictureButtonTapped"]
 - !private ["Ps28CustomDebugStringConvertible", "pointInside"]
@@ -366,9 +361,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "returnObjectForManipulation"]
 - ["Ps28CustomDebugStringConvertible", "setUpView"]
 - ["Ps28CustomDebugStringConvertible", "shareButtonTapped"]
-- ["Ps28CustomDebugStringConvertible", "toggleBottomDrawer"]
 - ["Ps28CustomDebugStringConvertible", "toggleDrawer"]
-- ["Ps28CustomDebugStringConvertible", "toggleTopDrawer"]
 - ["Ps28CustomDebugStringConvertible", "topDrawerView"]
 - ["Ps28CustomDebugStringConvertible", "topDrawerYConstraint"]
 - ["Ps28CustomDebugStringConvertible", "topHeightSlider"]
@@ -386,7 +379,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "value"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
-- ["Ps28CustomDebugStringConvertible", "viewIsLoaded"]
 - ["Ps28CustomDebugStringConvertible", "viewMode"]
 - ["Ps28CustomDebugStringConvertible", "widthSlider"]
 - ["Ps28CustomDebugStringConvertible", "widthSliderChanged"]
@@ -406,6 +398,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "ViewMode"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "adjustFrameBasedOnDimension"]
 - !private ["Ps23CustomStringConvertible", "adjustsFontSizeToFitWidth"]
 - !private ["Ps23CustomStringConvertible", "alpha"]
 - !private ["Ps23CustomStringConvertible", "animateWithDuration"]
@@ -440,7 +433,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "locationInView"]
 - !private ["Ps23CustomStringConvertible", "maximumValue"]
 - !private ["Ps23CustomStringConvertible", "minimumValue"]
-- ["Ps23CustomStringConvertible", "moveDrawers"]
 - ["Ps23CustomStringConvertible", "moveDrawersBasedOnView"]
 - ["Ps23CustomStringConvertible", "nextPictureButtonTapped"]
 - !private ["Ps23CustomStringConvertible", "pointInside"]
@@ -458,9 +450,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "returnObjectForManipulation"]
 - ["Ps23CustomStringConvertible", "setUpView"]
 - ["Ps23CustomStringConvertible", "shareButtonTapped"]
-- ["Ps23CustomStringConvertible", "toggleBottomDrawer"]
 - ["Ps23CustomStringConvertible", "toggleDrawer"]
-- ["Ps23CustomStringConvertible", "toggleTopDrawer"]
 - ["Ps23CustomStringConvertible", "topDrawerView"]
 - ["Ps23CustomStringConvertible", "topDrawerYConstraint"]
 - ["Ps23CustomStringConvertible", "topHeightSlider"]
@@ -478,19 +468,23 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "value"]
 - !private ["Ps23CustomStringConvertible", "view"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
-- ["Ps23CustomStringConvertible", "viewIsLoaded"]
 - ["Ps23CustomStringConvertible", "viewMode"]
 - ["Ps23CustomStringConvertible", "widthSlider"]
 - ["Ps23CustomStringConvertible", "widthSliderChanged"]
 - ["Ps23CustomStringConvertible", ""]
+- ["O4Echo9Dimension", "Height"]
+- ["O4Echo9Dimension", "Width"]
+- ["O4Echo9Dimension", "deinit"]
+- ["O4Echo9Dimension", "hashValue"]
 - ["O4Echo10DrawerMode", "Bottom"]
 - ["O4Echo10DrawerMode", "Top"]
 - ["O4Echo10DrawerMode", "deinit"]
 - ["O4Echo10DrawerMode", "hashValue"]
 - ["C4Echo18EchoViewController", "CGFloat"]
+- ["C4Echo18EchoViewController", "Dimension"]
 - ["C4Echo18EchoViewController", "DrawerMode"]
 - ["C4Echo18EchoViewController", "EditMode"]
-- !private ["C4Echo18EchoViewController", "Float"]
+- ["C4Echo18EchoViewController", "Float"]
 - !private ["C4Echo18EchoViewController", "ImageController"]
 - ["C4Echo18EchoViewController", "NSLayoutConstraint"]
 - !private ["C4Echo18EchoViewController", "QuoteController"]
@@ -505,6 +499,7 @@ depends-member:
 - ["C4Echo18EchoViewController", "UIView"]
 - ["C4Echo18EchoViewController", "ViewMode"]
 - !private ["C4Echo18EchoViewController", "Void"]
+- ["C4Echo18EchoViewController", "adjustFrameBasedOnDimension"]
 - ["C4Echo18EchoViewController", "animationInterval"]
 - ["C4Echo18EchoViewController", "backgroundImage"]
 - ["C4Echo18EchoViewController", "buttonY"]
@@ -524,7 +519,6 @@ depends-member:
 - ["C4Echo18EchoViewController", "junkSliderChanged"]
 - ["C4Echo18EchoViewController", "layoutViewBasedOnEditMode"]
 - ["C4Echo18EchoViewController", "locationInView"]
-- ["C4Echo18EchoViewController", "moveDrawers"]
 - ["C4Echo18EchoViewController", "moveDrawersBasedOnView"]
 - ["C4Echo18EchoViewController", "nextPictureButtonTapped"]
 - ["C4Echo18EchoViewController", "previousPictureTapped"]
@@ -540,9 +534,7 @@ depends-member:
 - ["C4Echo18EchoViewController", "returnObjectForManipulation"]
 - ["C4Echo18EchoViewController", "setUpView"]
 - ["C4Echo18EchoViewController", "shareButtonTapped"]
-- ["C4Echo18EchoViewController", "toggleBottomDrawer"]
 - ["C4Echo18EchoViewController", "toggleDrawer"]
-- ["C4Echo18EchoViewController", "toggleTopDrawer"]
 - ["C4Echo18EchoViewController", "topDrawerView"]
 - ["C4Echo18EchoViewController", "topDrawerYConstraint"]
 - ["C4Echo18EchoViewController", "topHeightSlider"]
@@ -557,7 +549,6 @@ depends-member:
 - ["C4Echo18EchoViewController", "updateViewForTextScale"]
 - !private ["C4Echo18EchoViewController", "view"]
 - ["C4Echo18EchoViewController", "viewDidLoad"]
-- ["C4Echo18EchoViewController", "viewIsLoaded"]
 - ["C4Echo18EchoViewController", "viewMode"]
 - ["C4Echo18EchoViewController", "widthSlider"]
 - ["C4Echo18EchoViewController", "widthSliderChanged"]
@@ -574,6 +565,7 @@ depends-member:
 - ["Ps9Equatable", "EditMode"]
 - !private ["Ps9Equatable", "Float"]
 - !private ["Ps9Equatable", "Generator"]
+- ["Ps9Equatable", "Height"]
 - !private ["Ps9Equatable", "ImageController"]
 - !private ["Ps9Equatable", "Index"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
@@ -584,9 +576,11 @@ depends-member:
 - ["Ps9Equatable", "Top"]
 - !private ["Ps9Equatable", "UIView"]
 - ["Ps9Equatable", "ViewMode"]
+- ["Ps9Equatable", "Width"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_Element"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "adjustFrameBasedOnDimension"]
 - !private ["Ps9Equatable", "adjustsFontSizeToFitWidth"]
 - !private ["Ps9Equatable", "alpha"]
 - !private ["Ps9Equatable", "animateWithDuration"]
@@ -624,7 +618,6 @@ depends-member:
 - !private ["Ps9Equatable", "maximumValue"]
 - !private ["Ps9Equatable", "minY"]
 - !private ["Ps9Equatable", "minimumValue"]
-- ["Ps9Equatable", "moveDrawers"]
 - ["Ps9Equatable", "moveDrawersBasedOnView"]
 - ["Ps9Equatable", "nextPictureButtonTapped"]
 - !private ["Ps9Equatable", "pointInside"]
@@ -643,9 +636,7 @@ depends-member:
 - ["Ps9Equatable", "setUpView"]
 - ["Ps9Equatable", "shareButtonTapped"]
 - !private ["Ps9Equatable", "size"]
-- ["Ps9Equatable", "toggleBottomDrawer"]
 - ["Ps9Equatable", "toggleDrawer"]
-- ["Ps9Equatable", "toggleTopDrawer"]
 - ["Ps9Equatable", "topDrawerView"]
 - ["Ps9Equatable", "topDrawerYConstraint"]
 - ["Ps9Equatable", "topHeightSlider"]
@@ -663,7 +654,6 @@ depends-member:
 - !private ["Ps9Equatable", "value"]
 - !private ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "viewDidLoad"]
-- ["Ps9Equatable", "viewIsLoaded"]
 - ["Ps9Equatable", "viewMode"]
 - !private ["Ps9Equatable", "width"]
 - ["Ps9Equatable", "widthSlider"]
@@ -686,6 +676,7 @@ depends-member:
 - ["Ps8Hashable", "EditMode"]
 - !private ["Ps8Hashable", "Float"]
 - !private ["Ps8Hashable", "Generator"]
+- ["Ps8Hashable", "Height"]
 - !private ["Ps8Hashable", "ImageController"]
 - !private ["Ps8Hashable", "Index"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
@@ -696,8 +687,10 @@ depends-member:
 - ["Ps8Hashable", "Top"]
 - !private ["Ps8Hashable", "UIView"]
 - ["Ps8Hashable", "ViewMode"]
+- ["Ps8Hashable", "Width"]
 - !private ["Ps8Hashable", "_Element"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "adjustFrameBasedOnDimension"]
 - !private ["Ps8Hashable", "adjustsFontSizeToFitWidth"]
 - !private ["Ps8Hashable", "alpha"]
 - !private ["Ps8Hashable", "animateWithDuration"]
@@ -732,7 +725,6 @@ depends-member:
 - ["Ps8Hashable", "locationInView"]
 - !private ["Ps8Hashable", "maximumValue"]
 - !private ["Ps8Hashable", "minimumValue"]
-- ["Ps8Hashable", "moveDrawers"]
 - ["Ps8Hashable", "moveDrawersBasedOnView"]
 - ["Ps8Hashable", "nextPictureButtonTapped"]
 - !private ["Ps8Hashable", "pointInside"]
@@ -750,9 +742,7 @@ depends-member:
 - ["Ps8Hashable", "returnObjectForManipulation"]
 - ["Ps8Hashable", "setUpView"]
 - ["Ps8Hashable", "shareButtonTapped"]
-- ["Ps8Hashable", "toggleBottomDrawer"]
 - ["Ps8Hashable", "toggleDrawer"]
-- ["Ps8Hashable", "toggleTopDrawer"]
 - ["Ps8Hashable", "topDrawerView"]
 - ["Ps8Hashable", "topDrawerYConstraint"]
 - ["Ps8Hashable", "topHeightSlider"]
@@ -770,7 +760,6 @@ depends-member:
 - !private ["Ps8Hashable", "value"]
 - !private ["Ps8Hashable", "view"]
 - ["Ps8Hashable", "viewDidLoad"]
-- ["Ps8Hashable", "viewIsLoaded"]
 - ["Ps8Hashable", "viewMode"]
 - ["Ps8Hashable", "widthSlider"]
 - ["Ps8Hashable", "widthSliderChanged"]
@@ -803,6 +792,7 @@ depends-member:
 - !private ["PSo8NSCoding", "QuoteController"]
 - !private ["PSo8NSCoding", "UIView"]
 - ["PSo8NSCoding", "ViewMode"]
+- ["PSo8NSCoding", "adjustFrameBasedOnDimension"]
 - !private ["PSo8NSCoding", "adjustsFontSizeToFitWidth"]
 - !private ["PSo8NSCoding", "alpha"]
 - !private ["PSo8NSCoding", "animateWithDuration"]
@@ -834,7 +824,6 @@ depends-member:
 - ["PSo8NSCoding", "locationInView"]
 - !private ["PSo8NSCoding", "maximumValue"]
 - !private ["PSo8NSCoding", "minimumValue"]
-- ["PSo8NSCoding", "moveDrawers"]
 - ["PSo8NSCoding", "moveDrawersBasedOnView"]
 - ["PSo8NSCoding", "nextPictureButtonTapped"]
 - !private ["PSo8NSCoding", "pointInside"]
@@ -851,9 +840,7 @@ depends-member:
 - ["PSo8NSCoding", "returnObjectForManipulation"]
 - ["PSo8NSCoding", "setUpView"]
 - ["PSo8NSCoding", "shareButtonTapped"]
-- ["PSo8NSCoding", "toggleBottomDrawer"]
 - ["PSo8NSCoding", "toggleDrawer"]
-- ["PSo8NSCoding", "toggleTopDrawer"]
 - ["PSo8NSCoding", "topDrawerView"]
 - ["PSo8NSCoding", "topDrawerYConstraint"]
 - ["PSo8NSCoding", "topHeightSlider"]
@@ -871,7 +858,6 @@ depends-member:
 - !private ["PSo8NSCoding", "value"]
 - !private ["PSo8NSCoding", "view"]
 - ["PSo8NSCoding", "viewDidLoad"]
-- ["PSo8NSCoding", "viewIsLoaded"]
 - ["PSo8NSCoding", "viewMode"]
 - ["PSo8NSCoding", "widthSlider"]
 - ["PSo8NSCoding", "widthSliderChanged"]
@@ -884,6 +870,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "QuoteController"]
 - !private ["PSo26NSExtensionRequestHandling", "UIView"]
 - ["PSo26NSExtensionRequestHandling", "ViewMode"]
+- ["PSo26NSExtensionRequestHandling", "adjustFrameBasedOnDimension"]
 - ["PSo26NSExtensionRequestHandling", "animationInterval"]
 - ["PSo26NSExtensionRequestHandling", "backgroundImage"]
 - ["PSo26NSExtensionRequestHandling", "buttonY"]
@@ -902,7 +889,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "junkSliderChanged"]
 - ["PSo26NSExtensionRequestHandling", "layoutViewBasedOnEditMode"]
 - ["PSo26NSExtensionRequestHandling", "locationInView"]
-- ["PSo26NSExtensionRequestHandling", "moveDrawers"]
 - ["PSo26NSExtensionRequestHandling", "moveDrawersBasedOnView"]
 - ["PSo26NSExtensionRequestHandling", "nextPictureButtonTapped"]
 - ["PSo26NSExtensionRequestHandling", "previousPictureTapped"]
@@ -918,9 +904,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "returnObjectForManipulation"]
 - ["PSo26NSExtensionRequestHandling", "setUpView"]
 - ["PSo26NSExtensionRequestHandling", "shareButtonTapped"]
-- ["PSo26NSExtensionRequestHandling", "toggleBottomDrawer"]
 - ["PSo26NSExtensionRequestHandling", "toggleDrawer"]
-- ["PSo26NSExtensionRequestHandling", "toggleTopDrawer"]
 - ["PSo26NSExtensionRequestHandling", "topDrawerView"]
 - ["PSo26NSExtensionRequestHandling", "topDrawerYConstraint"]
 - ["PSo26NSExtensionRequestHandling", "topHeightSlider"]
@@ -935,16 +919,16 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "updateViewForTextScale"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
-- ["PSo26NSExtensionRequestHandling", "viewIsLoaded"]
 - ["PSo26NSExtensionRequestHandling", "viewMode"]
 - ["PSo26NSExtensionRequestHandling", "widthSlider"]
 - ["PSo26NSExtensionRequestHandling", "widthSliderChanged"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo18NSLayoutConstraint", "constant"]
 - ["CSo8NSObject", "CGFloat"]
+- ["CSo8NSObject", "Dimension"]
 - ["CSo8NSObject", "DrawerMode"]
 - ["CSo8NSObject", "EditMode"]
-- !private ["CSo8NSObject", "Float"]
+- ["CSo8NSObject", "Float"]
 - !private ["CSo8NSObject", "ImageController"]
 - ["CSo8NSObject", "NSLayoutConstraint"]
 - !private ["CSo8NSObject", "QuoteController"]
@@ -959,6 +943,7 @@ depends-member:
 - ["CSo8NSObject", "UIView"]
 - ["CSo8NSObject", "ViewMode"]
 - !private ["CSo8NSObject", "Void"]
+- ["CSo8NSObject", "adjustFrameBasedOnDimension"]
 - !private ["CSo8NSObject", "adjustsFontSizeToFitWidth"]
 - !private ["CSo8NSObject", "alpha"]
 - !private ["CSo8NSObject", "animateWithDuration"]
@@ -991,7 +976,6 @@ depends-member:
 - ["CSo8NSObject", "locationInView"]
 - !private ["CSo8NSObject", "maximumValue"]
 - !private ["CSo8NSObject", "minimumValue"]
-- ["CSo8NSObject", "moveDrawers"]
 - ["CSo8NSObject", "moveDrawersBasedOnView"]
 - ["CSo8NSObject", "nextPictureButtonTapped"]
 - !private ["CSo8NSObject", "pointInside"]
@@ -1009,9 +993,7 @@ depends-member:
 - ["CSo8NSObject", "returnObjectForManipulation"]
 - ["CSo8NSObject", "setUpView"]
 - ["CSo8NSObject", "shareButtonTapped"]
-- ["CSo8NSObject", "toggleBottomDrawer"]
 - ["CSo8NSObject", "toggleDrawer"]
-- ["CSo8NSObject", "toggleTopDrawer"]
 - ["CSo8NSObject", "topDrawerView"]
 - ["CSo8NSObject", "topDrawerYConstraint"]
 - ["CSo8NSObject", "topHeightSlider"]
@@ -1029,7 +1011,6 @@ depends-member:
 - !private ["CSo8NSObject", "value"]
 - !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidLoad"]
-- ["CSo8NSObject", "viewIsLoaded"]
 - ["CSo8NSObject", "viewMode"]
 - ["CSo8NSObject", "widthSlider"]
 - ["CSo8NSObject", "widthSliderChanged"]
@@ -1041,6 +1022,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "QuoteController"]
 - !private ["PSo16NSObjectProtocol", "UIView"]
 - ["PSo16NSObjectProtocol", "ViewMode"]
+- ["PSo16NSObjectProtocol", "adjustFrameBasedOnDimension"]
 - !private ["PSo16NSObjectProtocol", "adjustsFontSizeToFitWidth"]
 - !private ["PSo16NSObjectProtocol", "alpha"]
 - !private ["PSo16NSObjectProtocol", "animateWithDuration"]
@@ -1073,7 +1055,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "locationInView"]
 - !private ["PSo16NSObjectProtocol", "maximumValue"]
 - !private ["PSo16NSObjectProtocol", "minimumValue"]
-- ["PSo16NSObjectProtocol", "moveDrawers"]
 - ["PSo16NSObjectProtocol", "moveDrawersBasedOnView"]
 - ["PSo16NSObjectProtocol", "nextPictureButtonTapped"]
 - !private ["PSo16NSObjectProtocol", "pointInside"]
@@ -1091,9 +1072,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "returnObjectForManipulation"]
 - ["PSo16NSObjectProtocol", "setUpView"]
 - ["PSo16NSObjectProtocol", "shareButtonTapped"]
-- ["PSo16NSObjectProtocol", "toggleBottomDrawer"]
 - ["PSo16NSObjectProtocol", "toggleDrawer"]
-- ["PSo16NSObjectProtocol", "toggleTopDrawer"]
 - ["PSo16NSObjectProtocol", "topDrawerView"]
 - ["PSo16NSObjectProtocol", "topDrawerYConstraint"]
 - ["PSo16NSObjectProtocol", "topHeightSlider"]
@@ -1111,7 +1090,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "value"]
 - !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
-- ["PSo16NSObjectProtocol", "viewIsLoaded"]
 - ["PSo16NSObjectProtocol", "viewMode"]
 - ["PSo16NSObjectProtocol", "widthSlider"]
 - ["PSo16NSObjectProtocol", "widthSliderChanged"]
@@ -1185,6 +1163,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "QuoteController"]
 - !private ["PSo21UIAppearanceContainer", "UIView"]
 - ["PSo21UIAppearanceContainer", "ViewMode"]
+- ["PSo21UIAppearanceContainer", "adjustFrameBasedOnDimension"]
 - !private ["PSo21UIAppearanceContainer", "adjustsFontSizeToFitWidth"]
 - !private ["PSo21UIAppearanceContainer", "alpha"]
 - !private ["PSo21UIAppearanceContainer", "animateWithDuration"]
@@ -1215,7 +1194,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "locationInView"]
 - !private ["PSo21UIAppearanceContainer", "maximumValue"]
 - !private ["PSo21UIAppearanceContainer", "minimumValue"]
-- ["PSo21UIAppearanceContainer", "moveDrawers"]
 - ["PSo21UIAppearanceContainer", "moveDrawersBasedOnView"]
 - ["PSo21UIAppearanceContainer", "nextPictureButtonTapped"]
 - !private ["PSo21UIAppearanceContainer", "pointInside"]
@@ -1232,9 +1210,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "returnObjectForManipulation"]
 - ["PSo21UIAppearanceContainer", "setUpView"]
 - ["PSo21UIAppearanceContainer", "shareButtonTapped"]
-- ["PSo21UIAppearanceContainer", "toggleBottomDrawer"]
 - ["PSo21UIAppearanceContainer", "toggleDrawer"]
-- ["PSo21UIAppearanceContainer", "toggleTopDrawer"]
 - ["PSo21UIAppearanceContainer", "topDrawerView"]
 - ["PSo21UIAppearanceContainer", "topDrawerYConstraint"]
 - ["PSo21UIAppearanceContainer", "topHeightSlider"]
@@ -1252,7 +1228,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "value"]
 - !private ["PSo21UIAppearanceContainer", "view"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
-- ["PSo21UIAppearanceContainer", "viewIsLoaded"]
 - ["PSo21UIAppearanceContainer", "viewMode"]
 - ["PSo21UIAppearanceContainer", "widthSlider"]
 - ["PSo21UIAppearanceContainer", "widthSliderChanged"]
@@ -1265,6 +1240,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "QuoteController"]
 - !private ["PSo18UIContentContainer", "UIView"]
 - ["PSo18UIContentContainer", "ViewMode"]
+- ["PSo18UIContentContainer", "adjustFrameBasedOnDimension"]
 - ["PSo18UIContentContainer", "animationInterval"]
 - ["PSo18UIContentContainer", "backgroundImage"]
 - ["PSo18UIContentContainer", "buttonY"]
@@ -1283,7 +1259,6 @@ depends-member:
 - ["PSo18UIContentContainer", "junkSliderChanged"]
 - ["PSo18UIContentContainer", "layoutViewBasedOnEditMode"]
 - ["PSo18UIContentContainer", "locationInView"]
-- ["PSo18UIContentContainer", "moveDrawers"]
 - ["PSo18UIContentContainer", "moveDrawersBasedOnView"]
 - ["PSo18UIContentContainer", "nextPictureButtonTapped"]
 - ["PSo18UIContentContainer", "previousPictureTapped"]
@@ -1299,9 +1274,7 @@ depends-member:
 - ["PSo18UIContentContainer", "returnObjectForManipulation"]
 - ["PSo18UIContentContainer", "setUpView"]
 - ["PSo18UIContentContainer", "shareButtonTapped"]
-- ["PSo18UIContentContainer", "toggleBottomDrawer"]
 - ["PSo18UIContentContainer", "toggleDrawer"]
-- ["PSo18UIContentContainer", "toggleTopDrawer"]
 - ["PSo18UIContentContainer", "topDrawerView"]
 - ["PSo18UIContentContainer", "topDrawerYConstraint"]
 - ["PSo18UIContentContainer", "topHeightSlider"]
@@ -1316,7 +1289,6 @@ depends-member:
 - ["PSo18UIContentContainer", "updateViewForTextScale"]
 - !private ["PSo18UIContentContainer", "view"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
-- ["PSo18UIContentContainer", "viewIsLoaded"]
 - ["PSo18UIContentContainer", "viewMode"]
 - ["PSo18UIContentContainer", "widthSlider"]
 - ["PSo18UIContentContainer", "widthSliderChanged"]
@@ -1364,6 +1336,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "QuoteController"]
 - !private ["PSo18UIFocusEnvironment", "UIView"]
 - ["PSo18UIFocusEnvironment", "ViewMode"]
+- ["PSo18UIFocusEnvironment", "adjustFrameBasedOnDimension"]
 - !private ["PSo18UIFocusEnvironment", "adjustsFontSizeToFitWidth"]
 - !private ["PSo18UIFocusEnvironment", "alpha"]
 - !private ["PSo18UIFocusEnvironment", "animateWithDuration"]
@@ -1394,7 +1367,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "locationInView"]
 - !private ["PSo18UIFocusEnvironment", "maximumValue"]
 - !private ["PSo18UIFocusEnvironment", "minimumValue"]
-- ["PSo18UIFocusEnvironment", "moveDrawers"]
 - ["PSo18UIFocusEnvironment", "moveDrawersBasedOnView"]
 - ["PSo18UIFocusEnvironment", "nextPictureButtonTapped"]
 - !private ["PSo18UIFocusEnvironment", "pointInside"]
@@ -1411,9 +1383,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "returnObjectForManipulation"]
 - ["PSo18UIFocusEnvironment", "setUpView"]
 - ["PSo18UIFocusEnvironment", "shareButtonTapped"]
-- ["PSo18UIFocusEnvironment", "toggleBottomDrawer"]
 - ["PSo18UIFocusEnvironment", "toggleDrawer"]
-- ["PSo18UIFocusEnvironment", "toggleTopDrawer"]
 - ["PSo18UIFocusEnvironment", "topDrawerView"]
 - ["PSo18UIFocusEnvironment", "topDrawerYConstraint"]
 - ["PSo18UIFocusEnvironment", "topHeightSlider"]
@@ -1431,7 +1401,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "value"]
 - !private ["PSo18UIFocusEnvironment", "view"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
-- ["PSo18UIFocusEnvironment", "viewIsLoaded"]
 - ["PSo18UIFocusEnvironment", "viewMode"]
 - ["PSo18UIFocusEnvironment", "widthSlider"]
 - ["PSo18UIFocusEnvironment", "widthSliderChanged"]
@@ -1445,9 +1414,10 @@ depends-member:
 - !private ["CSo7UILabel", "frame"]
 - !private ["CSo7UILabel", "layer"]
 - ["CSo11UIResponder", "CGFloat"]
+- ["CSo11UIResponder", "Dimension"]
 - ["CSo11UIResponder", "DrawerMode"]
 - ["CSo11UIResponder", "EditMode"]
-- !private ["CSo11UIResponder", "Float"]
+- ["CSo11UIResponder", "Float"]
 - !private ["CSo11UIResponder", "ImageController"]
 - ["CSo11UIResponder", "NSLayoutConstraint"]
 - !private ["CSo11UIResponder", "QuoteController"]
@@ -1462,6 +1432,7 @@ depends-member:
 - ["CSo11UIResponder", "UIView"]
 - ["CSo11UIResponder", "ViewMode"]
 - !private ["CSo11UIResponder", "Void"]
+- ["CSo11UIResponder", "adjustFrameBasedOnDimension"]
 - !private ["CSo11UIResponder", "adjustsFontSizeToFitWidth"]
 - !private ["CSo11UIResponder", "alpha"]
 - !private ["CSo11UIResponder", "animateWithDuration"]
@@ -1492,7 +1463,6 @@ depends-member:
 - ["CSo11UIResponder", "locationInView"]
 - !private ["CSo11UIResponder", "maximumValue"]
 - !private ["CSo11UIResponder", "minimumValue"]
-- ["CSo11UIResponder", "moveDrawers"]
 - ["CSo11UIResponder", "moveDrawersBasedOnView"]
 - ["CSo11UIResponder", "nextPictureButtonTapped"]
 - !private ["CSo11UIResponder", "pointInside"]
@@ -1509,9 +1479,7 @@ depends-member:
 - ["CSo11UIResponder", "returnObjectForManipulation"]
 - ["CSo11UIResponder", "setUpView"]
 - ["CSo11UIResponder", "shareButtonTapped"]
-- ["CSo11UIResponder", "toggleBottomDrawer"]
 - ["CSo11UIResponder", "toggleDrawer"]
-- ["CSo11UIResponder", "toggleTopDrawer"]
 - ["CSo11UIResponder", "topDrawerView"]
 - ["CSo11UIResponder", "topDrawerYConstraint"]
 - ["CSo11UIResponder", "topHeightSlider"]
@@ -1529,7 +1497,6 @@ depends-member:
 - !private ["CSo11UIResponder", "value"]
 - !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidLoad"]
-- ["CSo11UIResponder", "viewIsLoaded"]
 - ["CSo11UIResponder", "viewMode"]
 - ["CSo11UIResponder", "widthSlider"]
 - ["CSo11UIResponder", "widthSliderChanged"]
@@ -1544,6 +1511,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "QuoteController"]
 - !private ["PSo16UIStateRestoring", "UIView"]
 - ["PSo16UIStateRestoring", "ViewMode"]
+- ["PSo16UIStateRestoring", "adjustFrameBasedOnDimension"]
 - ["PSo16UIStateRestoring", "animationInterval"]
 - ["PSo16UIStateRestoring", "backgroundImage"]
 - ["PSo16UIStateRestoring", "buttonY"]
@@ -1562,7 +1530,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "junkSliderChanged"]
 - ["PSo16UIStateRestoring", "layoutViewBasedOnEditMode"]
 - ["PSo16UIStateRestoring", "locationInView"]
-- ["PSo16UIStateRestoring", "moveDrawers"]
 - ["PSo16UIStateRestoring", "moveDrawersBasedOnView"]
 - ["PSo16UIStateRestoring", "nextPictureButtonTapped"]
 - ["PSo16UIStateRestoring", "previousPictureTapped"]
@@ -1578,9 +1545,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "returnObjectForManipulation"]
 - ["PSo16UIStateRestoring", "setUpView"]
 - ["PSo16UIStateRestoring", "shareButtonTapped"]
-- ["PSo16UIStateRestoring", "toggleBottomDrawer"]
 - ["PSo16UIStateRestoring", "toggleDrawer"]
-- ["PSo16UIStateRestoring", "toggleTopDrawer"]
 - ["PSo16UIStateRestoring", "topDrawerView"]
 - ["PSo16UIStateRestoring", "topDrawerYConstraint"]
 - ["PSo16UIStateRestoring", "topHeightSlider"]
@@ -1595,7 +1560,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "updateViewForTextScale"]
 - !private ["PSo16UIStateRestoring", "view"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
-- ["PSo16UIStateRestoring", "viewIsLoaded"]
 - ["PSo16UIStateRestoring", "viewMode"]
 - ["PSo16UIStateRestoring", "widthSlider"]
 - ["PSo16UIStateRestoring", "widthSliderChanged"]
@@ -1609,6 +1573,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "QuoteController"]
 - !private ["PSo18UITraitEnvironment", "UIView"]
 - ["PSo18UITraitEnvironment", "ViewMode"]
+- ["PSo18UITraitEnvironment", "adjustFrameBasedOnDimension"]
 - !private ["PSo18UITraitEnvironment", "adjustsFontSizeToFitWidth"]
 - !private ["PSo18UITraitEnvironment", "alpha"]
 - !private ["PSo18UITraitEnvironment", "animateWithDuration"]
@@ -1639,7 +1604,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "locationInView"]
 - !private ["PSo18UITraitEnvironment", "maximumValue"]
 - !private ["PSo18UITraitEnvironment", "minimumValue"]
-- ["PSo18UITraitEnvironment", "moveDrawers"]
 - ["PSo18UITraitEnvironment", "moveDrawersBasedOnView"]
 - ["PSo18UITraitEnvironment", "nextPictureButtonTapped"]
 - !private ["PSo18UITraitEnvironment", "pointInside"]
@@ -1656,9 +1620,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "returnObjectForManipulation"]
 - ["PSo18UITraitEnvironment", "setUpView"]
 - ["PSo18UITraitEnvironment", "shareButtonTapped"]
-- ["PSo18UITraitEnvironment", "toggleBottomDrawer"]
 - ["PSo18UITraitEnvironment", "toggleDrawer"]
-- ["PSo18UITraitEnvironment", "toggleTopDrawer"]
 - ["PSo18UITraitEnvironment", "topDrawerView"]
 - ["PSo18UITraitEnvironment", "topDrawerYConstraint"]
 - ["PSo18UITraitEnvironment", "topHeightSlider"]
@@ -1676,7 +1638,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "value"]
 - !private ["PSo18UITraitEnvironment", "view"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
-- ["PSo18UITraitEnvironment", "viewIsLoaded"]
 - ["PSo18UITraitEnvironment", "viewMode"]
 - ["PSo18UITraitEnvironment", "widthSlider"]
 - ["PSo18UITraitEnvironment", "widthSliderChanged"]
@@ -1698,9 +1659,10 @@ depends-member:
 - !private ["CSo6UIView", "userInteractionEnabled"]
 - !private ["CSo6UIView", "value"]
 - ["CSo16UIViewController", "CGFloat"]
+- ["CSo16UIViewController", "Dimension"]
 - ["CSo16UIViewController", "DrawerMode"]
 - ["CSo16UIViewController", "EditMode"]
-- !private ["CSo16UIViewController", "Float"]
+- ["CSo16UIViewController", "Float"]
 - !private ["CSo16UIViewController", "ImageController"]
 - ["CSo16UIViewController", "NSLayoutConstraint"]
 - !private ["CSo16UIViewController", "QuoteController"]
@@ -1715,6 +1677,7 @@ depends-member:
 - ["CSo16UIViewController", "UIView"]
 - ["CSo16UIViewController", "ViewMode"]
 - !private ["CSo16UIViewController", "Void"]
+- ["CSo16UIViewController", "adjustFrameBasedOnDimension"]
 - ["CSo16UIViewController", "animationInterval"]
 - ["CSo16UIViewController", "backgroundImage"]
 - ["CSo16UIViewController", "buttonY"]
@@ -1733,7 +1696,6 @@ depends-member:
 - ["CSo16UIViewController", "junkSliderChanged"]
 - ["CSo16UIViewController", "layoutViewBasedOnEditMode"]
 - ["CSo16UIViewController", "locationInView"]
-- ["CSo16UIViewController", "moveDrawers"]
 - ["CSo16UIViewController", "moveDrawersBasedOnView"]
 - ["CSo16UIViewController", "nextPictureButtonTapped"]
 - ["CSo16UIViewController", "previousPictureTapped"]
@@ -1749,9 +1711,7 @@ depends-member:
 - ["CSo16UIViewController", "returnObjectForManipulation"]
 - ["CSo16UIViewController", "setUpView"]
 - ["CSo16UIViewController", "shareButtonTapped"]
-- ["CSo16UIViewController", "toggleBottomDrawer"]
 - ["CSo16UIViewController", "toggleDrawer"]
-- ["CSo16UIViewController", "toggleTopDrawer"]
 - ["CSo16UIViewController", "topDrawerView"]
 - ["CSo16UIViewController", "topDrawerYConstraint"]
 - ["CSo16UIViewController", "topHeightSlider"]
@@ -1766,7 +1726,6 @@ depends-member:
 - ["CSo16UIViewController", "updateViewForTextScale"]
 - !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidLoad"]
-- ["CSo16UIViewController", "viewIsLoaded"]
 - ["CSo16UIViewController", "viewMode"]
 - ["CSo16UIViewController", "widthSlider"]
 - ["CSo16UIViewController", "widthSliderChanged"]
@@ -1858,6 +1817,7 @@ depends-nominal:
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
+- "O4Echo9Dimension"
 - "O4Echo10DrawerMode"
 - "C4Echo18EchoViewController"
 - "O4Echo8EditMode"
@@ -1933,4 +1893,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-interface-hash: "6bccf491dc650762568a5ee8b8712f01"
+interface-hash: "9866a71e9f8f3d69ac5be55a5d6446b7"
