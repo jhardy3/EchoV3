@@ -8,20 +8,20 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "+"
-- !private "-"
-- !private "..."
-- !private "NetworkController"
-- "ImageController"
-- "UIImage"
-- !private "=="
-- !private "imageURL"
-- "IntegerLiteralType"
-- !private "dispatch_async"
 - "Int"
 - "FloatLiteralType"
-- !private "dispatch_get_main_queue"
 - !private "Void"
+- !private "-"
+- !private "NetworkController"
+- !private "..."
+- "ImageController"
+- !private "imageURL"
+- !private "dispatch_get_main_queue"
+- !private "dispatch_async"
+- "UIImage"
 - !private "<"
+- !private "=="
+- "IntegerLiteralType"
 depends-member:
 - ["Ps9AnyObject", "ImageController"]
 - !private ["Ps9AnyObject", "NetworkController"]

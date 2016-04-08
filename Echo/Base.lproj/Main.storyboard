@@ -257,11 +257,12 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zph-lk-kZ7">
                                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" priority="250" constant="263" id="7j8-HZ-17I">
-                                                <variation key="heightClass=regular-widthClass=compact" constant="100"/>
+                                            <constraint firstAttribute="height" constant="263" id="7j8-HZ-17I">
+                                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
                                             </constraint>
-                                            <constraint firstAttribute="width" priority="250" constant="340" id="FaU-IA-Pnc"/>
-                                            <constraint firstAttribute="height" priority="250" constant="157" id="d5v-mh-C4d"/>
+                                            <constraint firstAttribute="width" constant="400" id="FTg-Sc-NGh">
+                                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                                            </constraint>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Light" family="American Typewriter" pointSize="22"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -269,39 +270,33 @@
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="7j8-HZ-17I"/>
-                                                <exclude reference="FaU-IA-Pnc"/>
-                                                <exclude reference="d5v-mh-C4d"/>
+                                                <exclude reference="FTg-Sc-NGh"/>
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact">
                                             <mask key="constraints">
                                                 <include reference="7j8-HZ-17I"/>
-                                                <exclude reference="FaU-IA-Pnc"/>
-                                                <exclude reference="d5v-mh-C4d"/>
+                                                <include reference="FTg-Sc-NGh"/>
                                             </mask>
                                         </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.34812721631205673" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="zph-lk-kZ7" firstAttribute="width" secondItem="3gD-It-Yp7" secondAttribute="width" id="3r7-nP-DxB"/>
                                     <constraint firstItem="zph-lk-kZ7" firstAttribute="centerY" secondItem="3gD-It-Yp7" secondAttribute="centerY" id="Q6g-4c-seu"/>
-                                    <constraint firstAttribute="width" secondItem="zph-lk-kZ7" secondAttribute="width" id="aNN-rP-4to"/>
+                                    <constraint firstAttribute="height" constant="50" id="X6r-3m-nPL"/>
                                     <constraint firstItem="zph-lk-kZ7" firstAttribute="centerX" secondItem="3gD-It-Yp7" secondAttribute="centerX" id="gDE-ff-QfT"/>
-                                    <constraint firstAttribute="height" secondItem="zph-lk-kZ7" secondAttribute="height" id="xkt-1d-b6f">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
-                                    </constraint>
+                                    <constraint firstAttribute="width" constant="50" id="rQG-a7-R3K"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="subviews">
                                         <exclude reference="zph-lk-kZ7"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <exclude reference="3r7-nP-DxB"/>
+                                        <exclude reference="X6r-3m-nPL"/>
+                                        <exclude reference="rQG-a7-R3K"/>
                                         <exclude reference="Q6g-4c-seu"/>
-                                        <exclude reference="aNN-rP-4to"/>
                                         <exclude reference="gDE-ff-QfT"/>
-                                        <exclude reference="xkt-1d-b6f"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -309,11 +304,10 @@
                                         <include reference="zph-lk-kZ7"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <include reference="3r7-nP-DxB"/>
+                                        <include reference="X6r-3m-nPL"/>
+                                        <include reference="rQG-a7-R3K"/>
                                         <include reference="Q6g-4c-seu"/>
-                                        <exclude reference="aNN-rP-4to"/>
                                         <include reference="gDE-ff-QfT"/>
-                                        <include reference="xkt-1d-b6f"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -581,7 +575,7 @@
                                 <include reference="DMp-ji-nyh"/>
                                 <exclude reference="JAC-zt-AR9"/>
                                 <include reference="KI1-Bw-H4g"/>
-                                <include reference="Lqy-hY-5mg"/>
+                                <exclude reference="Lqy-hY-5mg"/>
                                 <exclude reference="e3l-8N-Qxt"/>
                                 <exclude reference="gYI-fp-Qln"/>
                                 <exclude reference="jHr-vg-i4B"/>
@@ -599,7 +593,11 @@
                         <outlet property="heightSlider" destination="iXN-u1-DBS" id="oHF-N0-S1S"/>
                         <outlet property="junkSlider" destination="cF5-0h-8Kx" id="kH5-bi-oAf"/>
                         <outlet property="quoteLabel" destination="zph-lk-kZ7" id="XWQ-cC-XLr"/>
+                        <outlet property="quoteLabelHeight" destination="FTg-Sc-NGh" id="IAo-Ql-nGO"/>
+                        <outlet property="quoteLabelWidth" destination="7j8-HZ-17I" id="Zwh-1O-qqP"/>
                         <outlet property="quoteView" destination="3gD-It-Yp7" id="aCK-YZ-vpY"/>
+                        <outlet property="quoteViewHeight" destination="X6r-3m-nPL" id="Dc3-pf-yua"/>
+                        <outlet property="quoteViewWidth" destination="rQG-a7-R3K" id="obD-7s-SSQ"/>
                         <outlet property="topDrawerView" destination="K9P-2L-g82" id="dRt-28-shL"/>
                         <outlet property="topDrawerYConstraint" destination="S6O-ye-MND" id="9FX-YQ-r0v"/>
                         <outlet property="topHeightSlider" destination="xcv-HJ-BAT" id="rZs-9g-64D"/>

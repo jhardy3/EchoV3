@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Echo/EchoViewController.swift"
-            timestampString = "481775894.669579"
+            timestampString = "481778013.891762"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "287"
-            endingLineNumber = "287"
+            startingLineNumber = "331"
+            endingLineNumber = "331"
             landmarkName = "updateViewConstraints()"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Echo/EchoViewController.swift"
-            timestampString = "481775894.669579"
+            timestampString = "481777402.64334"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "203"
-            endingLineNumber = "203"
+            startingLineNumber = "236"
+            endingLineNumber = "236"
             landmarkName = "toggleDrawer(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Echo/EchoViewController.swift"
-            timestampString = "481775894.669579"
+            timestampString = "481777402.64334"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "204"
-            endingLineNumber = "204"
+            startingLineNumber = "238"
+            endingLineNumber = "238"
             landmarkName = "toggleDrawer(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Echo/EchoViewController.swift"
-            timestampString = "481775894.669579"
+            timestampString = "481777402.64334"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "205"
-            endingLineNumber = "205"
+            startingLineNumber = "239"
+            endingLineNumber = "239"
             landmarkName = "toggleDrawer(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Echo/EchoViewController.swift"
-            timestampString = "481775894.669579"
+            timestampString = "481777402.64334"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "227"
-            endingLineNumber = "227"
+            startingLineNumber = "261"
+            endingLineNumber = "261"
             landmarkName = "toggleDrawer(_:)"
             landmarkType = "5">
             <Locations>
@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Echo/EchoViewController.swift"
-            timestampString = "481775894.669579"
+            timestampString = "481777402.64334"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "228"
-            endingLineNumber = "228"
+            startingLineNumber = "262"
+            endingLineNumber = "262"
             landmarkName = "toggleDrawer(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -138,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Echo/EchoViewController.swift"
-            timestampString = "481775894.669579"
+            timestampString = "481777402.64334"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "229"
-            endingLineNumber = "229"
+            startingLineNumber = "263"
+            endingLineNumber = "263"
             landmarkName = "toggleDrawer(_:)"
             landmarkType = "5">
             <Locations>

@@ -141,6 +141,10 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified topWidthSlider;
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified topHeightSlider;
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified topJunkSlider;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified quoteLabelHeight;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified quoteLabelWidth;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified quoteViewHeight;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified quoteViewWidth;
 @property (nonatomic) BOOL viewIsLoaded;
 @property (nonatomic) double animationInterval;
 @property (nonatomic) BOOL drawerShown;

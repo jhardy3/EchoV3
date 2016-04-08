@@ -37,6 +37,11 @@ class EchoViewController: UIViewController {
     @IBOutlet weak var topHeightSlider: UISlider!
     @IBOutlet weak var topJunkSlider: UISlider!
     
+    @IBOutlet weak var quoteLabelHeight: NSLayoutConstraint!
+    @IBOutlet weak var quoteLabelWidth: NSLayoutConstraint!
+    @IBOutlet weak var quoteViewHeight: NSLayoutConstraint!
+    @IBOutlet weak var quoteViewWidth: NSLayoutConstraint!
+    
     var viewIsLoaded = false
     var viewMode = ViewMode.EditMode
     var drawerMode = DrawerMode.Bottom {
@@ -171,11 +176,24 @@ class EchoViewController: UIViewController {
         quoteLabel.center.x = quoteView.frame.width / 2
         quoteLabel.center.y = quoteView.frame.height / 2
         
+        UIView.animateWithDuration(animationInterval) {
+            self.view.layoutIfNeeded()
+        }
+    
 //        view.layoutIfNeeded()
         
     }
     
     @IBAction func topWidthSlider(sender: UISlider) {
+        quoteView.frame.size.width = CGFloat(sender.value)
+        quoteLabel.frame.size.height = CGFloat(sender.value)
+        quoteView.center = view.center
+        quoteLabel.center.x = quoteView.frame.width / 2
+        quoteLabel.center.y = quoteView.frame.height / 2
+        
+        UIView.animateWithDuration(animationInterval) {
+            self.view.layoutIfNeeded()
+        }
     }
     
     
@@ -186,10 +204,24 @@ class EchoViewController: UIViewController {
         quoteLabel.center.x = quoteView.frame.width / 2
         quoteLabel.center.y = quoteView.frame.height / 2
         
+        UIView.animateWithDuration(animationInterval) {
+            self.view.layoutIfNeeded()
+        }
+
 //        view.layoutIfNeeded()
     }
     
     @IBAction func topHeightSlider(sender: UISlider) {
+        quoteView.frame.size.height = CGFloat(sender.value)
+        quoteLabel.frame.size.height = CGFloat(sender.value)
+        quoteView.center = view.center
+        quoteLabel.center.x = quoteView.frame.width / 2
+        quoteLabel.center.y = quoteView.frame.height / 2
+        
+        UIView.animateWithDuration(animationInterval) { 
+            self.view.layoutIfNeeded()
+        }
+        
     }
     
     @IBAction func junkSliderChanged(sender: UISlider) {
@@ -197,11 +229,13 @@ class EchoViewController: UIViewController {
     }
     
     @IBAction func topJunkSlider(sender: UISlider) {
+        quoteView.alpha = CGFloat(sender.value)
     }
     
     @IBAction func toggleDrawer(sender: UITapGestureRecognizer) {
         guard let yConstraint = drawerYConstraint else { return }
-//        view.layoutIfNeeded()
+        updateViewConstraints()
+        view.layoutIfNeeded()
         guard let topYConstraint = topDrawerYConstraint else { return }
         
         switch viewMode {
@@ -264,11 +298,21 @@ class EchoViewController: UIViewController {
                 locationInView = self.locationInView else { return }
             
             if viewIsLoaded {
-                if totalYMovement > view.frame.height / 2 && drawerMode == .Bottom {
-                    drawerMode = .Top
-                } else if totalYMovement < view.frame.height / 2 && drawerMode == .Top {
+                
+                let topMargin = quoteView.frame.maxY
+                let bottomMargin = view.frame.height / 0.7 - quoteView.frame.minY
+                
+                if topMargin < bottomMargin && drawerMode == .Top  {
                     drawerMode = .Bottom
+                } else if bottomMargin < topMargin && drawerMode == .Bottom {
+                    drawerMode = .Top
                 }
+//                
+//                if totalYMovement > view.frame.height / 2 && drawerMode == .Bottom {
+//                    drawerMode = .Top
+//                } else if totalYMovement < view.frame.height / 2 && drawerMode == .Top {
+//                    drawerMode = .Bottom
+//                }
             }
             
             
@@ -287,15 +331,12 @@ class EchoViewController: UIViewController {
     override func updateViewConstraints() {
         super.updateViewConstraints()
         
-        let height = quoteView.bounds.height
-        let width = quoteView.bounds.width
+        let height = quoteView.frame.height
+        let width = quoteView.frame.width
         
-        let heightConstraint = NSLayoutConstraint(item: quoteView, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .Height, multiplier: 1, constant: height)
-        quoteView.addConstraint(heightConstraint)
         
-        let heightConstraintLabel = NSLayoutConstraint(item: quoteLabel, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .Height, multiplier: 1, constant: height)
-        quoteLabel.addConstraint(heightConstraintLabel)
-        quoteLabel.updateConstraintsIfNeeded()
+        quoteViewWidth.constant = width
+        quoteViewHeight.constant = height
         
         print(quoteView.constraints)
         

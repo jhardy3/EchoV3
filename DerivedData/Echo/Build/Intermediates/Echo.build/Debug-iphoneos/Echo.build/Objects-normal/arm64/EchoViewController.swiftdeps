@@ -12,75 +12,78 @@ provides-member:
 - ["O4Echo10DrawerMode", ""]
 - ["C4Echo18EchoViewController", ""]
 provides-dynamic-lookup:
-- "nextPictureButtonTapped"
-- "customTextButtonTapped"
-- "firstLoad"
-- "heightSlider"
-- "moveDrawers"
-- "heightSliderChanged"
 - "toggleTopDrawer"
-- "drawerView"
-- "viewIsLoaded"
-- "animationInterval"
-- "topWidthSlider"
-- "topWidthSlider"
-- "quoteLabel"
-- "topDrawerView"
-- "setUpView"
-- "drawerYConstraint"
-- "shareButtonTapped"
-- "widthSliderChanged"
-- "junkSlider"
-- "moveDrawersBasedOnView"
-- "viewDidLoad"
-- "topHeightSlider"
-- "topHeightSlider"
-- "previousPictureTapped"
-- "topDrawerYConstraint"
-- "quoteViewLocation"
-- "touchesMoved"
-- "isInButton"
+- "topJunkSlider"
+- "topJunkSlider"
+- "widthSlider"
+- "toggleDrawer"
+- "moveDrawers"
+- "junkSliderChanged"
 - "touchesBegan"
 - "quoteView"
-- "backgroundImage"
-- "toggleDrawer"
-- "junkSliderChanged"
-- "topJunkSlider"
-- "topJunkSlider"
-- "drawerShown"
-- "widthSlider"
+- "customTextButtonTapped"
+- "viewIsLoaded"
+- "widthSliderChanged"
+- "setUpView"
+- "heightSlider"
+- "quoteLabelHeight"
 - "updateViewConstraints"
-- "didReceiveMemoryWarning"
+- "drawerView"
+- "nextPictureButtonTapped"
+- "previousPictureTapped"
+- "firstLoad"
+- "backgroundImage"
+- "drawerShown"
+- "shareButtonTapped"
+- "drawerYConstraint"
+- "isInButton"
+- "junkSlider"
+- "quoteLabelWidth"
+- "quoteViewHeight"
 - "toggleBottomDrawer"
+- "topWidthSlider"
+- "topWidthSlider"
+- "animationInterval"
+- "topDrawerView"
+- "touchesMoved"
+- "viewDidLoad"
+- "quoteLabel"
+- "quoteViewLocation"
+- "topDrawerYConstraint"
+- "heightSliderChanged"
+- "moveDrawersBasedOnView"
+- "didReceiveMemoryWarning"
+- "quoteViewWidth"
+- "topHeightSlider"
+- "topHeightSlider"
 depends-top-level:
-- "UIButton"
-- "UIEvent"
-- "CGFloat"
-- !private "Float"
-- !private "&&"
-- !private "Void"
-- "UILabel"
-- "UIImageView"
-- "UISlider"
-- !private "print"
 - "Set"
-- !private "/"
-- "ViewMode"
-- "=="
-- !private "+"
-- "UIViewController"
-- !private "-"
-- !private ">="
-- "DrawerMode"
-- "BooleanLiteralType"
-- "UIView"
-- !private "<"
-- !private ">"
-- "NSLayoutConstraint"
 - "EchoViewController"
-- "UITapGestureRecognizer"
-- "UITouch"
+- "UILabel"
+- "UIEvent"
+- "BooleanLiteralType"
+- "UIImageView"
+- "NSLayoutConstraint"
+- !private "-"
+- "UISlider"
+- "DrawerMode"
+- "ViewMode"
+- !private "<"
+- !private "Void"
+- !private "/"
+- !private "&&"
+- !private "+"
 - !private "ImageController"
+- !private ">="
+- !private "print"
+- "UITapGestureRecognizer"
+- "UIViewController"
+- !private "Float"
+- "UIButton"
+- "UITouch"
+- "UIView"
+- "CGFloat"
+- "=="
 - !private "QuoteController"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
@@ -88,18 +91,15 @@ depends-member:
 - ["Ps9AnyObject", "DrawerMode"]
 - !private ["Ps9AnyObject", "Float"]
 - !private ["Ps9AnyObject", "ImageController"]
-- !private ["Ps9AnyObject", "NSLayoutConstraint"]
 - !private ["Ps9AnyObject", "QuoteController"]
 - !private ["Ps9AnyObject", "UIView"]
 - ["Ps9AnyObject", "ViewMode"]
-- !private ["Ps9AnyObject", "addConstraint"]
 - !private ["Ps9AnyObject", "adjustsFontSizeToFitWidth"]
 - !private ["Ps9AnyObject", "alpha"]
 - !private ["Ps9AnyObject", "animateWithDuration"]
 - ["Ps9AnyObject", "animationInterval"]
 - !private ["Ps9AnyObject", "autoresizesSubviews"]
 - ["Ps9AnyObject", "backgroundImage"]
-- !private ["Ps9AnyObject", "bounds"]
 - ["Ps9AnyObject", "buttonY"]
 - !private ["Ps9AnyObject", "center"]
 - !private ["Ps9AnyObject", "clipsToBounds"]
@@ -136,8 +136,12 @@ depends-member:
 - ["Ps9AnyObject", "previousPictureTapped"]
 - !private ["Ps9AnyObject", "print"]
 - ["Ps9AnyObject", "quoteLabel"]
+- ["Ps9AnyObject", "quoteLabelHeight"]
+- ["Ps9AnyObject", "quoteLabelWidth"]
 - ["Ps9AnyObject", "quoteView"]
+- ["Ps9AnyObject", "quoteViewHeight"]
 - ["Ps9AnyObject", "quoteViewLocation"]
+- ["Ps9AnyObject", "quoteViewWidth"]
 - ["Ps9AnyObject", "setUpView"]
 - ["Ps9AnyObject", "shareButtonTapped"]
 - !private ["Ps9AnyObject", "sharedInstance"]
@@ -152,7 +156,6 @@ depends-member:
 - ["Ps9AnyObject", "touchesBegan"]
 - ["Ps9AnyObject", "touchesMoved"]
 - !private ["Ps9AnyObject", "transform"]
-- !private ["Ps9AnyObject", "updateConstraintsIfNeeded"]
 - ["Ps9AnyObject", "updateViewConstraints"]
 - !private ["Ps9AnyObject", "userInteractionEnabled"]
 - !private ["Ps9AnyObject", "value"]
@@ -183,6 +186,8 @@ depends-member:
 - !private ["VSC7CGPoint", "x"]
 - !private ["VSC7CGPoint", "y"]
 - !private ["VSC6CGRect", "height"]
+- !private ["VSC6CGRect", "maxY"]
+- !private ["VSC6CGRect", "minY"]
 - !private ["VSC6CGRect", "size"]
 - !private ["VSC6CGRect", "width"]
 - !private ["VSC6CGSize", "height"]
@@ -192,18 +197,15 @@ depends-member:
 - !private ["Ps11CVarArgType", "Float"]
 - !private ["Ps11CVarArgType", "ImageController"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
-- !private ["Ps11CVarArgType", "NSLayoutConstraint"]
 - !private ["Ps11CVarArgType", "QuoteController"]
 - !private ["Ps11CVarArgType", "UIView"]
 - ["Ps11CVarArgType", "ViewMode"]
-- !private ["Ps11CVarArgType", "addConstraint"]
 - !private ["Ps11CVarArgType", "adjustsFontSizeToFitWidth"]
 - !private ["Ps11CVarArgType", "alpha"]
 - !private ["Ps11CVarArgType", "animateWithDuration"]
 - ["Ps11CVarArgType", "animationInterval"]
 - !private ["Ps11CVarArgType", "autoresizesSubviews"]
 - ["Ps11CVarArgType", "backgroundImage"]
-- !private ["Ps11CVarArgType", "bounds"]
 - ["Ps11CVarArgType", "buttonY"]
 - !private ["Ps11CVarArgType", "center"]
 - !private ["Ps11CVarArgType", "clipsToBounds"]
@@ -239,8 +241,12 @@ depends-member:
 - ["Ps11CVarArgType", "previousPictureTapped"]
 - !private ["Ps11CVarArgType", "print"]
 - ["Ps11CVarArgType", "quoteLabel"]
+- ["Ps11CVarArgType", "quoteLabelHeight"]
+- ["Ps11CVarArgType", "quoteLabelWidth"]
 - ["Ps11CVarArgType", "quoteView"]
+- ["Ps11CVarArgType", "quoteViewHeight"]
 - ["Ps11CVarArgType", "quoteViewLocation"]
+- ["Ps11CVarArgType", "quoteViewWidth"]
 - ["Ps11CVarArgType", "setUpView"]
 - ["Ps11CVarArgType", "shareButtonTapped"]
 - ["Ps11CVarArgType", "toggleBottomDrawer"]
@@ -254,7 +260,6 @@ depends-member:
 - ["Ps11CVarArgType", "touchesBegan"]
 - ["Ps11CVarArgType", "touchesMoved"]
 - !private ["Ps11CVarArgType", "transform"]
-- !private ["Ps11CVarArgType", "updateConstraintsIfNeeded"]
 - ["Ps11CVarArgType", "updateViewConstraints"]
 - !private ["Ps11CVarArgType", "userInteractionEnabled"]
 - !private ["Ps11CVarArgType", "value"]
@@ -281,21 +286,18 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "ImageController"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
-- !private ["Ps28CustomDebugStringConvertible", "NSLayoutConstraint"]
 - !private ["Ps28CustomDebugStringConvertible", "QuoteController"]
 - ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIView"]
 - ["Ps28CustomDebugStringConvertible", "ViewMode"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
-- !private ["Ps28CustomDebugStringConvertible", "addConstraint"]
 - !private ["Ps28CustomDebugStringConvertible", "adjustsFontSizeToFitWidth"]
 - !private ["Ps28CustomDebugStringConvertible", "alpha"]
 - !private ["Ps28CustomDebugStringConvertible", "animateWithDuration"]
 - ["Ps28CustomDebugStringConvertible", "animationInterval"]
 - !private ["Ps28CustomDebugStringConvertible", "autoresizesSubviews"]
 - ["Ps28CustomDebugStringConvertible", "backgroundImage"]
-- !private ["Ps28CustomDebugStringConvertible", "bounds"]
 - ["Ps28CustomDebugStringConvertible", "buttonY"]
 - !private ["Ps28CustomDebugStringConvertible", "center"]
 - !private ["Ps28CustomDebugStringConvertible", "clipsToBounds"]
@@ -331,8 +333,12 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "previousPictureTapped"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - ["Ps28CustomDebugStringConvertible", "quoteLabel"]
+- ["Ps28CustomDebugStringConvertible", "quoteLabelHeight"]
+- ["Ps28CustomDebugStringConvertible", "quoteLabelWidth"]
 - ["Ps28CustomDebugStringConvertible", "quoteView"]
+- ["Ps28CustomDebugStringConvertible", "quoteViewHeight"]
 - ["Ps28CustomDebugStringConvertible", "quoteViewLocation"]
+- ["Ps28CustomDebugStringConvertible", "quoteViewWidth"]
 - ["Ps28CustomDebugStringConvertible", "setUpView"]
 - ["Ps28CustomDebugStringConvertible", "shareButtonTapped"]
 - ["Ps28CustomDebugStringConvertible", "toggleBottomDrawer"]
@@ -346,7 +352,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "touchesBegan"]
 - ["Ps28CustomDebugStringConvertible", "touchesMoved"]
 - !private ["Ps28CustomDebugStringConvertible", "transform"]
-- !private ["Ps28CustomDebugStringConvertible", "updateConstraintsIfNeeded"]
 - ["Ps28CustomDebugStringConvertible", "updateViewConstraints"]
 - !private ["Ps28CustomDebugStringConvertible", "userInteractionEnabled"]
 - !private ["Ps28CustomDebugStringConvertible", "value"]
@@ -364,7 +369,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "ImageController"]
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
-- !private ["Ps23CustomStringConvertible", "NSLayoutConstraint"]
 - !private ["Ps23CustomStringConvertible", "QuoteController"]
 - ["Ps23CustomStringConvertible", "Some"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
@@ -372,14 +376,12 @@ depends-member:
 - ["Ps23CustomStringConvertible", "ViewMode"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps23CustomStringConvertible", "addConstraint"]
 - !private ["Ps23CustomStringConvertible", "adjustsFontSizeToFitWidth"]
 - !private ["Ps23CustomStringConvertible", "alpha"]
 - !private ["Ps23CustomStringConvertible", "animateWithDuration"]
 - ["Ps23CustomStringConvertible", "animationInterval"]
 - !private ["Ps23CustomStringConvertible", "autoresizesSubviews"]
 - ["Ps23CustomStringConvertible", "backgroundImage"]
-- !private ["Ps23CustomStringConvertible", "bounds"]
 - ["Ps23CustomStringConvertible", "buttonY"]
 - !private ["Ps23CustomStringConvertible", "center"]
 - !private ["Ps23CustomStringConvertible", "clipsToBounds"]
@@ -416,8 +418,12 @@ depends-member:
 - ["Ps23CustomStringConvertible", "previousPictureTapped"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - ["Ps23CustomStringConvertible", "quoteLabel"]
+- ["Ps23CustomStringConvertible", "quoteLabelHeight"]
+- ["Ps23CustomStringConvertible", "quoteLabelWidth"]
 - ["Ps23CustomStringConvertible", "quoteView"]
+- ["Ps23CustomStringConvertible", "quoteViewHeight"]
 - ["Ps23CustomStringConvertible", "quoteViewLocation"]
+- ["Ps23CustomStringConvertible", "quoteViewWidth"]
 - ["Ps23CustomStringConvertible", "setUpView"]
 - ["Ps23CustomStringConvertible", "shareButtonTapped"]
 - ["Ps23CustomStringConvertible", "toggleBottomDrawer"]
@@ -431,7 +437,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "touchesBegan"]
 - ["Ps23CustomStringConvertible", "touchesMoved"]
 - !private ["Ps23CustomStringConvertible", "transform"]
-- !private ["Ps23CustomStringConvertible", "updateConstraintsIfNeeded"]
 - ["Ps23CustomStringConvertible", "updateViewConstraints"]
 - !private ["Ps23CustomStringConvertible", "userInteractionEnabled"]
 - !private ["Ps23CustomStringConvertible", "value"]
@@ -487,8 +492,12 @@ depends-member:
 - ["C4Echo18EchoViewController", "previousPictureTapped"]
 - !private ["C4Echo18EchoViewController", "print"]
 - ["C4Echo18EchoViewController", "quoteLabel"]
+- ["C4Echo18EchoViewController", "quoteLabelHeight"]
+- ["C4Echo18EchoViewController", "quoteLabelWidth"]
 - ["C4Echo18EchoViewController", "quoteView"]
+- ["C4Echo18EchoViewController", "quoteViewHeight"]
 - ["C4Echo18EchoViewController", "quoteViewLocation"]
+- ["C4Echo18EchoViewController", "quoteViewWidth"]
 - ["C4Echo18EchoViewController", "setUpView"]
 - ["C4Echo18EchoViewController", "shareButtonTapped"]
 - ["C4Echo18EchoViewController", "toggleBottomDrawer"]
@@ -513,14 +522,11 @@ depends-member:
 - !private ["Ps9Equatable", "Distance"]
 - ["Ps9Equatable", "DrawerMode"]
 - ["Ps9Equatable", "EditMode"]
-- !private ["Ps9Equatable", "Equal"]
 - !private ["Ps9Equatable", "Float"]
 - !private ["Ps9Equatable", "Generator"]
-- !private ["Ps9Equatable", "Height"]
 - !private ["Ps9Equatable", "ImageController"]
 - !private ["Ps9Equatable", "Index"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
-- !private ["Ps9Equatable", "NSLayoutConstraint"]
 - !private ["Ps9Equatable", "QuoteController"]
 - !private ["Ps9Equatable", "SubSequence"]
 - ["Ps9Equatable", "Top"]
@@ -529,14 +535,12 @@ depends-member:
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_Element"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
-- !private ["Ps9Equatable", "addConstraint"]
 - !private ["Ps9Equatable", "adjustsFontSizeToFitWidth"]
 - !private ["Ps9Equatable", "alpha"]
 - !private ["Ps9Equatable", "animateWithDuration"]
 - ["Ps9Equatable", "animationInterval"]
 - !private ["Ps9Equatable", "autoresizesSubviews"]
 - ["Ps9Equatable", "backgroundImage"]
-- !private ["Ps9Equatable", "bounds"]
 - ["Ps9Equatable", "buttonY"]
 - !private ["Ps9Equatable", "center"]
 - !private ["Ps9Equatable", "clipsToBounds"]
@@ -564,7 +568,9 @@ depends-member:
 - !private ["Ps9Equatable", "layer"]
 - !private ["Ps9Equatable", "layoutIfNeeded"]
 - ["Ps9Equatable", "locationInView"]
+- !private ["Ps9Equatable", "maxY"]
 - !private ["Ps9Equatable", "maximumValue"]
+- !private ["Ps9Equatable", "minY"]
 - !private ["Ps9Equatable", "minimumValue"]
 - ["Ps9Equatable", "moveDrawers"]
 - ["Ps9Equatable", "moveDrawersBasedOnView"]
@@ -574,8 +580,12 @@ depends-member:
 - ["Ps9Equatable", "previousPictureTapped"]
 - !private ["Ps9Equatable", "print"]
 - ["Ps9Equatable", "quoteLabel"]
+- ["Ps9Equatable", "quoteLabelHeight"]
+- ["Ps9Equatable", "quoteLabelWidth"]
 - ["Ps9Equatable", "quoteView"]
+- ["Ps9Equatable", "quoteViewHeight"]
 - ["Ps9Equatable", "quoteViewLocation"]
+- ["Ps9Equatable", "quoteViewWidth"]
 - ["Ps9Equatable", "setUpView"]
 - ["Ps9Equatable", "shareButtonTapped"]
 - !private ["Ps9Equatable", "size"]
@@ -590,7 +600,6 @@ depends-member:
 - ["Ps9Equatable", "touchesBegan"]
 - ["Ps9Equatable", "touchesMoved"]
 - !private ["Ps9Equatable", "transform"]
-- !private ["Ps9Equatable", "updateConstraintsIfNeeded"]
 - ["Ps9Equatable", "updateViewConstraints"]
 - !private ["Ps9Equatable", "userInteractionEnabled"]
 - !private ["Ps9Equatable", "value"]
@@ -616,14 +625,11 @@ depends-member:
 - !private ["Ps8Hashable", "CGFloat"]
 - ["Ps8Hashable", "DrawerMode"]
 - ["Ps8Hashable", "EditMode"]
-- !private ["Ps8Hashable", "Equal"]
 - !private ["Ps8Hashable", "Float"]
 - !private ["Ps8Hashable", "Generator"]
-- !private ["Ps8Hashable", "Height"]
 - !private ["Ps8Hashable", "ImageController"]
 - !private ["Ps8Hashable", "Index"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
-- !private ["Ps8Hashable", "NSLayoutConstraint"]
 - !private ["Ps8Hashable", "QuoteController"]
 - !private ["Ps8Hashable", "SubSequence"]
 - ["Ps8Hashable", "Top"]
@@ -631,14 +637,12 @@ depends-member:
 - ["Ps8Hashable", "ViewMode"]
 - !private ["Ps8Hashable", "_Element"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
-- !private ["Ps8Hashable", "addConstraint"]
 - !private ["Ps8Hashable", "adjustsFontSizeToFitWidth"]
 - !private ["Ps8Hashable", "alpha"]
 - !private ["Ps8Hashable", "animateWithDuration"]
 - ["Ps8Hashable", "animationInterval"]
 - !private ["Ps8Hashable", "autoresizesSubviews"]
 - ["Ps8Hashable", "backgroundImage"]
-- !private ["Ps8Hashable", "bounds"]
 - ["Ps8Hashable", "buttonY"]
 - !private ["Ps8Hashable", "center"]
 - !private ["Ps8Hashable", "clipsToBounds"]
@@ -675,8 +679,12 @@ depends-member:
 - ["Ps8Hashable", "previousPictureTapped"]
 - !private ["Ps8Hashable", "print"]
 - ["Ps8Hashable", "quoteLabel"]
+- ["Ps8Hashable", "quoteLabelHeight"]
+- ["Ps8Hashable", "quoteLabelWidth"]
 - ["Ps8Hashable", "quoteView"]
+- ["Ps8Hashable", "quoteViewHeight"]
 - ["Ps8Hashable", "quoteViewLocation"]
+- ["Ps8Hashable", "quoteViewWidth"]
 - ["Ps8Hashable", "setUpView"]
 - ["Ps8Hashable", "shareButtonTapped"]
 - ["Ps8Hashable", "toggleBottomDrawer"]
@@ -690,7 +698,6 @@ depends-member:
 - ["Ps8Hashable", "touchesBegan"]
 - ["Ps8Hashable", "touchesMoved"]
 - !private ["Ps8Hashable", "transform"]
-- !private ["Ps8Hashable", "updateConstraintsIfNeeded"]
 - ["Ps8Hashable", "updateViewConstraints"]
 - !private ["Ps8Hashable", "userInteractionEnabled"]
 - !private ["Ps8Hashable", "value"]
@@ -705,7 +712,6 @@ depends-member:
 - !private ["C4Echo15ImageController", "fetchPreviousImage"]
 - !private ["C4Echo15ImageController", "sharedInstance"]
 - ["SQ", "Some"]
-- !private ["SQ", "deinit"]
 - !private ["Ps9Indexable", "Generator"]
 - !private ["Ps9Indexable", "Index"]
 - !private ["Ps9Indexable", "SubSequence"]
@@ -726,18 +732,15 @@ depends-member:
 - ["PSo8NSCoding", "DrawerMode"]
 - !private ["PSo8NSCoding", "Float"]
 - !private ["PSo8NSCoding", "ImageController"]
-- !private ["PSo8NSCoding", "NSLayoutConstraint"]
 - !private ["PSo8NSCoding", "QuoteController"]
 - !private ["PSo8NSCoding", "UIView"]
 - ["PSo8NSCoding", "ViewMode"]
-- !private ["PSo8NSCoding", "addConstraint"]
 - !private ["PSo8NSCoding", "adjustsFontSizeToFitWidth"]
 - !private ["PSo8NSCoding", "alpha"]
 - !private ["PSo8NSCoding", "animateWithDuration"]
 - ["PSo8NSCoding", "animationInterval"]
 - !private ["PSo8NSCoding", "autoresizesSubviews"]
 - ["PSo8NSCoding", "backgroundImage"]
-- !private ["PSo8NSCoding", "bounds"]
 - ["PSo8NSCoding", "buttonY"]
 - !private ["PSo8NSCoding", "center"]
 - !private ["PSo8NSCoding", "clipsToBounds"]
@@ -770,8 +773,12 @@ depends-member:
 - ["PSo8NSCoding", "previousPictureTapped"]
 - !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "quoteLabel"]
+- ["PSo8NSCoding", "quoteLabelHeight"]
+- ["PSo8NSCoding", "quoteLabelWidth"]
 - ["PSo8NSCoding", "quoteView"]
+- ["PSo8NSCoding", "quoteViewHeight"]
 - ["PSo8NSCoding", "quoteViewLocation"]
+- ["PSo8NSCoding", "quoteViewWidth"]
 - ["PSo8NSCoding", "setUpView"]
 - ["PSo8NSCoding", "shareButtonTapped"]
 - ["PSo8NSCoding", "toggleBottomDrawer"]
@@ -785,7 +792,6 @@ depends-member:
 - ["PSo8NSCoding", "touchesBegan"]
 - ["PSo8NSCoding", "touchesMoved"]
 - !private ["PSo8NSCoding", "transform"]
-- !private ["PSo8NSCoding", "updateConstraintsIfNeeded"]
 - ["PSo8NSCoding", "updateViewConstraints"]
 - !private ["PSo8NSCoding", "userInteractionEnabled"]
 - !private ["PSo8NSCoding", "value"]
@@ -800,7 +806,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "DrawerMode"]
 - !private ["PSo26NSExtensionRequestHandling", "Float"]
 - !private ["PSo26NSExtensionRequestHandling", "ImageController"]
-- !private ["PSo26NSExtensionRequestHandling", "NSLayoutConstraint"]
 - !private ["PSo26NSExtensionRequestHandling", "QuoteController"]
 - !private ["PSo26NSExtensionRequestHandling", "UIView"]
 - ["PSo26NSExtensionRequestHandling", "ViewMode"]
@@ -827,8 +832,12 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "previousPictureTapped"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "quoteLabel"]
+- ["PSo26NSExtensionRequestHandling", "quoteLabelHeight"]
+- ["PSo26NSExtensionRequestHandling", "quoteLabelWidth"]
 - ["PSo26NSExtensionRequestHandling", "quoteView"]
+- ["PSo26NSExtensionRequestHandling", "quoteViewHeight"]
 - ["PSo26NSExtensionRequestHandling", "quoteViewLocation"]
+- ["PSo26NSExtensionRequestHandling", "quoteViewWidth"]
 - ["PSo26NSExtensionRequestHandling", "setUpView"]
 - ["PSo26NSExtensionRequestHandling", "shareButtonTapped"]
 - ["PSo26NSExtensionRequestHandling", "toggleBottomDrawer"]
@@ -849,10 +858,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "widthSlider"]
 - ["PSo26NSExtensionRequestHandling", "widthSliderChanged"]
 - ["PSo26NSExtensionRequestHandling", ""]
-- !private ["OSC17NSLayoutAttribute", "Height"]
 - !private ["CSo18NSLayoutConstraint", "constant"]
-- !private ["CSo18NSLayoutConstraint", "init"]
-- !private ["OSC16NSLayoutRelation", "Equal"]
 - ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "DrawerMode"]
 - !private ["CSo8NSObject", "Float"]
@@ -870,14 +876,12 @@ depends-member:
 - ["CSo8NSObject", "UIView"]
 - ["CSo8NSObject", "ViewMode"]
 - !private ["CSo8NSObject", "Void"]
-- !private ["CSo8NSObject", "addConstraint"]
 - !private ["CSo8NSObject", "adjustsFontSizeToFitWidth"]
 - !private ["CSo8NSObject", "alpha"]
 - !private ["CSo8NSObject", "animateWithDuration"]
 - ["CSo8NSObject", "animationInterval"]
 - !private ["CSo8NSObject", "autoresizesSubviews"]
 - ["CSo8NSObject", "backgroundImage"]
-- !private ["CSo8NSObject", "bounds"]
 - ["CSo8NSObject", "buttonY"]
 - !private ["CSo8NSObject", "center"]
 - !private ["CSo8NSObject", "clipsToBounds"]
@@ -912,8 +916,12 @@ depends-member:
 - ["CSo8NSObject", "previousPictureTapped"]
 - !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "quoteLabel"]
+- ["CSo8NSObject", "quoteLabelHeight"]
+- ["CSo8NSObject", "quoteLabelWidth"]
 - ["CSo8NSObject", "quoteView"]
+- ["CSo8NSObject", "quoteViewHeight"]
 - ["CSo8NSObject", "quoteViewLocation"]
+- ["CSo8NSObject", "quoteViewWidth"]
 - ["CSo8NSObject", "setUpView"]
 - ["CSo8NSObject", "shareButtonTapped"]
 - ["CSo8NSObject", "toggleBottomDrawer"]
@@ -927,7 +935,6 @@ depends-member:
 - ["CSo8NSObject", "touchesBegan"]
 - ["CSo8NSObject", "touchesMoved"]
 - !private ["CSo8NSObject", "transform"]
-- !private ["CSo8NSObject", "updateConstraintsIfNeeded"]
 - ["CSo8NSObject", "updateViewConstraints"]
 - !private ["CSo8NSObject", "userInteractionEnabled"]
 - !private ["CSo8NSObject", "value"]
@@ -941,18 +948,15 @@ depends-member:
 - ["PSo16NSObjectProtocol", "DrawerMode"]
 - !private ["PSo16NSObjectProtocol", "Float"]
 - !private ["PSo16NSObjectProtocol", "ImageController"]
-- !private ["PSo16NSObjectProtocol", "NSLayoutConstraint"]
 - !private ["PSo16NSObjectProtocol", "QuoteController"]
 - !private ["PSo16NSObjectProtocol", "UIView"]
 - ["PSo16NSObjectProtocol", "ViewMode"]
-- !private ["PSo16NSObjectProtocol", "addConstraint"]
 - !private ["PSo16NSObjectProtocol", "adjustsFontSizeToFitWidth"]
 - !private ["PSo16NSObjectProtocol", "alpha"]
 - !private ["PSo16NSObjectProtocol", "animateWithDuration"]
 - ["PSo16NSObjectProtocol", "animationInterval"]
 - !private ["PSo16NSObjectProtocol", "autoresizesSubviews"]
 - ["PSo16NSObjectProtocol", "backgroundImage"]
-- !private ["PSo16NSObjectProtocol", "bounds"]
 - ["PSo16NSObjectProtocol", "buttonY"]
 - !private ["PSo16NSObjectProtocol", "center"]
 - !private ["PSo16NSObjectProtocol", "clipsToBounds"]
@@ -987,8 +991,12 @@ depends-member:
 - ["PSo16NSObjectProtocol", "previousPictureTapped"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "quoteLabel"]
+- ["PSo16NSObjectProtocol", "quoteLabelHeight"]
+- ["PSo16NSObjectProtocol", "quoteLabelWidth"]
 - ["PSo16NSObjectProtocol", "quoteView"]
+- ["PSo16NSObjectProtocol", "quoteViewHeight"]
 - ["PSo16NSObjectProtocol", "quoteViewLocation"]
+- ["PSo16NSObjectProtocol", "quoteViewWidth"]
 - ["PSo16NSObjectProtocol", "setUpView"]
 - ["PSo16NSObjectProtocol", "shareButtonTapped"]
 - ["PSo16NSObjectProtocol", "toggleBottomDrawer"]
@@ -1002,7 +1010,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "touchesBegan"]
 - ["PSo16NSObjectProtocol", "touchesMoved"]
 - !private ["PSo16NSObjectProtocol", "transform"]
-- !private ["PSo16NSObjectProtocol", "updateConstraintsIfNeeded"]
 - ["PSo16NSObjectProtocol", "updateViewConstraints"]
 - !private ["PSo16NSObjectProtocol", "userInteractionEnabled"]
 - !private ["PSo16NSObjectProtocol", "value"]
@@ -1019,8 +1026,6 @@ depends-member:
 - !private ["C4Echo15QuoteController", "sharedInstance"]
 - !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
 - !private ["Ps21RandomAccessIndexType", "hashValue"]
-- !private ["Ps16RawRepresentable", "Equal"]
-- !private ["Ps16RawRepresentable", "Height"]
 - !private ["Ps12SequenceType", "Generator"]
 - !private ["Ps12SequenceType", "Index"]
 - !private ["Ps12SequenceType", "SubSequence"]
@@ -1044,12 +1049,10 @@ depends-member:
 - !private ["Ps10Strideable", "IntegerLiteralType"]
 - !private ["Ps10Strideable", "hashValue"]
 - !private ["Ps10Strideable", "init"]
-- !private ["PSo29UIAccessibilityIdentification", "addConstraint"]
 - !private ["PSo29UIAccessibilityIdentification", "adjustsFontSizeToFitWidth"]
 - !private ["PSo29UIAccessibilityIdentification", "alpha"]
 - !private ["PSo29UIAccessibilityIdentification", "animateWithDuration"]
 - !private ["PSo29UIAccessibilityIdentification", "autoresizesSubviews"]
-- !private ["PSo29UIAccessibilityIdentification", "bounds"]
 - !private ["PSo29UIAccessibilityIdentification", "center"]
 - !private ["PSo29UIAccessibilityIdentification", "clipsToBounds"]
 - !private ["PSo29UIAccessibilityIdentification", "constraints"]
@@ -1061,15 +1064,12 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "minimumValue"]
 - !private ["PSo29UIAccessibilityIdentification", "pointInside"]
 - !private ["PSo29UIAccessibilityIdentification", "transform"]
-- !private ["PSo29UIAccessibilityIdentification", "updateConstraintsIfNeeded"]
 - !private ["PSo29UIAccessibilityIdentification", "userInteractionEnabled"]
 - !private ["PSo29UIAccessibilityIdentification", "value"]
-- !private ["PSo12UIAppearance", "addConstraint"]
 - !private ["PSo12UIAppearance", "adjustsFontSizeToFitWidth"]
 - !private ["PSo12UIAppearance", "alpha"]
 - !private ["PSo12UIAppearance", "animateWithDuration"]
 - !private ["PSo12UIAppearance", "autoresizesSubviews"]
-- !private ["PSo12UIAppearance", "bounds"]
 - !private ["PSo12UIAppearance", "center"]
 - !private ["PSo12UIAppearance", "clipsToBounds"]
 - !private ["PSo12UIAppearance", "constraints"]
@@ -1081,25 +1081,21 @@ depends-member:
 - !private ["PSo12UIAppearance", "minimumValue"]
 - !private ["PSo12UIAppearance", "pointInside"]
 - !private ["PSo12UIAppearance", "transform"]
-- !private ["PSo12UIAppearance", "updateConstraintsIfNeeded"]
 - !private ["PSo12UIAppearance", "userInteractionEnabled"]
 - !private ["PSo12UIAppearance", "value"]
 - !private ["PSo21UIAppearanceContainer", "CGFloat"]
 - ["PSo21UIAppearanceContainer", "DrawerMode"]
 - !private ["PSo21UIAppearanceContainer", "Float"]
 - !private ["PSo21UIAppearanceContainer", "ImageController"]
-- !private ["PSo21UIAppearanceContainer", "NSLayoutConstraint"]
 - !private ["PSo21UIAppearanceContainer", "QuoteController"]
 - !private ["PSo21UIAppearanceContainer", "UIView"]
 - ["PSo21UIAppearanceContainer", "ViewMode"]
-- !private ["PSo21UIAppearanceContainer", "addConstraint"]
 - !private ["PSo21UIAppearanceContainer", "adjustsFontSizeToFitWidth"]
 - !private ["PSo21UIAppearanceContainer", "alpha"]
 - !private ["PSo21UIAppearanceContainer", "animateWithDuration"]
 - ["PSo21UIAppearanceContainer", "animationInterval"]
 - !private ["PSo21UIAppearanceContainer", "autoresizesSubviews"]
 - ["PSo21UIAppearanceContainer", "backgroundImage"]
-- !private ["PSo21UIAppearanceContainer", "bounds"]
 - ["PSo21UIAppearanceContainer", "buttonY"]
 - !private ["PSo21UIAppearanceContainer", "center"]
 - !private ["PSo21UIAppearanceContainer", "clipsToBounds"]
@@ -1131,8 +1127,12 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "previousPictureTapped"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "quoteLabel"]
+- ["PSo21UIAppearanceContainer", "quoteLabelHeight"]
+- ["PSo21UIAppearanceContainer", "quoteLabelWidth"]
 - ["PSo21UIAppearanceContainer", "quoteView"]
+- ["PSo21UIAppearanceContainer", "quoteViewHeight"]
 - ["PSo21UIAppearanceContainer", "quoteViewLocation"]
+- ["PSo21UIAppearanceContainer", "quoteViewWidth"]
 - ["PSo21UIAppearanceContainer", "setUpView"]
 - ["PSo21UIAppearanceContainer", "shareButtonTapped"]
 - ["PSo21UIAppearanceContainer", "toggleBottomDrawer"]
@@ -1146,7 +1146,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "touchesBegan"]
 - ["PSo21UIAppearanceContainer", "touchesMoved"]
 - !private ["PSo21UIAppearanceContainer", "transform"]
-- !private ["PSo21UIAppearanceContainer", "updateConstraintsIfNeeded"]
 - ["PSo21UIAppearanceContainer", "updateViewConstraints"]
 - !private ["PSo21UIAppearanceContainer", "userInteractionEnabled"]
 - !private ["PSo21UIAppearanceContainer", "value"]
@@ -1161,7 +1160,6 @@ depends-member:
 - ["PSo18UIContentContainer", "DrawerMode"]
 - !private ["PSo18UIContentContainer", "Float"]
 - !private ["PSo18UIContentContainer", "ImageController"]
-- !private ["PSo18UIContentContainer", "NSLayoutConstraint"]
 - !private ["PSo18UIContentContainer", "QuoteController"]
 - !private ["PSo18UIContentContainer", "UIView"]
 - ["PSo18UIContentContainer", "ViewMode"]
@@ -1188,8 +1186,12 @@ depends-member:
 - ["PSo18UIContentContainer", "previousPictureTapped"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "quoteLabel"]
+- ["PSo18UIContentContainer", "quoteLabelHeight"]
+- ["PSo18UIContentContainer", "quoteLabelWidth"]
 - ["PSo18UIContentContainer", "quoteView"]
+- ["PSo18UIContentContainer", "quoteViewHeight"]
 - ["PSo18UIContentContainer", "quoteViewLocation"]
+- ["PSo18UIContentContainer", "quoteViewWidth"]
 - ["PSo18UIContentContainer", "setUpView"]
 - ["PSo18UIContentContainer", "shareButtonTapped"]
 - ["PSo18UIContentContainer", "toggleBottomDrawer"]
@@ -1213,12 +1215,10 @@ depends-member:
 - !private ["CSo9UIControl", "maximumValue"]
 - !private ["CSo9UIControl", "minimumValue"]
 - !private ["CSo9UIControl", "value"]
-- !private ["PSo17UICoordinateSpace", "addConstraint"]
 - !private ["PSo17UICoordinateSpace", "adjustsFontSizeToFitWidth"]
 - !private ["PSo17UICoordinateSpace", "alpha"]
 - !private ["PSo17UICoordinateSpace", "animateWithDuration"]
 - !private ["PSo17UICoordinateSpace", "autoresizesSubviews"]
-- !private ["PSo17UICoordinateSpace", "bounds"]
 - !private ["PSo17UICoordinateSpace", "center"]
 - !private ["PSo17UICoordinateSpace", "clipsToBounds"]
 - !private ["PSo17UICoordinateSpace", "constraints"]
@@ -1230,15 +1230,12 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "minimumValue"]
 - !private ["PSo17UICoordinateSpace", "pointInside"]
 - !private ["PSo17UICoordinateSpace", "transform"]
-- !private ["PSo17UICoordinateSpace", "updateConstraintsIfNeeded"]
 - !private ["PSo17UICoordinateSpace", "userInteractionEnabled"]
 - !private ["PSo17UICoordinateSpace", "value"]
-- !private ["PSo13UIDynamicItem", "addConstraint"]
 - !private ["PSo13UIDynamicItem", "adjustsFontSizeToFitWidth"]
 - !private ["PSo13UIDynamicItem", "alpha"]
 - !private ["PSo13UIDynamicItem", "animateWithDuration"]
 - !private ["PSo13UIDynamicItem", "autoresizesSubviews"]
-- !private ["PSo13UIDynamicItem", "bounds"]
 - !private ["PSo13UIDynamicItem", "center"]
 - !private ["PSo13UIDynamicItem", "clipsToBounds"]
 - !private ["PSo13UIDynamicItem", "constraints"]
@@ -1250,25 +1247,21 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "minimumValue"]
 - !private ["PSo13UIDynamicItem", "pointInside"]
 - !private ["PSo13UIDynamicItem", "transform"]
-- !private ["PSo13UIDynamicItem", "updateConstraintsIfNeeded"]
 - !private ["PSo13UIDynamicItem", "userInteractionEnabled"]
 - !private ["PSo13UIDynamicItem", "value"]
 - !private ["PSo18UIFocusEnvironment", "CGFloat"]
 - ["PSo18UIFocusEnvironment", "DrawerMode"]
 - !private ["PSo18UIFocusEnvironment", "Float"]
 - !private ["PSo18UIFocusEnvironment", "ImageController"]
-- !private ["PSo18UIFocusEnvironment", "NSLayoutConstraint"]
 - !private ["PSo18UIFocusEnvironment", "QuoteController"]
 - !private ["PSo18UIFocusEnvironment", "UIView"]
 - ["PSo18UIFocusEnvironment", "ViewMode"]
-- !private ["PSo18UIFocusEnvironment", "addConstraint"]
 - !private ["PSo18UIFocusEnvironment", "adjustsFontSizeToFitWidth"]
 - !private ["PSo18UIFocusEnvironment", "alpha"]
 - !private ["PSo18UIFocusEnvironment", "animateWithDuration"]
 - ["PSo18UIFocusEnvironment", "animationInterval"]
 - !private ["PSo18UIFocusEnvironment", "autoresizesSubviews"]
 - ["PSo18UIFocusEnvironment", "backgroundImage"]
-- !private ["PSo18UIFocusEnvironment", "bounds"]
 - ["PSo18UIFocusEnvironment", "buttonY"]
 - !private ["PSo18UIFocusEnvironment", "center"]
 - !private ["PSo18UIFocusEnvironment", "clipsToBounds"]
@@ -1300,8 +1293,12 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "previousPictureTapped"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "quoteLabel"]
+- ["PSo18UIFocusEnvironment", "quoteLabelHeight"]
+- ["PSo18UIFocusEnvironment", "quoteLabelWidth"]
 - ["PSo18UIFocusEnvironment", "quoteView"]
+- ["PSo18UIFocusEnvironment", "quoteViewHeight"]
 - ["PSo18UIFocusEnvironment", "quoteViewLocation"]
+- ["PSo18UIFocusEnvironment", "quoteViewWidth"]
 - ["PSo18UIFocusEnvironment", "setUpView"]
 - ["PSo18UIFocusEnvironment", "shareButtonTapped"]
 - ["PSo18UIFocusEnvironment", "toggleBottomDrawer"]
@@ -1315,7 +1312,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "touchesBegan"]
 - ["PSo18UIFocusEnvironment", "touchesMoved"]
 - !private ["PSo18UIFocusEnvironment", "transform"]
-- !private ["PSo18UIFocusEnvironment", "updateConstraintsIfNeeded"]
 - ["PSo18UIFocusEnvironment", "updateViewConstraints"]
 - !private ["PSo18UIFocusEnvironment", "userInteractionEnabled"]
 - !private ["PSo18UIFocusEnvironment", "value"]
@@ -1328,14 +1324,12 @@ depends-member:
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo11UIImageView", "image"]
 - !private ["CSo11UIImageView", "userInteractionEnabled"]
-- !private ["CSo7UILabel", "addConstraint"]
 - !private ["CSo7UILabel", "adjustsFontSizeToFitWidth"]
 - !private ["CSo7UILabel", "autoresizesSubviews"]
 - !private ["CSo7UILabel", "center"]
 - !private ["CSo7UILabel", "clipsToBounds"]
 - !private ["CSo7UILabel", "frame"]
 - !private ["CSo7UILabel", "layer"]
-- !private ["CSo7UILabel", "updateConstraintsIfNeeded"]
 - ["CSo11UIResponder", "CGFloat"]
 - ["CSo11UIResponder", "DrawerMode"]
 - !private ["CSo11UIResponder", "Float"]
@@ -1353,14 +1347,12 @@ depends-member:
 - ["CSo11UIResponder", "UIView"]
 - ["CSo11UIResponder", "ViewMode"]
 - !private ["CSo11UIResponder", "Void"]
-- !private ["CSo11UIResponder", "addConstraint"]
 - !private ["CSo11UIResponder", "adjustsFontSizeToFitWidth"]
 - !private ["CSo11UIResponder", "alpha"]
 - !private ["CSo11UIResponder", "animateWithDuration"]
 - ["CSo11UIResponder", "animationInterval"]
 - !private ["CSo11UIResponder", "autoresizesSubviews"]
 - ["CSo11UIResponder", "backgroundImage"]
-- !private ["CSo11UIResponder", "bounds"]
 - ["CSo11UIResponder", "buttonY"]
 - !private ["CSo11UIResponder", "center"]
 - !private ["CSo11UIResponder", "clipsToBounds"]
@@ -1392,8 +1384,12 @@ depends-member:
 - ["CSo11UIResponder", "previousPictureTapped"]
 - !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "quoteLabel"]
+- ["CSo11UIResponder", "quoteLabelHeight"]
+- ["CSo11UIResponder", "quoteLabelWidth"]
 - ["CSo11UIResponder", "quoteView"]
+- ["CSo11UIResponder", "quoteViewHeight"]
 - ["CSo11UIResponder", "quoteViewLocation"]
+- ["CSo11UIResponder", "quoteViewWidth"]
 - ["CSo11UIResponder", "setUpView"]
 - ["CSo11UIResponder", "shareButtonTapped"]
 - ["CSo11UIResponder", "toggleBottomDrawer"]
@@ -1407,7 +1403,6 @@ depends-member:
 - ["CSo11UIResponder", "touchesBegan"]
 - ["CSo11UIResponder", "touchesMoved"]
 - !private ["CSo11UIResponder", "transform"]
-- !private ["CSo11UIResponder", "updateConstraintsIfNeeded"]
 - ["CSo11UIResponder", "updateViewConstraints"]
 - !private ["CSo11UIResponder", "userInteractionEnabled"]
 - !private ["CSo11UIResponder", "value"]
@@ -1424,7 +1419,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "DrawerMode"]
 - !private ["PSo16UIStateRestoring", "Float"]
 - !private ["PSo16UIStateRestoring", "ImageController"]
-- !private ["PSo16UIStateRestoring", "NSLayoutConstraint"]
 - !private ["PSo16UIStateRestoring", "QuoteController"]
 - !private ["PSo16UIStateRestoring", "UIView"]
 - ["PSo16UIStateRestoring", "ViewMode"]
@@ -1451,8 +1445,12 @@ depends-member:
 - ["PSo16UIStateRestoring", "previousPictureTapped"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "quoteLabel"]
+- ["PSo16UIStateRestoring", "quoteLabelHeight"]
+- ["PSo16UIStateRestoring", "quoteLabelWidth"]
 - ["PSo16UIStateRestoring", "quoteView"]
+- ["PSo16UIStateRestoring", "quoteViewHeight"]
 - ["PSo16UIStateRestoring", "quoteViewLocation"]
+- ["PSo16UIStateRestoring", "quoteViewWidth"]
 - ["PSo16UIStateRestoring", "setUpView"]
 - ["PSo16UIStateRestoring", "shareButtonTapped"]
 - ["PSo16UIStateRestoring", "toggleBottomDrawer"]
@@ -1478,18 +1476,15 @@ depends-member:
 - ["PSo18UITraitEnvironment", "DrawerMode"]
 - !private ["PSo18UITraitEnvironment", "Float"]
 - !private ["PSo18UITraitEnvironment", "ImageController"]
-- !private ["PSo18UITraitEnvironment", "NSLayoutConstraint"]
 - !private ["PSo18UITraitEnvironment", "QuoteController"]
 - !private ["PSo18UITraitEnvironment", "UIView"]
 - ["PSo18UITraitEnvironment", "ViewMode"]
-- !private ["PSo18UITraitEnvironment", "addConstraint"]
 - !private ["PSo18UITraitEnvironment", "adjustsFontSizeToFitWidth"]
 - !private ["PSo18UITraitEnvironment", "alpha"]
 - !private ["PSo18UITraitEnvironment", "animateWithDuration"]
 - ["PSo18UITraitEnvironment", "animationInterval"]
 - !private ["PSo18UITraitEnvironment", "autoresizesSubviews"]
 - ["PSo18UITraitEnvironment", "backgroundImage"]
-- !private ["PSo18UITraitEnvironment", "bounds"]
 - ["PSo18UITraitEnvironment", "buttonY"]
 - !private ["PSo18UITraitEnvironment", "center"]
 - !private ["PSo18UITraitEnvironment", "clipsToBounds"]
@@ -1521,8 +1516,12 @@ depends-member:
 - ["PSo18UITraitEnvironment", "previousPictureTapped"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "quoteLabel"]
+- ["PSo18UITraitEnvironment", "quoteLabelHeight"]
+- ["PSo18UITraitEnvironment", "quoteLabelWidth"]
 - ["PSo18UITraitEnvironment", "quoteView"]
+- ["PSo18UITraitEnvironment", "quoteViewHeight"]
 - ["PSo18UITraitEnvironment", "quoteViewLocation"]
+- ["PSo18UITraitEnvironment", "quoteViewWidth"]
 - ["PSo18UITraitEnvironment", "setUpView"]
 - ["PSo18UITraitEnvironment", "shareButtonTapped"]
 - ["PSo18UITraitEnvironment", "toggleBottomDrawer"]
@@ -1536,7 +1535,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "touchesBegan"]
 - ["PSo18UITraitEnvironment", "touchesMoved"]
 - !private ["PSo18UITraitEnvironment", "transform"]
-- !private ["PSo18UITraitEnvironment", "updateConstraintsIfNeeded"]
 - ["PSo18UITraitEnvironment", "updateViewConstraints"]
 - !private ["PSo18UITraitEnvironment", "userInteractionEnabled"]
 - !private ["PSo18UITraitEnvironment", "value"]
@@ -1547,12 +1545,10 @@ depends-member:
 - ["PSo18UITraitEnvironment", "widthSlider"]
 - ["PSo18UITraitEnvironment", "widthSliderChanged"]
 - ["PSo18UITraitEnvironment", ""]
-- !private ["CSo6UIView", "addConstraint"]
 - !private ["CSo6UIView", "adjustsFontSizeToFitWidth"]
 - !private ["CSo6UIView", "alpha"]
 - !private ["CSo6UIView", "animateWithDuration"]
 - !private ["CSo6UIView", "autoresizesSubviews"]
-- !private ["CSo6UIView", "bounds"]
 - !private ["CSo6UIView", "center"]
 - !private ["CSo6UIView", "clipsToBounds"]
 - !private ["CSo6UIView", "constraints"]
@@ -1564,7 +1560,6 @@ depends-member:
 - !private ["CSo6UIView", "minimumValue"]
 - !private ["CSo6UIView", "pointInside"]
 - !private ["CSo6UIView", "transform"]
-- !private ["CSo6UIView", "updateConstraintsIfNeeded"]
 - !private ["CSo6UIView", "userInteractionEnabled"]
 - !private ["CSo6UIView", "value"]
 - ["CSo16UIViewController", "CGFloat"]
@@ -1607,8 +1602,12 @@ depends-member:
 - ["CSo16UIViewController", "previousPictureTapped"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "quoteLabel"]
+- ["CSo16UIViewController", "quoteLabelHeight"]
+- ["CSo16UIViewController", "quoteLabelWidth"]
 - ["CSo16UIViewController", "quoteView"]
+- ["CSo16UIViewController", "quoteViewHeight"]
 - ["CSo16UIViewController", "quoteViewLocation"]
+- ["CSo16UIViewController", "quoteViewWidth"]
 - ["CSo16UIViewController", "setUpView"]
 - ["CSo16UIViewController", "shareButtonTapped"]
 - ["CSo16UIViewController", "toggleBottomDrawer"]
@@ -1667,12 +1666,10 @@ depends-member:
 - !private ["Ps12_Reflectable", "SubSequence"]
 - !private ["Ps12_Reflectable", "_Element"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
-- !private ["Ps12_Reflectable", "addConstraint"]
 - !private ["Ps12_Reflectable", "adjustsFontSizeToFitWidth"]
 - !private ["Ps12_Reflectable", "alpha"]
 - !private ["Ps12_Reflectable", "animateWithDuration"]
 - !private ["Ps12_Reflectable", "autoresizesSubviews"]
-- !private ["Ps12_Reflectable", "bounds"]
 - !private ["Ps12_Reflectable", "center"]
 - !private ["Ps12_Reflectable", "clipsToBounds"]
 - !private ["Ps12_Reflectable", "constraints"]
@@ -1684,12 +1681,13 @@ depends-member:
 - !private ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "layer"]
 - !private ["Ps12_Reflectable", "layoutIfNeeded"]
+- !private ["Ps12_Reflectable", "maxY"]
 - !private ["Ps12_Reflectable", "maximumValue"]
+- !private ["Ps12_Reflectable", "minY"]
 - !private ["Ps12_Reflectable", "minimumValue"]
 - !private ["Ps12_Reflectable", "pointInside"]
 - !private ["Ps12_Reflectable", "size"]
 - !private ["Ps12_Reflectable", "transform"]
-- !private ["Ps12_Reflectable", "updateConstraintsIfNeeded"]
 - !private ["Ps12_Reflectable", "userInteractionEnabled"]
 - !private ["Ps12_Reflectable", "value"]
 - !private ["Ps12_Reflectable", "width"]
@@ -1737,16 +1735,13 @@ depends-nominal:
 - !private "Ps14MirrorPathType"
 - "PSo8NSCoding"
 - "PSo26NSExtensionRequestHandling"
-- !private "OSC17NSLayoutAttribute"
 - !private "CSo18NSLayoutConstraint"
-- !private "OSC16NSLayoutRelation"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - "Ps21NilLiteralConvertible"
 - "Sq"
 - !private "C4Echo15QuoteController"
 - !private "Ps21RandomAccessIndexType"
-- !private "Ps16RawRepresentable"
 - !private "Ps12SequenceType"
 - !private "Vs3Set"
 - !private "Vs12SetGenerator"
@@ -1795,4 +1790,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-interface-hash: "60154de20684ea2e29319624176b1b17"
+interface-hash: "78392d29ecc33ecdfc9fa4864c16cf75"
