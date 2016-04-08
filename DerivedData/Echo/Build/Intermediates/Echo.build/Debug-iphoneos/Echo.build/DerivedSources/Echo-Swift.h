@@ -117,11 +117,11 @@ SWIFT_CLASS("_TtC4Echo11AppDelegate")
 @class UIButton;
 @class UISlider;
 @class UITapGestureRecognizer;
+@class UIView;
 @class UITouch;
 @class UIEvent;
 @class UIImageView;
 @class UILabel;
-@class UIView;
 @class NSLayoutConstraint;
 @class NSBundle;
 @class NSCoder;
@@ -151,7 +151,8 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 @property (nonatomic, readonly) CGFloat quoteViewLocation;
 @property (nonatomic) BOOL isInButton;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+- (void)setUpView;
+- (void)firstLoad;
 - (IBAction)previousPictureTapped:(UIButton * _Nonnull)sender;
 - (IBAction)customTextButtonTapped:(UIButton * _Nonnull)sender;
 - (IBAction)shareButtonTapped:(UIButton * _Nonnull)sender;
@@ -167,8 +168,12 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 - (IBAction)junkSliderChanged:(UISlider * _Nonnull)sender;
 - (IBAction)topJunkSlider:(UISlider * _Nonnull)sender;
 - (IBAction)toggleDrawer:(UITapGestureRecognizer * _Nonnull)sender;
-- (void)setUpView;
-- (void)firstLoad;
+- (void)layoutViewBasedOnEditMode;
+- (UIView * _Nonnull)returnObjectForManipulation;
+- (void)updateSlidersWithView:(UIView * _Nonnull)view;
+- (void)updateViewForBoxScale;
+- (void)updateViewForTextFont;
+- (void)updateViewForTextScale;
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (void)touchesMoved:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (void)updateViewConstraints;
