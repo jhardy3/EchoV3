@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Echo View Controller-->
@@ -78,7 +79,7 @@
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact">
                                             <mask key="constraints">
-                                                <include reference="vfM-p3-AQW"/>
+                                                <exclude reference="vfM-p3-AQW"/>
                                             </mask>
                                         </variation>
                                         <connections>
@@ -132,6 +133,7 @@
                                         <variation key="heightClass=regular-widthClass=compact" constant="172"/>
                                     </constraint>
                                     <constraint firstItem="sty-1Y-4xR" firstAttribute="top" secondItem="XWd-rH-VXH" secondAttribute="top" constant="8" id="Mbf-8G-9XT"/>
+                                    <constraint firstItem="Vxd-uU-RQa" firstAttribute="width" secondItem="XWd-rH-VXH" secondAttribute="width" multiplier="0.25" id="NPk-A8-af5"/>
                                     <constraint firstItem="Vxd-uU-RQa" firstAttribute="leading" secondItem="XWd-rH-VXH" secondAttribute="leading" id="Od2-Zp-ZQK"/>
                                     <constraint firstAttribute="bottom" secondItem="Vxd-uU-RQa" secondAttribute="bottom" id="VuU-pI-ocO">
                                         <variation key="heightClass=regular-widthClass=compact" constant="1"/>
@@ -189,6 +191,7 @@
                                         <exclude reference="kAa-o4-MNo"/>
                                         <exclude reference="8hv-f2-UH5"/>
                                         <exclude reference="IAb-Yn-zJE"/>
+                                        <exclude reference="NPk-A8-af5"/>
                                         <exclude reference="Od2-Zp-ZQK"/>
                                         <exclude reference="VuU-pI-ocO"/>
                                         <exclude reference="ugl-RK-t0c"/>
@@ -229,6 +232,7 @@
                                         <include reference="kAa-o4-MNo"/>
                                         <include reference="8hv-f2-UH5"/>
                                         <include reference="IAb-Yn-zJE"/>
+                                        <include reference="NPk-A8-af5"/>
                                         <include reference="Od2-Zp-ZQK"/>
                                         <include reference="VuU-pI-ocO"/>
                                         <include reference="ugl-RK-t0c"/>
@@ -347,7 +351,7 @@
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact">
                                             <mask key="constraints">
-                                                <include reference="L23-Ps-eNZ"/>
+                                                <exclude reference="L23-Ps-eNZ"/>
                                                 <include reference="S94-1F-7Hx"/>
                                             </mask>
                                         </variation>
@@ -408,6 +412,7 @@
                                     <constraint firstItem="kec-IP-BZ4" firstAttribute="top" secondItem="K9P-2L-g82" secondAttribute="top" id="ftN-Jh-wsX"/>
                                     <constraint firstItem="83v-mw-MhG" firstAttribute="height" secondItem="5qL-cW-fxr" secondAttribute="height" id="ig8-8g-B0I"/>
                                     <constraint firstItem="kec-IP-BZ4" firstAttribute="height" secondItem="5qL-cW-fxr" secondAttribute="height" id="oba-lB-QfI"/>
+                                    <constraint firstItem="5qL-cW-fxr" firstAttribute="width" secondItem="K9P-2L-g82" secondAttribute="width" multiplier="0.25" id="ouI-En-TDI"/>
                                     <constraint firstItem="q8K-JT-RTk" firstAttribute="top" secondItem="K9P-2L-g82" secondAttribute="top" id="pKT-KD-w5q"/>
                                     <constraint firstItem="5qL-cW-fxr" firstAttribute="width" secondItem="kec-IP-BZ4" secondAttribute="width" id="pwL-FB-aTD"/>
                                     <constraint firstItem="khc-Um-rfD" firstAttribute="top" secondItem="5qL-cW-fxr" secondAttribute="bottom" constant="1" id="tJu-Y6-W4N"/>
@@ -430,6 +435,7 @@
                                         <exclude reference="PA0-qa-Km5"/>
                                         <exclude reference="6Ro-kZ-7TU"/>
                                         <exclude reference="Xjv-jR-1Pf"/>
+                                        <exclude reference="ouI-En-TDI"/>
                                         <exclude reference="pwL-FB-aTD"/>
                                         <exclude reference="al1-cW-OP5"/>
                                         <exclude reference="tJu-Y6-W4N"/>
@@ -468,6 +474,7 @@
                                         <include reference="PA0-qa-Km5"/>
                                         <include reference="6Ro-kZ-7TU"/>
                                         <include reference="Xjv-jR-1Pf"/>
+                                        <include reference="ouI-En-TDI"/>
                                         <include reference="pwL-FB-aTD"/>
                                         <include reference="al1-cW-OP5"/>
                                         <include reference="tJu-Y6-W4N"/>

@@ -45,6 +45,8 @@ class EchoViewController: UIViewController {
         }
     }
     
+    var animationInterval = 0.5
+    
     var drawerShown = true
     var buttonY: CGFloat?
     
@@ -84,6 +86,7 @@ class EchoViewController: UIViewController {
         quoteLabel.autoresizesSubviews = true
         
         setUpView()
+        toggleTopDrawer()
         
         viewIsLoaded = true
     }
@@ -130,7 +133,7 @@ class EchoViewController: UIViewController {
     
     func toggleBottomDrawer() {
         guard let yConstraint = drawerYConstraint else { return }
-        view.layoutIfNeeded()
+//        view.layoutIfNeeded()
         
         switch drawerMode {
         case .Top:
@@ -147,7 +150,7 @@ class EchoViewController: UIViewController {
     
     func toggleTopDrawer() {
         guard let yConstraint = topDrawerYConstraint else { return }
-        view.layoutIfNeeded()
+//        view.layoutIfNeeded()
         switch drawerMode {
         case .Top:
             yConstraint.constant = 0
@@ -155,7 +158,7 @@ class EchoViewController: UIViewController {
             yConstraint.constant = -200
         }
         
-        UIView.animateWithDuration(0.75) {
+        UIView.animateWithDuration(animationInterval) {
             self.view.layoutIfNeeded()
         }
     }
@@ -168,7 +171,7 @@ class EchoViewController: UIViewController {
         quoteLabel.center.x = quoteView.frame.width / 2
         quoteLabel.center.y = quoteView.frame.height / 2
         
-        view.layoutIfNeeded()
+//        view.layoutIfNeeded()
         
     }
     
@@ -183,7 +186,7 @@ class EchoViewController: UIViewController {
         quoteLabel.center.x = quoteView.frame.width / 2
         quoteLabel.center.y = quoteView.frame.height / 2
         
-        view.layoutIfNeeded()
+//        view.layoutIfNeeded()
     }
     
     @IBAction func topHeightSlider(sender: UISlider) {
@@ -198,18 +201,34 @@ class EchoViewController: UIViewController {
     
     @IBAction func toggleDrawer(sender: UITapGestureRecognizer) {
         guard let yConstraint = drawerYConstraint else { return }
-        view.layoutIfNeeded()
-        if drawerShown {
-            yConstraint.constant = 0
-        } else {
-            yConstraint.constant = -200
+//        view.layoutIfNeeded()
+        guard let topYConstraint = topDrawerYConstraint else { return }
+        
+        switch viewMode {
+            
+        case .EditMode:
+            switch drawerMode {
+            case .Top:
+                topYConstraint.constant = -200
+            case .Bottom:
+                yConstraint.constant = -200
+            }
+            viewMode = .ViewMode
+        case .ViewMode:
+            switch drawerMode {
+            case .Top:
+                topYConstraint.constant = 0
+            case .Bottom:
+                yConstraint.constant = 0
+            }
+            viewMode = .EditMode
         }
         
-        UIView.animateWithDuration(0.75) { () -> Void in
+        UIView.animateWithDuration(animationInterval) { () -> Void in
             self.view.layoutIfNeeded()
         }
         
-        drawerShown = !drawerShown
+        
     }
     
     func setUpView() {
@@ -263,5 +282,22 @@ class EchoViewController: UIViewController {
             
             self.quoteView.transform.ty = yMovement
         }
+    }
+    
+    override func updateViewConstraints() {
+        super.updateViewConstraints()
+        
+        let height = quoteView.bounds.height
+        let width = quoteView.bounds.width
+        
+        let heightConstraint = NSLayoutConstraint(item: quoteView, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .Height, multiplier: 1, constant: height)
+        quoteView.addConstraint(heightConstraint)
+        
+        let heightConstraintLabel = NSLayoutConstraint(item: quoteLabel, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .Height, multiplier: 1, constant: height)
+        quoteLabel.addConstraint(heightConstraintLabel)
+        quoteLabel.updateConstraintsIfNeeded()
+        
+        print(quoteView.constraints)
+        
     }
 }

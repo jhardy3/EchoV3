@@ -142,6 +142,7 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified topHeightSlider;
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified topJunkSlider;
 @property (nonatomic) BOOL viewIsLoaded;
+@property (nonatomic) double animationInterval;
 @property (nonatomic) BOOL drawerShown;
 @property (nonatomic, readonly) CGFloat quoteViewLocation;
 @property (nonatomic) BOOL isInButton;
@@ -166,6 +167,7 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 - (void)firstLoad;
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (void)touchesMoved:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (void)updateViewConstraints;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
