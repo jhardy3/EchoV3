@@ -146,10 +146,10 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified quoteViewHeight;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified quoteViewWidth;
 @property (nonatomic) double animationInterval;
-@property (nonatomic) BOOL drawerShown;
 @property (nonatomic, readonly) CGFloat quoteViewLocation;
 @property (nonatomic) BOOL isInButton;
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)setUpView;
 - (void)firstLoad;
 - (IBAction)previousPictureTapped:(UIButton * _Nonnull)sender;

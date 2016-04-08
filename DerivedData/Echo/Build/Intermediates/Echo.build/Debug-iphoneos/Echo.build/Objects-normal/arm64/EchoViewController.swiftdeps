@@ -18,82 +18,83 @@ provides-member:
 - ["O4Echo9Dimension", ""]
 - ["C4Echo18EchoViewController", ""]
 provides-dynamic-lookup:
-- "updateViewForBoxScale"
+- "nextPictureButtonTapped"
+- "updateViewConstraints"
+- "updateViewForTextScale"
+- "heightSlider"
+- "quoteLabelHeight"
 - "quoteView"
+- "customTextButtonTapped"
+- "returnObjectForManipulation"
+- "updateViewForBoxScale"
+- "previousPictureTapped"
+- "topJunkSlider"
+- "topJunkSlider"
+- "quoteLabel"
 - "widthSlider"
-- "touchesBegan"
-- "topJunkSlider"
-- "topJunkSlider"
-- "shareButtonTapped"
-- "updateSlidersWithView"
-- "updateViewForTextFont"
 - "widthSliderChanged"
-- "topDrawerYConstraint"
+- "drawerView"
+- "topDrawerView"
+- "layoutViewBasedOnEditMode"
+- "shareButtonTapped"
 - "quoteViewWidth"
 - "topHeightSlider"
 - "topHeightSlider"
-- "setUpView"
-- "firstLoad"
-- "isInButton"
-- "backgroundImage"
+- "viewDidAppear"
+- "drawerYConstraint"
+- "updateViewForTextFont"
+- "viewDidLoad"
+- "quoteViewLocation"
+- "heightSliderChanged"
+- "updateSlidersWithView"
+- "touchesBegan"
 - "toggleDrawer"
 - "toggleDrawer"
-- "moveDrawersBasedOnView"
+- "quoteLabelWidth"
+- "junkSlider"
+- "topDrawerYConstraint"
 - "touchesMoved"
 - "junkSliderChanged"
-- "drawerShown"
-- "topWidthSlider"
-- "topWidthSlider"
-- "topDrawerView"
-- "updateViewConstraints"
-- "layoutViewBasedOnEditMode"
-- "quoteViewHeight"
-- "quoteLabelWidth"
-- "drawerYConstraint"
-- "nextPictureButtonTapped"
+- "firstLoad"
+- "isInButton"
+- "setUpView"
 - "animationInterval"
-- "viewDidLoad"
-- "customTextButtonTapped"
-- "quoteViewLocation"
-- "junkSlider"
-- "heightSliderChanged"
-- "updateViewForTextScale"
-- "previousPictureTapped"
-- "quoteLabel"
-- "returnObjectForManipulation"
-- "heightSlider"
-- "quoteLabelHeight"
-- "drawerView"
+- "backgroundImage"
+- "quoteViewHeight"
+- "moveDrawersBasedOnView"
+- "topWidthSlider"
+- "topWidthSlider"
 depends-top-level:
-- !private "QuoteController"
+- !private "&&"
 - "EchoViewController"
 - "UIButton"
+- !private "Void"
+- "EditMode"
+- "Float"
+- !private "<"
+- !private ">="
+- "UISlider"
+- "CGFloat"
+- "Set"
+- "UILabel"
+- "=="
+- "UIViewController"
 - "ViewMode"
+- "UIImageView"
+- !private "/"
+- "DrawerMode"
 - !private "-"
+- !private "ImageController"
+- "BooleanLiteralType"
+- "Bool"
 - !private "+"
 - "UIView"
-- "EditMode"
-- "CGFloat"
-- "BooleanLiteralType"
-- !private "/"
-- "UIViewController"
-- "UIImageView"
-- "Set"
-- !private "Void"
-- "NSLayoutConstraint"
-- !private "ImageController"
-- "=="
-- "UITouch"
-- !private "&&"
-- "UILabel"
 - "UITapGestureRecognizer"
+- "UITouch"
 - "Dimension"
+- !private "QuoteController"
 - "UIEvent"
-- !private ">="
-- "Float"
-- "DrawerMode"
-- !private "<"
-- "UISlider"
+- "NSLayoutConstraint"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -118,7 +119,6 @@ depends-member:
 - !private ["Ps9AnyObject", "cornerRadius"]
 - ["Ps9AnyObject", "customTextButtonTapped"]
 - ["Ps9AnyObject", "drawerMode"]
-- ["Ps9AnyObject", "drawerShown"]
 - ["Ps9AnyObject", "drawerView"]
 - ["Ps9AnyObject", "drawerYConstraint"]
 - ["Ps9AnyObject", "editMode"]
@@ -166,6 +166,7 @@ depends-member:
 - ["Ps9AnyObject", "touchesBegan"]
 - ["Ps9AnyObject", "touchesMoved"]
 - !private ["Ps9AnyObject", "transform"]
+- !private ["Ps9AnyObject", "translatesAutoresizingMaskIntoConstraints"]
 - ["Ps9AnyObject", "updateSlidersWithView"]
 - ["Ps9AnyObject", "updateViewConstraints"]
 - ["Ps9AnyObject", "updateViewForBoxScale"]
@@ -174,6 +175,7 @@ depends-member:
 - !private ["Ps9AnyObject", "userInteractionEnabled"]
 - !private ["Ps9AnyObject", "value"]
 - !private ["Ps9AnyObject", "view"]
+- ["Ps9AnyObject", "viewDidAppear"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", "viewMode"]
 - ["Ps9AnyObject", "widthSlider"]
@@ -228,7 +230,6 @@ depends-member:
 - !private ["Ps11CVarArgType", "cornerRadius"]
 - ["Ps11CVarArgType", "customTextButtonTapped"]
 - ["Ps11CVarArgType", "drawerMode"]
-- ["Ps11CVarArgType", "drawerShown"]
 - ["Ps11CVarArgType", "drawerView"]
 - ["Ps11CVarArgType", "drawerYConstraint"]
 - ["Ps11CVarArgType", "editMode"]
@@ -274,6 +275,7 @@ depends-member:
 - ["Ps11CVarArgType", "touchesBegan"]
 - ["Ps11CVarArgType", "touchesMoved"]
 - !private ["Ps11CVarArgType", "transform"]
+- !private ["Ps11CVarArgType", "translatesAutoresizingMaskIntoConstraints"]
 - ["Ps11CVarArgType", "updateSlidersWithView"]
 - ["Ps11CVarArgType", "updateViewConstraints"]
 - ["Ps11CVarArgType", "updateViewForBoxScale"]
@@ -282,6 +284,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "userInteractionEnabled"]
 - !private ["Ps11CVarArgType", "value"]
 - !private ["Ps11CVarArgType", "view"]
+- ["Ps11CVarArgType", "viewDidAppear"]
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", "viewMode"]
 - ["Ps11CVarArgType", "widthSlider"]
@@ -324,7 +327,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
 - ["Ps28CustomDebugStringConvertible", "customTextButtonTapped"]
 - ["Ps28CustomDebugStringConvertible", "drawerMode"]
-- ["Ps28CustomDebugStringConvertible", "drawerShown"]
 - ["Ps28CustomDebugStringConvertible", "drawerView"]
 - ["Ps28CustomDebugStringConvertible", "drawerYConstraint"]
 - ["Ps28CustomDebugStringConvertible", "editMode"]
@@ -370,6 +372,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "touchesBegan"]
 - ["Ps28CustomDebugStringConvertible", "touchesMoved"]
 - !private ["Ps28CustomDebugStringConvertible", "transform"]
+- !private ["Ps28CustomDebugStringConvertible", "translatesAutoresizingMaskIntoConstraints"]
 - ["Ps28CustomDebugStringConvertible", "updateSlidersWithView"]
 - ["Ps28CustomDebugStringConvertible", "updateViewConstraints"]
 - ["Ps28CustomDebugStringConvertible", "updateViewForBoxScale"]
@@ -378,6 +381,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "userInteractionEnabled"]
 - !private ["Ps28CustomDebugStringConvertible", "value"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
+- ["Ps28CustomDebugStringConvertible", "viewDidAppear"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", "viewMode"]
 - ["Ps28CustomDebugStringConvertible", "widthSlider"]
@@ -412,7 +416,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "cornerRadius"]
 - ["Ps23CustomStringConvertible", "customTextButtonTapped"]
 - ["Ps23CustomStringConvertible", "drawerMode"]
-- ["Ps23CustomStringConvertible", "drawerShown"]
 - ["Ps23CustomStringConvertible", "drawerView"]
 - ["Ps23CustomStringConvertible", "drawerYConstraint"]
 - ["Ps23CustomStringConvertible", "editMode"]
@@ -459,6 +462,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "touchesBegan"]
 - ["Ps23CustomStringConvertible", "touchesMoved"]
 - !private ["Ps23CustomStringConvertible", "transform"]
+- !private ["Ps23CustomStringConvertible", "translatesAutoresizingMaskIntoConstraints"]
 - ["Ps23CustomStringConvertible", "updateSlidersWithView"]
 - ["Ps23CustomStringConvertible", "updateViewConstraints"]
 - ["Ps23CustomStringConvertible", "updateViewForBoxScale"]
@@ -467,6 +471,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "userInteractionEnabled"]
 - !private ["Ps23CustomStringConvertible", "value"]
 - !private ["Ps23CustomStringConvertible", "view"]
+- ["Ps23CustomStringConvertible", "viewDidAppear"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "viewMode"]
 - ["Ps23CustomStringConvertible", "widthSlider"]
@@ -480,6 +485,7 @@ depends-member:
 - ["O4Echo10DrawerMode", "Top"]
 - ["O4Echo10DrawerMode", "deinit"]
 - ["O4Echo10DrawerMode", "hashValue"]
+- ["C4Echo18EchoViewController", "Bool"]
 - ["C4Echo18EchoViewController", "CGFloat"]
 - ["C4Echo18EchoViewController", "Dimension"]
 - ["C4Echo18EchoViewController", "DrawerMode"]
@@ -506,7 +512,6 @@ depends-member:
 - ["C4Echo18EchoViewController", "customTextButtonTapped"]
 - ["C4Echo18EchoViewController", "deinit"]
 - ["C4Echo18EchoViewController", "drawerMode"]
-- ["C4Echo18EchoViewController", "drawerShown"]
 - ["C4Echo18EchoViewController", "drawerView"]
 - ["C4Echo18EchoViewController", "drawerYConstraint"]
 - ["C4Echo18EchoViewController", "editMode"]
@@ -548,6 +553,7 @@ depends-member:
 - ["C4Echo18EchoViewController", "updateViewForTextFont"]
 - ["C4Echo18EchoViewController", "updateViewForTextScale"]
 - !private ["C4Echo18EchoViewController", "view"]
+- ["C4Echo18EchoViewController", "viewDidAppear"]
 - ["C4Echo18EchoViewController", "viewDidLoad"]
 - ["C4Echo18EchoViewController", "viewMode"]
 - ["C4Echo18EchoViewController", "widthSlider"]
@@ -594,7 +600,6 @@ depends-member:
 - !private ["Ps9Equatable", "cornerRadius"]
 - ["Ps9Equatable", "customTextButtonTapped"]
 - ["Ps9Equatable", "drawerMode"]
-- ["Ps9Equatable", "drawerShown"]
 - ["Ps9Equatable", "drawerView"]
 - ["Ps9Equatable", "drawerYConstraint"]
 - ["Ps9Equatable", "editMode"]
@@ -645,6 +650,7 @@ depends-member:
 - ["Ps9Equatable", "touchesBegan"]
 - ["Ps9Equatable", "touchesMoved"]
 - !private ["Ps9Equatable", "transform"]
+- !private ["Ps9Equatable", "translatesAutoresizingMaskIntoConstraints"]
 - ["Ps9Equatable", "updateSlidersWithView"]
 - ["Ps9Equatable", "updateViewConstraints"]
 - ["Ps9Equatable", "updateViewForBoxScale"]
@@ -653,6 +659,7 @@ depends-member:
 - !private ["Ps9Equatable", "userInteractionEnabled"]
 - !private ["Ps9Equatable", "value"]
 - !private ["Ps9Equatable", "view"]
+- ["Ps9Equatable", "viewDidAppear"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", "viewMode"]
 - !private ["Ps9Equatable", "width"]
@@ -704,7 +711,6 @@ depends-member:
 - !private ["Ps8Hashable", "cornerRadius"]
 - ["Ps8Hashable", "customTextButtonTapped"]
 - ["Ps8Hashable", "drawerMode"]
-- ["Ps8Hashable", "drawerShown"]
 - ["Ps8Hashable", "drawerView"]
 - ["Ps8Hashable", "drawerYConstraint"]
 - ["Ps8Hashable", "editMode"]
@@ -751,6 +757,7 @@ depends-member:
 - ["Ps8Hashable", "touchesBegan"]
 - ["Ps8Hashable", "touchesMoved"]
 - !private ["Ps8Hashable", "transform"]
+- !private ["Ps8Hashable", "translatesAutoresizingMaskIntoConstraints"]
 - ["Ps8Hashable", "updateSlidersWithView"]
 - ["Ps8Hashable", "updateViewConstraints"]
 - ["Ps8Hashable", "updateViewForBoxScale"]
@@ -759,6 +766,7 @@ depends-member:
 - !private ["Ps8Hashable", "userInteractionEnabled"]
 - !private ["Ps8Hashable", "value"]
 - !private ["Ps8Hashable", "view"]
+- ["Ps8Hashable", "viewDidAppear"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", "viewMode"]
 - ["Ps8Hashable", "widthSlider"]
@@ -805,7 +813,6 @@ depends-member:
 - !private ["PSo8NSCoding", "cornerRadius"]
 - ["PSo8NSCoding", "customTextButtonTapped"]
 - ["PSo8NSCoding", "drawerMode"]
-- ["PSo8NSCoding", "drawerShown"]
 - ["PSo8NSCoding", "drawerView"]
 - ["PSo8NSCoding", "drawerYConstraint"]
 - ["PSo8NSCoding", "editMode"]
@@ -849,6 +856,7 @@ depends-member:
 - ["PSo8NSCoding", "touchesBegan"]
 - ["PSo8NSCoding", "touchesMoved"]
 - !private ["PSo8NSCoding", "transform"]
+- !private ["PSo8NSCoding", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo8NSCoding", "updateSlidersWithView"]
 - ["PSo8NSCoding", "updateViewConstraints"]
 - ["PSo8NSCoding", "updateViewForBoxScale"]
@@ -857,6 +865,7 @@ depends-member:
 - !private ["PSo8NSCoding", "userInteractionEnabled"]
 - !private ["PSo8NSCoding", "value"]
 - !private ["PSo8NSCoding", "view"]
+- ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewMode"]
 - ["PSo8NSCoding", "widthSlider"]
@@ -876,7 +885,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "buttonY"]
 - ["PSo26NSExtensionRequestHandling", "customTextButtonTapped"]
 - ["PSo26NSExtensionRequestHandling", "drawerMode"]
-- ["PSo26NSExtensionRequestHandling", "drawerShown"]
 - ["PSo26NSExtensionRequestHandling", "drawerView"]
 - ["PSo26NSExtensionRequestHandling", "drawerYConstraint"]
 - ["PSo26NSExtensionRequestHandling", "editMode"]
@@ -918,12 +926,14 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "updateViewForTextFont"]
 - ["PSo26NSExtensionRequestHandling", "updateViewForTextScale"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
+- ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewMode"]
 - ["PSo26NSExtensionRequestHandling", "widthSlider"]
 - ["PSo26NSExtensionRequestHandling", "widthSliderChanged"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["CSo18NSLayoutConstraint", "constant"]
+- ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "Dimension"]
 - ["CSo8NSObject", "DrawerMode"]
@@ -957,7 +967,6 @@ depends-member:
 - !private ["CSo8NSObject", "cornerRadius"]
 - ["CSo8NSObject", "customTextButtonTapped"]
 - ["CSo8NSObject", "drawerMode"]
-- ["CSo8NSObject", "drawerShown"]
 - ["CSo8NSObject", "drawerView"]
 - ["CSo8NSObject", "drawerYConstraint"]
 - ["CSo8NSObject", "editMode"]
@@ -1002,6 +1011,7 @@ depends-member:
 - ["CSo8NSObject", "touchesBegan"]
 - ["CSo8NSObject", "touchesMoved"]
 - !private ["CSo8NSObject", "transform"]
+- !private ["CSo8NSObject", "translatesAutoresizingMaskIntoConstraints"]
 - ["CSo8NSObject", "updateSlidersWithView"]
 - ["CSo8NSObject", "updateViewConstraints"]
 - ["CSo8NSObject", "updateViewForBoxScale"]
@@ -1010,6 +1020,7 @@ depends-member:
 - !private ["CSo8NSObject", "userInteractionEnabled"]
 - !private ["CSo8NSObject", "value"]
 - !private ["CSo8NSObject", "view"]
+- ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewMode"]
 - ["CSo8NSObject", "widthSlider"]
@@ -1036,7 +1047,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "cornerRadius"]
 - ["PSo16NSObjectProtocol", "customTextButtonTapped"]
 - ["PSo16NSObjectProtocol", "drawerMode"]
-- ["PSo16NSObjectProtocol", "drawerShown"]
 - ["PSo16NSObjectProtocol", "drawerView"]
 - ["PSo16NSObjectProtocol", "drawerYConstraint"]
 - ["PSo16NSObjectProtocol", "editMode"]
@@ -1081,6 +1091,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "touchesBegan"]
 - ["PSo16NSObjectProtocol", "touchesMoved"]
 - !private ["PSo16NSObjectProtocol", "transform"]
+- !private ["PSo16NSObjectProtocol", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo16NSObjectProtocol", "updateSlidersWithView"]
 - ["PSo16NSObjectProtocol", "updateViewConstraints"]
 - ["PSo16NSObjectProtocol", "updateViewForBoxScale"]
@@ -1089,6 +1100,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "userInteractionEnabled"]
 - !private ["PSo16NSObjectProtocol", "value"]
 - !private ["PSo16NSObjectProtocol", "view"]
+- ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewMode"]
 - ["PSo16NSObjectProtocol", "widthSlider"]
@@ -1137,6 +1149,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "minimumValue"]
 - !private ["PSo29UIAccessibilityIdentification", "pointInside"]
 - !private ["PSo29UIAccessibilityIdentification", "transform"]
+- !private ["PSo29UIAccessibilityIdentification", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo29UIAccessibilityIdentification", "userInteractionEnabled"]
 - !private ["PSo29UIAccessibilityIdentification", "value"]
 - !private ["PSo12UIAppearance", "adjustsFontSizeToFitWidth"]
@@ -1153,6 +1166,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "minimumValue"]
 - !private ["PSo12UIAppearance", "pointInside"]
 - !private ["PSo12UIAppearance", "transform"]
+- !private ["PSo12UIAppearance", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo12UIAppearance", "userInteractionEnabled"]
 - !private ["PSo12UIAppearance", "value"]
 - !private ["PSo21UIAppearanceContainer", "CGFloat"]
@@ -1175,7 +1189,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "clipsToBounds"]
 - ["PSo21UIAppearanceContainer", "customTextButtonTapped"]
 - ["PSo21UIAppearanceContainer", "drawerMode"]
-- ["PSo21UIAppearanceContainer", "drawerShown"]
 - ["PSo21UIAppearanceContainer", "drawerView"]
 - ["PSo21UIAppearanceContainer", "drawerYConstraint"]
 - ["PSo21UIAppearanceContainer", "editMode"]
@@ -1219,6 +1232,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "touchesBegan"]
 - ["PSo21UIAppearanceContainer", "touchesMoved"]
 - !private ["PSo21UIAppearanceContainer", "transform"]
+- !private ["PSo21UIAppearanceContainer", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo21UIAppearanceContainer", "updateSlidersWithView"]
 - ["PSo21UIAppearanceContainer", "updateViewConstraints"]
 - ["PSo21UIAppearanceContainer", "updateViewForBoxScale"]
@@ -1227,6 +1241,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "userInteractionEnabled"]
 - !private ["PSo21UIAppearanceContainer", "value"]
 - !private ["PSo21UIAppearanceContainer", "view"]
+- ["PSo21UIAppearanceContainer", "viewDidAppear"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewMode"]
 - ["PSo21UIAppearanceContainer", "widthSlider"]
@@ -1246,7 +1261,6 @@ depends-member:
 - ["PSo18UIContentContainer", "buttonY"]
 - ["PSo18UIContentContainer", "customTextButtonTapped"]
 - ["PSo18UIContentContainer", "drawerMode"]
-- ["PSo18UIContentContainer", "drawerShown"]
 - ["PSo18UIContentContainer", "drawerView"]
 - ["PSo18UIContentContainer", "drawerYConstraint"]
 - ["PSo18UIContentContainer", "editMode"]
@@ -1288,6 +1302,7 @@ depends-member:
 - ["PSo18UIContentContainer", "updateViewForTextFont"]
 - ["PSo18UIContentContainer", "updateViewForTextScale"]
 - !private ["PSo18UIContentContainer", "view"]
+- ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewMode"]
 - ["PSo18UIContentContainer", "widthSlider"]
@@ -1310,6 +1325,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "minimumValue"]
 - !private ["PSo17UICoordinateSpace", "pointInside"]
 - !private ["PSo17UICoordinateSpace", "transform"]
+- !private ["PSo17UICoordinateSpace", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo17UICoordinateSpace", "userInteractionEnabled"]
 - !private ["PSo17UICoordinateSpace", "value"]
 - !private ["PSo13UIDynamicItem", "adjustsFontSizeToFitWidth"]
@@ -1326,6 +1342,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "minimumValue"]
 - !private ["PSo13UIDynamicItem", "pointInside"]
 - !private ["PSo13UIDynamicItem", "transform"]
+- !private ["PSo13UIDynamicItem", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo13UIDynamicItem", "userInteractionEnabled"]
 - !private ["PSo13UIDynamicItem", "value"]
 - !private ["PSo18UIFocusEnvironment", "CGFloat"]
@@ -1348,7 +1365,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "clipsToBounds"]
 - ["PSo18UIFocusEnvironment", "customTextButtonTapped"]
 - ["PSo18UIFocusEnvironment", "drawerMode"]
-- ["PSo18UIFocusEnvironment", "drawerShown"]
 - ["PSo18UIFocusEnvironment", "drawerView"]
 - ["PSo18UIFocusEnvironment", "drawerYConstraint"]
 - ["PSo18UIFocusEnvironment", "editMode"]
@@ -1392,6 +1408,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "touchesBegan"]
 - ["PSo18UIFocusEnvironment", "touchesMoved"]
 - !private ["PSo18UIFocusEnvironment", "transform"]
+- !private ["PSo18UIFocusEnvironment", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo18UIFocusEnvironment", "updateSlidersWithView"]
 - ["PSo18UIFocusEnvironment", "updateViewConstraints"]
 - ["PSo18UIFocusEnvironment", "updateViewForBoxScale"]
@@ -1400,6 +1417,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "userInteractionEnabled"]
 - !private ["PSo18UIFocusEnvironment", "value"]
 - !private ["PSo18UIFocusEnvironment", "view"]
+- ["PSo18UIFocusEnvironment", "viewDidAppear"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewMode"]
 - ["PSo18UIFocusEnvironment", "widthSlider"]
@@ -1413,6 +1431,8 @@ depends-member:
 - !private ["CSo7UILabel", "clipsToBounds"]
 - !private ["CSo7UILabel", "frame"]
 - !private ["CSo7UILabel", "layer"]
+- !private ["CSo7UILabel", "translatesAutoresizingMaskIntoConstraints"]
+- ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CGFloat"]
 - ["CSo11UIResponder", "Dimension"]
 - ["CSo11UIResponder", "DrawerMode"]
@@ -1444,7 +1464,6 @@ depends-member:
 - !private ["CSo11UIResponder", "clipsToBounds"]
 - ["CSo11UIResponder", "customTextButtonTapped"]
 - ["CSo11UIResponder", "drawerMode"]
-- ["CSo11UIResponder", "drawerShown"]
 - ["CSo11UIResponder", "drawerView"]
 - ["CSo11UIResponder", "drawerYConstraint"]
 - ["CSo11UIResponder", "editMode"]
@@ -1488,6 +1507,7 @@ depends-member:
 - ["CSo11UIResponder", "touchesBegan"]
 - ["CSo11UIResponder", "touchesMoved"]
 - !private ["CSo11UIResponder", "transform"]
+- !private ["CSo11UIResponder", "translatesAutoresizingMaskIntoConstraints"]
 - ["CSo11UIResponder", "updateSlidersWithView"]
 - ["CSo11UIResponder", "updateViewConstraints"]
 - ["CSo11UIResponder", "updateViewForBoxScale"]
@@ -1496,6 +1516,7 @@ depends-member:
 - !private ["CSo11UIResponder", "userInteractionEnabled"]
 - !private ["CSo11UIResponder", "value"]
 - !private ["CSo11UIResponder", "view"]
+- ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewMode"]
 - ["CSo11UIResponder", "widthSlider"]
@@ -1517,7 +1538,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "buttonY"]
 - ["PSo16UIStateRestoring", "customTextButtonTapped"]
 - ["PSo16UIStateRestoring", "drawerMode"]
-- ["PSo16UIStateRestoring", "drawerShown"]
 - ["PSo16UIStateRestoring", "drawerView"]
 - ["PSo16UIStateRestoring", "drawerYConstraint"]
 - ["PSo16UIStateRestoring", "editMode"]
@@ -1559,6 +1579,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "updateViewForTextFont"]
 - ["PSo16UIStateRestoring", "updateViewForTextScale"]
 - !private ["PSo16UIStateRestoring", "view"]
+- ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewMode"]
 - ["PSo16UIStateRestoring", "widthSlider"]
@@ -1585,7 +1606,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "clipsToBounds"]
 - ["PSo18UITraitEnvironment", "customTextButtonTapped"]
 - ["PSo18UITraitEnvironment", "drawerMode"]
-- ["PSo18UITraitEnvironment", "drawerShown"]
 - ["PSo18UITraitEnvironment", "drawerView"]
 - ["PSo18UITraitEnvironment", "drawerYConstraint"]
 - ["PSo18UITraitEnvironment", "editMode"]
@@ -1629,6 +1649,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "touchesBegan"]
 - ["PSo18UITraitEnvironment", "touchesMoved"]
 - !private ["PSo18UITraitEnvironment", "transform"]
+- !private ["PSo18UITraitEnvironment", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo18UITraitEnvironment", "updateSlidersWithView"]
 - ["PSo18UITraitEnvironment", "updateViewConstraints"]
 - ["PSo18UITraitEnvironment", "updateViewForBoxScale"]
@@ -1637,6 +1658,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "userInteractionEnabled"]
 - !private ["PSo18UITraitEnvironment", "value"]
 - !private ["PSo18UITraitEnvironment", "view"]
+- ["PSo18UITraitEnvironment", "viewDidAppear"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewMode"]
 - ["PSo18UITraitEnvironment", "widthSlider"]
@@ -1656,8 +1678,10 @@ depends-member:
 - !private ["CSo6UIView", "minimumValue"]
 - !private ["CSo6UIView", "pointInside"]
 - !private ["CSo6UIView", "transform"]
+- !private ["CSo6UIView", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["CSo6UIView", "userInteractionEnabled"]
 - !private ["CSo6UIView", "value"]
+- ["CSo16UIViewController", "Bool"]
 - ["CSo16UIViewController", "CGFloat"]
 - ["CSo16UIViewController", "Dimension"]
 - ["CSo16UIViewController", "DrawerMode"]
@@ -1683,7 +1707,6 @@ depends-member:
 - ["CSo16UIViewController", "buttonY"]
 - ["CSo16UIViewController", "customTextButtonTapped"]
 - ["CSo16UIViewController", "drawerMode"]
-- ["CSo16UIViewController", "drawerShown"]
 - ["CSo16UIViewController", "drawerView"]
 - ["CSo16UIViewController", "drawerYConstraint"]
 - ["CSo16UIViewController", "editMode"]
@@ -1725,6 +1748,7 @@ depends-member:
 - ["CSo16UIViewController", "updateViewForTextFont"]
 - ["CSo16UIViewController", "updateViewForTextScale"]
 - !private ["CSo16UIViewController", "view"]
+- ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewMode"]
 - ["CSo16UIViewController", "widthSlider"]
@@ -1789,6 +1813,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "pointInside"]
 - !private ["Ps12_Reflectable", "size"]
 - !private ["Ps12_Reflectable", "transform"]
+- !private ["Ps12_Reflectable", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["Ps12_Reflectable", "userInteractionEnabled"]
 - !private ["Ps12_Reflectable", "value"]
 - !private ["Ps12_Reflectable", "width"]
@@ -1893,4 +1918,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-interface-hash: "9866a71e9f8f3d69ac5be55a5d6446b7"
+interface-hash: "31ff280fb80846cd19c212e8dbdd9974"

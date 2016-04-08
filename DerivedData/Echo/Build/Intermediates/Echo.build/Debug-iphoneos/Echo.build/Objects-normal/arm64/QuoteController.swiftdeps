@@ -13,23 +13,23 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "String"
-- !private "imageURL"
+- !private "quoteURL"
+- "kQuoteKey"
+- !private "NSJSONSerialization"
 - "kContentKey"
+- "Void"
 - "QuoteController"
-- !private "NetworkController"
+- !private "dispatch_get_main_queue"
 - "kQuotesKey"
 - !private "AnyObject"
-- "kQuoteKey"
-- !private "quoteURL"
+- !private "dispatch_async"
 - "StringLiteralType"
 - "kLengthKey"
-- !private "NSJSONSerialization"
-- "Void"
-- !private "dispatch_get_main_queue"
+- !private "imageURL"
 - !private "ImageController"
+- !private "NetworkController"
 - "kAuthorKey"
 - "EchoViewController"
-- !private "dispatch_async"
 depends-member:
 - !private ["Ps9AnyObject", "ImageController"]
 - !private ["Ps9AnyObject", "JSONObjectWithData"]

@@ -71,7 +71,6 @@ class EchoViewController: UIViewController {
     
     var animationInterval = 0.5
     
-    var drawerShown = true
     var buttonY: CGFloat?
     
     var quoteViewLocation: CGFloat {
@@ -87,19 +86,25 @@ class EchoViewController: UIViewController {
         super.viewDidLoad()
         
         updateViewForBoxScale()
-        
-        quoteLabel.adjustsFontSizeToFitWidth = true
-        quoteLabel.autoresizesSubviews = true
-        
+        updateViewConstraints()
         setUpView()
         toggleDrawer()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         
+        quoteLabel.translatesAutoresizingMaskIntoConstraints = true
     }
     
     func setUpView() {
         quoteLabel.layer.cornerRadius = 7.0
         quoteLabel.clipsToBounds = true
+        quoteLabel.adjustsFontSizeToFitWidth = true
+        quoteLabel.autoresizesSubviews = true
+        
         backgroundImage.userInteractionEnabled = true
+
         firstLoad()
     }
     
@@ -340,8 +345,6 @@ class EchoViewController: UIViewController {
             guard let totalYMovement = touches.first?.preciseLocationInView(self.view).y,
                 locationInView = self.locationInView else { return }
             
-            
-            
             let topMargin = quoteView.frame.maxY
             let bottomMargin = view.frame.height / 0.8 - quoteView.frame.minY
             
@@ -350,7 +353,6 @@ class EchoViewController: UIViewController {
             } else if bottomMargin < topMargin && drawerMode == .Bottom {
                 drawerMode = .Top
             }
-            
             
             var yMovement = totalYMovement - quoteViewLocation
             if locationInView >= (self.quoteView.frame.height / 2) {
