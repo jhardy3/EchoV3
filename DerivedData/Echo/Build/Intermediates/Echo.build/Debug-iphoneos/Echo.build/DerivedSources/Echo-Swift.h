@@ -157,6 +157,7 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified quoteLabelWidth;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified quoteViewHeight;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified quoteViewWidth;
+@property (nonatomic) double currentFontSize;
 @property (nonatomic, readonly) CGFloat quoteViewLocation;
 @property (nonatomic) BOOL isInButton;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull fontNames;

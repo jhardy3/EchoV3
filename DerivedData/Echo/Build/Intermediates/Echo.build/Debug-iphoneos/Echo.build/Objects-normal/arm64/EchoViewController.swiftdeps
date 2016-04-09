@@ -18,112 +18,117 @@ provides-member:
 - ["O4Echo9Dimension", ""]
 - ["C4Echo18EchoViewController", ""]
 provides-dynamic-lookup:
-- "isInButton"
-- "junkSliderChanged"
-- "fontNames"
-- "topDrawerYConstraint"
-- "quoteView"
-- "updateViewConstraints"
-- "quoteLabelWidth"
-- "backgroundImage"
-- "quoteViewHeight"
-- "viewDidAppear"
-- "quoteViewLocation"
-- "toggleDrawer"
-- "toggleDrawer"
-- "topPickerView"
-- "topHeightSlider"
-- "topHeightSlider"
 - "moveDrawersBasedOnView"
-- "hideDrawers"
-- "heightSliderChanged"
-- "topFontSizeSliderFired"
-- "quoteLabelHeight"
-- "quoteViewWidth"
-- "bottomFontSizeSliderFired"
-- "firstLoad"
-- "hideJunkView"
+- "junkSliderChanged"
+- "quoteViewHeight"
 - "textFontButtonTapped"
-- "viewDidLoad"
-- "updateViewForTextScale"
-- "hidePickerViews"
+- "topDrawerView"
+- "junkbarYConstraint"
 - "touchesBegan"
+- "topHeightSlider"
+- "topHeightSlider"
+- "setUpView"
+- "heightSliderChanged"
+- "toggleJunkView"
+- "layoutViewBasedOnEditMode"
+- "updateSlidersWithView"
+- "updateViewConstraints"
+- "updateViewForBoxScale"
+- "fontNames"
+- "toggleDrawer"
+- "toggleDrawer"
+- "junkBarView"
+- "hidePickerViews"
+- "updateViewForTextScale"
+- "currentFontSize"
+- "quoteViewLocation"
+- "quoteView"
+- "topPickerView"
+- "topDrawerYConstraint"
+- "backgroundImage"
+- "touchesMoved"
+- "widthSliderChanged"
+- "viewDidAppear"
+- "topJunkbarYConstraint"
+- "topWidthSlider"
+- "topWidthSlider"
+- "quoteLabelWidth"
+- "heightSlider"
+- "topFontSizeSlider"
+- "textScaleButtonTapped"
+- "topPickerViewYConstraint"
+- "bottomPickerView"
+- "firstLoad"
+- "viewDidLoad"
+- "quoteLabelHeight"
+- "updateViewForTextFont"
+- "topFontSizeSliderFired"
+- "bottomFontSizeSlider"
+- "junkSlider"
+- "drawerYConstraint"
 - "topJunkSlider"
 - "topJunkSlider"
 - "widthSlider"
-- "topJunkBarView"
-- "bottomFontSizeSlider"
-- "topPickerViewYConstraint"
-- "viewScaleButtonTapped"
-- "bottomPickerView"
-- "junkSlider"
-- "layoutViewBasedOnEditMode"
-- "drawerYConstraint"
-- "returnObjectForManipulation"
-- "heightSlider"
-- "drawerView"
-- "updateViewForBoxScale"
-- "updateSlidersWithView"
-- "topFontSizeSlider"
+- "quoteViewWidth"
+- "hideDrawers"
 - "bottomPickerViewYConstraint"
-- "topWidthSlider"
-- "topWidthSlider"
-- "topDrawerView"
-- "setUpView"
-- "topJunkbarYConstraint"
-- "textScaleButtonTapped"
-- "junkBarView"
-- "toggleJunkView"
-- "junkbarYConstraint"
-- "touchesMoved"
-- "widthSliderChanged"
-- "shareJunkButtonTapped"
+- "viewScaleButtonTapped"
+- "bottomFontSizeSliderFired"
+- "hideJunkView"
+- "topJunkBarView"
+- "isInButton"
+- "drawerView"
 - "togglePickerView"
-- "updateViewForTextFont"
 - "quoteLabel"
+- "shareJunkButtonTapped"
+- "returnObjectForManipulation"
 depends-top-level:
-- "Dimension"
-- "UIEvent"
-- "Float"
-- !private "/"
-- "EditMode"
-- "BooleanLiteralType"
-- "CGFloat"
-- "UITapGestureRecognizer"
-- !private "UIFont"
-- !private "ImageController"
-- "EchoViewController"
-- "NSLayoutConstraint"
-- "UIPickerView"
-- !private "Void"
-- "DrawerMode"
-- "UIView"
-- "UILabel"
-- "String"
 - "Set"
-- "UISlider"
-- !private ">="
-- "UIViewController"
-- !private "-"
-- !private "QuoteController"
-- "UIButton"
-- "UITouch"
-- !private "+"
-- !private "&&"
-- "ViewMode"
-- "Bool"
-- "=="
+- !private "UIColor"
 - "UIImageView"
+- !private "Double"
+- "NSLayoutConstraint"
+- !private "+"
+- "UILabel"
+- "ViewMode"
+- !private "Void"
+- !private "-"
+- "Bool"
+- "DrawerMode"
+- "UIEvent"
+- "=="
+- "String"
+- !private "UIFont"
+- "UIView"
+- !private "QuoteController"
+- "Float"
+- "UISlider"
+- "UITapGestureRecognizer"
+- "CGFloat"
+- !private "/"
+- !private "ImageController"
+- "UIViewController"
+- "UIPickerView"
+- !private "&&"
+- "BooleanLiteralType"
+- "UITouch"
+- "UIButton"
+- !private ">="
 - !private "<"
+- "EchoViewController"
+- "Dimension"
+- "EditMode"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]
+- !private ["Ps9AnyObject", "Double"]
 - ["Ps9AnyObject", "DrawerMode"]
 - ["Ps9AnyObject", "EditMode"]
-- !private ["Ps9AnyObject", "Float"]
+- ["Ps9AnyObject", "Float"]
 - !private ["Ps9AnyObject", "ImageController"]
 - !private ["Ps9AnyObject", "QuoteController"]
 - ["Ps9AnyObject", "String"]
+- !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIFont"]
 - !private ["Ps9AnyObject", "UIView"]
 - ["Ps9AnyObject", "ViewMode"]
@@ -133,6 +138,7 @@ depends-member:
 - !private ["Ps9AnyObject", "animateWithDuration"]
 - ["Ps9AnyObject", "animationInterval"]
 - !private ["Ps9AnyObject", "autoresizesSubviews"]
+- !private ["Ps9AnyObject", "backgroundColor"]
 - ["Ps9AnyObject", "backgroundImage"]
 - ["Ps9AnyObject", "bottomFontSizeSlider"]
 - ["Ps9AnyObject", "bottomFontSizeSliderFired"]
@@ -142,8 +148,10 @@ depends-member:
 - ["Ps9AnyObject", "buttonY"]
 - !private ["Ps9AnyObject", "center"]
 - !private ["Ps9AnyObject", "clipsToBounds"]
+- !private ["Ps9AnyObject", "colorWithAlphaComponent"]
 - !private ["Ps9AnyObject", "constant"]
 - !private ["Ps9AnyObject", "cornerRadius"]
+- ["Ps9AnyObject", "currentFontSize"]
 - !private ["Ps9AnyObject", "displayActivityController"]
 - ["Ps9AnyObject", "drawerMode"]
 - ["Ps9AnyObject", "drawerView"]
@@ -151,6 +159,7 @@ depends-member:
 - ["Ps9AnyObject", "editBarDisplay"]
 - ["Ps9AnyObject", "editBarHide"]
 - ["Ps9AnyObject", "editMode"]
+- ["Ps9AnyObject", "extraBufferSpace"]
 - !private ["Ps9AnyObject", "familyNames"]
 - !private ["Ps9AnyObject", "fetchPreviousImage"]
 - ["Ps9AnyObject", "firstLoad"]
@@ -198,6 +207,7 @@ depends-member:
 - ["Ps9AnyObject", "setUpView"]
 - ["Ps9AnyObject", "shareJunkButtonTapped"]
 - !private ["Ps9AnyObject", "sharedInstance"]
+- !private ["Ps9AnyObject", "textColor"]
 - ["Ps9AnyObject", "textFontButtonTapped"]
 - ["Ps9AnyObject", "textScaleButtonTapped"]
 - ["Ps9AnyObject", "toggleDrawer"]
@@ -274,13 +284,15 @@ depends-member:
 - !private ["VSC6CGSize", "width"]
 - ["Ps11CVarArgType", "CGFloat"]
 - ["Ps11CVarArgType", "Distance"]
+- !private ["Ps11CVarArgType", "Double"]
 - ["Ps11CVarArgType", "DrawerMode"]
 - ["Ps11CVarArgType", "EditMode"]
-- !private ["Ps11CVarArgType", "Float"]
+- ["Ps11CVarArgType", "Float"]
 - !private ["Ps11CVarArgType", "ImageController"]
 - ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "QuoteController"]
 - ["Ps11CVarArgType", "String"]
+- !private ["Ps11CVarArgType", "UIColor"]
 - !private ["Ps11CVarArgType", "UIFont"]
 - !private ["Ps11CVarArgType", "UIView"]
 - ["Ps11CVarArgType", "ViewMode"]
@@ -290,6 +302,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "animateWithDuration"]
 - ["Ps11CVarArgType", "animationInterval"]
 - !private ["Ps11CVarArgType", "autoresizesSubviews"]
+- !private ["Ps11CVarArgType", "backgroundColor"]
 - ["Ps11CVarArgType", "backgroundImage"]
 - ["Ps11CVarArgType", "bottomFontSizeSlider"]
 - ["Ps11CVarArgType", "bottomFontSizeSliderFired"]
@@ -299,8 +312,10 @@ depends-member:
 - ["Ps11CVarArgType", "buttonY"]
 - !private ["Ps11CVarArgType", "center"]
 - !private ["Ps11CVarArgType", "clipsToBounds"]
+- !private ["Ps11CVarArgType", "colorWithAlphaComponent"]
 - !private ["Ps11CVarArgType", "constant"]
 - !private ["Ps11CVarArgType", "cornerRadius"]
+- ["Ps11CVarArgType", "currentFontSize"]
 - !private ["Ps11CVarArgType", "displayActivityController"]
 - ["Ps11CVarArgType", "drawerMode"]
 - ["Ps11CVarArgType", "drawerView"]
@@ -308,6 +323,7 @@ depends-member:
 - ["Ps11CVarArgType", "editBarDisplay"]
 - ["Ps11CVarArgType", "editBarHide"]
 - ["Ps11CVarArgType", "editMode"]
+- ["Ps11CVarArgType", "extraBufferSpace"]
 - !private ["Ps11CVarArgType", "familyNames"]
 - ["Ps11CVarArgType", "firstLoad"]
 - !private ["Ps11CVarArgType", "font"]
@@ -354,6 +370,7 @@ depends-member:
 - ["Ps11CVarArgType", "returnObjectForManipulation"]
 - ["Ps11CVarArgType", "setUpView"]
 - ["Ps11CVarArgType", "shareJunkButtonTapped"]
+- !private ["Ps11CVarArgType", "textColor"]
 - ["Ps11CVarArgType", "textFontButtonTapped"]
 - ["Ps11CVarArgType", "textScaleButtonTapped"]
 - ["Ps11CVarArgType", "toggleDrawer"]
@@ -402,9 +419,10 @@ depends-member:
 - !private ["Ps10Comparable", "hashValue"]
 - ["Ps10Comparable", "init"]
 - ["Ps28CustomDebugStringConvertible", "CGFloat"]
+- !private ["Ps28CustomDebugStringConvertible", "Double"]
 - ["Ps28CustomDebugStringConvertible", "DrawerMode"]
 - ["Ps28CustomDebugStringConvertible", "EditMode"]
-- !private ["Ps28CustomDebugStringConvertible", "Float"]
+- ["Ps28CustomDebugStringConvertible", "Float"]
 - ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "ImageController"]
 - ["Ps28CustomDebugStringConvertible", "Index"]
@@ -412,6 +430,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "Some"]
 - ["Ps28CustomDebugStringConvertible", "String"]
 - ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIFont"]
 - !private ["Ps28CustomDebugStringConvertible", "UIView"]
 - ["Ps28CustomDebugStringConvertible", "ViewMode"]
@@ -422,6 +441,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "animateWithDuration"]
 - ["Ps28CustomDebugStringConvertible", "animationInterval"]
 - !private ["Ps28CustomDebugStringConvertible", "autoresizesSubviews"]
+- !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - ["Ps28CustomDebugStringConvertible", "backgroundImage"]
 - ["Ps28CustomDebugStringConvertible", "bottomFontSizeSlider"]
 - ["Ps28CustomDebugStringConvertible", "bottomFontSizeSliderFired"]
@@ -431,8 +451,10 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "buttonY"]
 - !private ["Ps28CustomDebugStringConvertible", "center"]
 - !private ["Ps28CustomDebugStringConvertible", "clipsToBounds"]
+- !private ["Ps28CustomDebugStringConvertible", "colorWithAlphaComponent"]
 - !private ["Ps28CustomDebugStringConvertible", "constant"]
 - !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
+- ["Ps28CustomDebugStringConvertible", "currentFontSize"]
 - !private ["Ps28CustomDebugStringConvertible", "displayActivityController"]
 - ["Ps28CustomDebugStringConvertible", "drawerMode"]
 - ["Ps28CustomDebugStringConvertible", "drawerView"]
@@ -440,6 +462,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "editBarDisplay"]
 - ["Ps28CustomDebugStringConvertible", "editBarHide"]
 - ["Ps28CustomDebugStringConvertible", "editMode"]
+- ["Ps28CustomDebugStringConvertible", "extraBufferSpace"]
 - !private ["Ps28CustomDebugStringConvertible", "familyNames"]
 - !private ["Ps28CustomDebugStringConvertible", "first"]
 - ["Ps28CustomDebugStringConvertible", "firstLoad"]
@@ -487,6 +510,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "setUpView"]
 - ["Ps28CustomDebugStringConvertible", "shareJunkButtonTapped"]
 - !private ["Ps28CustomDebugStringConvertible", "sort"]
+- !private ["Ps28CustomDebugStringConvertible", "textColor"]
 - ["Ps28CustomDebugStringConvertible", "textFontButtonTapped"]
 - ["Ps28CustomDebugStringConvertible", "textScaleButtonTapped"]
 - ["Ps28CustomDebugStringConvertible", "toggleDrawer"]
@@ -524,9 +548,10 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", ""]
 - ["Ps23CustomStringConvertible", "CGFloat"]
 - ["Ps23CustomStringConvertible", "Distance"]
+- !private ["Ps23CustomStringConvertible", "Double"]
 - ["Ps23CustomStringConvertible", "DrawerMode"]
 - ["Ps23CustomStringConvertible", "EditMode"]
-- !private ["Ps23CustomStringConvertible", "Float"]
+- ["Ps23CustomStringConvertible", "Float"]
 - ["Ps23CustomStringConvertible", "Generator"]
 - !private ["Ps23CustomStringConvertible", "ImageController"]
 - ["Ps23CustomStringConvertible", "Index"]
@@ -535,6 +560,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "Some"]
 - ["Ps23CustomStringConvertible", "String"]
 - ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UIFont"]
 - !private ["Ps23CustomStringConvertible", "UIView"]
 - ["Ps23CustomStringConvertible", "ViewMode"]
@@ -546,6 +572,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "animateWithDuration"]
 - ["Ps23CustomStringConvertible", "animationInterval"]
 - !private ["Ps23CustomStringConvertible", "autoresizesSubviews"]
+- !private ["Ps23CustomStringConvertible", "backgroundColor"]
 - ["Ps23CustomStringConvertible", "backgroundImage"]
 - ["Ps23CustomStringConvertible", "bottomFontSizeSlider"]
 - ["Ps23CustomStringConvertible", "bottomFontSizeSliderFired"]
@@ -555,8 +582,10 @@ depends-member:
 - ["Ps23CustomStringConvertible", "buttonY"]
 - !private ["Ps23CustomStringConvertible", "center"]
 - !private ["Ps23CustomStringConvertible", "clipsToBounds"]
+- !private ["Ps23CustomStringConvertible", "colorWithAlphaComponent"]
 - !private ["Ps23CustomStringConvertible", "constant"]
 - !private ["Ps23CustomStringConvertible", "cornerRadius"]
+- ["Ps23CustomStringConvertible", "currentFontSize"]
 - !private ["Ps23CustomStringConvertible", "displayActivityController"]
 - ["Ps23CustomStringConvertible", "drawerMode"]
 - ["Ps23CustomStringConvertible", "drawerView"]
@@ -564,6 +593,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "editBarDisplay"]
 - ["Ps23CustomStringConvertible", "editBarHide"]
 - ["Ps23CustomStringConvertible", "editMode"]
+- ["Ps23CustomStringConvertible", "extraBufferSpace"]
 - !private ["Ps23CustomStringConvertible", "familyNames"]
 - !private ["Ps23CustomStringConvertible", "first"]
 - ["Ps23CustomStringConvertible", "firstLoad"]
@@ -612,6 +642,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "setUpView"]
 - ["Ps23CustomStringConvertible", "shareJunkButtonTapped"]
 - !private ["Ps23CustomStringConvertible", "sort"]
+- !private ["Ps23CustomStringConvertible", "textColor"]
 - ["Ps23CustomStringConvertible", "textFontButtonTapped"]
 - ["Ps23CustomStringConvertible", "textScaleButtonTapped"]
 - ["Ps23CustomStringConvertible", "toggleDrawer"]
@@ -651,6 +682,7 @@ depends-member:
 - ["O4Echo9Dimension", "Width"]
 - ["O4Echo9Dimension", "deinit"]
 - ["O4Echo9Dimension", "hashValue"]
+- !private ["Sd", "init"]
 - ["O4Echo10DrawerMode", "Bottom"]
 - ["O4Echo10DrawerMode", "Top"]
 - ["O4Echo10DrawerMode", "deinit"]
@@ -658,6 +690,7 @@ depends-member:
 - ["C4Echo18EchoViewController", "Bool"]
 - ["C4Echo18EchoViewController", "CGFloat"]
 - ["C4Echo18EchoViewController", "Dimension"]
+- !private ["C4Echo18EchoViewController", "Double"]
 - ["C4Echo18EchoViewController", "DrawerMode"]
 - ["C4Echo18EchoViewController", "EditMode"]
 - ["C4Echo18EchoViewController", "Float"]
@@ -667,6 +700,7 @@ depends-member:
 - ["C4Echo18EchoViewController", "Set"]
 - ["C4Echo18EchoViewController", "String"]
 - ["C4Echo18EchoViewController", "UIButton"]
+- !private ["C4Echo18EchoViewController", "UIColor"]
 - ["C4Echo18EchoViewController", "UIEvent"]
 - !private ["C4Echo18EchoViewController", "UIFont"]
 - ["C4Echo18EchoViewController", "UIImageView"]
@@ -686,6 +720,7 @@ depends-member:
 - ["C4Echo18EchoViewController", "bottomPickerView"]
 - ["C4Echo18EchoViewController", "bottomPickerViewYConstraint"]
 - ["C4Echo18EchoViewController", "buttonY"]
+- ["C4Echo18EchoViewController", "currentFontSize"]
 - ["C4Echo18EchoViewController", "deinit"]
 - !private ["C4Echo18EchoViewController", "displayActivityController"]
 - ["C4Echo18EchoViewController", "drawerMode"]
@@ -694,6 +729,7 @@ depends-member:
 - !private ["C4Echo18EchoViewController", "editBarDisplay"]
 - !private ["C4Echo18EchoViewController", "editBarHide"]
 - ["C4Echo18EchoViewController", "editMode"]
+- !private ["C4Echo18EchoViewController", "extraBufferSpace"]
 - ["C4Echo18EchoViewController", "firstLoad"]
 - ["C4Echo18EchoViewController", "fontNames"]
 - ["C4Echo18EchoViewController", "heightSlider"]
@@ -767,9 +803,10 @@ depends-member:
 - ["Ps9Equatable", "BoxScale"]
 - ["Ps9Equatable", "CGFloat"]
 - ["Ps9Equatable", "Distance"]
+- !private ["Ps9Equatable", "Double"]
 - ["Ps9Equatable", "DrawerMode"]
 - ["Ps9Equatable", "EditMode"]
-- !private ["Ps9Equatable", "Float"]
+- ["Ps9Equatable", "Float"]
 - !private ["Ps9Equatable", "Generator"]
 - ["Ps9Equatable", "Height"]
 - !private ["Ps9Equatable", "ImageController"]
@@ -781,6 +818,7 @@ depends-member:
 - ["Ps9Equatable", "TextFont"]
 - ["Ps9Equatable", "TextScale"]
 - ["Ps9Equatable", "Top"]
+- !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "UIFont"]
 - !private ["Ps9Equatable", "UIView"]
 - ["Ps9Equatable", "ViewMode"]
@@ -794,6 +832,7 @@ depends-member:
 - !private ["Ps9Equatable", "animateWithDuration"]
 - ["Ps9Equatable", "animationInterval"]
 - !private ["Ps9Equatable", "autoresizesSubviews"]
+- !private ["Ps9Equatable", "backgroundColor"]
 - ["Ps9Equatable", "backgroundImage"]
 - ["Ps9Equatable", "bottomFontSizeSlider"]
 - ["Ps9Equatable", "bottomFontSizeSliderFired"]
@@ -803,8 +842,10 @@ depends-member:
 - ["Ps9Equatable", "buttonY"]
 - !private ["Ps9Equatable", "center"]
 - !private ["Ps9Equatable", "clipsToBounds"]
+- !private ["Ps9Equatable", "colorWithAlphaComponent"]
 - !private ["Ps9Equatable", "constant"]
 - !private ["Ps9Equatable", "cornerRadius"]
+- ["Ps9Equatable", "currentFontSize"]
 - !private ["Ps9Equatable", "displayActivityController"]
 - ["Ps9Equatable", "drawerMode"]
 - ["Ps9Equatable", "drawerView"]
@@ -812,6 +853,7 @@ depends-member:
 - ["Ps9Equatable", "editBarDisplay"]
 - ["Ps9Equatable", "editBarHide"]
 - ["Ps9Equatable", "editMode"]
+- ["Ps9Equatable", "extraBufferSpace"]
 - !private ["Ps9Equatable", "familyNames"]
 - !private ["Ps9Equatable", "first"]
 - ["Ps9Equatable", "firstLoad"]
@@ -863,6 +905,7 @@ depends-member:
 - ["Ps9Equatable", "setUpView"]
 - ["Ps9Equatable", "shareJunkButtonTapped"]
 - !private ["Ps9Equatable", "size"]
+- !private ["Ps9Equatable", "textColor"]
 - ["Ps9Equatable", "textFontButtonTapped"]
 - ["Ps9Equatable", "textScaleButtonTapped"]
 - ["Ps9Equatable", "toggleDrawer"]
@@ -901,7 +944,7 @@ depends-member:
 - !private ["Ps9Equatable", "x"]
 - !private ["Ps9Equatable", "y"]
 - ["Ps9Equatable", ""]
-- !private ["Sf", "init"]
+- ["Sf", "init"]
 - ["Ps23FloatLiteralConvertible", "init"]
 - ["Ps17FloatingPointType", "init"]
 - ["Ps16ForwardIndexType", "Distance"]
@@ -913,9 +956,10 @@ depends-member:
 - ["Ps8Hashable", "BoxScale"]
 - ["Ps8Hashable", "CGFloat"]
 - ["Ps8Hashable", "Distance"]
+- !private ["Ps8Hashable", "Double"]
 - ["Ps8Hashable", "DrawerMode"]
 - ["Ps8Hashable", "EditMode"]
-- !private ["Ps8Hashable", "Float"]
+- ["Ps8Hashable", "Float"]
 - !private ["Ps8Hashable", "Generator"]
 - ["Ps8Hashable", "Height"]
 - !private ["Ps8Hashable", "ImageController"]
@@ -927,6 +971,7 @@ depends-member:
 - ["Ps8Hashable", "TextFont"]
 - ["Ps8Hashable", "TextScale"]
 - ["Ps8Hashable", "Top"]
+- !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "UIFont"]
 - !private ["Ps8Hashable", "UIView"]
 - ["Ps8Hashable", "ViewMode"]
@@ -939,6 +984,7 @@ depends-member:
 - !private ["Ps8Hashable", "animateWithDuration"]
 - ["Ps8Hashable", "animationInterval"]
 - !private ["Ps8Hashable", "autoresizesSubviews"]
+- !private ["Ps8Hashable", "backgroundColor"]
 - ["Ps8Hashable", "backgroundImage"]
 - ["Ps8Hashable", "bottomFontSizeSlider"]
 - ["Ps8Hashable", "bottomFontSizeSliderFired"]
@@ -948,8 +994,10 @@ depends-member:
 - ["Ps8Hashable", "buttonY"]
 - !private ["Ps8Hashable", "center"]
 - !private ["Ps8Hashable", "clipsToBounds"]
+- !private ["Ps8Hashable", "colorWithAlphaComponent"]
 - !private ["Ps8Hashable", "constant"]
 - !private ["Ps8Hashable", "cornerRadius"]
+- ["Ps8Hashable", "currentFontSize"]
 - !private ["Ps8Hashable", "displayActivityController"]
 - ["Ps8Hashable", "drawerMode"]
 - ["Ps8Hashable", "drawerView"]
@@ -957,6 +1005,7 @@ depends-member:
 - ["Ps8Hashable", "editBarDisplay"]
 - ["Ps8Hashable", "editBarHide"]
 - ["Ps8Hashable", "editMode"]
+- ["Ps8Hashable", "extraBufferSpace"]
 - !private ["Ps8Hashable", "familyNames"]
 - !private ["Ps8Hashable", "first"]
 - ["Ps8Hashable", "firstLoad"]
@@ -1004,6 +1053,7 @@ depends-member:
 - ["Ps8Hashable", "returnObjectForManipulation"]
 - ["Ps8Hashable", "setUpView"]
 - ["Ps8Hashable", "shareJunkButtonTapped"]
+- !private ["Ps8Hashable", "textColor"]
 - ["Ps8Hashable", "textFontButtonTapped"]
 - ["Ps8Hashable", "textScaleButtonTapped"]
 - ["Ps8Hashable", "toggleDrawer"]
@@ -1085,12 +1135,14 @@ depends-member:
 - ["Ps16MutableSliceable", "init"]
 - !private ["Ps16MutableSliceable", "sort"]
 - ["PSo8NSCoding", "CGFloat"]
+- !private ["PSo8NSCoding", "Double"]
 - ["PSo8NSCoding", "DrawerMode"]
 - ["PSo8NSCoding", "EditMode"]
-- !private ["PSo8NSCoding", "Float"]
+- ["PSo8NSCoding", "Float"]
 - !private ["PSo8NSCoding", "ImageController"]
 - !private ["PSo8NSCoding", "QuoteController"]
 - ["PSo8NSCoding", "String"]
+- !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIFont"]
 - !private ["PSo8NSCoding", "UIView"]
 - ["PSo8NSCoding", "ViewMode"]
@@ -1100,6 +1152,7 @@ depends-member:
 - !private ["PSo8NSCoding", "animateWithDuration"]
 - ["PSo8NSCoding", "animationInterval"]
 - !private ["PSo8NSCoding", "autoresizesSubviews"]
+- !private ["PSo8NSCoding", "backgroundColor"]
 - ["PSo8NSCoding", "backgroundImage"]
 - ["PSo8NSCoding", "bottomFontSizeSlider"]
 - ["PSo8NSCoding", "bottomFontSizeSliderFired"]
@@ -1109,7 +1162,9 @@ depends-member:
 - ["PSo8NSCoding", "buttonY"]
 - !private ["PSo8NSCoding", "center"]
 - !private ["PSo8NSCoding", "clipsToBounds"]
+- !private ["PSo8NSCoding", "colorWithAlphaComponent"]
 - !private ["PSo8NSCoding", "cornerRadius"]
+- ["PSo8NSCoding", "currentFontSize"]
 - !private ["PSo8NSCoding", "displayActivityController"]
 - ["PSo8NSCoding", "drawerMode"]
 - ["PSo8NSCoding", "drawerView"]
@@ -1117,6 +1172,7 @@ depends-member:
 - ["PSo8NSCoding", "editBarDisplay"]
 - ["PSo8NSCoding", "editBarHide"]
 - ["PSo8NSCoding", "editMode"]
+- ["PSo8NSCoding", "extraBufferSpace"]
 - ["PSo8NSCoding", "firstLoad"]
 - !private ["PSo8NSCoding", "font"]
 - ["PSo8NSCoding", "fontNames"]
@@ -1159,6 +1215,7 @@ depends-member:
 - ["PSo8NSCoding", "returnObjectForManipulation"]
 - ["PSo8NSCoding", "setUpView"]
 - ["PSo8NSCoding", "shareJunkButtonTapped"]
+- !private ["PSo8NSCoding", "textColor"]
 - ["PSo8NSCoding", "textFontButtonTapped"]
 - ["PSo8NSCoding", "textScaleButtonTapped"]
 - ["PSo8NSCoding", "toggleDrawer"]
@@ -1194,16 +1251,19 @@ depends-member:
 - ["PSo8NSCoding", "widthSlider"]
 - ["PSo8NSCoding", "widthSliderChanged"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "colorWithAlphaComponent"]
 - !private ["PSo9NSCopying", "familyNames"]
 - !private ["PSo9NSCopying", "fontName"]
 - !private ["PSo9NSCopying", "init"]
 - ["PSo26NSExtensionRequestHandling", "CGFloat"]
+- !private ["PSo26NSExtensionRequestHandling", "Double"]
 - ["PSo26NSExtensionRequestHandling", "DrawerMode"]
 - ["PSo26NSExtensionRequestHandling", "EditMode"]
-- !private ["PSo26NSExtensionRequestHandling", "Float"]
+- ["PSo26NSExtensionRequestHandling", "Float"]
 - !private ["PSo26NSExtensionRequestHandling", "ImageController"]
 - !private ["PSo26NSExtensionRequestHandling", "QuoteController"]
 - ["PSo26NSExtensionRequestHandling", "String"]
+- !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIFont"]
 - !private ["PSo26NSExtensionRequestHandling", "UIView"]
 - ["PSo26NSExtensionRequestHandling", "ViewMode"]
@@ -1215,6 +1275,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "bottomPickerView"]
 - ["PSo26NSExtensionRequestHandling", "bottomPickerViewYConstraint"]
 - ["PSo26NSExtensionRequestHandling", "buttonY"]
+- ["PSo26NSExtensionRequestHandling", "currentFontSize"]
 - !private ["PSo26NSExtensionRequestHandling", "displayActivityController"]
 - ["PSo26NSExtensionRequestHandling", "drawerMode"]
 - ["PSo26NSExtensionRequestHandling", "drawerView"]
@@ -1222,6 +1283,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "editBarDisplay"]
 - ["PSo26NSExtensionRequestHandling", "editBarHide"]
 - ["PSo26NSExtensionRequestHandling", "editMode"]
+- ["PSo26NSExtensionRequestHandling", "extraBufferSpace"]
 - ["PSo26NSExtensionRequestHandling", "firstLoad"]
 - ["PSo26NSExtensionRequestHandling", "fontNames"]
 - ["PSo26NSExtensionRequestHandling", "heightSlider"]
@@ -1291,6 +1353,7 @@ depends-member:
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "Dimension"]
+- !private ["CSo8NSObject", "Double"]
 - ["CSo8NSObject", "DrawerMode"]
 - ["CSo8NSObject", "EditMode"]
 - ["CSo8NSObject", "Float"]
@@ -1300,6 +1363,7 @@ depends-member:
 - ["CSo8NSObject", "Set"]
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "UIColor"]
 - ["CSo8NSObject", "UIEvent"]
 - !private ["CSo8NSObject", "UIFont"]
 - ["CSo8NSObject", "UIImageView"]
@@ -1317,6 +1381,7 @@ depends-member:
 - !private ["CSo8NSObject", "animateWithDuration"]
 - ["CSo8NSObject", "animationInterval"]
 - !private ["CSo8NSObject", "autoresizesSubviews"]
+- !private ["CSo8NSObject", "backgroundColor"]
 - ["CSo8NSObject", "backgroundImage"]
 - ["CSo8NSObject", "bottomFontSizeSlider"]
 - ["CSo8NSObject", "bottomFontSizeSliderFired"]
@@ -1326,8 +1391,10 @@ depends-member:
 - ["CSo8NSObject", "buttonY"]
 - !private ["CSo8NSObject", "center"]
 - !private ["CSo8NSObject", "clipsToBounds"]
+- !private ["CSo8NSObject", "colorWithAlphaComponent"]
 - !private ["CSo8NSObject", "constant"]
 - !private ["CSo8NSObject", "cornerRadius"]
+- ["CSo8NSObject", "currentFontSize"]
 - !private ["CSo8NSObject", "displayActivityController"]
 - ["CSo8NSObject", "drawerMode"]
 - ["CSo8NSObject", "drawerView"]
@@ -1335,6 +1402,7 @@ depends-member:
 - ["CSo8NSObject", "editBarDisplay"]
 - ["CSo8NSObject", "editBarHide"]
 - ["CSo8NSObject", "editMode"]
+- ["CSo8NSObject", "extraBufferSpace"]
 - !private ["CSo8NSObject", "familyNames"]
 - ["CSo8NSObject", "firstLoad"]
 - !private ["CSo8NSObject", "font"]
@@ -1380,6 +1448,7 @@ depends-member:
 - ["CSo8NSObject", "returnObjectForManipulation"]
 - ["CSo8NSObject", "setUpView"]
 - ["CSo8NSObject", "shareJunkButtonTapped"]
+- !private ["CSo8NSObject", "textColor"]
 - ["CSo8NSObject", "textFontButtonTapped"]
 - ["CSo8NSObject", "textScaleButtonTapped"]
 - ["CSo8NSObject", "toggleDrawer"]
@@ -1415,12 +1484,14 @@ depends-member:
 - ["CSo8NSObject", "widthSlider"]
 - ["CSo8NSObject", "widthSliderChanged"]
 - ["PSo16NSObjectProtocol", "CGFloat"]
+- !private ["PSo16NSObjectProtocol", "Double"]
 - ["PSo16NSObjectProtocol", "DrawerMode"]
 - ["PSo16NSObjectProtocol", "EditMode"]
-- !private ["PSo16NSObjectProtocol", "Float"]
+- ["PSo16NSObjectProtocol", "Float"]
 - !private ["PSo16NSObjectProtocol", "ImageController"]
 - !private ["PSo16NSObjectProtocol", "QuoteController"]
 - ["PSo16NSObjectProtocol", "String"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIFont"]
 - !private ["PSo16NSObjectProtocol", "UIView"]
 - ["PSo16NSObjectProtocol", "ViewMode"]
@@ -1430,6 +1501,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "animateWithDuration"]
 - ["PSo16NSObjectProtocol", "animationInterval"]
 - !private ["PSo16NSObjectProtocol", "autoresizesSubviews"]
+- !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - ["PSo16NSObjectProtocol", "backgroundImage"]
 - ["PSo16NSObjectProtocol", "bottomFontSizeSlider"]
 - ["PSo16NSObjectProtocol", "bottomFontSizeSliderFired"]
@@ -1439,8 +1511,10 @@ depends-member:
 - ["PSo16NSObjectProtocol", "buttonY"]
 - !private ["PSo16NSObjectProtocol", "center"]
 - !private ["PSo16NSObjectProtocol", "clipsToBounds"]
+- !private ["PSo16NSObjectProtocol", "colorWithAlphaComponent"]
 - !private ["PSo16NSObjectProtocol", "constant"]
 - !private ["PSo16NSObjectProtocol", "cornerRadius"]
+- ["PSo16NSObjectProtocol", "currentFontSize"]
 - !private ["PSo16NSObjectProtocol", "displayActivityController"]
 - ["PSo16NSObjectProtocol", "drawerMode"]
 - ["PSo16NSObjectProtocol", "drawerView"]
@@ -1448,6 +1522,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "editBarDisplay"]
 - ["PSo16NSObjectProtocol", "editBarHide"]
 - ["PSo16NSObjectProtocol", "editMode"]
+- ["PSo16NSObjectProtocol", "extraBufferSpace"]
 - !private ["PSo16NSObjectProtocol", "familyNames"]
 - ["PSo16NSObjectProtocol", "firstLoad"]
 - !private ["PSo16NSObjectProtocol", "font"]
@@ -1493,6 +1568,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "returnObjectForManipulation"]
 - ["PSo16NSObjectProtocol", "setUpView"]
 - ["PSo16NSObjectProtocol", "shareJunkButtonTapped"]
+- !private ["PSo16NSObjectProtocol", "textColor"]
 - ["PSo16NSObjectProtocol", "textFontButtonTapped"]
 - ["PSo16NSObjectProtocol", "textScaleButtonTapped"]
 - ["PSo16NSObjectProtocol", "toggleDrawer"]
@@ -1528,6 +1604,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "widthSlider"]
 - ["PSo16NSObjectProtocol", "widthSliderChanged"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "colorWithAlphaComponent"]
+- !private ["PSo14NSSecureCoding", "init"]
 - ["Ps21NilLiteralConvertible", "Some"]
 - ["Sq", "Some"]
 - !private ["C4Echo15QuoteController", "firstLoad"]
@@ -1574,6 +1652,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "alpha"]
 - !private ["PSo29UIAccessibilityIdentification", "animateWithDuration"]
 - !private ["PSo29UIAccessibilityIdentification", "autoresizesSubviews"]
+- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "bringSubviewToFront"]
 - !private ["PSo29UIAccessibilityIdentification", "center"]
 - !private ["PSo29UIAccessibilityIdentification", "clipsToBounds"]
@@ -1585,6 +1664,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "maximumValue"]
 - !private ["PSo29UIAccessibilityIdentification", "minimumValue"]
 - !private ["PSo29UIAccessibilityIdentification", "pointInside"]
+- !private ["PSo29UIAccessibilityIdentification", "textColor"]
 - !private ["PSo29UIAccessibilityIdentification", "transform"]
 - !private ["PSo29UIAccessibilityIdentification", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo29UIAccessibilityIdentification", "userInteractionEnabled"]
@@ -1593,6 +1673,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "alpha"]
 - !private ["PSo12UIAppearance", "animateWithDuration"]
 - !private ["PSo12UIAppearance", "autoresizesSubviews"]
+- !private ["PSo12UIAppearance", "backgroundColor"]
 - !private ["PSo12UIAppearance", "bringSubviewToFront"]
 - !private ["PSo12UIAppearance", "center"]
 - !private ["PSo12UIAppearance", "clipsToBounds"]
@@ -1604,17 +1685,20 @@ depends-member:
 - !private ["PSo12UIAppearance", "maximumValue"]
 - !private ["PSo12UIAppearance", "minimumValue"]
 - !private ["PSo12UIAppearance", "pointInside"]
+- !private ["PSo12UIAppearance", "textColor"]
 - !private ["PSo12UIAppearance", "transform"]
 - !private ["PSo12UIAppearance", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo12UIAppearance", "userInteractionEnabled"]
 - !private ["PSo12UIAppearance", "value"]
 - ["PSo21UIAppearanceContainer", "CGFloat"]
+- !private ["PSo21UIAppearanceContainer", "Double"]
 - ["PSo21UIAppearanceContainer", "DrawerMode"]
 - ["PSo21UIAppearanceContainer", "EditMode"]
-- !private ["PSo21UIAppearanceContainer", "Float"]
+- ["PSo21UIAppearanceContainer", "Float"]
 - !private ["PSo21UIAppearanceContainer", "ImageController"]
 - !private ["PSo21UIAppearanceContainer", "QuoteController"]
 - ["PSo21UIAppearanceContainer", "String"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
 - !private ["PSo21UIAppearanceContainer", "UIView"]
 - ["PSo21UIAppearanceContainer", "ViewMode"]
@@ -1624,6 +1708,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "animateWithDuration"]
 - ["PSo21UIAppearanceContainer", "animationInterval"]
 - !private ["PSo21UIAppearanceContainer", "autoresizesSubviews"]
+- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - ["PSo21UIAppearanceContainer", "backgroundImage"]
 - ["PSo21UIAppearanceContainer", "bottomFontSizeSlider"]
 - ["PSo21UIAppearanceContainer", "bottomFontSizeSliderFired"]
@@ -1633,6 +1718,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "buttonY"]
 - !private ["PSo21UIAppearanceContainer", "center"]
 - !private ["PSo21UIAppearanceContainer", "clipsToBounds"]
+- ["PSo21UIAppearanceContainer", "currentFontSize"]
 - !private ["PSo21UIAppearanceContainer", "displayActivityController"]
 - ["PSo21UIAppearanceContainer", "drawerMode"]
 - ["PSo21UIAppearanceContainer", "drawerView"]
@@ -1640,6 +1726,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "editBarDisplay"]
 - ["PSo21UIAppearanceContainer", "editBarHide"]
 - ["PSo21UIAppearanceContainer", "editMode"]
+- ["PSo21UIAppearanceContainer", "extraBufferSpace"]
 - ["PSo21UIAppearanceContainer", "firstLoad"]
 - !private ["PSo21UIAppearanceContainer", "font"]
 - ["PSo21UIAppearanceContainer", "fontNames"]
@@ -1682,6 +1769,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "returnObjectForManipulation"]
 - ["PSo21UIAppearanceContainer", "setUpView"]
 - ["PSo21UIAppearanceContainer", "shareJunkButtonTapped"]
+- !private ["PSo21UIAppearanceContainer", "textColor"]
 - ["PSo21UIAppearanceContainer", "textFontButtonTapped"]
 - ["PSo21UIAppearanceContainer", "textScaleButtonTapped"]
 - ["PSo21UIAppearanceContainer", "toggleDrawer"]
@@ -1717,13 +1805,17 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "widthSlider"]
 - ["PSo21UIAppearanceContainer", "widthSliderChanged"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo7UIColor", "colorWithAlphaComponent"]
+- !private ["CSo7UIColor", "init"]
 - ["PSo18UIContentContainer", "CGFloat"]
+- !private ["PSo18UIContentContainer", "Double"]
 - ["PSo18UIContentContainer", "DrawerMode"]
 - ["PSo18UIContentContainer", "EditMode"]
-- !private ["PSo18UIContentContainer", "Float"]
+- ["PSo18UIContentContainer", "Float"]
 - !private ["PSo18UIContentContainer", "ImageController"]
 - !private ["PSo18UIContentContainer", "QuoteController"]
 - ["PSo18UIContentContainer", "String"]
+- !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIFont"]
 - !private ["PSo18UIContentContainer", "UIView"]
 - ["PSo18UIContentContainer", "ViewMode"]
@@ -1735,6 +1827,7 @@ depends-member:
 - ["PSo18UIContentContainer", "bottomPickerView"]
 - ["PSo18UIContentContainer", "bottomPickerViewYConstraint"]
 - ["PSo18UIContentContainer", "buttonY"]
+- ["PSo18UIContentContainer", "currentFontSize"]
 - !private ["PSo18UIContentContainer", "displayActivityController"]
 - ["PSo18UIContentContainer", "drawerMode"]
 - ["PSo18UIContentContainer", "drawerView"]
@@ -1742,6 +1835,7 @@ depends-member:
 - ["PSo18UIContentContainer", "editBarDisplay"]
 - ["PSo18UIContentContainer", "editBarHide"]
 - ["PSo18UIContentContainer", "editMode"]
+- ["PSo18UIContentContainer", "extraBufferSpace"]
 - ["PSo18UIContentContainer", "firstLoad"]
 - ["PSo18UIContentContainer", "fontNames"]
 - ["PSo18UIContentContainer", "heightSlider"]
@@ -1814,6 +1908,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "alpha"]
 - !private ["PSo17UICoordinateSpace", "animateWithDuration"]
 - !private ["PSo17UICoordinateSpace", "autoresizesSubviews"]
+- !private ["PSo17UICoordinateSpace", "backgroundColor"]
 - !private ["PSo17UICoordinateSpace", "bringSubviewToFront"]
 - !private ["PSo17UICoordinateSpace", "center"]
 - !private ["PSo17UICoordinateSpace", "clipsToBounds"]
@@ -1825,6 +1920,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "maximumValue"]
 - !private ["PSo17UICoordinateSpace", "minimumValue"]
 - !private ["PSo17UICoordinateSpace", "pointInside"]
+- !private ["PSo17UICoordinateSpace", "textColor"]
 - !private ["PSo17UICoordinateSpace", "transform"]
 - !private ["PSo17UICoordinateSpace", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo17UICoordinateSpace", "userInteractionEnabled"]
@@ -1833,6 +1929,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "alpha"]
 - !private ["PSo13UIDynamicItem", "animateWithDuration"]
 - !private ["PSo13UIDynamicItem", "autoresizesSubviews"]
+- !private ["PSo13UIDynamicItem", "backgroundColor"]
 - !private ["PSo13UIDynamicItem", "bringSubviewToFront"]
 - !private ["PSo13UIDynamicItem", "center"]
 - !private ["PSo13UIDynamicItem", "clipsToBounds"]
@@ -1844,17 +1941,20 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "maximumValue"]
 - !private ["PSo13UIDynamicItem", "minimumValue"]
 - !private ["PSo13UIDynamicItem", "pointInside"]
+- !private ["PSo13UIDynamicItem", "textColor"]
 - !private ["PSo13UIDynamicItem", "transform"]
 - !private ["PSo13UIDynamicItem", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["PSo13UIDynamicItem", "userInteractionEnabled"]
 - !private ["PSo13UIDynamicItem", "value"]
 - ["PSo18UIFocusEnvironment", "CGFloat"]
+- !private ["PSo18UIFocusEnvironment", "Double"]
 - ["PSo18UIFocusEnvironment", "DrawerMode"]
 - ["PSo18UIFocusEnvironment", "EditMode"]
-- !private ["PSo18UIFocusEnvironment", "Float"]
+- ["PSo18UIFocusEnvironment", "Float"]
 - !private ["PSo18UIFocusEnvironment", "ImageController"]
 - !private ["PSo18UIFocusEnvironment", "QuoteController"]
 - ["PSo18UIFocusEnvironment", "String"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIFont"]
 - !private ["PSo18UIFocusEnvironment", "UIView"]
 - ["PSo18UIFocusEnvironment", "ViewMode"]
@@ -1864,6 +1964,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "animateWithDuration"]
 - ["PSo18UIFocusEnvironment", "animationInterval"]
 - !private ["PSo18UIFocusEnvironment", "autoresizesSubviews"]
+- !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - ["PSo18UIFocusEnvironment", "backgroundImage"]
 - ["PSo18UIFocusEnvironment", "bottomFontSizeSlider"]
 - ["PSo18UIFocusEnvironment", "bottomFontSizeSliderFired"]
@@ -1873,6 +1974,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "buttonY"]
 - !private ["PSo18UIFocusEnvironment", "center"]
 - !private ["PSo18UIFocusEnvironment", "clipsToBounds"]
+- ["PSo18UIFocusEnvironment", "currentFontSize"]
 - !private ["PSo18UIFocusEnvironment", "displayActivityController"]
 - ["PSo18UIFocusEnvironment", "drawerMode"]
 - ["PSo18UIFocusEnvironment", "drawerView"]
@@ -1880,6 +1982,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "editBarDisplay"]
 - ["PSo18UIFocusEnvironment", "editBarHide"]
 - ["PSo18UIFocusEnvironment", "editMode"]
+- ["PSo18UIFocusEnvironment", "extraBufferSpace"]
 - ["PSo18UIFocusEnvironment", "firstLoad"]
 - !private ["PSo18UIFocusEnvironment", "font"]
 - ["PSo18UIFocusEnvironment", "fontNames"]
@@ -1922,6 +2025,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "returnObjectForManipulation"]
 - ["PSo18UIFocusEnvironment", "setUpView"]
 - ["PSo18UIFocusEnvironment", "shareJunkButtonTapped"]
+- !private ["PSo18UIFocusEnvironment", "textColor"]
 - ["PSo18UIFocusEnvironment", "textFontButtonTapped"]
 - ["PSo18UIFocusEnvironment", "textScaleButtonTapped"]
 - ["PSo18UIFocusEnvironment", "toggleDrawer"]
@@ -1969,14 +2073,17 @@ depends-member:
 - !private ["CSo7UILabel", "font"]
 - !private ["CSo7UILabel", "frame"]
 - !private ["CSo7UILabel", "layer"]
+- !private ["CSo7UILabel", "textColor"]
 - !private ["CSo7UILabel", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo22UIPickerViewDataSource", "CGFloat"]
+- !private ["PSo22UIPickerViewDataSource", "Double"]
 - ["PSo22UIPickerViewDataSource", "DrawerMode"]
 - ["PSo22UIPickerViewDataSource", "EditMode"]
-- !private ["PSo22UIPickerViewDataSource", "Float"]
+- ["PSo22UIPickerViewDataSource", "Float"]
 - !private ["PSo22UIPickerViewDataSource", "ImageController"]
 - !private ["PSo22UIPickerViewDataSource", "QuoteController"]
 - ["PSo22UIPickerViewDataSource", "String"]
+- !private ["PSo22UIPickerViewDataSource", "UIColor"]
 - !private ["PSo22UIPickerViewDataSource", "UIFont"]
 - !private ["PSo22UIPickerViewDataSource", "UIView"]
 - ["PSo22UIPickerViewDataSource", "ViewMode"]
@@ -1986,6 +2093,7 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "bottomFontSizeSlider"]
 - !private ["PSo22UIPickerViewDataSource", "bottomPickerView"]
 - !private ["PSo22UIPickerViewDataSource", "bottomPickerViewYConstraint"]
+- !private ["PSo22UIPickerViewDataSource", "currentFontSize"]
 - !private ["PSo22UIPickerViewDataSource", "displayActivityController"]
 - !private ["PSo22UIPickerViewDataSource", "drawerMode"]
 - !private ["PSo22UIPickerViewDataSource", "drawerView"]
@@ -1993,6 +2101,7 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "editBarDisplay"]
 - !private ["PSo22UIPickerViewDataSource", "editBarHide"]
 - !private ["PSo22UIPickerViewDataSource", "editMode"]
+- !private ["PSo22UIPickerViewDataSource", "extraBufferSpace"]
 - !private ["PSo22UIPickerViewDataSource", "firstLoad"]
 - !private ["PSo22UIPickerViewDataSource", "fontNames"]
 - !private ["PSo22UIPickerViewDataSource", "heightSlider"]
@@ -2043,12 +2152,14 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "viewMode"]
 - !private ["PSo22UIPickerViewDataSource", "widthSlider"]
 - ["PSo20UIPickerViewDelegate", "CGFloat"]
+- !private ["PSo20UIPickerViewDelegate", "Double"]
 - ["PSo20UIPickerViewDelegate", "DrawerMode"]
 - ["PSo20UIPickerViewDelegate", "EditMode"]
-- !private ["PSo20UIPickerViewDelegate", "Float"]
+- ["PSo20UIPickerViewDelegate", "Float"]
 - !private ["PSo20UIPickerViewDelegate", "ImageController"]
 - !private ["PSo20UIPickerViewDelegate", "QuoteController"]
 - ["PSo20UIPickerViewDelegate", "String"]
+- !private ["PSo20UIPickerViewDelegate", "UIColor"]
 - !private ["PSo20UIPickerViewDelegate", "UIFont"]
 - !private ["PSo20UIPickerViewDelegate", "UIView"]
 - ["PSo20UIPickerViewDelegate", "ViewMode"]
@@ -2058,6 +2169,7 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "bottomFontSizeSlider"]
 - !private ["PSo20UIPickerViewDelegate", "bottomPickerView"]
 - !private ["PSo20UIPickerViewDelegate", "bottomPickerViewYConstraint"]
+- !private ["PSo20UIPickerViewDelegate", "currentFontSize"]
 - !private ["PSo20UIPickerViewDelegate", "displayActivityController"]
 - !private ["PSo20UIPickerViewDelegate", "drawerMode"]
 - !private ["PSo20UIPickerViewDelegate", "drawerView"]
@@ -2065,6 +2177,7 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "editBarDisplay"]
 - !private ["PSo20UIPickerViewDelegate", "editBarHide"]
 - !private ["PSo20UIPickerViewDelegate", "editMode"]
+- !private ["PSo20UIPickerViewDelegate", "extraBufferSpace"]
 - !private ["PSo20UIPickerViewDelegate", "firstLoad"]
 - !private ["PSo20UIPickerViewDelegate", "fontNames"]
 - !private ["PSo20UIPickerViewDelegate", "heightSlider"]
@@ -2117,6 +2230,7 @@ depends-member:
 - ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CGFloat"]
 - ["CSo11UIResponder", "Dimension"]
+- !private ["CSo11UIResponder", "Double"]
 - ["CSo11UIResponder", "DrawerMode"]
 - ["CSo11UIResponder", "EditMode"]
 - ["CSo11UIResponder", "Float"]
@@ -2126,6 +2240,7 @@ depends-member:
 - ["CSo11UIResponder", "Set"]
 - ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIButton"]
+- !private ["CSo11UIResponder", "UIColor"]
 - ["CSo11UIResponder", "UIEvent"]
 - !private ["CSo11UIResponder", "UIFont"]
 - ["CSo11UIResponder", "UIImageView"]
@@ -2143,6 +2258,7 @@ depends-member:
 - !private ["CSo11UIResponder", "animateWithDuration"]
 - ["CSo11UIResponder", "animationInterval"]
 - !private ["CSo11UIResponder", "autoresizesSubviews"]
+- !private ["CSo11UIResponder", "backgroundColor"]
 - ["CSo11UIResponder", "backgroundImage"]
 - ["CSo11UIResponder", "bottomFontSizeSlider"]
 - ["CSo11UIResponder", "bottomFontSizeSliderFired"]
@@ -2152,6 +2268,7 @@ depends-member:
 - ["CSo11UIResponder", "buttonY"]
 - !private ["CSo11UIResponder", "center"]
 - !private ["CSo11UIResponder", "clipsToBounds"]
+- ["CSo11UIResponder", "currentFontSize"]
 - !private ["CSo11UIResponder", "displayActivityController"]
 - ["CSo11UIResponder", "drawerMode"]
 - ["CSo11UIResponder", "drawerView"]
@@ -2159,6 +2276,7 @@ depends-member:
 - ["CSo11UIResponder", "editBarDisplay"]
 - ["CSo11UIResponder", "editBarHide"]
 - ["CSo11UIResponder", "editMode"]
+- ["CSo11UIResponder", "extraBufferSpace"]
 - ["CSo11UIResponder", "firstLoad"]
 - !private ["CSo11UIResponder", "font"]
 - ["CSo11UIResponder", "fontNames"]
@@ -2201,6 +2319,7 @@ depends-member:
 - ["CSo11UIResponder", "returnObjectForManipulation"]
 - ["CSo11UIResponder", "setUpView"]
 - ["CSo11UIResponder", "shareJunkButtonTapped"]
+- !private ["CSo11UIResponder", "textColor"]
 - ["CSo11UIResponder", "textFontButtonTapped"]
 - ["CSo11UIResponder", "textScaleButtonTapped"]
 - ["CSo11UIResponder", "toggleDrawer"]
@@ -2239,12 +2358,14 @@ depends-member:
 - !private ["CSo8UISlider", "minimumValue"]
 - !private ["CSo8UISlider", "value"]
 - ["PSo16UIStateRestoring", "CGFloat"]
+- !private ["PSo16UIStateRestoring", "Double"]
 - ["PSo16UIStateRestoring", "DrawerMode"]
 - ["PSo16UIStateRestoring", "EditMode"]
-- !private ["PSo16UIStateRestoring", "Float"]
+- ["PSo16UIStateRestoring", "Float"]
 - !private ["PSo16UIStateRestoring", "ImageController"]
 - !private ["PSo16UIStateRestoring", "QuoteController"]
 - ["PSo16UIStateRestoring", "String"]
+- !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIFont"]
 - !private ["PSo16UIStateRestoring", "UIView"]
 - ["PSo16UIStateRestoring", "ViewMode"]
@@ -2256,6 +2377,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "bottomPickerView"]
 - ["PSo16UIStateRestoring", "bottomPickerViewYConstraint"]
 - ["PSo16UIStateRestoring", "buttonY"]
+- ["PSo16UIStateRestoring", "currentFontSize"]
 - !private ["PSo16UIStateRestoring", "displayActivityController"]
 - ["PSo16UIStateRestoring", "drawerMode"]
 - ["PSo16UIStateRestoring", "drawerView"]
@@ -2263,6 +2385,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "editBarDisplay"]
 - ["PSo16UIStateRestoring", "editBarHide"]
 - ["PSo16UIStateRestoring", "editMode"]
+- ["PSo16UIStateRestoring", "extraBufferSpace"]
 - ["PSo16UIStateRestoring", "firstLoad"]
 - ["PSo16UIStateRestoring", "fontNames"]
 - ["PSo16UIStateRestoring", "heightSlider"]
@@ -2330,12 +2453,14 @@ depends-member:
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo7UITouch", "preciseLocationInView"]
 - ["PSo18UITraitEnvironment", "CGFloat"]
+- !private ["PSo18UITraitEnvironment", "Double"]
 - ["PSo18UITraitEnvironment", "DrawerMode"]
 - ["PSo18UITraitEnvironment", "EditMode"]
-- !private ["PSo18UITraitEnvironment", "Float"]
+- ["PSo18UITraitEnvironment", "Float"]
 - !private ["PSo18UITraitEnvironment", "ImageController"]
 - !private ["PSo18UITraitEnvironment", "QuoteController"]
 - ["PSo18UITraitEnvironment", "String"]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIFont"]
 - !private ["PSo18UITraitEnvironment", "UIView"]
 - ["PSo18UITraitEnvironment", "ViewMode"]
@@ -2345,6 +2470,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "animateWithDuration"]
 - ["PSo18UITraitEnvironment", "animationInterval"]
 - !private ["PSo18UITraitEnvironment", "autoresizesSubviews"]
+- !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - ["PSo18UITraitEnvironment", "backgroundImage"]
 - ["PSo18UITraitEnvironment", "bottomFontSizeSlider"]
 - ["PSo18UITraitEnvironment", "bottomFontSizeSliderFired"]
@@ -2354,6 +2480,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "buttonY"]
 - !private ["PSo18UITraitEnvironment", "center"]
 - !private ["PSo18UITraitEnvironment", "clipsToBounds"]
+- ["PSo18UITraitEnvironment", "currentFontSize"]
 - !private ["PSo18UITraitEnvironment", "displayActivityController"]
 - ["PSo18UITraitEnvironment", "drawerMode"]
 - ["PSo18UITraitEnvironment", "drawerView"]
@@ -2361,6 +2488,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "editBarDisplay"]
 - ["PSo18UITraitEnvironment", "editBarHide"]
 - ["PSo18UITraitEnvironment", "editMode"]
+- ["PSo18UITraitEnvironment", "extraBufferSpace"]
 - ["PSo18UITraitEnvironment", "firstLoad"]
 - !private ["PSo18UITraitEnvironment", "font"]
 - ["PSo18UITraitEnvironment", "fontNames"]
@@ -2403,6 +2531,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "returnObjectForManipulation"]
 - ["PSo18UITraitEnvironment", "setUpView"]
 - ["PSo18UITraitEnvironment", "shareJunkButtonTapped"]
+- !private ["PSo18UITraitEnvironment", "textColor"]
 - ["PSo18UITraitEnvironment", "textFontButtonTapped"]
 - ["PSo18UITraitEnvironment", "textScaleButtonTapped"]
 - ["PSo18UITraitEnvironment", "toggleDrawer"]
@@ -2442,6 +2571,7 @@ depends-member:
 - !private ["CSo6UIView", "alpha"]
 - !private ["CSo6UIView", "animateWithDuration"]
 - !private ["CSo6UIView", "autoresizesSubviews"]
+- !private ["CSo6UIView", "backgroundColor"]
 - !private ["CSo6UIView", "bringSubviewToFront"]
 - !private ["CSo6UIView", "center"]
 - !private ["CSo6UIView", "clipsToBounds"]
@@ -2453,6 +2583,7 @@ depends-member:
 - !private ["CSo6UIView", "maximumValue"]
 - !private ["CSo6UIView", "minimumValue"]
 - !private ["CSo6UIView", "pointInside"]
+- !private ["CSo6UIView", "textColor"]
 - !private ["CSo6UIView", "transform"]
 - !private ["CSo6UIView", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["CSo6UIView", "userInteractionEnabled"]
@@ -2460,6 +2591,7 @@ depends-member:
 - ["CSo16UIViewController", "Bool"]
 - ["CSo16UIViewController", "CGFloat"]
 - ["CSo16UIViewController", "Dimension"]
+- !private ["CSo16UIViewController", "Double"]
 - ["CSo16UIViewController", "DrawerMode"]
 - ["CSo16UIViewController", "EditMode"]
 - ["CSo16UIViewController", "Float"]
@@ -2469,6 +2601,7 @@ depends-member:
 - ["CSo16UIViewController", "Set"]
 - ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UIButton"]
+- !private ["CSo16UIViewController", "UIColor"]
 - ["CSo16UIViewController", "UIEvent"]
 - !private ["CSo16UIViewController", "UIFont"]
 - ["CSo16UIViewController", "UIImageView"]
@@ -2488,6 +2621,7 @@ depends-member:
 - ["CSo16UIViewController", "bottomPickerView"]
 - ["CSo16UIViewController", "bottomPickerViewYConstraint"]
 - ["CSo16UIViewController", "buttonY"]
+- ["CSo16UIViewController", "currentFontSize"]
 - !private ["CSo16UIViewController", "displayActivityController"]
 - ["CSo16UIViewController", "drawerMode"]
 - ["CSo16UIViewController", "drawerView"]
@@ -2495,6 +2629,7 @@ depends-member:
 - ["CSo16UIViewController", "editBarDisplay"]
 - ["CSo16UIViewController", "editBarHide"]
 - ["CSo16UIViewController", "editMode"]
+- ["CSo16UIViewController", "extraBufferSpace"]
 - ["CSo16UIViewController", "firstLoad"]
 - ["CSo16UIViewController", "fontNames"]
 - ["CSo16UIViewController", "heightSlider"]
@@ -2571,13 +2706,15 @@ depends-member:
 - ["Ps10_ArrayType", "init"]
 - !private ["Ps10_ArrayType", "sort"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps31_BuiltinFloatLiteralConvertible", "init"]
+- ["Ps31_BuiltinFloatLiteralConvertible", "init"]
 - ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
 - ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "hashValue"]
-- !private ["Ps33_BuiltinIntegerLiteralConvertible", "init"]
+- ["Ps33_BuiltinIntegerLiteralConvertible", "init"]
 - ["Ps19_CVarArgAlignedType", "init"]
 - ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps24_ColorLiteralConvertible", "colorWithAlphaComponent"]
+- !private ["Ps24_ColorLiteralConvertible", "init"]
 - ["Ps24_DestructorSafeContainer", "Generator"]
 - ["Ps24_DestructorSafeContainer", "Index"]
 - ["Ps24_DestructorSafeContainer", "SubSequence"]
@@ -2621,6 +2758,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "alpha"]
 - !private ["Ps12_Reflectable", "animateWithDuration"]
 - !private ["Ps12_Reflectable", "autoresizesSubviews"]
+- !private ["Ps12_Reflectable", "backgroundColor"]
 - !private ["Ps12_Reflectable", "bringSubviewToFront"]
 - !private ["Ps12_Reflectable", "center"]
 - !private ["Ps12_Reflectable", "clipsToBounds"]
@@ -2640,6 +2778,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "pointInside"]
 - !private ["Ps12_Reflectable", "size"]
 - !private ["Ps12_Reflectable", "sort"]
+- !private ["Ps12_Reflectable", "textColor"]
 - !private ["Ps12_Reflectable", "transform"]
 - !private ["Ps12_Reflectable", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["Ps12_Reflectable", "userInteractionEnabled"]
@@ -2674,11 +2813,12 @@ depends-nominal:
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
 - "O4Echo9Dimension"
+- !private "Sd"
 - "O4Echo10DrawerMode"
 - "C4Echo18EchoViewController"
 - "O4Echo8EditMode"
 - "Ps9Equatable"
-- !private "Sf"
+- "Sf"
 - "Ps23FloatLiteralConvertible"
 - "Ps17FloatingPointType"
 - "Ps16ForwardIndexType"
@@ -2702,6 +2842,7 @@ depends-nominal:
 - !private "CSo18NSLayoutConstraint"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
 - "Ps21NilLiteralConvertible"
 - "Sq"
 - !private "C4Echo15QuoteController"
@@ -2718,6 +2859,7 @@ depends-nominal:
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- !private "CSo7UIColor"
 - "PSo18UIContentContainer"
 - !private "CSo9UIControl"
 - !private "PSo17UICoordinateSpace"
@@ -2738,10 +2880,11 @@ depends-nominal:
 - "O4Echo8ViewMode"
 - "Ps10_ArrayType"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
-- !private "Ps31_BuiltinFloatLiteralConvertible"
+- "Ps31_BuiltinFloatLiteralConvertible"
 - "Ps33_BuiltinIntegerLiteralConvertible"
 - "Ps19_CVarArgAlignedType"
 - "Ps22_CVarArgPassedAsDouble"
+- !private "Ps24_ColorLiteralConvertible"
 - "Ps24_DestructorSafeContainer"
 - "Ps14_Incrementable"
 - "Ps22_IntegerArithmeticType"
@@ -2760,4 +2903,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-interface-hash: "c7d609f1ea7c65644d12fa5681624237"
+interface-hash: "a1b74b323ec516d50faaea4fc17ea563"

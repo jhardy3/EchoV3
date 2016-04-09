@@ -82,6 +82,8 @@ class EchoViewController: UIViewController {
         }
     }
     
+    var currentFontSize = 20.0
+    
     private let junkBarOffsetConstant = CGFloat(80)
     private let junkBarDisplay = CGFloat(-20)
     private let junkBarHide = CGFloat(-200)
@@ -91,6 +93,8 @@ class EchoViewController: UIViewController {
     
     private let editBarHide = CGFloat(-200)
     private let editBarDisplay = CGFloat(0)
+    
+    private let extraBufferSpace = Float(100)
     
     private let animationInterval = 0.5
     private let pickerViewAnimationDuration = 0.75
@@ -125,8 +129,8 @@ class EchoViewController: UIViewController {
         
         quoteLabel.translatesAutoresizingMaskIntoConstraints = true
         quoteView.translatesAutoresizingMaskIntoConstraints = true
-    
-        UIView.animateWithDuration(animationInterval) { 
+        
+        UIView.animateWithDuration(animationInterval) {
             self.view.layoutIfNeeded()
         }
     }
@@ -311,11 +315,18 @@ class EchoViewController: UIViewController {
     }
     
     @IBAction func topFontSizeSliderFired(sender: UISlider) {
-
+        let colorValue = sender.value / 255
+        bottomFontSizeSlider.value = sender.value
+        let color = UIColor(colorLiteralRed: colorValue, green: colorValue, blue: colorValue, alpha: 1.0)
+        quoteLabel.textColor = color
+        
     }
     
     @IBAction func bottomFontSizeSliderFired(sender: UISlider) {
-
+        let colorValue = sender.value / 255
+        topFontSizeSlider.value = sender.value
+        let color = UIColor(colorLiteralRed: colorValue, green: colorValue, blue: colorValue, alpha: 1.0)
+        quoteLabel.textColor = color
     }
     
     @IBAction func widthSliderChanged(sender: UISlider) {
@@ -337,15 +348,17 @@ class EchoViewController: UIViewController {
     @IBAction func junkSliderChanged(sender: UISlider) {
         
         switch editMode {
-    
+            
         case .BoxScale:
-            quoteView.alpha = CGFloat(sender.value)
+            quoteView.backgroundColor = quoteView.backgroundColor?.colorWithAlphaComponent(CGFloat(sender.value))
             topJunkSlider.value = sender.value
+            
         case .TextScale:
             let fontName = quoteLabel.font.fontName
             let fontSize = CGFloat(sender.value)
             quoteLabel.font = UIFont(name: fontName, size: fontSize)
             bottomFontSizeSlider.value = sender.value
+            currentFontSize = Double(sender.value)
             
             UIView.animateWithDuration(animationInterval) {
                 self.view.layoutIfNeeded()
@@ -360,7 +373,7 @@ class EchoViewController: UIViewController {
         switch editMode {
             
         case .BoxScale:
-            quoteView.alpha = CGFloat(sender.value)
+            quoteView.backgroundColor = quoteView.backgroundColor?.colorWithAlphaComponent(CGFloat(sender.value))
             junkSlider.value = sender.value
             
         case .TextScale:
@@ -368,6 +381,7 @@ class EchoViewController: UIViewController {
             let fontSize = CGFloat(sender.value)
             quoteLabel.font = UIFont(name: fontName, size: fontSize)
             topFontSizeSlider.value = sender.value
+            currentFontSize = Double(sender.value)
             
             UIView.animateWithDuration(animationInterval) {
                 self.view.layoutIfNeeded()
@@ -450,29 +464,31 @@ class EchoViewController: UIViewController {
     }
     
     func updateSlidersWithView(view: UIView) {
-        widthSlider.maximumValue = Float(self.view.frame.width) + 50
+        widthSlider.maximumValue = Float(self.view.frame.width) + extraBufferSpace
         widthSlider.value = Float(view.frame.width)
-        heightSlider.maximumValue = Float(self.view.frame.height) + 50
+        heightSlider.maximumValue = Float(self.view.frame.height) + extraBufferSpace
         heightSlider.value = Float(view.frame.height)
         
         widthSlider.minimumValue = 30
         heightSlider.minimumValue = 30
-
-        topWidthSlider.maximumValue = Float(self.view.frame.width) + 50
+        
+        topWidthSlider.maximumValue = Float(self.view.frame.width) + extraBufferSpace
         topWidthSlider.value = Float(view.frame.width)
-        topHeightSlider.maximumValue = Float(self.view.frame.height) + 50
-        topHeightSlider.value = Float(view.frame.height) 
-
+        topHeightSlider.maximumValue = Float(self.view.frame.height) + extraBufferSpace
+        topHeightSlider.value = Float(view.frame.height)
+        
         
         topWidthSlider.minimumValue = 30
         topHeightSlider.minimumValue = 30
+    
+        topFontSizeSlider.maximumValue = 255.0
+        topFontSizeSlider.minimumValue = 0.0
         
+        bottomFontSizeSlider.maximumValue = 255.0
+        topFontSizeSlider.minimumValue = 0.0
         
-        topFontSizeSlider.maximumValue = 60
-        topFontSizeSlider.minimumValue = 6
-        
-        bottomFontSizeSlider.maximumValue = 60
-        bottomFontSizeSlider.minimumValue = 6
+        topFontSizeSlider.value = 254.0
+        bottomFontSizeSlider.value = 254.0
         
         switch editMode {
         case .BoxScale:

@@ -35,7 +35,7 @@ extension EchoViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let font = fontNames[row]
         
-        let size = CGFloat(topFontSizeSlider.value)
+        let size = CGFloat(currentFontSize)
         quoteLabel.font = UIFont(name: font, size: size)
     }
 
