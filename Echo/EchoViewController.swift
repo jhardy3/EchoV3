@@ -451,17 +451,17 @@ class EchoViewController: UIViewController {
     
     func updateSlidersWithView(view: UIView) {
         widthSlider.maximumValue = Float(self.view.frame.width) + 50
-        widthSlider.value = Float(view.frame.width) + 50
+        widthSlider.value = Float(view.frame.width)
         heightSlider.maximumValue = Float(self.view.frame.height) + 50
-        heightSlider.value = Float(view.frame.height) + 50
+        heightSlider.value = Float(view.frame.height)
         
         widthSlider.minimumValue = 30
         heightSlider.minimumValue = 30
 
-        topWidthSlider.maximumValue = Float(self.view.frame.width)
+        topWidthSlider.maximumValue = Float(self.view.frame.width) + 50
         topWidthSlider.value = Float(view.frame.width)
-        topHeightSlider.maximumValue = Float(self.view.frame.height)
-        topHeightSlider.value = Float(view.frame.height)
+        topHeightSlider.maximumValue = Float(self.view.frame.height) + 50
+        topHeightSlider.value = Float(view.frame.height) 
 
         
         topWidthSlider.minimumValue = 30

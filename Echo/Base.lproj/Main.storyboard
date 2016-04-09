@@ -256,14 +256,12 @@
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="0.34812721631205673" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="topWidthSlider:" destination="Rec-CM-Jmt" eventType="valueChanged" id="kk6-v6-ghX"/>
-                                            <action selector="widthSliderChanged:" destination="Rec-CM-Jmt" eventType="valueChanged" id="nou-0G-Hcr"/>
                                         </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xcv-HJ-BAT">
                                         <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="0.34812721631205673" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <action selector="junkSliderChanged:" destination="Rec-CM-Jmt" eventType="valueChanged" id="LlU-vx-IR2"/>
                                             <action selector="topHeightSlider:" destination="Rec-CM-Jmt" eventType="valueChanged" id="gxi-bA-IkU"/>
                                         </connections>
                                     </slider>
@@ -271,7 +269,6 @@
                                         <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="0.34812721631205673" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <action selector="heightSliderChanged:" destination="Rec-CM-Jmt" eventType="valueChanged" id="caR-99-gxB"/>
                                             <action selector="topJunkSlider:" destination="Rec-CM-Jmt" eventType="valueChanged" id="9Hg-c5-kdE"/>
                                         </connections>
                                     </slider>
