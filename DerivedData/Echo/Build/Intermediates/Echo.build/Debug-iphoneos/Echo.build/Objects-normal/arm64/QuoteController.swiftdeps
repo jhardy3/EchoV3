@@ -12,24 +12,24 @@ provides-member:
 - ["C4Echo15QuoteController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
-- !private "quoteURL"
-- "kQuoteKey"
-- !private "NSJSONSerialization"
-- "kContentKey"
-- "Void"
-- "QuoteController"
-- !private "dispatch_get_main_queue"
-- "kQuotesKey"
-- !private "AnyObject"
-- !private "dispatch_async"
-- "StringLiteralType"
-- "kLengthKey"
-- !private "imageURL"
-- !private "ImageController"
-- !private "NetworkController"
 - "kAuthorKey"
+- !private "quoteURL"
+- "kLengthKey"
+- !private "NSJSONSerialization"
+- !private "NetworkController"
+- !private "AnyObject"
+- !private "ImageController"
+- !private "imageURL"
+- "kQuotesKey"
+- "StringLiteralType"
+- !private "dispatch_async"
+- "QuoteController"
+- "String"
 - "EchoViewController"
+- !private "dispatch_get_main_queue"
+- "Void"
+- "kQuoteKey"
+- "kContentKey"
 depends-member:
 - !private ["Ps9AnyObject", "ImageController"]
 - !private ["Ps9AnyObject", "JSONObjectWithData"]
@@ -339,6 +339,10 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["CSo11UIImageView", "image"]
 - !private ["CSo7UILabel", "text"]
+- !private ["PSo22UIPickerViewDataSource", "backgroundImage"]
+- !private ["PSo22UIPickerViewDataSource", "quoteLabel"]
+- !private ["PSo20UIPickerViewDelegate", "backgroundImage"]
+- !private ["PSo20UIPickerViewDelegate", "quoteLabel"]
 - !private ["CSo11UIResponder", "backgroundImage"]
 - !private ["CSo11UIResponder", "image"]
 - !private ["CSo11UIResponder", "quoteLabel"]
@@ -497,6 +501,8 @@ depends-nominal:
 - !private "PSo18UIFocusEnvironment"
 - !private "CSo11UIImageView"
 - !private "CSo7UILabel"
+- !private "PSo22UIPickerViewDataSource"
+- !private "PSo20UIPickerViewDelegate"
 - !private "CSo11UIResponder"
 - !private "PSo16UIStateRestoring"
 - !private "PSo18UITraitEnvironment"

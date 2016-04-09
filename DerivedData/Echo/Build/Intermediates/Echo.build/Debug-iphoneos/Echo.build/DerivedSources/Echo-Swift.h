@@ -120,6 +120,7 @@ SWIFT_CLASS("_TtC4Echo11AppDelegate")
 @class UIView;
 @class UITouch;
 @class UIEvent;
+@class UIPickerView;
 @class UIImageView;
 @class UILabel;
 @class NSLayoutConstraint;
@@ -128,6 +129,9 @@ SWIFT_CLASS("_TtC4Echo11AppDelegate")
 
 SWIFT_CLASS("_TtC4Echo18EchoViewController")
 @interface EchoViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified topPickerView;
+@property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified bottomPickerView;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified junkBarView;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified backgroundImage;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified quoteLabel;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified quoteView;
@@ -141,23 +145,34 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified topWidthSlider;
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified topHeightSlider;
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified topJunkSlider;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified junkbarYConstraint;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified bottomPickerViewYConstraint;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified topPickerViewYConstraint;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified quoteLabelHeight;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified quoteLabelWidth;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified quoteViewHeight;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified quoteViewWidth;
-@property (nonatomic) double animationInterval;
 @property (nonatomic, readonly) CGFloat quoteViewLocation;
 @property (nonatomic) BOOL isInButton;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull fontNames;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)setUpView;
 - (void)firstLoad;
 - (IBAction)previousPictureTapped:(UIButton * _Nonnull)sender;
+- (IBAction)viewScaleButtonTapped:(UIButton * _Nonnull)sender;
 - (IBAction)customTextButtonTapped:(UIButton * _Nonnull)sender;
+- (IBAction)textScaleButtonTapped:(UIButton * _Nonnull)sender;
 - (IBAction)shareButtonTapped:(UIButton * _Nonnull)sender;
+- (IBAction)textFontButtonTapped:(UIButton * _Nonnull)sender;
 - (IBAction)nextPictureButtonTapped:(UIButton * _Nonnull)sender;
+- (IBAction)shareJunkButtonTapped:(UIButton * _Nonnull)sender;
 - (void)moveDrawersBasedOnView;
 - (void)toggleDrawer;
+- (void)togglePickerView;
+- (void)hideJunkView;
+- (void)hideDrawers;
+- (void)hidePickerViews;
 - (IBAction)widthSliderChanged:(UISlider * _Nonnull)sender;
 - (IBAction)topWidthSlider:(UISlider * _Nonnull)sender;
 - (IBAction)heightSliderChanged:(UISlider * _Nonnull)sender;
@@ -176,6 +191,14 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 - (void)updateViewConstraints;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface EchoViewController (SWIFT_EXTENSION(Echo)) <UIPickerViewDelegate, UIPickerViewDataSource>
+- (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
+- (UIView * _Nonnull)pickerView:(UIPickerView * _Nonnull)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView * _Nullable)view;
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView;
+- (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 @end
 
 #pragma clang diagnostic pop
