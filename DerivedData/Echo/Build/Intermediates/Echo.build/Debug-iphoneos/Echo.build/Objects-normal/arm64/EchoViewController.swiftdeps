@@ -18,100 +18,101 @@ provides-member:
 - ["O4Echo9Dimension", ""]
 - ["C4Echo18EchoViewController", ""]
 provides-dynamic-lookup:
-- "drawerView"
-- "topJunkBarView"
-- "quoteLabelWidth"
-- "viewDidAppear"
-- "topJunkbarYConstraint"
-- "hideDrawers"
-- "heightSlider"
-- "fontNames"
-- "firstLoad"
-- "backgroundImage"
-- "quoteViewLocation"
-- "widthSlider"
-- "quoteViewHeight"
-- "toggleDrawer"
-- "toggleDrawer"
-- "quoteView"
-- "bottomPickerView"
-- "junkbarYConstraint"
-- "topPickerView"
-- "updateSlidersWithView"
-- "moveDrawersBasedOnView"
-- "isInButton"
-- "togglePickerView"
 - "widthSliderChanged"
-- "setUpView"
-- "toggleJunkView"
-- "hidePickerViews"
-- "junkSliderChanged"
-- "topDrawerYConstraint"
-- "topWidthSlider"
-- "topWidthSlider"
-- "bottomPickerViewYConstraint"
-- "textScaleButtonTapped"
-- "heightSliderChanged"
-- "shareJunkButtonTapped"
-- "quoteViewWidth"
-- "updateViewConstraints"
-- "returnObjectForManipulation"
-- "quoteLabel"
-- "topPickerViewYConstraint"
-- "hideJunkView"
-- "topHeightSlider"
-- "topHeightSlider"
-- "touchesBegan"
-- "topDrawerView"
-- "viewScaleButtonTapped"
 - "layoutViewBasedOnEditMode"
-- "updateViewForBoxScale"
-- "updateViewForTextFont"
-- "updateViewForTextScale"
-- "touchesMoved"
-- "topJunkSlider"
-- "topJunkSlider"
-- "drawerYConstraint"
-- "junkSlider"
-- "textFontButtonTapped"
-- "junkBarView"
-- "quoteLabelHeight"
 - "viewDidLoad"
+- "quoteViewHeight"
+- "returnObjectForManipulation"
+- "updateViewForTextScale"
+- "junkbarYConstraint"
+- "junkBarView"
+- "junkSlider"
+- "drawerYConstraint"
+- "updateSlidersWithView"
+- "heightSlider"
+- "quoteLabelWidth"
+- "drawerView"
+- "backgroundImage"
+- "topJunkbarYConstraint"
+- "textFontButtonTapped"
+- "bottomPickerView"
+- "topJunkBarView"
+- "updateViewForBoxScale"
+- "touchesBegan"
+- "hidePickerViews"
+- "firstLoad"
+- "toggleJunkView"
+- "topPickerView"
+- "quoteLabelHeight"
+- "hideJunkView"
+- "viewScaleButtonTapped"
+- "topJunkSlider"
+- "topJunkSlider"
+- "widthSlider"
+- "heightSliderChanged"
+- "quoteView"
+- "junkSliderChanged"
+- "updateViewForTextFont"
+- "topHeightSlider"
+- "topHeightSlider"
+- "topDrawerYConstraint"
+- "setUpView"
+- "topPickerViewYConstraint"
+- "isInButton"
+- "textScaleButtonTapped"
+- "quoteLabel"
+- "shareJunkButtonTapped"
+- "quoteViewLocation"
+- "moveDrawersBasedOnView"
+- "viewDidAppear"
+- "bottomPickerViewYConstraint"
+- "hideDrawers"
+- "quoteViewWidth"
+- "touchesMoved"
+- "updateViewConstraints"
+- "fontNames"
+- "topDrawerView"
+- "toggleDrawer"
+- "toggleDrawer"
+- "topWidthSlider"
+- "topWidthSlider"
+- "togglePickerView"
 depends-top-level:
-- "UIViewController"
-- "CGFloat"
-- !private "ImageController"
-- "DrawerMode"
-- !private ">"
-- "UIView"
-- "=="
-- "String"
-- !private "QuoteController"
-- "NSLayoutConstraint"
-- !private "&&"
-- "UITapGestureRecognizer"
-- "UITouch"
-- !private "/"
-- !private "+"
-- !private "<"
-- !private ">="
-- "Float"
-- "UISlider"
-- "Set"
 - "EchoViewController"
-- "UIPickerView"
-- "UIButton"
-- "EditMode"
-- !private "-"
-- "UIEvent"
-- !private "Void"
-- "Dimension"
-- !private "UIFont"
-- "UILabel"
-- "UIImageView"
-- "BooleanLiteralType"
-- "Bool"
 - "ViewMode"
+- !private ">"
+- "UITapGestureRecognizer"
+- "UIImageView"
+- !private "<"
+- !private "+"
+- !private "&&"
+- "UIView"
+- "DrawerMode"
+- "UIViewController"
+- "UILabel"
+- "Float"
+- !private "/"
+- "CGFloat"
+- "=="
+- !private "UIFont"
+- "BooleanLiteralType"
+- !private "Void"
+- !private "ImageUitilies"
+- "UIButton"
+- "UISlider"
+- "Bool"
+- "UIPickerView"
+- "NSLayoutConstraint"
+- !private "ImageController"
+- !private "-"
+- "String"
+- !private ">="
+- "UITouch"
+- !private "QuoteController"
+- "Dimension"
+- "Set"
+- "EditMode"
+- "UIEvent"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]
@@ -119,6 +120,7 @@ depends-member:
 - ["Ps9AnyObject", "EditMode"]
 - !private ["Ps9AnyObject", "Float"]
 - !private ["Ps9AnyObject", "ImageController"]
+- !private ["Ps9AnyObject", "ImageUitilies"]
 - !private ["Ps9AnyObject", "QuoteController"]
 - ["Ps9AnyObject", "String"]
 - !private ["Ps9AnyObject", "UIFont"]
@@ -138,6 +140,7 @@ depends-member:
 - !private ["Ps9AnyObject", "clipsToBounds"]
 - !private ["Ps9AnyObject", "constant"]
 - !private ["Ps9AnyObject", "cornerRadius"]
+- !private ["Ps9AnyObject", "createImageWithViewOnTop"]
 - ["Ps9AnyObject", "drawerMode"]
 - ["Ps9AnyObject", "drawerView"]
 - ["Ps9AnyObject", "drawerYConstraint"]
@@ -145,7 +148,6 @@ depends-member:
 - ["Ps9AnyObject", "editBarHide"]
 - ["Ps9AnyObject", "editMode"]
 - !private ["Ps9AnyObject", "familyNames"]
-- !private ["Ps9AnyObject", "fetchNextImage"]
 - !private ["Ps9AnyObject", "fetchPreviousImage"]
 - ["Ps9AnyObject", "firstLoad"]
 - ["Ps9AnyObject", "fontNames"]
@@ -268,6 +270,7 @@ depends-member:
 - ["Ps11CVarArgType", "EditMode"]
 - !private ["Ps11CVarArgType", "Float"]
 - !private ["Ps11CVarArgType", "ImageController"]
+- !private ["Ps11CVarArgType", "ImageUitilies"]
 - ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "QuoteController"]
 - ["Ps11CVarArgType", "String"]
@@ -288,6 +291,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "clipsToBounds"]
 - !private ["Ps11CVarArgType", "constant"]
 - !private ["Ps11CVarArgType", "cornerRadius"]
+- !private ["Ps11CVarArgType", "createImageWithViewOnTop"]
 - ["Ps11CVarArgType", "drawerMode"]
 - ["Ps11CVarArgType", "drawerView"]
 - ["Ps11CVarArgType", "drawerYConstraint"]
@@ -389,6 +393,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Float"]
 - ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "ImageController"]
+- !private ["Ps28CustomDebugStringConvertible", "ImageUitilies"]
 - ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "QuoteController"]
 - ["Ps28CustomDebugStringConvertible", "Some"]
@@ -412,6 +417,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "clipsToBounds"]
 - !private ["Ps28CustomDebugStringConvertible", "constant"]
 - !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
+- !private ["Ps28CustomDebugStringConvertible", "createImageWithViewOnTop"]
 - ["Ps28CustomDebugStringConvertible", "drawerMode"]
 - ["Ps28CustomDebugStringConvertible", "drawerView"]
 - ["Ps28CustomDebugStringConvertible", "drawerYConstraint"]
@@ -503,6 +509,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Float"]
 - ["Ps23CustomStringConvertible", "Generator"]
 - !private ["Ps23CustomStringConvertible", "ImageController"]
+- !private ["Ps23CustomStringConvertible", "ImageUitilies"]
 - ["Ps23CustomStringConvertible", "Index"]
 - ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "QuoteController"]
@@ -528,6 +535,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "clipsToBounds"]
 - !private ["Ps23CustomStringConvertible", "constant"]
 - !private ["Ps23CustomStringConvertible", "cornerRadius"]
+- !private ["Ps23CustomStringConvertible", "createImageWithViewOnTop"]
 - ["Ps23CustomStringConvertible", "drawerMode"]
 - ["Ps23CustomStringConvertible", "drawerView"]
 - ["Ps23CustomStringConvertible", "drawerYConstraint"]
@@ -628,6 +636,7 @@ depends-member:
 - ["C4Echo18EchoViewController", "EditMode"]
 - ["C4Echo18EchoViewController", "Float"]
 - !private ["C4Echo18EchoViewController", "ImageController"]
+- !private ["C4Echo18EchoViewController", "ImageUitilies"]
 - ["C4Echo18EchoViewController", "NSLayoutConstraint"]
 - !private ["C4Echo18EchoViewController", "QuoteController"]
 - ["C4Echo18EchoViewController", "Set"]
@@ -734,6 +743,7 @@ depends-member:
 - !private ["Ps9Equatable", "Generator"]
 - ["Ps9Equatable", "Height"]
 - !private ["Ps9Equatable", "ImageController"]
+- !private ["Ps9Equatable", "ImageUitilies"]
 - !private ["Ps9Equatable", "Index"]
 - ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "QuoteController"]
@@ -763,6 +773,7 @@ depends-member:
 - !private ["Ps9Equatable", "clipsToBounds"]
 - !private ["Ps9Equatable", "constant"]
 - !private ["Ps9Equatable", "cornerRadius"]
+- !private ["Ps9Equatable", "createImageWithViewOnTop"]
 - ["Ps9Equatable", "drawerMode"]
 - ["Ps9Equatable", "drawerView"]
 - ["Ps9Equatable", "drawerYConstraint"]
@@ -872,6 +883,7 @@ depends-member:
 - !private ["Ps8Hashable", "Generator"]
 - ["Ps8Hashable", "Height"]
 - !private ["Ps8Hashable", "ImageController"]
+- !private ["Ps8Hashable", "ImageUitilies"]
 - !private ["Ps8Hashable", "Index"]
 - ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "QuoteController"]
@@ -900,6 +912,7 @@ depends-member:
 - !private ["Ps8Hashable", "clipsToBounds"]
 - !private ["Ps8Hashable", "constant"]
 - !private ["Ps8Hashable", "cornerRadius"]
+- !private ["Ps8Hashable", "createImageWithViewOnTop"]
 - ["Ps8Hashable", "drawerMode"]
 - ["Ps8Hashable", "drawerView"]
 - ["Ps8Hashable", "drawerYConstraint"]
@@ -984,9 +997,9 @@ depends-member:
 - ["Ps8Hashable", "widthSlider"]
 - ["Ps8Hashable", "widthSliderChanged"]
 - ["Ps8Hashable", ""]
-- !private ["C4Echo15ImageController", "fetchNextImage"]
 - !private ["C4Echo15ImageController", "fetchPreviousImage"]
 - !private ["C4Echo15ImageController", "sharedInstance"]
+- !private ["C4Echo13ImageUitilies", "createImageWithViewOnTop"]
 - ["SQ", "Some"]
 - ["Ps9Indexable", "Generator"]
 - ["Ps9Indexable", "Index"]
@@ -1035,6 +1048,7 @@ depends-member:
 - ["PSo8NSCoding", "EditMode"]
 - !private ["PSo8NSCoding", "Float"]
 - !private ["PSo8NSCoding", "ImageController"]
+- !private ["PSo8NSCoding", "ImageUitilies"]
 - !private ["PSo8NSCoding", "QuoteController"]
 - ["PSo8NSCoding", "String"]
 - !private ["PSo8NSCoding", "UIFont"]
@@ -1139,6 +1153,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "EditMode"]
 - !private ["PSo26NSExtensionRequestHandling", "Float"]
 - !private ["PSo26NSExtensionRequestHandling", "ImageController"]
+- !private ["PSo26NSExtensionRequestHandling", "ImageUitilies"]
 - !private ["PSo26NSExtensionRequestHandling", "QuoteController"]
 - ["PSo26NSExtensionRequestHandling", "String"]
 - !private ["PSo26NSExtensionRequestHandling", "UIFont"]
@@ -1227,6 +1242,7 @@ depends-member:
 - ["CSo8NSObject", "EditMode"]
 - ["CSo8NSObject", "Float"]
 - !private ["CSo8NSObject", "ImageController"]
+- !private ["CSo8NSObject", "ImageUitilies"]
 - ["CSo8NSObject", "NSLayoutConstraint"]
 - !private ["CSo8NSObject", "QuoteController"]
 - ["CSo8NSObject", "Set"]
@@ -1257,6 +1273,7 @@ depends-member:
 - !private ["CSo8NSObject", "clipsToBounds"]
 - !private ["CSo8NSObject", "constant"]
 - !private ["CSo8NSObject", "cornerRadius"]
+- !private ["CSo8NSObject", "createImageWithViewOnTop"]
 - ["CSo8NSObject", "drawerMode"]
 - ["CSo8NSObject", "drawerView"]
 - ["CSo8NSObject", "drawerYConstraint"]
@@ -1343,6 +1360,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "EditMode"]
 - !private ["PSo16NSObjectProtocol", "Float"]
 - !private ["PSo16NSObjectProtocol", "ImageController"]
+- !private ["PSo16NSObjectProtocol", "ImageUitilies"]
 - !private ["PSo16NSObjectProtocol", "QuoteController"]
 - ["PSo16NSObjectProtocol", "String"]
 - !private ["PSo16NSObjectProtocol", "UIFont"]
@@ -1362,6 +1380,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "clipsToBounds"]
 - !private ["PSo16NSObjectProtocol", "constant"]
 - !private ["PSo16NSObjectProtocol", "cornerRadius"]
+- !private ["PSo16NSObjectProtocol", "createImageWithViewOnTop"]
 - ["PSo16NSObjectProtocol", "drawerMode"]
 - ["PSo16NSObjectProtocol", "drawerView"]
 - ["PSo16NSObjectProtocol", "drawerYConstraint"]
@@ -1525,6 +1544,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "EditMode"]
 - !private ["PSo21UIAppearanceContainer", "Float"]
 - !private ["PSo21UIAppearanceContainer", "ImageController"]
+- !private ["PSo21UIAppearanceContainer", "ImageUitilies"]
 - !private ["PSo21UIAppearanceContainer", "QuoteController"]
 - ["PSo21UIAppearanceContainer", "String"]
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
@@ -1627,6 +1647,7 @@ depends-member:
 - ["PSo18UIContentContainer", "EditMode"]
 - !private ["PSo18UIContentContainer", "Float"]
 - !private ["PSo18UIContentContainer", "ImageController"]
+- !private ["PSo18UIContentContainer", "ImageUitilies"]
 - !private ["PSo18UIContentContainer", "QuoteController"]
 - ["PSo18UIContentContainer", "String"]
 - !private ["PSo18UIContentContainer", "UIFont"]
@@ -1749,6 +1770,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "EditMode"]
 - !private ["PSo18UIFocusEnvironment", "Float"]
 - !private ["PSo18UIFocusEnvironment", "ImageController"]
+- !private ["PSo18UIFocusEnvironment", "ImageUitilies"]
 - !private ["PSo18UIFocusEnvironment", "QuoteController"]
 - ["PSo18UIFocusEnvironment", "String"]
 - !private ["PSo18UIFocusEnvironment", "UIFont"]
@@ -1861,6 +1883,7 @@ depends-member:
 - ["PSo22UIPickerViewDataSource", "EditMode"]
 - !private ["PSo22UIPickerViewDataSource", "Float"]
 - !private ["PSo22UIPickerViewDataSource", "ImageController"]
+- !private ["PSo22UIPickerViewDataSource", "ImageUitilies"]
 - !private ["PSo22UIPickerViewDataSource", "QuoteController"]
 - ["PSo22UIPickerViewDataSource", "String"]
 - !private ["PSo22UIPickerViewDataSource", "UIFont"]
@@ -1924,6 +1947,7 @@ depends-member:
 - ["PSo20UIPickerViewDelegate", "EditMode"]
 - !private ["PSo20UIPickerViewDelegate", "Float"]
 - !private ["PSo20UIPickerViewDelegate", "ImageController"]
+- !private ["PSo20UIPickerViewDelegate", "ImageUitilies"]
 - !private ["PSo20UIPickerViewDelegate", "QuoteController"]
 - ["PSo20UIPickerViewDelegate", "String"]
 - !private ["PSo20UIPickerViewDelegate", "UIFont"]
@@ -1989,6 +2013,7 @@ depends-member:
 - ["CSo11UIResponder", "EditMode"]
 - ["CSo11UIResponder", "Float"]
 - !private ["CSo11UIResponder", "ImageController"]
+- !private ["CSo11UIResponder", "ImageUitilies"]
 - ["CSo11UIResponder", "NSLayoutConstraint"]
 - !private ["CSo11UIResponder", "QuoteController"]
 - ["CSo11UIResponder", "Set"]
@@ -2104,6 +2129,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "EditMode"]
 - !private ["PSo16UIStateRestoring", "Float"]
 - !private ["PSo16UIStateRestoring", "ImageController"]
+- !private ["PSo16UIStateRestoring", "ImageUitilies"]
 - !private ["PSo16UIStateRestoring", "QuoteController"]
 - ["PSo16UIStateRestoring", "String"]
 - !private ["PSo16UIStateRestoring", "UIFont"]
@@ -2190,6 +2216,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "EditMode"]
 - !private ["PSo18UITraitEnvironment", "Float"]
 - !private ["PSo18UITraitEnvironment", "ImageController"]
+- !private ["PSo18UITraitEnvironment", "ImageUitilies"]
 - !private ["PSo18UITraitEnvironment", "QuoteController"]
 - ["PSo18UITraitEnvironment", "String"]
 - !private ["PSo18UITraitEnvironment", "UIFont"]
@@ -2311,6 +2338,7 @@ depends-member:
 - ["CSo16UIViewController", "EditMode"]
 - ["CSo16UIViewController", "Float"]
 - !private ["CSo16UIViewController", "ImageController"]
+- !private ["CSo16UIViewController", "ImageUitilies"]
 - ["CSo16UIViewController", "NSLayoutConstraint"]
 - !private ["CSo16UIViewController", "QuoteController"]
 - ["CSo16UIViewController", "Set"]
@@ -2525,6 +2553,7 @@ depends-nominal:
 - "Ps13GeneratorType"
 - "Ps8Hashable"
 - !private "C4Echo15ImageController"
+- !private "C4Echo13ImageUitilies"
 - "SQ"
 - "Ps9Indexable"
 - "Vs17IndexingGenerator"

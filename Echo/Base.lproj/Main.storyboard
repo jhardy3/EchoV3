@@ -45,18 +45,21 @@
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="iXN-u1-DBS">
                                         <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="0.34812721631205673" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="heightSliderChanged:" destination="Rec-CM-Jmt" eventType="valueChanged" id="Vzv-dm-vjV"/>
                                         </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="sty-1Y-4xR">
                                         <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="0.34812721631205673" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="widthSliderChanged:" destination="Rec-CM-Jmt" eventType="valueChanged" id="OxU-tu-QZg"/>
                                         </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cF5-0h-8Kx">
                                         <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="0.34812721631205673" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="junkSliderChanged:" destination="Rec-CM-Jmt" eventType="valueChanged" id="5QA-cr-ish"/>
                                         </connections>
@@ -238,6 +241,7 @@
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="khc-Um-rfD">
                                         <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="0.34812721631205673" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="topWidthSlider:" destination="Rec-CM-Jmt" eventType="valueChanged" id="kk6-v6-ghX"/>
                                             <action selector="widthSliderChanged:" destination="Rec-CM-Jmt" eventType="valueChanged" id="nou-0G-Hcr"/>
@@ -245,6 +249,7 @@
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xcv-HJ-BAT">
                                         <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="0.34812721631205673" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="junkSliderChanged:" destination="Rec-CM-Jmt" eventType="valueChanged" id="LlU-vx-IR2"/>
                                             <action selector="topHeightSlider:" destination="Rec-CM-Jmt" eventType="valueChanged" id="gxi-bA-IkU"/>
@@ -252,6 +257,7 @@
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="b6M-l5-HBz">
                                         <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="0.34812721631205673" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="heightSliderChanged:" destination="Rec-CM-Jmt" eventType="valueChanged" id="caR-99-gxB"/>
                                             <action selector="topJunkSlider:" destination="Rec-CM-Jmt" eventType="valueChanged" id="9Hg-c5-kdE"/>
@@ -364,6 +370,7 @@
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="DQu-zS-qMW">
                                         <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="0.34812721631205673" colorSpace="calibratedRGB"/>
                                     </slider>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G85-pf-JdE">
                                         <rect key="frame" x="0.0" y="-216" width="320" height="216"/>
@@ -432,6 +439,7 @@
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Cf8-WH-mL0">
                                         <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="0.34812721631205673" colorSpace="calibratedRGB"/>
                                     </slider>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2EU-dv-Wr5">
                                         <rect key="frame" x="0.0" y="-216" width="320" height="216"/>
@@ -501,32 +509,40 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KfE-12-5Rr" userLabel="Junk Bar View">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqp-jI-BNj">
-                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="viewScaleButtonTapped:" destination="Rec-CM-Jmt" eventType="touchUpInside" id="83K-Sy-QHr"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewG-ci-BhZ">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Text">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="textScaleButtonTapped:" destination="Rec-CM-Jmt" eventType="touchUpInside" id="JX7-7m-h2H"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtl-p7-uKy">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Font">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="textFontButtonTapped:" destination="Rec-CM-Jmt" eventType="touchUpInside" id="9w9-5G-I9s"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W25-sl-7Yo">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Share">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="shareJunkButtonTapped:" destination="Rec-CM-Jmt" eventType="touchUpInside" id="UEL-83-Q2u"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqp-jI-BNj">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" title="Square">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="viewScaleButtonTapped:" destination="Rec-CM-Jmt" eventType="touchUpInside" id="83K-Sy-QHr"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -563,10 +579,10 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="subviews">
-                                        <exclude reference="jqp-jI-BNj"/>
                                         <exclude reference="ewG-ci-BhZ"/>
                                         <exclude reference="qtl-p7-uKy"/>
                                         <exclude reference="W25-sl-7Yo"/>
+                                        <exclude reference="jqp-jI-BNj"/>
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="bCT-TN-jww"/>
@@ -591,10 +607,10 @@
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="subviews">
-                                        <include reference="jqp-jI-BNj"/>
                                         <include reference="ewG-ci-BhZ"/>
                                         <include reference="qtl-p7-uKy"/>
                                         <include reference="W25-sl-7Yo"/>
+                                        <include reference="jqp-jI-BNj"/>
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="bCT-TN-jww"/>
@@ -623,28 +639,36 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfP-05-cMl">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Square">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="viewScaleButtonTapped:" destination="Rec-CM-Jmt" eventType="touchUpInside" id="Odz-nw-I8l"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1h-2h-4oP">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Text">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="textScaleButtonTapped:" destination="Rec-CM-Jmt" eventType="touchUpInside" id="6fx-XA-Ahk"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8j-Dx-8Ot">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Font">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="textFontButtonTapped:" destination="Rec-CM-Jmt" eventType="touchUpInside" id="8Jm-0U-nR3"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuN-mL-BhY">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Share">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="shareJunkButtonTapped:" destination="Rec-CM-Jmt" eventType="touchUpInside" id="cdn-N8-WuD"/>
                                         </connections>

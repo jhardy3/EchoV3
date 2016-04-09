@@ -163,8 +163,11 @@ class EchoViewController: UIViewController {
     }
     
     @IBAction func shareJunkButtonTapped(sender: UIButton) {
-        guard let image = ImageController.sharedInstance.fetchNextImage() else { return }
-        backgroundImage.image = image
+        
+        ImageUitilies.createImageWithViewOnTop(backgroundImage: backgroundImage, view: quoteView)
+        
+//        guard let image = ImageController.sharedInstance.fetchNextImage() else { return }
+//        backgroundImage.image = image
     }
     
     // MARK: - Drawer View Functions

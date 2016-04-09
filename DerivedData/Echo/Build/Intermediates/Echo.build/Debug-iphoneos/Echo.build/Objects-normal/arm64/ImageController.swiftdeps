@@ -7,19 +7,19 @@ provides-member:
 - ["C4Echo15ImageController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "=="
-- !private "<"
-- !private "NetworkController"
-- !private "-"
-- "ImageController"
-- !private "imageURL"
-- "UIImage"
-- !private "..."
-- !private "dispatch_async"
 - !private "+"
-- !private "dispatch_get_main_queue"
-- "Int"
 - !private "Void"
+- "UIImage"
+- "ImageController"
+- !private "dispatch_get_main_queue"
+- !private "dispatch_async"
+- !private "-"
+- !private "imageURL"
+- "Int"
+- !private "NetworkController"
+- !private "<"
+- !private "..."
+- !private "=="
 depends-member:
 - ["Ps9AnyObject", "ImageController"]
 - !private ["Ps9AnyObject", "NetworkController"]
