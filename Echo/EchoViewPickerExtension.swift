@@ -22,7 +22,7 @@ extension EchoViewController: UIPickerViewDelegate, UIPickerViewDataSource {
             let view = UILabel()
             view.text = fontNames[row]
             view.textColor = UIColor.whiteColor()
-            view.font = UIFont(name: fontNames[row], size: 30)
+            view.font = UIFont(name: fontNames[row], size: 20)
             view.textAlignment = .Center
             return view
         }

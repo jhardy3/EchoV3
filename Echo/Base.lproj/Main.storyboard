@@ -384,7 +384,7 @@
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact">
                                             <mask key="constraints">
-                                                <include reference="8pe-Iy-lAi"/>
+                                                <exclude reference="8pe-Iy-lAi"/>
                                             </mask>
                                         </variation>
                                         <connections>
@@ -453,7 +453,7 @@
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact">
                                             <mask key="constraints">
-                                                <include reference="qbF-81-QCb"/>
+                                                <exclude reference="qbF-81-QCb"/>
                                             </mask>
                                         </variation>
                                         <connections>
@@ -768,8 +768,10 @@
                             <constraint firstAttribute="trailing" secondItem="xf7-I3-CqP" secondAttribute="trailing" id="2Dv-Xj-gb5"/>
                             <constraint firstItem="KfE-12-5Rr" firstAttribute="centerX" secondItem="W3w-2M-KEE" secondAttribute="centerX" id="3xn-oO-3gr"/>
                             <constraint firstItem="xf7-I3-CqP" firstAttribute="centerX" secondItem="W3w-2M-KEE" secondAttribute="centerX" id="6tX-k7-Ygj"/>
+                            <constraint firstItem="G85-pf-JdE" firstAttribute="height" secondItem="W3w-2M-KEE" secondAttribute="height" multiplier="0.05" id="8cN-9C-fmc"/>
                             <constraint firstItem="xf7-I3-CqP" firstAttribute="width" secondItem="W3w-2M-KEE" secondAttribute="width" id="AAv-ET-bnq"/>
                             <constraint firstItem="xf7-I3-CqP" firstAttribute="leading" secondItem="W3w-2M-KEE" secondAttribute="leading" id="BbU-QR-ZUa"/>
+                            <constraint firstItem="2EU-dv-Wr5" firstAttribute="height" secondItem="W3w-2M-KEE" secondAttribute="height" multiplier="0.15" id="C7E-Xt-jmx"/>
                             <constraint firstItem="3gD-It-Yp7" firstAttribute="centerY" secondItem="W3w-2M-KEE" secondAttribute="centerY" id="DMp-ji-nyh"/>
                             <constraint firstItem="3gD-It-Yp7" firstAttribute="centerX" secondItem="W3w-2M-KEE" secondAttribute="centerX" id="KI1-Bw-H4g"/>
                             <constraint firstItem="qMx-lA-7iw" firstAttribute="centerX" secondItem="W3w-2M-KEE" secondAttribute="centerX" id="KXR-kL-cMj"/>
@@ -801,6 +803,7 @@
                                 <exclude reference="cSu-VE-q2P"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="8cN-9C-fmc"/>
                                 <exclude reference="Mhb-Vn-rpl"/>
                                 <exclude reference="S6O-ye-MND"/>
                                 <exclude reference="w5P-Fo-Won"/>
@@ -819,6 +822,7 @@
                                 <exclude reference="KI1-Bw-H4g"/>
                                 <exclude reference="3xn-oO-3gr"/>
                                 <exclude reference="xLd-Si-45V"/>
+                                <exclude reference="C7E-Xt-jmx"/>
                                 <exclude reference="KXR-kL-cMj"/>
                                 <exclude reference="Ug4-MW-dIH"/>
                                 <exclude reference="cJa-JV-LY8"/>
@@ -838,6 +842,7 @@
                                 <include reference="cSu-VE-q2P"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="8cN-9C-fmc"/>
                                 <include reference="Mhb-Vn-rpl"/>
                                 <include reference="S6O-ye-MND"/>
                                 <include reference="w5P-Fo-Won"/>
@@ -856,6 +861,7 @@
                                 <include reference="KI1-Bw-H4g"/>
                                 <include reference="3xn-oO-3gr"/>
                                 <include reference="xLd-Si-45V"/>
+                                <include reference="C7E-Xt-jmx"/>
                                 <include reference="KXR-kL-cMj"/>
                                 <include reference="Ug4-MW-dIH"/>
                                 <include reference="cJa-JV-LY8"/>
