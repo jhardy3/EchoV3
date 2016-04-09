@@ -54,11 +54,11 @@ class EchoViewController: UIViewController {
     @IBOutlet weak var topHeightSlider: UISlider!
     @IBOutlet weak var topJunkSlider: UISlider!
     
-    
+    @IBOutlet weak var topFontSizeSlider: UISlider!
+    @IBOutlet weak var bottomFontSizeSlider: UISlider!
     
     @IBOutlet weak var topJunkbarYConstraint: NSLayoutConstraint!
     @IBOutlet weak var junkbarYConstraint: NSLayoutConstraint!
-    
     
     @IBOutlet weak var bottomPickerViewYConstraint: NSLayoutConstraint!
     @IBOutlet weak var topPickerViewYConstraint: NSLayoutConstraint!
@@ -124,6 +124,11 @@ class EchoViewController: UIViewController {
         super.viewDidAppear(animated)
         
         quoteLabel.translatesAutoresizingMaskIntoConstraints = true
+        quoteView.translatesAutoresizingMaskIntoConstraints = true
+    
+        UIView.animateWithDuration(animationInterval) { 
+            self.view.layoutIfNeeded()
+        }
     }
     
     func setUpView() {
@@ -137,9 +142,12 @@ class EchoViewController: UIViewController {
         hidePickerViews()
         
         
-        fontNames = UIFont.familyNames().sort { $0 > $1 }
+        fontNames = UIFont.familyNames().sort { $0 < $1 }
         
         firstLoad()
+        
+        topFontSizeSlider.value = 20
+        bottomFontSizeSlider.value = 20
     }
     
     func firstLoad() {
@@ -163,11 +171,7 @@ class EchoViewController: UIViewController {
     }
     
     @IBAction func shareJunkButtonTapped(sender: UIButton) {
-        
-        ImageUitilies.createImageWithViewOnTop(backgroundImage: backgroundImage, view: quoteView)
-        
-//        guard let image = ImageController.sharedInstance.fetchNextImage() else { return }
-//        backgroundImage.image = image
+        displayActivityController()
     }
     
     // MARK: - Drawer View Functions
@@ -198,9 +202,11 @@ class EchoViewController: UIViewController {
         case .Top:
             yConstraint.constant = editBarHide
             yTopConstraint.constant = editBarDisplay
+            view.bringSubviewToFront(topDrawerView)
         case .Bottom:
             yTopConstraint.constant = editBarHide
             yConstraint.constant = editBarDisplay
+            view.bringSubviewToFront(drawerView)
         }
         
         UIView.animateWithDuration(animationInterval) { () -> Void in
@@ -218,10 +224,12 @@ class EchoViewController: UIViewController {
         case .Top:
             yTopConstraint.constant = pickerViewDisplay
             yBottomConstraint.constant = pickerViewHide
+            view.bringSubviewToFront(topPickerView)
             
         case .Bottom:
             yTopConstraint.constant = pickerViewHide
             yBottomConstraint.constant = pickerViewDisplay
+            view.bringSubviewToFront(bottomPickerView)
         }
         
         UIView.animateWithDuration(pickerViewAnimationDuration) {
@@ -238,12 +246,14 @@ class EchoViewController: UIViewController {
         case .Top:
             topYConstraint.constant = junkBarHide
             bottomYConstraint.constant = junkBarDisplay
+            view.bringSubviewToFront(junkBarView)
         case .Bottom:
             bottomYConstraint.constant = junkBarHide
             topYConstraint.constant = junkBarDisplay
+            view.bringSubviewToFront(topJunkBarView)
         }
         
-        UIView.animateWithDuration(animationInterval) { 
+        UIView.animateWithDuration(animationInterval) {
             self.view.layoutIfNeeded()
         }
     }
@@ -294,6 +304,28 @@ class EchoViewController: UIViewController {
         quoteLabel.center.y = quoteView.frame.height / 2
         
         updateViewConstraints()
+        
+        UIView.animateWithDuration(animationInterval) {
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    @IBAction func topFontSizeSliderFired(sender: UISlider) {
+        let fontName = quoteLabel.font.fontName
+        let fontSize = CGFloat(sender.value)
+        quoteLabel.font = UIFont(name: fontName, size: fontSize)
+        bottomFontSizeSlider.value = sender.value
+        
+        UIView.animateWithDuration(animationInterval) {
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    @IBAction func bottomFontSizeSliderFired(sender: UISlider) {
+        let fontName = quoteLabel.font.fontName
+        let fontSize = CGFloat(sender.value)
+        quoteLabel.font = UIFont(name: fontName, size: fontSize)
+        topFontSizeSlider.value = sender.value
         
         UIView.animateWithDuration(animationInterval) {
             self.view.layoutIfNeeded()
@@ -397,10 +429,10 @@ class EchoViewController: UIViewController {
     }
     
     func updateSlidersWithView(view: UIView) {
-        widthSlider.maximumValue = Float(self.view.frame.width)
-        widthSlider.value = Float(view.frame.width)
-        heightSlider.maximumValue = Float(self.view.frame.height)
-        heightSlider.value = Float(view.frame.height)
+        widthSlider.maximumValue = Float(self.view.frame.width) + 50
+        widthSlider.value = Float(view.frame.width) + 50
+        heightSlider.maximumValue = Float(self.view.frame.height) + 50
+        heightSlider.value = Float(view.frame.height) + 50
         junkSlider.maximumValue = 1.0
         junkSlider.value = Float(view.alpha)
         
@@ -418,6 +450,12 @@ class EchoViewController: UIViewController {
         topWidthSlider.minimumValue = 30
         topHeightSlider.minimumValue = 30
         topJunkSlider.minimumValue = 0.0
+        
+        topFontSizeSlider.maximumValue = 60
+        topFontSizeSlider.minimumValue = 6
+        
+        bottomFontSizeSlider.maximumValue = 60
+        bottomFontSizeSlider.minimumValue = 6
     }
     
     func updateViewForBoxScale() {

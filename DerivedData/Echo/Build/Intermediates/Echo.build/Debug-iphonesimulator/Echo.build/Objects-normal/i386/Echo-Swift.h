@@ -94,6 +94,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import CoreGraphics;
+@import ObjectiveC;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -193,11 +194,30 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 @end
 
 
+@interface EchoViewController (SWIFT_EXTENSION(Echo))
+- (void)displayActivityController;
+@end
+
+
 @interface EchoViewController (SWIFT_EXTENSION(Echo)) <UIPickerViewDelegate, UIPickerViewDataSource>
 - (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
 - (UIView * _Nonnull)pickerView:(UIPickerView * _Nonnull)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView * _Nullable)view;
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView;
 - (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
+@end
+
+@class UIImage;
+
+SWIFT_CLASS("_TtC4Echo13ImageUitilies")
+@interface ImageUitilies : NSObject
++ (UIImage * _Nonnull)cropToSquareWithImage:(UIImage * _Nonnull)originalImage;
++ (UIImage * _Nullable)createImageWithViewOnTopWithBackgroundImage:(UIImageView * _Nonnull)image view:(UIView * _Nonnull)view;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface UIImageView (SWIFT_EXTENSION(Echo))
+- (void)downloadImageFromLink:(NSString * _Nonnull)link contentMode:(UIViewContentMode)contentMode;
 @end
 
 #pragma clang diagnostic pop

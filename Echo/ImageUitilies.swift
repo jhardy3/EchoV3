@@ -49,7 +49,9 @@ class ImageUitilies: NSObject {
         
         let imageToSave = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        UIImageWriteToSavedPhotosAlbum(imageToSave, nil, nil, nil)
+        
+//        UIImageWriteToSavedPhotosAlbum(imageToSave, nil, nil, nil)
+        
         return imageToSave
     }
     

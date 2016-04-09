@@ -18,6 +18,7 @@
 		74F8C9041CB5EAEE00C02079 /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F8C9031CB5EAEE00C02079 /* ImageController.swift */; };
 		74F8C9241CB8839F00C02079 /* EchoViewPickerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F8C9231CB8839F00C02079 /* EchoViewPickerExtension.swift */; };
 		74F8C9281CB8A4D400C02079 /* ImageUitilies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F8C9271CB8A4D400C02079 /* ImageUitilies.swift */; };
+		74F8C94A1CB8BD9700C02079 /* EchoViewActivityControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F8C9491CB8BD9700C02079 /* EchoViewActivityControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		74F8C9031CB5EAEE00C02079 /* ImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
 		74F8C9231CB8839F00C02079 /* EchoViewPickerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EchoViewPickerExtension.swift; sourceTree = "<group>"; };
 		74F8C9271CB8A4D400C02079 /* ImageUitilies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUitilies.swift; sourceTree = "<group>"; };
+		74F8C9491CB8BD9700C02079 /* EchoViewActivityControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EchoViewActivityControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				74F8C8F01CB5BFA000C02079 /* Assets.xcassets */,
 				74F8C8FB1CB5C6D700C02079 /* EchoViewController.swift */,
 				74F8C9231CB8839F00C02079 /* EchoViewPickerExtension.swift */,
+				74F8C9491CB8BD9700C02079 /* EchoViewActivityControllerExtension.swift */,
 				74F8C8FD1CB5C75D00C02079 /* NetworkController.swift */,
 				74F8C8FF1CB5C79300C02079 /* Quote.swift */,
 				74F8C9011CB5C79C00C02079 /* QuoteController.swift */,
@@ -155,6 +158,7 @@
 			files = (
 				74F8C9021CB5C79C00C02079 /* QuoteController.swift in Sources */,
 				74F8C9281CB8A4D400C02079 /* ImageUitilies.swift in Sources */,
+				74F8C94A1CB8BD9700C02079 /* EchoViewActivityControllerExtension.swift in Sources */,
 				74F8C9001CB5C79300C02079 /* Quote.swift in Sources */,
 				74F8C8EA1CB5BFA000C02079 /* AppDelegate.swift in Sources */,
 				74F8C8FC1CB5C6D700C02079 /* EchoViewController.swift in Sources */,

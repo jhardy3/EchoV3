@@ -8,37 +8,36 @@ provides-member:
 - ["CSo11UIImageView", ""]
 - ["CSo11UIImageView", "downloadImageFrom"]
 provides-dynamic-lookup:
-- "cropToSquare"
-- "downloadImageFrom"
 - "createImageWithViewOnTop"
+- "downloadImageFrom"
+- "cropToSquare"
 depends-top-level:
-- "UIImageView"
-- !private "UIGraphicsBeginImageContextWithOptions"
-- !private "UIImageWriteToSavedPhotosAlbum"
-- "UIImage"
-- "NSObject"
 - "UIViewContentMode"
-- !private "-"
-- !private "CGFloat"
-- !private "UIGraphicsEndImageContext"
-- !private "CGImageRef"
-- "UIView"
-- !private "CGImageCreateWithImageInRect"
-- !private "/"
-- !private "UIGraphicsGetImageFromCurrentImageContext"
 - "ImageUitilies"
-- !private "dispatch_get_main_queue"
-- !private "dispatch_async"
-- !private "CGRect"
-- !private "UIGraphicsGetCurrentContext"
-- !private "NSURLSession"
 - !private "NSURL"
 - !private "CGRectMake"
+- !private "/"
+- !private "UIGraphicsGetImageFromCurrentImageContext"
+- !private "CGRect"
+- !private "UIGraphicsGetCurrentContext"
+- !private "CGFloat"
 - !private ">"
-- "String"
-- !private "CGSize"
+- !private "NSURLSession"
 - !private "BooleanLiteralType"
+- "UIView"
+- "NSObject"
+- "UIImage"
+- "String"
+- !private "-"
+- !private "dispatch_get_main_queue"
+- !private "dispatch_async"
+- !private "CGSize"
 - !private "Void"
+- !private "CGImageCreateWithImageInRect"
+- !private "UIGraphicsBeginImageContextWithOptions"
+- !private "UIGraphicsEndImageContext"
+- "UIImageView"
+- !private "CGImageRef"
 depends-member:
 - !private ["Ps9AnyObject", "CGImage"]
 - !private ["Ps9AnyObject", "CGImageCreateWithImageInRect"]
@@ -50,7 +49,6 @@ depends-member:
 - !private ["Ps9AnyObject", "UIGraphicsGetCurrentContext"]
 - !private ["Ps9AnyObject", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["Ps9AnyObject", "UIImage"]
-- !private ["Ps9AnyObject", "UIImageWriteToSavedPhotosAlbum"]
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "bounds"]
 - !private ["Ps9AnyObject", "contentMode"]
@@ -89,7 +87,6 @@ depends-member:
 - !private ["Ps11CVarArgType", "UIGraphicsGetCurrentContext"]
 - !private ["Ps11CVarArgType", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["Ps11CVarArgType", "UIImage"]
-- !private ["Ps11CVarArgType", "UIImageWriteToSavedPhotosAlbum"]
 - !private ["Ps11CVarArgType", "addSubview"]
 - !private ["Ps11CVarArgType", "bounds"]
 - !private ["Ps11CVarArgType", "contentMode"]
@@ -120,7 +117,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIGraphicsGetCurrentContext"]
 - !private ["Ps28CustomDebugStringConvertible", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImage"]
-- !private ["Ps28CustomDebugStringConvertible", "UIImageWriteToSavedPhotosAlbum"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "bounds"]
 - !private ["Ps28CustomDebugStringConvertible", "contentMode"]
@@ -150,7 +146,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "UIGraphicsGetCurrentContext"]
 - !private ["Ps23CustomStringConvertible", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["Ps23CustomStringConvertible", "UIImage"]
-- !private ["Ps23CustomStringConvertible", "UIImageWriteToSavedPhotosAlbum"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addSubview"]
 - !private ["Ps23CustomStringConvertible", "bounds"]
@@ -181,7 +176,6 @@ depends-member:
 - !private ["Ps9Equatable", "UIGraphicsGetCurrentContext"]
 - !private ["Ps9Equatable", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["Ps9Equatable", "UIImage"]
-- !private ["Ps9Equatable", "UIImageWriteToSavedPhotosAlbum"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addSubview"]
 - !private ["Ps9Equatable", "bounds"]
@@ -214,7 +208,6 @@ depends-member:
 - !private ["Ps8Hashable", "UIGraphicsGetCurrentContext"]
 - !private ["Ps8Hashable", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["Ps8Hashable", "UIImage"]
-- !private ["Ps8Hashable", "UIImageWriteToSavedPhotosAlbum"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addSubview"]
 - !private ["Ps8Hashable", "bounds"]
@@ -247,7 +240,6 @@ depends-member:
 - !private ["C4Echo13ImageUitilies", "UIGraphicsGetImageFromCurrentImageContext"]
 - ["C4Echo13ImageUitilies", "UIImage"]
 - ["C4Echo13ImageUitilies", "UIImageView"]
-- !private ["C4Echo13ImageUitilies", "UIImageWriteToSavedPhotosAlbum"]
 - ["C4Echo13ImageUitilies", "UIView"]
 - ["C4Echo13ImageUitilies", "createImageWithViewOnTop"]
 - ["C4Echo13ImageUitilies", "cropToSquare"]
@@ -289,7 +281,6 @@ depends-member:
 - !private ["CSo8NSObject", "UIGraphicsGetImageFromCurrentImageContext"]
 - ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "UIImageView"]
-- !private ["CSo8NSObject", "UIImageWriteToSavedPhotosAlbum"]
 - ["CSo8NSObject", "UIView"]
 - ["CSo8NSObject", "UIViewContentMode"]
 - !private ["CSo8NSObject", "Void"]
@@ -322,7 +313,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIGraphicsGetCurrentContext"]
 - !private ["PSo16NSObjectProtocol", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
-- !private ["PSo16NSObjectProtocol", "UIImageWriteToSavedPhotosAlbum"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "bounds"]
 - !private ["PSo16NSObjectProtocol", "contentMode"]

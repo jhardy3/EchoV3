@@ -194,6 +194,11 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 @end
 
 
+@interface EchoViewController (SWIFT_EXTENSION(Echo))
+- (void)displayActivityController;
+@end
+
+
 @interface EchoViewController (SWIFT_EXTENSION(Echo)) <UIPickerViewDelegate, UIPickerViewDataSource>
 - (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
 - (UIView * _Nonnull)pickerView:(UIPickerView * _Nonnull)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView * _Nullable)view;

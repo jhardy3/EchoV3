@@ -12,24 +12,24 @@ provides-member:
 - ["C4Echo15QuoteController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "ImageController"
-- !private "NetworkController"
-- "kContentKey"
 - "kQuoteKey"
+- "kContentKey"
+- !private "NetworkController"
+- !private "ImageController"
 - !private "imageURL"
 - !private "AnyObject"
-- "String"
 - "kQuotesKey"
 - "QuoteController"
 - !private "quoteURL"
-- !private "NSJSONSerialization"
+- "String"
 - "EchoViewController"
-- !private "dispatch_get_main_queue"
-- "kLengthKey"
-- !private "dispatch_async"
-- "kAuthorKey"
+- !private "NSJSONSerialization"
 - "StringLiteralType"
 - "Void"
+- "kLengthKey"
+- !private "dispatch_async"
+- !private "dispatch_get_main_queue"
+- "kAuthorKey"
 depends-member:
 - !private ["Ps9AnyObject", "ImageController"]
 - !private ["Ps9AnyObject", "JSONObjectWithData"]

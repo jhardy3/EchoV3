@@ -5,20 +5,20 @@ provides-nominal:
 provides-member:
 - ["C4Echo18EchoViewController", ""]
 provides-dynamic-lookup:
+- "pickerView"
+- "pickerView"
+- "pickerView"
 - "numberOfComponentsInPickerView"
-- "pickerView"
-- "pickerView"
-- "pickerView"
 depends-top-level:
-- !private "UILabel"
-- "UIPickerView"
-- !private "UIColor"
 - "Int"
-- "UIPickerViewDataSource"
+- "EchoViewController"
 - "UIView"
+- !private "UIColor"
+- "UIPickerView"
+- "UIPickerViewDataSource"
 - "UIPickerViewDelegate"
 - !private "UIFont"
-- "EchoViewController"
+- !private "UILabel"
 depends-member:
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIFont"]

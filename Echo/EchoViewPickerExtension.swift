@@ -22,7 +22,7 @@ extension EchoViewController: UIPickerViewDelegate, UIPickerViewDataSource {
             let view = UILabel()
             view.text = fontNames[row]
             view.textColor = UIColor.whiteColor()
-            view.font = UIFont(name: fontNames[row], size: 20)
+            view.font = UIFont(name: fontNames[row], size: 25)
             view.textAlignment = .Center
             return view
         }
@@ -35,7 +35,8 @@ extension EchoViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let font = fontNames[row]
         
-        quoteLabel.font = UIFont(name: font, size: 18)
+        let size = CGFloat(topFontSizeSlider.value)
+        quoteLabel.font = UIFont(name: font, size: size)
     }
 
     
