@@ -7,8 +7,8 @@ provides-member:
 - ["C4Echo5Quote", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
 - "UIImage"
+- "String"
 - "Quote"
 depends-member:
 - !private ["Ps9AnyObject", "author"]

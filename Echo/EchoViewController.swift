@@ -35,6 +35,7 @@ class EchoViewController: UIViewController {
     @IBOutlet weak var topPickerView: UIPickerView!
     @IBOutlet weak var bottomPickerView: UIPickerView!
     
+    @IBOutlet weak var topJunkBarView: UIView!
     @IBOutlet weak var junkBarView: UIView!
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var quoteLabel: UILabel!
@@ -55,7 +56,9 @@ class EchoViewController: UIViewController {
     
     
     
+    @IBOutlet weak var topJunkbarYConstraint: NSLayoutConstraint!
     @IBOutlet weak var junkbarYConstraint: NSLayoutConstraint!
+    
     
     @IBOutlet weak var bottomPickerViewYConstraint: NSLayoutConstraint!
     @IBOutlet weak var topPickerViewYConstraint: NSLayoutConstraint!
@@ -108,10 +111,12 @@ class EchoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        hideJunkView()
+        
         updateViewForBoxScale()
         updateViewConstraints()
         setUpView()
+        
+        toggleJunkView()
         toggleDrawer()
     }
     
@@ -130,9 +135,9 @@ class EchoViewController: UIViewController {
         backgroundImage.userInteractionEnabled = true
         
         hidePickerViews()
-        hideJunkView()
         
-        fontNames = UIFont.familyNames()
+        
+        fontNames = UIFont.familyNames().sort { $0 > $1 }
         
         firstLoad()
     }
@@ -143,39 +148,18 @@ class EchoViewController: UIViewController {
     
     // MARK: IBAction Button Functions
     
-    @IBAction func previousPictureTapped(sender: UIButton) {
-        backgroundImage.image = ImageController.sharedInstance.fetchPreviousImage()
-        editMode = .BoxScale
-    }
-    
     @IBAction func viewScaleButtonTapped(sender: UIButton) {
         backgroundImage.image = ImageController.sharedInstance.fetchPreviousImage()
         editMode = .BoxScale
-    }
-
-    @IBAction func customTextButtonTapped(sender: UIButton) {
-        editMode = .TextScale
     }
     
     @IBAction func textScaleButtonTapped(sender: UIButton) {
         editMode = .TextScale
     }
     
-    
-    @IBAction func shareButtonTapped(sender: UIButton) {
-        editMode = .TextFont
-        moveDrawersBasedOnView()
-    }
-    
     @IBAction func textFontButtonTapped(sender: UIButton) {
         editMode = .TextFont
         moveDrawersBasedOnView()
-    }
-    
-    
-    @IBAction func nextPictureButtonTapped(sender: UIButton) {
-        guard let image = ImageController.sharedInstance.fetchNextImage() else { return }
-        backgroundImage.image = image
     }
     
     @IBAction func shareJunkButtonTapped(sender: UIButton) {
@@ -192,9 +176,11 @@ class EchoViewController: UIViewController {
             case .TextFont:
                 hideDrawers()
                 togglePickerView()
+                toggleJunkView()
             default:
                 toggleDrawer()
                 hidePickerViews()
+                toggleJunkView()
             }
         default:
             return
@@ -224,18 +210,15 @@ class EchoViewController: UIViewController {
         
         guard let yBottomConstraint = bottomPickerViewYConstraint else { return }
         guard let yTopConstraint = topPickerViewYConstraint else { return }
-        guard let junkbarYConstraint = junkbarYConstraint else { return }
         
         switch drawerMode {
         case .Top:
             yTopConstraint.constant = pickerViewDisplay
             yBottomConstraint.constant = pickerViewHide
-            junkbarYConstraint.constant = view.frame.height - junkBarOffsetConstant
             
         case .Bottom:
             yTopConstraint.constant = pickerViewHide
             yBottomConstraint.constant = pickerViewDisplay
-            junkbarYConstraint.constant = junkBarDisplay
         }
         
         UIView.animateWithDuration(pickerViewAnimationDuration) {
@@ -244,8 +227,29 @@ class EchoViewController: UIViewController {
         
     }
     
+    func toggleJunkView() {
+        guard let topYConstraint = topJunkbarYConstraint else { return }
+        guard let bottomYConstraint = junkbarYConstraint else { return }
+        
+        switch drawerMode {
+        case .Top:
+            topYConstraint.constant = junkBarHide
+            bottomYConstraint.constant = junkBarDisplay
+        case .Bottom:
+            bottomYConstraint.constant = junkBarHide
+            topYConstraint.constant = junkBarDisplay
+        }
+        
+        UIView.animateWithDuration(animationInterval) { 
+            self.view.layoutIfNeeded()
+        }
+    }
+    
     func hideJunkView() {
         guard let junkbarYConstraint = junkbarYConstraint else { return }
+        guard let topJunkBarYConstraint = topJunkbarYConstraint else { return }
+        
+        topJunkBarYConstraint.constant = junkBarHide
         junkbarYConstraint.constant = junkBarHide
     }
     
@@ -343,19 +347,20 @@ class EchoViewController: UIViewController {
         case .BoxScale:
             updateViewForBoxScale()
             hidePickerViews()
-            hideJunkView()
             toggleDrawer()
+            toggleJunkView()
             
         case .TextFont:
             updateViewForTextFont()
             hideDrawers()
             togglePickerView()
+            toggleJunkView()
             
         case.TextScale:
             updateViewForTextScale()
             hidePickerViews()
-            hideJunkView()
             toggleDrawer()
+            toggleJunkView()
         }
     }
     

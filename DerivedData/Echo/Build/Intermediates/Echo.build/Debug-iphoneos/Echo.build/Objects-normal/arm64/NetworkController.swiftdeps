@@ -10,15 +10,15 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "String"
-- "UIImage"
-- "Void"
 - "NSURL"
-- "StringLiteralType"
-- "imageURL"
+- "Void"
 - "quoteURL"
-- "NetworkController"
-- "NSData"
+- "StringLiteralType"
 - !private "print"
+- "NetworkController"
+- "UIImage"
+- "imageURL"
+- "NSData"
 - !private "NSURLSession"
 depends-member:
 - !private ["Ps9AnyObject", "NSURL"]

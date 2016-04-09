@@ -131,6 +131,7 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 @interface EchoViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified topPickerView;
 @property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified bottomPickerView;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified topJunkBarView;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified junkBarView;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified backgroundImage;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified quoteLabel;
@@ -145,6 +146,7 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified topWidthSlider;
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified topHeightSlider;
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified topJunkSlider;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified topJunkbarYConstraint;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified junkbarYConstraint;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified bottomPickerViewYConstraint;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified topPickerViewYConstraint;
@@ -159,17 +161,14 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 - (void)viewDidAppear:(BOOL)animated;
 - (void)setUpView;
 - (void)firstLoad;
-- (IBAction)previousPictureTapped:(UIButton * _Nonnull)sender;
 - (IBAction)viewScaleButtonTapped:(UIButton * _Nonnull)sender;
-- (IBAction)customTextButtonTapped:(UIButton * _Nonnull)sender;
 - (IBAction)textScaleButtonTapped:(UIButton * _Nonnull)sender;
-- (IBAction)shareButtonTapped:(UIButton * _Nonnull)sender;
 - (IBAction)textFontButtonTapped:(UIButton * _Nonnull)sender;
-- (IBAction)nextPictureButtonTapped:(UIButton * _Nonnull)sender;
 - (IBAction)shareJunkButtonTapped:(UIButton * _Nonnull)sender;
 - (void)moveDrawersBasedOnView;
 - (void)toggleDrawer;
 - (void)togglePickerView;
+- (void)toggleJunkView;
 - (void)hideJunkView;
 - (void)hideDrawers;
 - (void)hidePickerViews;

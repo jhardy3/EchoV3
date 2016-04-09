@@ -18,100 +18,100 @@ provides-member:
 - ["O4Echo9Dimension", ""]
 - ["C4Echo18EchoViewController", ""]
 provides-dynamic-lookup:
-- "updateSlidersWithView"
-- "heightSliderChanged"
-- "previousPictureTapped"
-- "updateViewForTextScale"
-- "topWidthSlider"
-- "topWidthSlider"
-- "drawerYConstraint"
-- "junkSliderChanged"
-- "junkBarView"
-- "topPickerViewYConstraint"
-- "textFontButtonTapped"
-- "touchesBegan"
-- "updateViewConstraints"
-- "returnObjectForManipulation"
-- "textScaleButtonTapped"
-- "junkSlider"
-- "topDrawerView"
-- "widthSliderChanged"
-- "hidePickerViews"
-- "bottomPickerViewYConstraint"
-- "quoteLabel"
-- "hideJunkView"
-- "quoteViewWidth"
-- "isInButton"
-- "widthSlider"
-- "layoutViewBasedOnEditMode"
-- "fontNames"
-- "togglePickerView"
-- "viewDidAppear"
-- "updateViewForBoxScale"
-- "updateViewForTextFont"
-- "backgroundImage"
-- "quoteViewHeight"
-- "quoteViewLocation"
-- "setUpView"
-- "heightSlider"
-- "viewScaleButtonTapped"
-- "hideDrawers"
-- "junkbarYConstraint"
-- "nextPictureButtonTapped"
-- "moveDrawersBasedOnView"
-- "topHeightSlider"
-- "topHeightSlider"
-- "bottomPickerView"
 - "drawerView"
-- "topDrawerYConstraint"
-- "viewDidLoad"
-- "firstLoad"
-- "quoteLabelHeight"
-- "shareJunkButtonTapped"
-- "shareButtonTapped"
-- "touchesMoved"
-- "customTextButtonTapped"
+- "topJunkBarView"
 - "quoteLabelWidth"
-- "topPickerView"
-- "topJunkSlider"
-- "topJunkSlider"
+- "viewDidAppear"
+- "topJunkbarYConstraint"
+- "hideDrawers"
+- "heightSlider"
+- "fontNames"
+- "firstLoad"
+- "backgroundImage"
+- "quoteViewLocation"
+- "widthSlider"
+- "quoteViewHeight"
 - "toggleDrawer"
 - "toggleDrawer"
 - "quoteView"
+- "bottomPickerView"
+- "junkbarYConstraint"
+- "topPickerView"
+- "updateSlidersWithView"
+- "moveDrawersBasedOnView"
+- "isInButton"
+- "togglePickerView"
+- "widthSliderChanged"
+- "setUpView"
+- "toggleJunkView"
+- "hidePickerViews"
+- "junkSliderChanged"
+- "topDrawerYConstraint"
+- "topWidthSlider"
+- "topWidthSlider"
+- "bottomPickerViewYConstraint"
+- "textScaleButtonTapped"
+- "heightSliderChanged"
+- "shareJunkButtonTapped"
+- "quoteViewWidth"
+- "updateViewConstraints"
+- "returnObjectForManipulation"
+- "quoteLabel"
+- "topPickerViewYConstraint"
+- "hideJunkView"
+- "topHeightSlider"
+- "topHeightSlider"
+- "touchesBegan"
+- "topDrawerView"
+- "viewScaleButtonTapped"
+- "layoutViewBasedOnEditMode"
+- "updateViewForBoxScale"
+- "updateViewForTextFont"
+- "updateViewForTextScale"
+- "touchesMoved"
+- "topJunkSlider"
+- "topJunkSlider"
+- "drawerYConstraint"
+- "junkSlider"
+- "textFontButtonTapped"
+- "junkBarView"
+- "quoteLabelHeight"
+- "viewDidLoad"
 depends-top-level:
-- "Bool"
-- "UIButton"
-- "BooleanLiteralType"
-- "UIEvent"
-- "EditMode"
-- "UIPickerView"
-- "UILabel"
-- !private "Void"
-- !private "/"
-- !private "<"
-- "UISlider"
-- "Float"
-- "ViewMode"
-- "CGFloat"
-- "UIImageView"
-- "EchoViewController"
-- !private "&&"
-- "String"
 - "UIViewController"
-- !private "+"
-- !private "-"
-- "DrawerMode"
-- !private ">="
+- "CGFloat"
 - !private "ImageController"
-- "Set"
-- !private "QuoteController"
+- "DrawerMode"
+- !private ">"
 - "UIView"
-- "Dimension"
+- "=="
+- "String"
+- !private "QuoteController"
+- "NSLayoutConstraint"
+- !private "&&"
 - "UITapGestureRecognizer"
 - "UITouch"
-- "NSLayoutConstraint"
-- "=="
+- !private "/"
+- !private "+"
+- !private "<"
+- !private ">="
+- "Float"
+- "UISlider"
+- "Set"
+- "EchoViewController"
+- "UIPickerView"
+- "UIButton"
+- "EditMode"
+- !private "-"
+- "UIEvent"
+- !private "Void"
+- "Dimension"
 - !private "UIFont"
+- "UILabel"
+- "UIImageView"
+- "BooleanLiteralType"
+- "Bool"
+- "ViewMode"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]
@@ -138,7 +138,6 @@ depends-member:
 - !private ["Ps9AnyObject", "clipsToBounds"]
 - !private ["Ps9AnyObject", "constant"]
 - !private ["Ps9AnyObject", "cornerRadius"]
-- ["Ps9AnyObject", "customTextButtonTapped"]
 - ["Ps9AnyObject", "drawerMode"]
 - ["Ps9AnyObject", "drawerView"]
 - ["Ps9AnyObject", "drawerYConstraint"]
@@ -173,13 +172,11 @@ depends-member:
 - !private ["Ps9AnyObject", "maximumValue"]
 - !private ["Ps9AnyObject", "minimumValue"]
 - ["Ps9AnyObject", "moveDrawersBasedOnView"]
-- ["Ps9AnyObject", "nextPictureButtonTapped"]
 - ["Ps9AnyObject", "pickerViewAnimationDuration"]
 - ["Ps9AnyObject", "pickerViewDisplay"]
 - ["Ps9AnyObject", "pickerViewHide"]
 - !private ["Ps9AnyObject", "pointInside"]
 - !private ["Ps9AnyObject", "preciseLocationInView"]
-- ["Ps9AnyObject", "previousPictureTapped"]
 - ["Ps9AnyObject", "quoteLabel"]
 - ["Ps9AnyObject", "quoteLabelHeight"]
 - ["Ps9AnyObject", "quoteLabelWidth"]
@@ -191,17 +188,19 @@ depends-member:
 - ["Ps9AnyObject", "returnDimensions"]
 - ["Ps9AnyObject", "returnObjectForManipulation"]
 - ["Ps9AnyObject", "setUpView"]
-- ["Ps9AnyObject", "shareButtonTapped"]
 - ["Ps9AnyObject", "shareJunkButtonTapped"]
 - !private ["Ps9AnyObject", "sharedInstance"]
 - ["Ps9AnyObject", "textFontButtonTapped"]
 - ["Ps9AnyObject", "textScaleButtonTapped"]
 - ["Ps9AnyObject", "toggleDrawer"]
+- ["Ps9AnyObject", "toggleJunkView"]
 - ["Ps9AnyObject", "togglePickerView"]
 - ["Ps9AnyObject", "topDrawerView"]
 - ["Ps9AnyObject", "topDrawerYConstraint"]
 - ["Ps9AnyObject", "topHeightSlider"]
+- ["Ps9AnyObject", "topJunkBarView"]
 - ["Ps9AnyObject", "topJunkSlider"]
+- ["Ps9AnyObject", "topJunkbarYConstraint"]
 - ["Ps9AnyObject", "topPickerView"]
 - ["Ps9AnyObject", "topPickerViewYConstraint"]
 - ["Ps9AnyObject", "topWidthSlider"]
@@ -229,14 +228,17 @@ depends-member:
 - ["Sa", "SubSequence"]
 - ["Sa", "_Element"]
 - ["Sa", "init"]
+- !private ["Sa", "sort"]
 - ["Ps23ArrayLiteralConvertible", "Generator"]
 - ["Ps23ArrayLiteralConvertible", "Index"]
 - ["Ps23ArrayLiteralConvertible", "SubSequence"]
 - ["Ps23ArrayLiteralConvertible", "_Element"]
 - !private ["Ps23ArrayLiteralConvertible", "first"]
 - ["Ps23ArrayLiteralConvertible", "init"]
+- !private ["Ps23ArrayLiteralConvertible", "sort"]
 - ["Vs10ArraySlice", "Generator"]
 - ["Vs10ArraySlice", "Index"]
+- !private ["Vs10ArraySlice", "SubSequence"]
 - ["Ps22BidirectionalIndexType", "Distance"]
 - ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
 - !private ["Ps22BidirectionalIndexType", "hashValue"]
@@ -286,7 +288,6 @@ depends-member:
 - !private ["Ps11CVarArgType", "clipsToBounds"]
 - !private ["Ps11CVarArgType", "constant"]
 - !private ["Ps11CVarArgType", "cornerRadius"]
-- ["Ps11CVarArgType", "customTextButtonTapped"]
 - ["Ps11CVarArgType", "drawerMode"]
 - ["Ps11CVarArgType", "drawerView"]
 - ["Ps11CVarArgType", "drawerYConstraint"]
@@ -320,13 +321,11 @@ depends-member:
 - !private ["Ps11CVarArgType", "maximumValue"]
 - !private ["Ps11CVarArgType", "minimumValue"]
 - ["Ps11CVarArgType", "moveDrawersBasedOnView"]
-- ["Ps11CVarArgType", "nextPictureButtonTapped"]
 - ["Ps11CVarArgType", "pickerViewAnimationDuration"]
 - ["Ps11CVarArgType", "pickerViewDisplay"]
 - ["Ps11CVarArgType", "pickerViewHide"]
 - !private ["Ps11CVarArgType", "pointInside"]
 - !private ["Ps11CVarArgType", "preciseLocationInView"]
-- ["Ps11CVarArgType", "previousPictureTapped"]
 - ["Ps11CVarArgType", "quoteLabel"]
 - ["Ps11CVarArgType", "quoteLabelHeight"]
 - ["Ps11CVarArgType", "quoteLabelWidth"]
@@ -338,16 +337,18 @@ depends-member:
 - ["Ps11CVarArgType", "returnDimensions"]
 - ["Ps11CVarArgType", "returnObjectForManipulation"]
 - ["Ps11CVarArgType", "setUpView"]
-- ["Ps11CVarArgType", "shareButtonTapped"]
 - ["Ps11CVarArgType", "shareJunkButtonTapped"]
 - ["Ps11CVarArgType", "textFontButtonTapped"]
 - ["Ps11CVarArgType", "textScaleButtonTapped"]
 - ["Ps11CVarArgType", "toggleDrawer"]
+- ["Ps11CVarArgType", "toggleJunkView"]
 - ["Ps11CVarArgType", "togglePickerView"]
 - ["Ps11CVarArgType", "topDrawerView"]
 - ["Ps11CVarArgType", "topDrawerYConstraint"]
 - ["Ps11CVarArgType", "topHeightSlider"]
+- ["Ps11CVarArgType", "topJunkBarView"]
 - ["Ps11CVarArgType", "topJunkSlider"]
+- ["Ps11CVarArgType", "topJunkbarYConstraint"]
 - ["Ps11CVarArgType", "topPickerView"]
 - ["Ps11CVarArgType", "topPickerViewYConstraint"]
 - ["Ps11CVarArgType", "topWidthSlider"]
@@ -376,6 +377,7 @@ depends-member:
 - ["Ps14CollectionType", "_Element"]
 - !private ["Ps14CollectionType", "first"]
 - ["Ps14CollectionType", "init"]
+- !private ["Ps14CollectionType", "sort"]
 - ["Ps10Comparable", "Distance"]
 - ["Ps10Comparable", "IntegerLiteralType"]
 - !private ["Ps10Comparable", "_DisabledRangeIndex"]
@@ -410,7 +412,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "clipsToBounds"]
 - !private ["Ps28CustomDebugStringConvertible", "constant"]
 - !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
-- ["Ps28CustomDebugStringConvertible", "customTextButtonTapped"]
 - ["Ps28CustomDebugStringConvertible", "drawerMode"]
 - ["Ps28CustomDebugStringConvertible", "drawerView"]
 - ["Ps28CustomDebugStringConvertible", "drawerYConstraint"]
@@ -444,13 +445,11 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "maximumValue"]
 - !private ["Ps28CustomDebugStringConvertible", "minimumValue"]
 - ["Ps28CustomDebugStringConvertible", "moveDrawersBasedOnView"]
-- ["Ps28CustomDebugStringConvertible", "nextPictureButtonTapped"]
 - ["Ps28CustomDebugStringConvertible", "pickerViewAnimationDuration"]
 - ["Ps28CustomDebugStringConvertible", "pickerViewDisplay"]
 - ["Ps28CustomDebugStringConvertible", "pickerViewHide"]
 - !private ["Ps28CustomDebugStringConvertible", "pointInside"]
 - !private ["Ps28CustomDebugStringConvertible", "preciseLocationInView"]
-- ["Ps28CustomDebugStringConvertible", "previousPictureTapped"]
 - ["Ps28CustomDebugStringConvertible", "quoteLabel"]
 - ["Ps28CustomDebugStringConvertible", "quoteLabelHeight"]
 - ["Ps28CustomDebugStringConvertible", "quoteLabelWidth"]
@@ -462,16 +461,19 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "returnDimensions"]
 - ["Ps28CustomDebugStringConvertible", "returnObjectForManipulation"]
 - ["Ps28CustomDebugStringConvertible", "setUpView"]
-- ["Ps28CustomDebugStringConvertible", "shareButtonTapped"]
 - ["Ps28CustomDebugStringConvertible", "shareJunkButtonTapped"]
+- !private ["Ps28CustomDebugStringConvertible", "sort"]
 - ["Ps28CustomDebugStringConvertible", "textFontButtonTapped"]
 - ["Ps28CustomDebugStringConvertible", "textScaleButtonTapped"]
 - ["Ps28CustomDebugStringConvertible", "toggleDrawer"]
+- ["Ps28CustomDebugStringConvertible", "toggleJunkView"]
 - ["Ps28CustomDebugStringConvertible", "togglePickerView"]
 - ["Ps28CustomDebugStringConvertible", "topDrawerView"]
 - ["Ps28CustomDebugStringConvertible", "topDrawerYConstraint"]
 - ["Ps28CustomDebugStringConvertible", "topHeightSlider"]
+- ["Ps28CustomDebugStringConvertible", "topJunkBarView"]
 - ["Ps28CustomDebugStringConvertible", "topJunkSlider"]
+- ["Ps28CustomDebugStringConvertible", "topJunkbarYConstraint"]
 - ["Ps28CustomDebugStringConvertible", "topPickerView"]
 - ["Ps28CustomDebugStringConvertible", "topPickerViewYConstraint"]
 - ["Ps28CustomDebugStringConvertible", "topWidthSlider"]
@@ -526,7 +528,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "clipsToBounds"]
 - !private ["Ps23CustomStringConvertible", "constant"]
 - !private ["Ps23CustomStringConvertible", "cornerRadius"]
-- ["Ps23CustomStringConvertible", "customTextButtonTapped"]
 - ["Ps23CustomStringConvertible", "drawerMode"]
 - ["Ps23CustomStringConvertible", "drawerView"]
 - ["Ps23CustomStringConvertible", "drawerYConstraint"]
@@ -561,13 +562,11 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "maximumValue"]
 - !private ["Ps23CustomStringConvertible", "minimumValue"]
 - ["Ps23CustomStringConvertible", "moveDrawersBasedOnView"]
-- ["Ps23CustomStringConvertible", "nextPictureButtonTapped"]
 - ["Ps23CustomStringConvertible", "pickerViewAnimationDuration"]
 - ["Ps23CustomStringConvertible", "pickerViewDisplay"]
 - ["Ps23CustomStringConvertible", "pickerViewHide"]
 - !private ["Ps23CustomStringConvertible", "pointInside"]
 - !private ["Ps23CustomStringConvertible", "preciseLocationInView"]
-- ["Ps23CustomStringConvertible", "previousPictureTapped"]
 - ["Ps23CustomStringConvertible", "quoteLabel"]
 - ["Ps23CustomStringConvertible", "quoteLabelHeight"]
 - ["Ps23CustomStringConvertible", "quoteLabelWidth"]
@@ -579,16 +578,19 @@ depends-member:
 - ["Ps23CustomStringConvertible", "returnDimensions"]
 - ["Ps23CustomStringConvertible", "returnObjectForManipulation"]
 - ["Ps23CustomStringConvertible", "setUpView"]
-- ["Ps23CustomStringConvertible", "shareButtonTapped"]
 - ["Ps23CustomStringConvertible", "shareJunkButtonTapped"]
+- !private ["Ps23CustomStringConvertible", "sort"]
 - ["Ps23CustomStringConvertible", "textFontButtonTapped"]
 - ["Ps23CustomStringConvertible", "textScaleButtonTapped"]
 - ["Ps23CustomStringConvertible", "toggleDrawer"]
+- ["Ps23CustomStringConvertible", "toggleJunkView"]
 - ["Ps23CustomStringConvertible", "togglePickerView"]
 - ["Ps23CustomStringConvertible", "topDrawerView"]
 - ["Ps23CustomStringConvertible", "topDrawerYConstraint"]
 - ["Ps23CustomStringConvertible", "topHeightSlider"]
+- ["Ps23CustomStringConvertible", "topJunkBarView"]
 - ["Ps23CustomStringConvertible", "topJunkSlider"]
+- ["Ps23CustomStringConvertible", "topJunkbarYConstraint"]
 - ["Ps23CustomStringConvertible", "topPickerView"]
 - ["Ps23CustomStringConvertible", "topPickerViewYConstraint"]
 - ["Ps23CustomStringConvertible", "topWidthSlider"]
@@ -648,7 +650,6 @@ depends-member:
 - ["C4Echo18EchoViewController", "bottomPickerView"]
 - ["C4Echo18EchoViewController", "bottomPickerViewYConstraint"]
 - ["C4Echo18EchoViewController", "buttonY"]
-- ["C4Echo18EchoViewController", "customTextButtonTapped"]
 - ["C4Echo18EchoViewController", "deinit"]
 - ["C4Echo18EchoViewController", "drawerMode"]
 - ["C4Echo18EchoViewController", "drawerView"]
@@ -675,11 +676,9 @@ depends-member:
 - ["C4Echo18EchoViewController", "layoutViewBasedOnEditMode"]
 - ["C4Echo18EchoViewController", "locationInView"]
 - ["C4Echo18EchoViewController", "moveDrawersBasedOnView"]
-- ["C4Echo18EchoViewController", "nextPictureButtonTapped"]
 - !private ["C4Echo18EchoViewController", "pickerViewAnimationDuration"]
 - !private ["C4Echo18EchoViewController", "pickerViewDisplay"]
 - !private ["C4Echo18EchoViewController", "pickerViewHide"]
-- ["C4Echo18EchoViewController", "previousPictureTapped"]
 - ["C4Echo18EchoViewController", "quoteLabel"]
 - ["C4Echo18EchoViewController", "quoteLabelHeight"]
 - ["C4Echo18EchoViewController", "quoteLabelWidth"]
@@ -691,16 +690,18 @@ depends-member:
 - ["C4Echo18EchoViewController", "returnDimensions"]
 - ["C4Echo18EchoViewController", "returnObjectForManipulation"]
 - ["C4Echo18EchoViewController", "setUpView"]
-- ["C4Echo18EchoViewController", "shareButtonTapped"]
 - ["C4Echo18EchoViewController", "shareJunkButtonTapped"]
 - ["C4Echo18EchoViewController", "textFontButtonTapped"]
 - ["C4Echo18EchoViewController", "textScaleButtonTapped"]
 - ["C4Echo18EchoViewController", "toggleDrawer"]
+- ["C4Echo18EchoViewController", "toggleJunkView"]
 - ["C4Echo18EchoViewController", "togglePickerView"]
 - ["C4Echo18EchoViewController", "topDrawerView"]
 - ["C4Echo18EchoViewController", "topDrawerYConstraint"]
 - ["C4Echo18EchoViewController", "topHeightSlider"]
+- ["C4Echo18EchoViewController", "topJunkBarView"]
 - ["C4Echo18EchoViewController", "topJunkSlider"]
+- ["C4Echo18EchoViewController", "topJunkbarYConstraint"]
 - ["C4Echo18EchoViewController", "topPickerView"]
 - ["C4Echo18EchoViewController", "topPickerViewYConstraint"]
 - ["C4Echo18EchoViewController", "topWidthSlider"]
@@ -762,7 +763,6 @@ depends-member:
 - !private ["Ps9Equatable", "clipsToBounds"]
 - !private ["Ps9Equatable", "constant"]
 - !private ["Ps9Equatable", "cornerRadius"]
-- ["Ps9Equatable", "customTextButtonTapped"]
 - ["Ps9Equatable", "drawerMode"]
 - ["Ps9Equatable", "drawerView"]
 - ["Ps9Equatable", "drawerYConstraint"]
@@ -800,13 +800,11 @@ depends-member:
 - !private ["Ps9Equatable", "minY"]
 - !private ["Ps9Equatable", "minimumValue"]
 - ["Ps9Equatable", "moveDrawersBasedOnView"]
-- ["Ps9Equatable", "nextPictureButtonTapped"]
 - ["Ps9Equatable", "pickerViewAnimationDuration"]
 - ["Ps9Equatable", "pickerViewDisplay"]
 - ["Ps9Equatable", "pickerViewHide"]
 - !private ["Ps9Equatable", "pointInside"]
 - !private ["Ps9Equatable", "preciseLocationInView"]
-- ["Ps9Equatable", "previousPictureTapped"]
 - ["Ps9Equatable", "quoteLabel"]
 - ["Ps9Equatable", "quoteLabelHeight"]
 - ["Ps9Equatable", "quoteLabelWidth"]
@@ -818,17 +816,19 @@ depends-member:
 - ["Ps9Equatable", "returnDimensions"]
 - ["Ps9Equatable", "returnObjectForManipulation"]
 - ["Ps9Equatable", "setUpView"]
-- ["Ps9Equatable", "shareButtonTapped"]
 - ["Ps9Equatable", "shareJunkButtonTapped"]
 - !private ["Ps9Equatable", "size"]
 - ["Ps9Equatable", "textFontButtonTapped"]
 - ["Ps9Equatable", "textScaleButtonTapped"]
 - ["Ps9Equatable", "toggleDrawer"]
+- ["Ps9Equatable", "toggleJunkView"]
 - ["Ps9Equatable", "togglePickerView"]
 - ["Ps9Equatable", "topDrawerView"]
 - ["Ps9Equatable", "topDrawerYConstraint"]
 - ["Ps9Equatable", "topHeightSlider"]
+- ["Ps9Equatable", "topJunkBarView"]
 - ["Ps9Equatable", "topJunkSlider"]
+- ["Ps9Equatable", "topJunkbarYConstraint"]
 - ["Ps9Equatable", "topPickerView"]
 - ["Ps9Equatable", "topPickerViewYConstraint"]
 - ["Ps9Equatable", "topWidthSlider"]
@@ -900,7 +900,6 @@ depends-member:
 - !private ["Ps8Hashable", "clipsToBounds"]
 - !private ["Ps8Hashable", "constant"]
 - !private ["Ps8Hashable", "cornerRadius"]
-- ["Ps8Hashable", "customTextButtonTapped"]
 - ["Ps8Hashable", "drawerMode"]
 - ["Ps8Hashable", "drawerView"]
 - ["Ps8Hashable", "drawerYConstraint"]
@@ -935,13 +934,11 @@ depends-member:
 - !private ["Ps8Hashable", "maximumValue"]
 - !private ["Ps8Hashable", "minimumValue"]
 - ["Ps8Hashable", "moveDrawersBasedOnView"]
-- ["Ps8Hashable", "nextPictureButtonTapped"]
 - ["Ps8Hashable", "pickerViewAnimationDuration"]
 - ["Ps8Hashable", "pickerViewDisplay"]
 - ["Ps8Hashable", "pickerViewHide"]
 - !private ["Ps8Hashable", "pointInside"]
 - !private ["Ps8Hashable", "preciseLocationInView"]
-- ["Ps8Hashable", "previousPictureTapped"]
 - ["Ps8Hashable", "quoteLabel"]
 - ["Ps8Hashable", "quoteLabelHeight"]
 - ["Ps8Hashable", "quoteLabelWidth"]
@@ -953,16 +950,18 @@ depends-member:
 - ["Ps8Hashable", "returnDimensions"]
 - ["Ps8Hashable", "returnObjectForManipulation"]
 - ["Ps8Hashable", "setUpView"]
-- ["Ps8Hashable", "shareButtonTapped"]
 - ["Ps8Hashable", "shareJunkButtonTapped"]
 - ["Ps8Hashable", "textFontButtonTapped"]
 - ["Ps8Hashable", "textScaleButtonTapped"]
 - ["Ps8Hashable", "toggleDrawer"]
+- ["Ps8Hashable", "toggleJunkView"]
 - ["Ps8Hashable", "togglePickerView"]
 - ["Ps8Hashable", "topDrawerView"]
 - ["Ps8Hashable", "topDrawerYConstraint"]
 - ["Ps8Hashable", "topHeightSlider"]
+- ["Ps8Hashable", "topJunkBarView"]
 - ["Ps8Hashable", "topJunkSlider"]
+- ["Ps8Hashable", "topJunkbarYConstraint"]
 - ["Ps8Hashable", "topPickerView"]
 - ["Ps8Hashable", "topPickerViewYConstraint"]
 - ["Ps8Hashable", "topWidthSlider"]
@@ -995,6 +994,7 @@ depends-member:
 - ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "first"]
 - ["Ps9Indexable", "init"]
+- !private ["Ps9Indexable", "sort"]
 - ["Vs17IndexingGenerator", "Element"]
 - ["Si", "Distance"]
 - ["Si", "IntegerLiteralType"]
@@ -1017,16 +1017,19 @@ depends-member:
 - ["Ps21MutableCollectionType", "SubSequence"]
 - ["Ps21MutableCollectionType", "_Element"]
 - ["Ps21MutableCollectionType", "init"]
+- !private ["Ps21MutableCollectionType", "sort"]
 - ["Ps16MutableIndexable", "Generator"]
 - ["Ps16MutableIndexable", "Index"]
 - ["Ps16MutableIndexable", "SubSequence"]
 - ["Ps16MutableIndexable", "_Element"]
 - ["Ps16MutableIndexable", "init"]
+- !private ["Ps16MutableIndexable", "sort"]
 - ["Ps16MutableSliceable", "Generator"]
 - ["Ps16MutableSliceable", "Index"]
 - ["Ps16MutableSliceable", "SubSequence"]
 - ["Ps16MutableSliceable", "_Element"]
 - ["Ps16MutableSliceable", "init"]
+- !private ["Ps16MutableSliceable", "sort"]
 - ["PSo8NSCoding", "CGFloat"]
 - ["PSo8NSCoding", "DrawerMode"]
 - ["PSo8NSCoding", "EditMode"]
@@ -1050,7 +1053,6 @@ depends-member:
 - !private ["PSo8NSCoding", "center"]
 - !private ["PSo8NSCoding", "clipsToBounds"]
 - !private ["PSo8NSCoding", "cornerRadius"]
-- ["PSo8NSCoding", "customTextButtonTapped"]
 - ["PSo8NSCoding", "drawerMode"]
 - ["PSo8NSCoding", "drawerView"]
 - ["PSo8NSCoding", "drawerYConstraint"]
@@ -1082,12 +1084,10 @@ depends-member:
 - !private ["PSo8NSCoding", "maximumValue"]
 - !private ["PSo8NSCoding", "minimumValue"]
 - ["PSo8NSCoding", "moveDrawersBasedOnView"]
-- ["PSo8NSCoding", "nextPictureButtonTapped"]
 - ["PSo8NSCoding", "pickerViewAnimationDuration"]
 - ["PSo8NSCoding", "pickerViewDisplay"]
 - ["PSo8NSCoding", "pickerViewHide"]
 - !private ["PSo8NSCoding", "pointInside"]
-- ["PSo8NSCoding", "previousPictureTapped"]
 - ["PSo8NSCoding", "quoteLabel"]
 - ["PSo8NSCoding", "quoteLabelHeight"]
 - ["PSo8NSCoding", "quoteLabelWidth"]
@@ -1099,16 +1099,18 @@ depends-member:
 - ["PSo8NSCoding", "returnDimensions"]
 - ["PSo8NSCoding", "returnObjectForManipulation"]
 - ["PSo8NSCoding", "setUpView"]
-- ["PSo8NSCoding", "shareButtonTapped"]
 - ["PSo8NSCoding", "shareJunkButtonTapped"]
 - ["PSo8NSCoding", "textFontButtonTapped"]
 - ["PSo8NSCoding", "textScaleButtonTapped"]
 - ["PSo8NSCoding", "toggleDrawer"]
+- ["PSo8NSCoding", "toggleJunkView"]
 - ["PSo8NSCoding", "togglePickerView"]
 - ["PSo8NSCoding", "topDrawerView"]
 - ["PSo8NSCoding", "topDrawerYConstraint"]
 - ["PSo8NSCoding", "topHeightSlider"]
+- ["PSo8NSCoding", "topJunkBarView"]
 - ["PSo8NSCoding", "topJunkSlider"]
+- ["PSo8NSCoding", "topJunkbarYConstraint"]
 - ["PSo8NSCoding", "topPickerView"]
 - ["PSo8NSCoding", "topPickerViewYConstraint"]
 - ["PSo8NSCoding", "topWidthSlider"]
@@ -1148,7 +1150,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "bottomPickerView"]
 - ["PSo26NSExtensionRequestHandling", "bottomPickerViewYConstraint"]
 - ["PSo26NSExtensionRequestHandling", "buttonY"]
-- ["PSo26NSExtensionRequestHandling", "customTextButtonTapped"]
 - ["PSo26NSExtensionRequestHandling", "drawerMode"]
 - ["PSo26NSExtensionRequestHandling", "drawerView"]
 - ["PSo26NSExtensionRequestHandling", "drawerYConstraint"]
@@ -1174,11 +1175,9 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "layoutViewBasedOnEditMode"]
 - ["PSo26NSExtensionRequestHandling", "locationInView"]
 - ["PSo26NSExtensionRequestHandling", "moveDrawersBasedOnView"]
-- ["PSo26NSExtensionRequestHandling", "nextPictureButtonTapped"]
 - ["PSo26NSExtensionRequestHandling", "pickerViewAnimationDuration"]
 - ["PSo26NSExtensionRequestHandling", "pickerViewDisplay"]
 - ["PSo26NSExtensionRequestHandling", "pickerViewHide"]
-- ["PSo26NSExtensionRequestHandling", "previousPictureTapped"]
 - ["PSo26NSExtensionRequestHandling", "quoteLabel"]
 - ["PSo26NSExtensionRequestHandling", "quoteLabelHeight"]
 - ["PSo26NSExtensionRequestHandling", "quoteLabelWidth"]
@@ -1190,16 +1189,18 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "returnDimensions"]
 - ["PSo26NSExtensionRequestHandling", "returnObjectForManipulation"]
 - ["PSo26NSExtensionRequestHandling", "setUpView"]
-- ["PSo26NSExtensionRequestHandling", "shareButtonTapped"]
 - ["PSo26NSExtensionRequestHandling", "shareJunkButtonTapped"]
 - ["PSo26NSExtensionRequestHandling", "textFontButtonTapped"]
 - ["PSo26NSExtensionRequestHandling", "textScaleButtonTapped"]
 - ["PSo26NSExtensionRequestHandling", "toggleDrawer"]
+- ["PSo26NSExtensionRequestHandling", "toggleJunkView"]
 - ["PSo26NSExtensionRequestHandling", "togglePickerView"]
 - ["PSo26NSExtensionRequestHandling", "topDrawerView"]
 - ["PSo26NSExtensionRequestHandling", "topDrawerYConstraint"]
 - ["PSo26NSExtensionRequestHandling", "topHeightSlider"]
+- ["PSo26NSExtensionRequestHandling", "topJunkBarView"]
 - ["PSo26NSExtensionRequestHandling", "topJunkSlider"]
+- ["PSo26NSExtensionRequestHandling", "topJunkbarYConstraint"]
 - ["PSo26NSExtensionRequestHandling", "topPickerView"]
 - ["PSo26NSExtensionRequestHandling", "topPickerViewYConstraint"]
 - ["PSo26NSExtensionRequestHandling", "topWidthSlider"]
@@ -1256,7 +1257,6 @@ depends-member:
 - !private ["CSo8NSObject", "clipsToBounds"]
 - !private ["CSo8NSObject", "constant"]
 - !private ["CSo8NSObject", "cornerRadius"]
-- ["CSo8NSObject", "customTextButtonTapped"]
 - ["CSo8NSObject", "drawerMode"]
 - ["CSo8NSObject", "drawerView"]
 - ["CSo8NSObject", "drawerYConstraint"]
@@ -1289,13 +1289,11 @@ depends-member:
 - !private ["CSo8NSObject", "maximumValue"]
 - !private ["CSo8NSObject", "minimumValue"]
 - ["CSo8NSObject", "moveDrawersBasedOnView"]
-- ["CSo8NSObject", "nextPictureButtonTapped"]
 - ["CSo8NSObject", "pickerViewAnimationDuration"]
 - ["CSo8NSObject", "pickerViewDisplay"]
 - ["CSo8NSObject", "pickerViewHide"]
 - !private ["CSo8NSObject", "pointInside"]
 - !private ["CSo8NSObject", "preciseLocationInView"]
-- ["CSo8NSObject", "previousPictureTapped"]
 - ["CSo8NSObject", "quoteLabel"]
 - ["CSo8NSObject", "quoteLabelHeight"]
 - ["CSo8NSObject", "quoteLabelWidth"]
@@ -1307,16 +1305,18 @@ depends-member:
 - ["CSo8NSObject", "returnDimensions"]
 - ["CSo8NSObject", "returnObjectForManipulation"]
 - ["CSo8NSObject", "setUpView"]
-- ["CSo8NSObject", "shareButtonTapped"]
 - ["CSo8NSObject", "shareJunkButtonTapped"]
 - ["CSo8NSObject", "textFontButtonTapped"]
 - ["CSo8NSObject", "textScaleButtonTapped"]
 - ["CSo8NSObject", "toggleDrawer"]
+- ["CSo8NSObject", "toggleJunkView"]
 - ["CSo8NSObject", "togglePickerView"]
 - ["CSo8NSObject", "topDrawerView"]
 - ["CSo8NSObject", "topDrawerYConstraint"]
 - ["CSo8NSObject", "topHeightSlider"]
+- ["CSo8NSObject", "topJunkBarView"]
 - ["CSo8NSObject", "topJunkSlider"]
+- ["CSo8NSObject", "topJunkbarYConstraint"]
 - ["CSo8NSObject", "topPickerView"]
 - ["CSo8NSObject", "topPickerViewYConstraint"]
 - ["CSo8NSObject", "topWidthSlider"]
@@ -1362,7 +1362,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "clipsToBounds"]
 - !private ["PSo16NSObjectProtocol", "constant"]
 - !private ["PSo16NSObjectProtocol", "cornerRadius"]
-- ["PSo16NSObjectProtocol", "customTextButtonTapped"]
 - ["PSo16NSObjectProtocol", "drawerMode"]
 - ["PSo16NSObjectProtocol", "drawerView"]
 - ["PSo16NSObjectProtocol", "drawerYConstraint"]
@@ -1395,13 +1394,11 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "maximumValue"]
 - !private ["PSo16NSObjectProtocol", "minimumValue"]
 - ["PSo16NSObjectProtocol", "moveDrawersBasedOnView"]
-- ["PSo16NSObjectProtocol", "nextPictureButtonTapped"]
 - ["PSo16NSObjectProtocol", "pickerViewAnimationDuration"]
 - ["PSo16NSObjectProtocol", "pickerViewDisplay"]
 - ["PSo16NSObjectProtocol", "pickerViewHide"]
 - !private ["PSo16NSObjectProtocol", "pointInside"]
 - !private ["PSo16NSObjectProtocol", "preciseLocationInView"]
-- ["PSo16NSObjectProtocol", "previousPictureTapped"]
 - ["PSo16NSObjectProtocol", "quoteLabel"]
 - ["PSo16NSObjectProtocol", "quoteLabelHeight"]
 - ["PSo16NSObjectProtocol", "quoteLabelWidth"]
@@ -1413,16 +1410,18 @@ depends-member:
 - ["PSo16NSObjectProtocol", "returnDimensions"]
 - ["PSo16NSObjectProtocol", "returnObjectForManipulation"]
 - ["PSo16NSObjectProtocol", "setUpView"]
-- ["PSo16NSObjectProtocol", "shareButtonTapped"]
 - ["PSo16NSObjectProtocol", "shareJunkButtonTapped"]
 - ["PSo16NSObjectProtocol", "textFontButtonTapped"]
 - ["PSo16NSObjectProtocol", "textScaleButtonTapped"]
 - ["PSo16NSObjectProtocol", "toggleDrawer"]
+- ["PSo16NSObjectProtocol", "toggleJunkView"]
 - ["PSo16NSObjectProtocol", "togglePickerView"]
 - ["PSo16NSObjectProtocol", "topDrawerView"]
 - ["PSo16NSObjectProtocol", "topDrawerYConstraint"]
 - ["PSo16NSObjectProtocol", "topHeightSlider"]
+- ["PSo16NSObjectProtocol", "topJunkBarView"]
 - ["PSo16NSObjectProtocol", "topJunkSlider"]
+- ["PSo16NSObjectProtocol", "topJunkbarYConstraint"]
 - ["PSo16NSObjectProtocol", "topPickerView"]
 - ["PSo16NSObjectProtocol", "topPickerViewYConstraint"]
 - ["PSo16NSObjectProtocol", "topWidthSlider"]
@@ -1457,6 +1456,7 @@ depends-member:
 - ["Ps30RangeReplaceableCollectionType", "SubSequence"]
 - ["Ps30RangeReplaceableCollectionType", "_Element"]
 - ["Ps30RangeReplaceableCollectionType", "init"]
+- !private ["Ps30RangeReplaceableCollectionType", "sort"]
 - ["Ps12SequenceType", "Element"]
 - ["Ps12SequenceType", "Generator"]
 - ["Ps12SequenceType", "Index"]
@@ -1464,6 +1464,7 @@ depends-member:
 - ["Ps12SequenceType", "_Element"]
 - !private ["Ps12SequenceType", "first"]
 - ["Ps12SequenceType", "init"]
+- !private ["Ps12SequenceType", "sort"]
 - !private ["Vs3Set", "Generator"]
 - !private ["Vs3Set", "Index"]
 - !private ["Vs3Set", "SubSequence"]
@@ -1541,7 +1542,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "buttonY"]
 - !private ["PSo21UIAppearanceContainer", "center"]
 - !private ["PSo21UIAppearanceContainer", "clipsToBounds"]
-- ["PSo21UIAppearanceContainer", "customTextButtonTapped"]
 - ["PSo21UIAppearanceContainer", "drawerMode"]
 - ["PSo21UIAppearanceContainer", "drawerView"]
 - ["PSo21UIAppearanceContainer", "drawerYConstraint"]
@@ -1573,12 +1573,10 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "maximumValue"]
 - !private ["PSo21UIAppearanceContainer", "minimumValue"]
 - ["PSo21UIAppearanceContainer", "moveDrawersBasedOnView"]
-- ["PSo21UIAppearanceContainer", "nextPictureButtonTapped"]
 - ["PSo21UIAppearanceContainer", "pickerViewAnimationDuration"]
 - ["PSo21UIAppearanceContainer", "pickerViewDisplay"]
 - ["PSo21UIAppearanceContainer", "pickerViewHide"]
 - !private ["PSo21UIAppearanceContainer", "pointInside"]
-- ["PSo21UIAppearanceContainer", "previousPictureTapped"]
 - ["PSo21UIAppearanceContainer", "quoteLabel"]
 - ["PSo21UIAppearanceContainer", "quoteLabelHeight"]
 - ["PSo21UIAppearanceContainer", "quoteLabelWidth"]
@@ -1590,16 +1588,18 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "returnDimensions"]
 - ["PSo21UIAppearanceContainer", "returnObjectForManipulation"]
 - ["PSo21UIAppearanceContainer", "setUpView"]
-- ["PSo21UIAppearanceContainer", "shareButtonTapped"]
 - ["PSo21UIAppearanceContainer", "shareJunkButtonTapped"]
 - ["PSo21UIAppearanceContainer", "textFontButtonTapped"]
 - ["PSo21UIAppearanceContainer", "textScaleButtonTapped"]
 - ["PSo21UIAppearanceContainer", "toggleDrawer"]
+- ["PSo21UIAppearanceContainer", "toggleJunkView"]
 - ["PSo21UIAppearanceContainer", "togglePickerView"]
 - ["PSo21UIAppearanceContainer", "topDrawerView"]
 - ["PSo21UIAppearanceContainer", "topDrawerYConstraint"]
 - ["PSo21UIAppearanceContainer", "topHeightSlider"]
+- ["PSo21UIAppearanceContainer", "topJunkBarView"]
 - ["PSo21UIAppearanceContainer", "topJunkSlider"]
+- ["PSo21UIAppearanceContainer", "topJunkbarYConstraint"]
 - ["PSo21UIAppearanceContainer", "topPickerView"]
 - ["PSo21UIAppearanceContainer", "topPickerViewYConstraint"]
 - ["PSo21UIAppearanceContainer", "topWidthSlider"]
@@ -1638,7 +1638,6 @@ depends-member:
 - ["PSo18UIContentContainer", "bottomPickerView"]
 - ["PSo18UIContentContainer", "bottomPickerViewYConstraint"]
 - ["PSo18UIContentContainer", "buttonY"]
-- ["PSo18UIContentContainer", "customTextButtonTapped"]
 - ["PSo18UIContentContainer", "drawerMode"]
 - ["PSo18UIContentContainer", "drawerView"]
 - ["PSo18UIContentContainer", "drawerYConstraint"]
@@ -1664,11 +1663,9 @@ depends-member:
 - ["PSo18UIContentContainer", "layoutViewBasedOnEditMode"]
 - ["PSo18UIContentContainer", "locationInView"]
 - ["PSo18UIContentContainer", "moveDrawersBasedOnView"]
-- ["PSo18UIContentContainer", "nextPictureButtonTapped"]
 - ["PSo18UIContentContainer", "pickerViewAnimationDuration"]
 - ["PSo18UIContentContainer", "pickerViewDisplay"]
 - ["PSo18UIContentContainer", "pickerViewHide"]
-- ["PSo18UIContentContainer", "previousPictureTapped"]
 - ["PSo18UIContentContainer", "quoteLabel"]
 - ["PSo18UIContentContainer", "quoteLabelHeight"]
 - ["PSo18UIContentContainer", "quoteLabelWidth"]
@@ -1680,16 +1677,18 @@ depends-member:
 - ["PSo18UIContentContainer", "returnDimensions"]
 - ["PSo18UIContentContainer", "returnObjectForManipulation"]
 - ["PSo18UIContentContainer", "setUpView"]
-- ["PSo18UIContentContainer", "shareButtonTapped"]
 - ["PSo18UIContentContainer", "shareJunkButtonTapped"]
 - ["PSo18UIContentContainer", "textFontButtonTapped"]
 - ["PSo18UIContentContainer", "textScaleButtonTapped"]
 - ["PSo18UIContentContainer", "toggleDrawer"]
+- ["PSo18UIContentContainer", "toggleJunkView"]
 - ["PSo18UIContentContainer", "togglePickerView"]
 - ["PSo18UIContentContainer", "topDrawerView"]
 - ["PSo18UIContentContainer", "topDrawerYConstraint"]
 - ["PSo18UIContentContainer", "topHeightSlider"]
+- ["PSo18UIContentContainer", "topJunkBarView"]
 - ["PSo18UIContentContainer", "topJunkSlider"]
+- ["PSo18UIContentContainer", "topJunkbarYConstraint"]
 - ["PSo18UIContentContainer", "topPickerView"]
 - ["PSo18UIContentContainer", "topPickerViewYConstraint"]
 - ["PSo18UIContentContainer", "topWidthSlider"]
@@ -1767,7 +1766,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "buttonY"]
 - !private ["PSo18UIFocusEnvironment", "center"]
 - !private ["PSo18UIFocusEnvironment", "clipsToBounds"]
-- ["PSo18UIFocusEnvironment", "customTextButtonTapped"]
 - ["PSo18UIFocusEnvironment", "drawerMode"]
 - ["PSo18UIFocusEnvironment", "drawerView"]
 - ["PSo18UIFocusEnvironment", "drawerYConstraint"]
@@ -1799,12 +1797,10 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "maximumValue"]
 - !private ["PSo18UIFocusEnvironment", "minimumValue"]
 - ["PSo18UIFocusEnvironment", "moveDrawersBasedOnView"]
-- ["PSo18UIFocusEnvironment", "nextPictureButtonTapped"]
 - ["PSo18UIFocusEnvironment", "pickerViewAnimationDuration"]
 - ["PSo18UIFocusEnvironment", "pickerViewDisplay"]
 - ["PSo18UIFocusEnvironment", "pickerViewHide"]
 - !private ["PSo18UIFocusEnvironment", "pointInside"]
-- ["PSo18UIFocusEnvironment", "previousPictureTapped"]
 - ["PSo18UIFocusEnvironment", "quoteLabel"]
 - ["PSo18UIFocusEnvironment", "quoteLabelHeight"]
 - ["PSo18UIFocusEnvironment", "quoteLabelWidth"]
@@ -1816,16 +1812,18 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "returnDimensions"]
 - ["PSo18UIFocusEnvironment", "returnObjectForManipulation"]
 - ["PSo18UIFocusEnvironment", "setUpView"]
-- ["PSo18UIFocusEnvironment", "shareButtonTapped"]
 - ["PSo18UIFocusEnvironment", "shareJunkButtonTapped"]
 - ["PSo18UIFocusEnvironment", "textFontButtonTapped"]
 - ["PSo18UIFocusEnvironment", "textScaleButtonTapped"]
 - ["PSo18UIFocusEnvironment", "toggleDrawer"]
+- ["PSo18UIFocusEnvironment", "toggleJunkView"]
 - ["PSo18UIFocusEnvironment", "togglePickerView"]
 - ["PSo18UIFocusEnvironment", "topDrawerView"]
 - ["PSo18UIFocusEnvironment", "topDrawerYConstraint"]
 - ["PSo18UIFocusEnvironment", "topHeightSlider"]
+- ["PSo18UIFocusEnvironment", "topJunkBarView"]
 - ["PSo18UIFocusEnvironment", "topJunkSlider"]
+- ["PSo18UIFocusEnvironment", "topJunkbarYConstraint"]
 - ["PSo18UIFocusEnvironment", "topPickerView"]
 - ["PSo18UIFocusEnvironment", "topPickerViewYConstraint"]
 - ["PSo18UIFocusEnvironment", "topWidthSlider"]
@@ -1886,7 +1884,6 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "isInButton"]
 - !private ["PSo22UIPickerViewDataSource", "junkBarDisplay"]
 - !private ["PSo22UIPickerViewDataSource", "junkBarHide"]
-- !private ["PSo22UIPickerViewDataSource", "junkBarOffsetConstant"]
 - !private ["PSo22UIPickerViewDataSource", "junkSlider"]
 - !private ["PSo22UIPickerViewDataSource", "junkbarYConstraint"]
 - !private ["PSo22UIPickerViewDataSource", "layoutViewBasedOnEditMode"]
@@ -1906,10 +1903,12 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "returnObjectForManipulation"]
 - !private ["PSo22UIPickerViewDataSource", "setUpView"]
 - !private ["PSo22UIPickerViewDataSource", "toggleDrawer"]
+- !private ["PSo22UIPickerViewDataSource", "toggleJunkView"]
 - !private ["PSo22UIPickerViewDataSource", "togglePickerView"]
 - !private ["PSo22UIPickerViewDataSource", "topDrawerYConstraint"]
 - !private ["PSo22UIPickerViewDataSource", "topHeightSlider"]
 - !private ["PSo22UIPickerViewDataSource", "topJunkSlider"]
+- !private ["PSo22UIPickerViewDataSource", "topJunkbarYConstraint"]
 - !private ["PSo22UIPickerViewDataSource", "topPickerViewYConstraint"]
 - !private ["PSo22UIPickerViewDataSource", "topWidthSlider"]
 - !private ["PSo22UIPickerViewDataSource", "updateSlidersWithView"]
@@ -1948,7 +1947,6 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "isInButton"]
 - !private ["PSo20UIPickerViewDelegate", "junkBarDisplay"]
 - !private ["PSo20UIPickerViewDelegate", "junkBarHide"]
-- !private ["PSo20UIPickerViewDelegate", "junkBarOffsetConstant"]
 - !private ["PSo20UIPickerViewDelegate", "junkSlider"]
 - !private ["PSo20UIPickerViewDelegate", "junkbarYConstraint"]
 - !private ["PSo20UIPickerViewDelegate", "layoutViewBasedOnEditMode"]
@@ -1968,10 +1966,12 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "returnObjectForManipulation"]
 - !private ["PSo20UIPickerViewDelegate", "setUpView"]
 - !private ["PSo20UIPickerViewDelegate", "toggleDrawer"]
+- !private ["PSo20UIPickerViewDelegate", "toggleJunkView"]
 - !private ["PSo20UIPickerViewDelegate", "togglePickerView"]
 - !private ["PSo20UIPickerViewDelegate", "topDrawerYConstraint"]
 - !private ["PSo20UIPickerViewDelegate", "topHeightSlider"]
 - !private ["PSo20UIPickerViewDelegate", "topJunkSlider"]
+- !private ["PSo20UIPickerViewDelegate", "topJunkbarYConstraint"]
 - !private ["PSo20UIPickerViewDelegate", "topPickerViewYConstraint"]
 - !private ["PSo20UIPickerViewDelegate", "topWidthSlider"]
 - !private ["PSo20UIPickerViewDelegate", "updateSlidersWithView"]
@@ -2017,7 +2017,6 @@ depends-member:
 - ["CSo11UIResponder", "buttonY"]
 - !private ["CSo11UIResponder", "center"]
 - !private ["CSo11UIResponder", "clipsToBounds"]
-- ["CSo11UIResponder", "customTextButtonTapped"]
 - ["CSo11UIResponder", "drawerMode"]
 - ["CSo11UIResponder", "drawerView"]
 - ["CSo11UIResponder", "drawerYConstraint"]
@@ -2049,12 +2048,10 @@ depends-member:
 - !private ["CSo11UIResponder", "maximumValue"]
 - !private ["CSo11UIResponder", "minimumValue"]
 - ["CSo11UIResponder", "moveDrawersBasedOnView"]
-- ["CSo11UIResponder", "nextPictureButtonTapped"]
 - ["CSo11UIResponder", "pickerViewAnimationDuration"]
 - ["CSo11UIResponder", "pickerViewDisplay"]
 - ["CSo11UIResponder", "pickerViewHide"]
 - !private ["CSo11UIResponder", "pointInside"]
-- ["CSo11UIResponder", "previousPictureTapped"]
 - ["CSo11UIResponder", "quoteLabel"]
 - ["CSo11UIResponder", "quoteLabelHeight"]
 - ["CSo11UIResponder", "quoteLabelWidth"]
@@ -2066,16 +2063,18 @@ depends-member:
 - ["CSo11UIResponder", "returnDimensions"]
 - ["CSo11UIResponder", "returnObjectForManipulation"]
 - ["CSo11UIResponder", "setUpView"]
-- ["CSo11UIResponder", "shareButtonTapped"]
 - ["CSo11UIResponder", "shareJunkButtonTapped"]
 - ["CSo11UIResponder", "textFontButtonTapped"]
 - ["CSo11UIResponder", "textScaleButtonTapped"]
 - ["CSo11UIResponder", "toggleDrawer"]
+- ["CSo11UIResponder", "toggleJunkView"]
 - ["CSo11UIResponder", "togglePickerView"]
 - ["CSo11UIResponder", "topDrawerView"]
 - ["CSo11UIResponder", "topDrawerYConstraint"]
 - ["CSo11UIResponder", "topHeightSlider"]
+- ["CSo11UIResponder", "topJunkBarView"]
 - ["CSo11UIResponder", "topJunkSlider"]
+- ["CSo11UIResponder", "topJunkbarYConstraint"]
 - ["CSo11UIResponder", "topPickerView"]
 - ["CSo11UIResponder", "topPickerViewYConstraint"]
 - ["CSo11UIResponder", "topWidthSlider"]
@@ -2116,7 +2115,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "bottomPickerView"]
 - ["PSo16UIStateRestoring", "bottomPickerViewYConstraint"]
 - ["PSo16UIStateRestoring", "buttonY"]
-- ["PSo16UIStateRestoring", "customTextButtonTapped"]
 - ["PSo16UIStateRestoring", "drawerMode"]
 - ["PSo16UIStateRestoring", "drawerView"]
 - ["PSo16UIStateRestoring", "drawerYConstraint"]
@@ -2142,11 +2140,9 @@ depends-member:
 - ["PSo16UIStateRestoring", "layoutViewBasedOnEditMode"]
 - ["PSo16UIStateRestoring", "locationInView"]
 - ["PSo16UIStateRestoring", "moveDrawersBasedOnView"]
-- ["PSo16UIStateRestoring", "nextPictureButtonTapped"]
 - ["PSo16UIStateRestoring", "pickerViewAnimationDuration"]
 - ["PSo16UIStateRestoring", "pickerViewDisplay"]
 - ["PSo16UIStateRestoring", "pickerViewHide"]
-- ["PSo16UIStateRestoring", "previousPictureTapped"]
 - ["PSo16UIStateRestoring", "quoteLabel"]
 - ["PSo16UIStateRestoring", "quoteLabelHeight"]
 - ["PSo16UIStateRestoring", "quoteLabelWidth"]
@@ -2158,16 +2154,18 @@ depends-member:
 - ["PSo16UIStateRestoring", "returnDimensions"]
 - ["PSo16UIStateRestoring", "returnObjectForManipulation"]
 - ["PSo16UIStateRestoring", "setUpView"]
-- ["PSo16UIStateRestoring", "shareButtonTapped"]
 - ["PSo16UIStateRestoring", "shareJunkButtonTapped"]
 - ["PSo16UIStateRestoring", "textFontButtonTapped"]
 - ["PSo16UIStateRestoring", "textScaleButtonTapped"]
 - ["PSo16UIStateRestoring", "toggleDrawer"]
+- ["PSo16UIStateRestoring", "toggleJunkView"]
 - ["PSo16UIStateRestoring", "togglePickerView"]
 - ["PSo16UIStateRestoring", "topDrawerView"]
 - ["PSo16UIStateRestoring", "topDrawerYConstraint"]
 - ["PSo16UIStateRestoring", "topHeightSlider"]
+- ["PSo16UIStateRestoring", "topJunkBarView"]
 - ["PSo16UIStateRestoring", "topJunkSlider"]
+- ["PSo16UIStateRestoring", "topJunkbarYConstraint"]
 - ["PSo16UIStateRestoring", "topPickerView"]
 - ["PSo16UIStateRestoring", "topPickerViewYConstraint"]
 - ["PSo16UIStateRestoring", "topWidthSlider"]
@@ -2209,7 +2207,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "buttonY"]
 - !private ["PSo18UITraitEnvironment", "center"]
 - !private ["PSo18UITraitEnvironment", "clipsToBounds"]
-- ["PSo18UITraitEnvironment", "customTextButtonTapped"]
 - ["PSo18UITraitEnvironment", "drawerMode"]
 - ["PSo18UITraitEnvironment", "drawerView"]
 - ["PSo18UITraitEnvironment", "drawerYConstraint"]
@@ -2241,12 +2238,10 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "maximumValue"]
 - !private ["PSo18UITraitEnvironment", "minimumValue"]
 - ["PSo18UITraitEnvironment", "moveDrawersBasedOnView"]
-- ["PSo18UITraitEnvironment", "nextPictureButtonTapped"]
 - ["PSo18UITraitEnvironment", "pickerViewAnimationDuration"]
 - ["PSo18UITraitEnvironment", "pickerViewDisplay"]
 - ["PSo18UITraitEnvironment", "pickerViewHide"]
 - !private ["PSo18UITraitEnvironment", "pointInside"]
-- ["PSo18UITraitEnvironment", "previousPictureTapped"]
 - ["PSo18UITraitEnvironment", "quoteLabel"]
 - ["PSo18UITraitEnvironment", "quoteLabelHeight"]
 - ["PSo18UITraitEnvironment", "quoteLabelWidth"]
@@ -2258,16 +2253,18 @@ depends-member:
 - ["PSo18UITraitEnvironment", "returnDimensions"]
 - ["PSo18UITraitEnvironment", "returnObjectForManipulation"]
 - ["PSo18UITraitEnvironment", "setUpView"]
-- ["PSo18UITraitEnvironment", "shareButtonTapped"]
 - ["PSo18UITraitEnvironment", "shareJunkButtonTapped"]
 - ["PSo18UITraitEnvironment", "textFontButtonTapped"]
 - ["PSo18UITraitEnvironment", "textScaleButtonTapped"]
 - ["PSo18UITraitEnvironment", "toggleDrawer"]
+- ["PSo18UITraitEnvironment", "toggleJunkView"]
 - ["PSo18UITraitEnvironment", "togglePickerView"]
 - ["PSo18UITraitEnvironment", "topDrawerView"]
 - ["PSo18UITraitEnvironment", "topDrawerYConstraint"]
 - ["PSo18UITraitEnvironment", "topHeightSlider"]
+- ["PSo18UITraitEnvironment", "topJunkBarView"]
 - ["PSo18UITraitEnvironment", "topJunkSlider"]
+- ["PSo18UITraitEnvironment", "topJunkbarYConstraint"]
 - ["PSo18UITraitEnvironment", "topPickerView"]
 - ["PSo18UITraitEnvironment", "topPickerViewYConstraint"]
 - ["PSo18UITraitEnvironment", "topWidthSlider"]
@@ -2336,7 +2333,6 @@ depends-member:
 - ["CSo16UIViewController", "bottomPickerView"]
 - ["CSo16UIViewController", "bottomPickerViewYConstraint"]
 - ["CSo16UIViewController", "buttonY"]
-- ["CSo16UIViewController", "customTextButtonTapped"]
 - ["CSo16UIViewController", "drawerMode"]
 - ["CSo16UIViewController", "drawerView"]
 - ["CSo16UIViewController", "drawerYConstraint"]
@@ -2362,11 +2358,9 @@ depends-member:
 - ["CSo16UIViewController", "layoutViewBasedOnEditMode"]
 - ["CSo16UIViewController", "locationInView"]
 - ["CSo16UIViewController", "moveDrawersBasedOnView"]
-- ["CSo16UIViewController", "nextPictureButtonTapped"]
 - ["CSo16UIViewController", "pickerViewAnimationDuration"]
 - ["CSo16UIViewController", "pickerViewDisplay"]
 - ["CSo16UIViewController", "pickerViewHide"]
-- ["CSo16UIViewController", "previousPictureTapped"]
 - ["CSo16UIViewController", "quoteLabel"]
 - ["CSo16UIViewController", "quoteLabelHeight"]
 - ["CSo16UIViewController", "quoteLabelWidth"]
@@ -2378,16 +2372,18 @@ depends-member:
 - ["CSo16UIViewController", "returnDimensions"]
 - ["CSo16UIViewController", "returnObjectForManipulation"]
 - ["CSo16UIViewController", "setUpView"]
-- ["CSo16UIViewController", "shareButtonTapped"]
 - ["CSo16UIViewController", "shareJunkButtonTapped"]
 - ["CSo16UIViewController", "textFontButtonTapped"]
 - ["CSo16UIViewController", "textScaleButtonTapped"]
 - ["CSo16UIViewController", "toggleDrawer"]
+- ["CSo16UIViewController", "toggleJunkView"]
 - ["CSo16UIViewController", "togglePickerView"]
 - ["CSo16UIViewController", "topDrawerView"]
 - ["CSo16UIViewController", "topDrawerYConstraint"]
 - ["CSo16UIViewController", "topHeightSlider"]
+- ["CSo16UIViewController", "topJunkBarView"]
 - ["CSo16UIViewController", "topJunkSlider"]
+- ["CSo16UIViewController", "topJunkbarYConstraint"]
 - ["CSo16UIViewController", "topPickerView"]
 - ["CSo16UIViewController", "topPickerViewYConstraint"]
 - ["CSo16UIViewController", "topWidthSlider"]
@@ -2415,6 +2411,7 @@ depends-member:
 - ["Ps10_ArrayType", "SubSequence"]
 - ["Ps10_ArrayType", "_Element"]
 - ["Ps10_ArrayType", "init"]
+- !private ["Ps10_ArrayType", "sort"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps31_BuiltinFloatLiteralConvertible", "init"]
 - ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
@@ -2428,6 +2425,7 @@ depends-member:
 - ["Ps24_DestructorSafeContainer", "SubSequence"]
 - ["Ps24_DestructorSafeContainer", "_Element"]
 - ["Ps24_DestructorSafeContainer", "init"]
+- !private ["Ps24_DestructorSafeContainer", "sort"]
 - ["Ps14_Incrementable", "Distance"]
 - ["Ps14_Incrementable", "IntegerLiteralType"]
 - !private ["Ps14_Incrementable", "_DisabledRangeIndex"]
@@ -2449,6 +2447,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "first"]
 - !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "sort"]
 - ["Ps22_RandomAccessAmbiguity", "Distance"]
 - ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
 - !private ["Ps22_RandomAccessAmbiguity", "hashValue"]
@@ -2480,6 +2479,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "minimumValue"]
 - !private ["Ps12_Reflectable", "pointInside"]
 - !private ["Ps12_Reflectable", "size"]
+- !private ["Ps12_Reflectable", "sort"]
 - !private ["Ps12_Reflectable", "transform"]
 - !private ["Ps12_Reflectable", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["Ps12_Reflectable", "userInteractionEnabled"]
@@ -2600,4 +2600,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-interface-hash: "48ee19eff7161dc65ce087bd7c3c8798"
+interface-hash: "dd8c568c7a5c0430071f7c2f8cebe0d1"
