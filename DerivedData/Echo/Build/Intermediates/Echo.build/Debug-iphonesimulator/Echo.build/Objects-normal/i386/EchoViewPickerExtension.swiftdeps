@@ -5,21 +5,24 @@ provides-nominal:
 provides-member:
 - ["C4Echo18EchoViewController", ""]
 provides-dynamic-lookup:
-- "pickerView"
-- "pickerView"
-- "pickerView"
 - "numberOfComponentsInPickerView"
+- "pickerView"
+- "pickerView"
+- "pickerView"
 depends-top-level:
-- "Int"
-- "EchoViewController"
 - "UIView"
 - !private "UIColor"
-- "UIPickerView"
-- "UIPickerViewDataSource"
 - "UIPickerViewDelegate"
 - !private "UIFont"
+- "UIPickerViewDataSource"
+- "EchoViewController"
+- !private "CGFloat"
 - !private "UILabel"
+- "UIPickerView"
+- "Int"
 depends-member:
+- !private ["Ps16AbsoluteValuable", "init"]
+- !private ["Ps9AnyObject", "CGFloat"]
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIFont"]
 - !private ["Ps9AnyObject", "UILabel"]
@@ -32,6 +35,8 @@ depends-member:
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "textAlignment"]
 - !private ["Ps9AnyObject", "textColor"]
+- !private ["Ps9AnyObject", "topFontSizeSlider"]
+- !private ["Ps9AnyObject", "value"]
 - !private ["Ps9AnyObject", "whiteColor"]
 - !private ["Sa", "Generator"]
 - !private ["Sa", "Index"]
@@ -51,6 +56,8 @@ depends-member:
 - !private ["Ps21BitwiseOperationsType", "Distance"]
 - !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["V12CoreGraphics7CGFloat", "init"]
+- !private ["Ps11CVarArgType", "CGFloat"]
 - !private ["Ps11CVarArgType", "Distance"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "UIColor"]
@@ -65,6 +72,8 @@ depends-member:
 - !private ["Ps11CVarArgType", "text"]
 - !private ["Ps11CVarArgType", "textAlignment"]
 - !private ["Ps11CVarArgType", "textColor"]
+- !private ["Ps11CVarArgType", "topFontSizeSlider"]
+- !private ["Ps11CVarArgType", "value"]
 - !private ["Ps11CVarArgType", "whiteColor"]
 - !private ["Ps14CollectionType", "Generator"]
 - !private ["Ps14CollectionType", "Index"]
@@ -74,6 +83,8 @@ depends-member:
 - !private ["Ps14CollectionType", "subscript"]
 - !private ["Ps10Comparable", "Distance"]
 - !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "CGFloat"]
 - !private ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - ["Ps28CustomDebugStringConvertible", "Some"]
@@ -92,7 +103,10 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "textAlignment"]
 - !private ["Ps28CustomDebugStringConvertible", "textColor"]
+- !private ["Ps28CustomDebugStringConvertible", "topFontSizeSlider"]
+- !private ["Ps28CustomDebugStringConvertible", "value"]
 - !private ["Ps28CustomDebugStringConvertible", "whiteColor"]
+- !private ["Ps23CustomStringConvertible", "CGFloat"]
 - !private ["Ps23CustomStringConvertible", "Distance"]
 - !private ["Ps23CustomStringConvertible", "Generator"]
 - !private ["Ps23CustomStringConvertible", "Index"]
@@ -112,7 +126,10 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "textAlignment"]
 - !private ["Ps23CustomStringConvertible", "textColor"]
+- !private ["Ps23CustomStringConvertible", "topFontSizeSlider"]
+- !private ["Ps23CustomStringConvertible", "value"]
 - !private ["Ps23CustomStringConvertible", "whiteColor"]
+- !private ["C4Echo18EchoViewController", "CGFloat"]
 - ["C4Echo18EchoViewController", "Int"]
 - !private ["C4Echo18EchoViewController", "UIColor"]
 - !private ["C4Echo18EchoViewController", "UIFont"]
@@ -124,6 +141,8 @@ depends-member:
 - ["C4Echo18EchoViewController", "numberOfComponentsInPickerView"]
 - ["C4Echo18EchoViewController", "pickerView"]
 - !private ["C4Echo18EchoViewController", "quoteLabel"]
+- !private ["C4Echo18EchoViewController", "topFontSizeSlider"]
+- !private ["Ps9Equatable", "CGFloat"]
 - !private ["Ps9Equatable", "Center"]
 - !private ["Ps9Equatable", "Distance"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
@@ -139,10 +158,15 @@ depends-member:
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "textAlignment"]
 - !private ["Ps9Equatable", "textColor"]
+- !private ["Ps9Equatable", "topFontSizeSlider"]
+- !private ["Ps9Equatable", "value"]
 - !private ["Ps9Equatable", "whiteColor"]
+- !private ["Ps23FloatLiteralConvertible", "init"]
+- !private ["Ps17FloatingPointType", "init"]
 - !private ["Ps16ForwardIndexType", "Distance"]
 - !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
 - !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "CGFloat"]
 - !private ["Ps8Hashable", "Center"]
 - !private ["Ps8Hashable", "Distance"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
@@ -158,6 +182,8 @@ depends-member:
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "textAlignment"]
 - !private ["Ps8Hashable", "textColor"]
+- !private ["Ps8Hashable", "topFontSizeSlider"]
+- !private ["Ps8Hashable", "value"]
 - !private ["Ps8Hashable", "whiteColor"]
 - !private ["Ps9Indexable", "Generator"]
 - !private ["Ps9Indexable", "Index"]
@@ -172,6 +198,7 @@ depends-member:
 - !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
 - !private ["Ps25IntegerLiteralConvertible", "Distance"]
 - !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "init"]
 - !private ["Ps11IntegerType", "Distance"]
 - !private ["Ps11IntegerType", "IntegerLiteralType"]
 - !private ["Ps14MirrorPathType", "Distance"]
@@ -191,6 +218,7 @@ depends-member:
 - !private ["Ps16MutableSliceable", "SubSequence"]
 - !private ["Ps16MutableSliceable", "count"]
 - !private ["Ps16MutableSliceable", "subscript"]
+- !private ["PSo8NSCoding", "CGFloat"]
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIFont"]
 - !private ["PSo8NSCoding", "UILabel"]
@@ -203,9 +231,12 @@ depends-member:
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "textAlignment"]
 - !private ["PSo8NSCoding", "textColor"]
+- !private ["PSo8NSCoding", "topFontSizeSlider"]
+- !private ["PSo8NSCoding", "value"]
 - !private ["PSo8NSCoding", "whiteColor"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "whiteColor"]
+- !private ["PSo26NSExtensionRequestHandling", "CGFloat"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIFont"]
 - !private ["PSo26NSExtensionRequestHandling", "UILabel"]
@@ -213,6 +244,8 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "numberOfComponentsInPickerView"]
 - ["PSo26NSExtensionRequestHandling", "pickerView"]
 - !private ["PSo26NSExtensionRequestHandling", "quoteLabel"]
+- !private ["PSo26NSExtensionRequestHandling", "topFontSizeSlider"]
+- !private ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIFont"]
@@ -228,7 +261,10 @@ depends-member:
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "textAlignment"]
 - !private ["CSo8NSObject", "textColor"]
+- !private ["CSo8NSObject", "topFontSizeSlider"]
+- !private ["CSo8NSObject", "value"]
 - !private ["CSo8NSObject", "whiteColor"]
+- !private ["PSo16NSObjectProtocol", "CGFloat"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIFont"]
 - !private ["PSo16NSObjectProtocol", "UILabel"]
@@ -241,6 +277,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "textAlignment"]
 - !private ["PSo16NSObjectProtocol", "textColor"]
+- !private ["PSo16NSObjectProtocol", "topFontSizeSlider"]
+- !private ["PSo16NSObjectProtocol", "value"]
 - !private ["PSo16NSObjectProtocol", "whiteColor"]
 - !private ["PSo14NSSecureCoding", "whiteColor"]
 - !private ["OSC15NSTextAlignment", "Center"]
@@ -266,22 +304,27 @@ depends-member:
 - !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
 - !private ["Ps16SignedNumberType", "Distance"]
 - !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "init"]
 - !private ["Vs5Slice", "Generator"]
 - !private ["Vs5Slice", "Index"]
 - !private ["Vs5Slice", "SubSequence"]
 - !private ["Vs5Slice", "_Element"]
 - !private ["Ps10Strideable", "Distance"]
 - !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["Ps10Strideable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "font"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "textAlignment"]
 - !private ["PSo29UIAccessibilityIdentification", "textColor"]
+- !private ["PSo29UIAccessibilityIdentification", "value"]
 - !private ["PSo12UIAppearance", "font"]
 - !private ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "textAlignment"]
 - !private ["PSo12UIAppearance", "textColor"]
+- !private ["PSo12UIAppearance", "value"]
+- !private ["PSo21UIAppearanceContainer", "CGFloat"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
 - !private ["PSo21UIAppearanceContainer", "UILabel"]
@@ -294,7 +337,10 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "textAlignment"]
 - !private ["PSo21UIAppearanceContainer", "textColor"]
+- !private ["PSo21UIAppearanceContainer", "topFontSizeSlider"]
+- !private ["PSo21UIAppearanceContainer", "value"]
 - !private ["CSo7UIColor", "whiteColor"]
+- !private ["PSo18UIContentContainer", "CGFloat"]
 - !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIFont"]
 - !private ["PSo18UIContentContainer", "UILabel"]
@@ -302,16 +348,21 @@ depends-member:
 - ["PSo18UIContentContainer", "numberOfComponentsInPickerView"]
 - ["PSo18UIContentContainer", "pickerView"]
 - !private ["PSo18UIContentContainer", "quoteLabel"]
+- !private ["PSo18UIContentContainer", "topFontSizeSlider"]
+- !private ["CSo9UIControl", "value"]
 - !private ["PSo17UICoordinateSpace", "font"]
 - !private ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "textAlignment"]
 - !private ["PSo17UICoordinateSpace", "textColor"]
+- !private ["PSo17UICoordinateSpace", "value"]
 - !private ["PSo13UIDynamicItem", "font"]
 - !private ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "textAlignment"]
 - !private ["PSo13UIDynamicItem", "textColor"]
+- !private ["PSo13UIDynamicItem", "value"]
+- !private ["PSo18UIFocusEnvironment", "CGFloat"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIFont"]
 - !private ["PSo18UIFocusEnvironment", "UILabel"]
@@ -324,12 +375,15 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "textAlignment"]
 - !private ["PSo18UIFocusEnvironment", "textColor"]
+- !private ["PSo18UIFocusEnvironment", "topFontSizeSlider"]
+- !private ["PSo18UIFocusEnvironment", "value"]
 - !private ["CSo6UIFont", "init"]
 - !private ["CSo7UILabel", "font"]
 - !private ["CSo7UILabel", "init"]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo7UILabel", "textAlignment"]
 - !private ["CSo7UILabel", "textColor"]
+- !private ["PSo22UIPickerViewDataSource", "CGFloat"]
 - !private ["PSo22UIPickerViewDataSource", "UIColor"]
 - !private ["PSo22UIPickerViewDataSource", "UIFont"]
 - !private ["PSo22UIPickerViewDataSource", "UILabel"]
@@ -337,7 +391,9 @@ depends-member:
 - ["PSo22UIPickerViewDataSource", "numberOfComponentsInPickerView"]
 - ["PSo22UIPickerViewDataSource", "pickerView"]
 - !private ["PSo22UIPickerViewDataSource", "quoteLabel"]
+- !private ["PSo22UIPickerViewDataSource", "topFontSizeSlider"]
 - ["PSo22UIPickerViewDataSource", ""]
+- !private ["PSo20UIPickerViewDelegate", "CGFloat"]
 - !private ["PSo20UIPickerViewDelegate", "UIColor"]
 - !private ["PSo20UIPickerViewDelegate", "UIFont"]
 - !private ["PSo20UIPickerViewDelegate", "UILabel"]
@@ -345,7 +401,9 @@ depends-member:
 - ["PSo20UIPickerViewDelegate", "numberOfComponentsInPickerView"]
 - ["PSo20UIPickerViewDelegate", "pickerView"]
 - !private ["PSo20UIPickerViewDelegate", "quoteLabel"]
+- !private ["PSo20UIPickerViewDelegate", "topFontSizeSlider"]
 - ["PSo20UIPickerViewDelegate", ""]
+- !private ["CSo11UIResponder", "CGFloat"]
 - ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIFont"]
@@ -361,6 +419,10 @@ depends-member:
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "textAlignment"]
 - !private ["CSo11UIResponder", "textColor"]
+- !private ["CSo11UIResponder", "topFontSizeSlider"]
+- !private ["CSo11UIResponder", "value"]
+- !private ["CSo8UISlider", "value"]
+- !private ["PSo16UIStateRestoring", "CGFloat"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIFont"]
 - !private ["PSo16UIStateRestoring", "UILabel"]
@@ -368,6 +430,8 @@ depends-member:
 - ["PSo16UIStateRestoring", "numberOfComponentsInPickerView"]
 - ["PSo16UIStateRestoring", "pickerView"]
 - !private ["PSo16UIStateRestoring", "quoteLabel"]
+- !private ["PSo16UIStateRestoring", "topFontSizeSlider"]
+- !private ["PSo18UITraitEnvironment", "CGFloat"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIFont"]
 - !private ["PSo18UITraitEnvironment", "UILabel"]
@@ -380,11 +444,15 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "textAlignment"]
 - !private ["PSo18UITraitEnvironment", "textColor"]
+- !private ["PSo18UITraitEnvironment", "topFontSizeSlider"]
+- !private ["PSo18UITraitEnvironment", "value"]
 - !private ["CSo6UIView", "font"]
 - !private ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "textAlignment"]
 - !private ["CSo6UIView", "textColor"]
+- !private ["CSo6UIView", "value"]
+- !private ["CSo16UIViewController", "CGFloat"]
 - ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "UIColor"]
 - !private ["CSo16UIViewController", "UIFont"]
@@ -395,6 +463,7 @@ depends-member:
 - ["CSo16UIViewController", "numberOfComponentsInPickerView"]
 - ["CSo16UIViewController", "pickerView"]
 - !private ["CSo16UIViewController", "quoteLabel"]
+- !private ["CSo16UIViewController", "topFontSizeSlider"]
 - !private ["Ps10_ArrayType", "Generator"]
 - !private ["Ps10_ArrayType", "Index"]
 - !private ["Ps10_ArrayType", "SubSequence"]
@@ -402,6 +471,8 @@ depends-member:
 - !private ["Ps10_ArrayType", "subscript"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps19_CVarArgAlignedType", "init"]
+- !private ["Ps22_CVarArgPassedAsDouble", "init"]
 - !private ["Ps24_ColorLiteralConvertible", "whiteColor"]
 - !private ["Ps24_DestructorSafeContainer", "Generator"]
 - !private ["Ps24_DestructorSafeContainer", "Index"]
@@ -420,6 +491,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
 - !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Ps22_RandomAccessAmbiguity", "Distance"]
 - !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
@@ -436,9 +508,11 @@ depends-member:
 - !private ["Ps12_Reflectable", "text"]
 - !private ["Ps12_Reflectable", "textAlignment"]
 - !private ["Ps12_Reflectable", "textColor"]
+- !private ["Ps12_Reflectable", "value"]
 - !private ["Ps18_SignedIntegerType", "Distance"]
 - !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
 depends-nominal:
+- !private "Ps16AbsoluteValuable"
 - "Ps9AnyObject"
 - !private "Sa"
 - !private "Ps23ArrayLiteralConvertible"
@@ -453,6 +527,8 @@ depends-nominal:
 - "Ps23CustomStringConvertible"
 - "C4Echo18EchoViewController"
 - "Ps9Equatable"
+- !private "Ps23FloatLiteralConvertible"
+- !private "Ps17FloatingPointType"
 - !private "Ps16ForwardIndexType"
 - !private "Ps13GeneratorType"
 - "Ps8Hashable"
@@ -488,6 +564,7 @@ depends-nominal:
 - "PSo21UIAppearanceContainer"
 - !private "CSo7UIColor"
 - "PSo18UIContentContainer"
+- !private "CSo9UIControl"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
@@ -496,12 +573,15 @@ depends-nominal:
 - "PSo22UIPickerViewDataSource"
 - "PSo20UIPickerViewDelegate"
 - "CSo11UIResponder"
+- !private "CSo8UISlider"
 - "PSo16UIStateRestoring"
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
 - !private "Ps10_ArrayType"
 - !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps19_CVarArgAlignedType"
+- !private "Ps22_CVarArgPassedAsDouble"
 - !private "Ps24_ColorLiteralConvertible"
 - !private "Ps24_DestructorSafeContainer"
 - !private "Ps14_Incrementable"

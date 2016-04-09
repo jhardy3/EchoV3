@@ -134,7 +134,7 @@ class EchoViewController: UIViewController {
     func setUpView() {
         quoteLabel.layer.cornerRadius = 7.0
         quoteLabel.clipsToBounds = true
-        quoteLabel.adjustsFontSizeToFitWidth = true
+        quoteLabel.adjustsFontSizeToFitWidth = false
         quoteLabel.autoresizesSubviews = true
         
         backgroundImage.userInteractionEnabled = true
@@ -311,25 +311,11 @@ class EchoViewController: UIViewController {
     }
     
     @IBAction func topFontSizeSliderFired(sender: UISlider) {
-        let fontName = quoteLabel.font.fontName
-        let fontSize = CGFloat(sender.value)
-        quoteLabel.font = UIFont(name: fontName, size: fontSize)
-        bottomFontSizeSlider.value = sender.value
-        
-        UIView.animateWithDuration(animationInterval) {
-            self.view.layoutIfNeeded()
-        }
+
     }
     
     @IBAction func bottomFontSizeSliderFired(sender: UISlider) {
-        let fontName = quoteLabel.font.fontName
-        let fontSize = CGFloat(sender.value)
-        quoteLabel.font = UIFont(name: fontName, size: fontSize)
-        topFontSizeSlider.value = sender.value
-        
-        UIView.animateWithDuration(animationInterval) {
-            self.view.layoutIfNeeded()
-        }
+
     }
     
     @IBAction func widthSliderChanged(sender: UISlider) {
@@ -349,11 +335,46 @@ class EchoViewController: UIViewController {
     }
     
     @IBAction func junkSliderChanged(sender: UISlider) {
-        quoteView.alpha = CGFloat(sender.value)
+        
+        switch editMode {
+    
+        case .BoxScale:
+            quoteView.alpha = CGFloat(sender.value)
+            topJunkSlider.value = sender.value
+        case .TextScale:
+            let fontName = quoteLabel.font.fontName
+            let fontSize = CGFloat(sender.value)
+            quoteLabel.font = UIFont(name: fontName, size: fontSize)
+            bottomFontSizeSlider.value = sender.value
+            
+            UIView.animateWithDuration(animationInterval) {
+                self.view.layoutIfNeeded()
+            }
+        default:
+            return
+        }
     }
     
     @IBAction func topJunkSlider(sender: UISlider) {
-        quoteView.alpha = CGFloat(sender.value)
+        
+        switch editMode {
+            
+        case .BoxScale:
+            quoteView.alpha = CGFloat(sender.value)
+            junkSlider.value = sender.value
+            
+        case .TextScale:
+            let fontName = quoteLabel.font.fontName
+            let fontSize = CGFloat(sender.value)
+            quoteLabel.font = UIFont(name: fontName, size: fontSize)
+            topFontSizeSlider.value = sender.value
+            
+            UIView.animateWithDuration(animationInterval) {
+                self.view.layoutIfNeeded()
+            }
+        default:
+            return
+        }
     }
     
     @IBAction func toggleDrawer(sender: UITapGestureRecognizer) {
@@ -433,29 +454,48 @@ class EchoViewController: UIViewController {
         widthSlider.value = Float(view.frame.width) + 50
         heightSlider.maximumValue = Float(self.view.frame.height) + 50
         heightSlider.value = Float(view.frame.height) + 50
-        junkSlider.maximumValue = 1.0
-        junkSlider.value = Float(view.alpha)
         
         widthSlider.minimumValue = 30
         heightSlider.minimumValue = 30
-        junkSlider.minimumValue = 0.0
-        
+
         topWidthSlider.maximumValue = Float(self.view.frame.width)
         topWidthSlider.value = Float(view.frame.width)
         topHeightSlider.maximumValue = Float(self.view.frame.height)
         topHeightSlider.value = Float(view.frame.height)
-        topJunkSlider.maximumValue = 1.0
-        topJunkSlider.value = Float(view.alpha)
+
         
         topWidthSlider.minimumValue = 30
         topHeightSlider.minimumValue = 30
-        topJunkSlider.minimumValue = 0.0
+        
         
         topFontSizeSlider.maximumValue = 60
         topFontSizeSlider.minimumValue = 6
         
         bottomFontSizeSlider.maximumValue = 60
         bottomFontSizeSlider.minimumValue = 6
+        
+        switch editMode {
+        case .BoxScale:
+            junkSlider.maximumValue = 1.0
+            junkSlider.value = Float(view.alpha)
+            junkSlider.minimumValue = 0.0
+            
+            topJunkSlider.maximumValue = 1.0
+            topJunkSlider.value = Float(view.alpha)
+            topJunkSlider.minimumValue = 0.0
+            
+        case .TextScale:
+            junkSlider.maximumValue = 60
+            junkSlider.minimumValue = 6
+            junkSlider.value = 20
+            
+            topJunkSlider.maximumValue = 60
+            topJunkSlider.minimumValue = 6
+            topJunkSlider.value = 20
+            
+        default:
+            break
+        }
     }
     
     func updateViewForBoxScale() {

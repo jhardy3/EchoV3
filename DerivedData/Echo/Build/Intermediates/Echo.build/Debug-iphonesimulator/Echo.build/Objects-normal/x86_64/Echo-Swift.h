@@ -147,6 +147,8 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified topWidthSlider;
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified topHeightSlider;
 @property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified topJunkSlider;
+@property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified topFontSizeSlider;
+@property (nonatomic, weak) IBOutlet UISlider * _Null_unspecified bottomFontSizeSlider;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified topJunkbarYConstraint;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified junkbarYConstraint;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified bottomPickerViewYConstraint;
@@ -173,6 +175,8 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 - (void)hideJunkView;
 - (void)hideDrawers;
 - (void)hidePickerViews;
+- (IBAction)topFontSizeSliderFired:(UISlider * _Nonnull)sender;
+- (IBAction)bottomFontSizeSliderFired:(UISlider * _Nonnull)sender;
 - (IBAction)widthSliderChanged:(UISlider * _Nonnull)sender;
 - (IBAction)topWidthSlider:(UISlider * _Nonnull)sender;
 - (IBAction)heightSliderChanged:(UISlider * _Nonnull)sender;
@@ -191,6 +195,11 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 - (void)updateViewConstraints;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface EchoViewController (SWIFT_EXTENSION(Echo))
+- (void)displayActivityController;
 @end
 
 
