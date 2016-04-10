@@ -18,106 +18,106 @@ provides-member:
 - ["O4Echo9Dimension", ""]
 - ["C4Echo18EchoViewController", ""]
 provides-dynamic-lookup:
+- "updateViewConstraints"
 - "moveDrawersBasedOnView"
-- "junkSliderChanged"
 - "quoteViewHeight"
-- "textFontButtonTapped"
-- "topDrawerView"
+- "hideJunkView"
 - "junkbarYConstraint"
+- "topFontSizeSliderFired"
+- "togglePickerView"
+- "topDrawerView"
+- "quoteViewLocation"
+- "forwardSwipeGestureFired"
+- "topHeightSlider"
+- "topHeightSlider"
+- "backgroundImage"
+- "toggleDrawer"
+- "toggleDrawer"
+- "firstLoad"
+- "updateSlidersWithView"
+- "junkBarView"
+- "viewDidLoad"
 - "touchesBegan"
-- "topHeightSlider"
-- "topHeightSlider"
+- "currentFontSize"
+- "widthSliderChanged"
+- "topPickerView"
+- "quoteView"
+- "topDrawerYConstraint"
+- "shareJunkButtonTapped"
+- "touchesMoved"
+- "backwardSwipeGestureFired"
+- "topWidthSlider"
+- "topWidthSlider"
+- "topJunkbarYConstraint"
+- "textScaleButtonTapped"
+- "hideDrawers"
+- "quoteLabelWidth"
+- "junkSliderChanged"
+- "returnObjectForManipulation"
+- "topFontSizeSlider"
+- "bottomPickerView"
+- "topPickerViewYConstraint"
 - "setUpView"
 - "heightSliderChanged"
+- "widthSlider"
+- "viewDidAppear"
+- "quoteLabel"
+- "bottomFontSizeSlider"
+- "quoteLabelHeight"
+- "isInButton"
+- "bottomPickerViewYConstraint"
+- "junkSlider"
+- "topJunkSlider"
+- "topJunkSlider"
+- "drawerYConstraint"
+- "quoteViewWidth"
 - "toggleJunkView"
 - "layoutViewBasedOnEditMode"
-- "updateSlidersWithView"
-- "updateViewConstraints"
-- "updateViewForBoxScale"
-- "fontNames"
-- "toggleDrawer"
-- "toggleDrawer"
-- "junkBarView"
-- "hidePickerViews"
-- "updateViewForTextScale"
-- "currentFontSize"
-- "quoteViewLocation"
-- "quoteView"
-- "topPickerView"
-- "topDrawerYConstraint"
-- "backgroundImage"
-- "touchesMoved"
-- "widthSliderChanged"
-- "viewDidAppear"
-- "topJunkbarYConstraint"
-- "topWidthSlider"
-- "topWidthSlider"
-- "quoteLabelWidth"
-- "heightSlider"
-- "topFontSizeSlider"
-- "textScaleButtonTapped"
-- "topPickerViewYConstraint"
-- "bottomPickerView"
-- "firstLoad"
-- "viewDidLoad"
-- "quoteLabelHeight"
-- "updateViewForTextFont"
-- "topFontSizeSliderFired"
-- "bottomFontSizeSlider"
-- "junkSlider"
-- "drawerYConstraint"
-- "topJunkSlider"
-- "topJunkSlider"
-- "widthSlider"
-- "quoteViewWidth"
-- "hideDrawers"
-- "bottomPickerViewYConstraint"
-- "viewScaleButtonTapped"
 - "bottomFontSizeSliderFired"
-- "hideJunkView"
+- "hidePickerViews"
+- "viewScaleButtonTapped"
+- "textFontButtonTapped"
 - "topJunkBarView"
-- "isInButton"
+- "heightSlider"
+- "fontNames"
 - "drawerView"
-- "togglePickerView"
-- "quoteLabel"
-- "shareJunkButtonTapped"
-- "returnObjectForManipulation"
 depends-top-level:
-- "Set"
-- !private "UIColor"
 - "UIImageView"
 - !private "Double"
-- "NSLayoutConstraint"
-- !private "+"
-- "UILabel"
-- "ViewMode"
-- !private "Void"
-- !private "-"
-- "Bool"
-- "DrawerMode"
-- "UIEvent"
 - "=="
-- "String"
-- !private "UIFont"
-- "UIView"
-- !private "QuoteController"
-- "Float"
-- "UISlider"
-- "UITapGestureRecognizer"
-- "CGFloat"
-- !private "/"
-- !private "ImageController"
-- "UIViewController"
-- "UIPickerView"
-- !private "&&"
-- "BooleanLiteralType"
-- "UITouch"
-- "UIButton"
 - !private ">="
-- !private "<"
-- "EchoViewController"
-- "Dimension"
+- "BooleanLiteralType"
+- !private "&&"
+- !private "ImageController"
+- !private "+"
+- "Bool"
+- "ViewMode"
+- "CGFloat"
+- "UITouch"
+- !private "QuoteController"
+- "DrawerMode"
+- "Set"
+- "String"
+- "UISwipeGestureRecognizer"
+- "UIView"
 - "EditMode"
+- !private "/"
+- !private "-"
+- "UILabel"
+- "Float"
+- "EchoViewController"
+- !private "Void"
+- !private "UIFont"
+- "UIPickerView"
+- !private "UIColor"
+- "UITapGestureRecognizer"
+- "NSLayoutConstraint"
+- "UIViewController"
+- "UIEvent"
+- "Dimension"
+- !private "<"
+- "UIButton"
+- "UISlider"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]
@@ -140,6 +140,7 @@ depends-member:
 - !private ["Ps9AnyObject", "autoresizesSubviews"]
 - !private ["Ps9AnyObject", "backgroundColor"]
 - ["Ps9AnyObject", "backgroundImage"]
+- ["Ps9AnyObject", "backwardSwipeGestureFired"]
 - ["Ps9AnyObject", "bottomFontSizeSlider"]
 - ["Ps9AnyObject", "bottomFontSizeSliderFired"]
 - ["Ps9AnyObject", "bottomPickerView"]
@@ -152,6 +153,7 @@ depends-member:
 - !private ["Ps9AnyObject", "constant"]
 - !private ["Ps9AnyObject", "cornerRadius"]
 - ["Ps9AnyObject", "currentFontSize"]
+- !private ["Ps9AnyObject", "direction"]
 - !private ["Ps9AnyObject", "displayActivityController"]
 - ["Ps9AnyObject", "drawerMode"]
 - ["Ps9AnyObject", "drawerView"]
@@ -161,11 +163,13 @@ depends-member:
 - ["Ps9AnyObject", "editMode"]
 - ["Ps9AnyObject", "extraBufferSpace"]
 - !private ["Ps9AnyObject", "familyNames"]
+- !private ["Ps9AnyObject", "fetchNextImage"]
 - !private ["Ps9AnyObject", "fetchPreviousImage"]
 - ["Ps9AnyObject", "firstLoad"]
 - !private ["Ps9AnyObject", "font"]
 - !private ["Ps9AnyObject", "fontName"]
 - ["Ps9AnyObject", "fontNames"]
+- ["Ps9AnyObject", "forwardSwipeGestureFired"]
 - !private ["Ps9AnyObject", "frame"]
 - ["Ps9AnyObject", "heightSlider"]
 - ["Ps9AnyObject", "heightSliderChanged"]
@@ -230,9 +234,6 @@ depends-member:
 - !private ["Ps9AnyObject", "translatesAutoresizingMaskIntoConstraints"]
 - ["Ps9AnyObject", "updateSlidersWithView"]
 - ["Ps9AnyObject", "updateViewConstraints"]
-- ["Ps9AnyObject", "updateViewForBoxScale"]
-- ["Ps9AnyObject", "updateViewForTextFont"]
-- ["Ps9AnyObject", "updateViewForTextScale"]
 - !private ["Ps9AnyObject", "userInteractionEnabled"]
 - !private ["Ps9AnyObject", "value"]
 - !private ["Ps9AnyObject", "view"]
@@ -251,6 +252,9 @@ depends-member:
 - !private ["Sa", "sort"]
 - ["Ps23ArrayLiteralConvertible", "Generator"]
 - ["Ps23ArrayLiteralConvertible", "Index"]
+- !private ["Ps23ArrayLiteralConvertible", "Left"]
+- !private ["Ps23ArrayLiteralConvertible", "RawValue"]
+- !private ["Ps23ArrayLiteralConvertible", "Right"]
 - ["Ps23ArrayLiteralConvertible", "SubSequence"]
 - ["Ps23ArrayLiteralConvertible", "_Element"]
 - !private ["Ps23ArrayLiteralConvertible", "first"]
@@ -304,6 +308,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "autoresizesSubviews"]
 - !private ["Ps11CVarArgType", "backgroundColor"]
 - ["Ps11CVarArgType", "backgroundImage"]
+- ["Ps11CVarArgType", "backwardSwipeGestureFired"]
 - ["Ps11CVarArgType", "bottomFontSizeSlider"]
 - ["Ps11CVarArgType", "bottomFontSizeSliderFired"]
 - ["Ps11CVarArgType", "bottomPickerView"]
@@ -316,6 +321,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "constant"]
 - !private ["Ps11CVarArgType", "cornerRadius"]
 - ["Ps11CVarArgType", "currentFontSize"]
+- !private ["Ps11CVarArgType", "direction"]
 - !private ["Ps11CVarArgType", "displayActivityController"]
 - ["Ps11CVarArgType", "drawerMode"]
 - ["Ps11CVarArgType", "drawerView"]
@@ -329,6 +335,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "font"]
 - !private ["Ps11CVarArgType", "fontName"]
 - ["Ps11CVarArgType", "fontNames"]
+- ["Ps11CVarArgType", "forwardSwipeGestureFired"]
 - !private ["Ps11CVarArgType", "frame"]
 - !private ["Ps11CVarArgType", "hashValue"]
 - ["Ps11CVarArgType", "heightSlider"]
@@ -393,9 +400,6 @@ depends-member:
 - !private ["Ps11CVarArgType", "translatesAutoresizingMaskIntoConstraints"]
 - ["Ps11CVarArgType", "updateSlidersWithView"]
 - ["Ps11CVarArgType", "updateViewConstraints"]
-- ["Ps11CVarArgType", "updateViewForBoxScale"]
-- ["Ps11CVarArgType", "updateViewForTextFont"]
-- ["Ps11CVarArgType", "updateViewForTextScale"]
 - !private ["Ps11CVarArgType", "userInteractionEnabled"]
 - !private ["Ps11CVarArgType", "value"]
 - !private ["Ps11CVarArgType", "view"]
@@ -443,6 +447,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "autoresizesSubviews"]
 - !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - ["Ps28CustomDebugStringConvertible", "backgroundImage"]
+- ["Ps28CustomDebugStringConvertible", "backwardSwipeGestureFired"]
 - ["Ps28CustomDebugStringConvertible", "bottomFontSizeSlider"]
 - ["Ps28CustomDebugStringConvertible", "bottomFontSizeSliderFired"]
 - ["Ps28CustomDebugStringConvertible", "bottomPickerView"]
@@ -455,6 +460,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "constant"]
 - !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
 - ["Ps28CustomDebugStringConvertible", "currentFontSize"]
+- !private ["Ps28CustomDebugStringConvertible", "direction"]
 - !private ["Ps28CustomDebugStringConvertible", "displayActivityController"]
 - ["Ps28CustomDebugStringConvertible", "drawerMode"]
 - ["Ps28CustomDebugStringConvertible", "drawerView"]
@@ -469,6 +475,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "font"]
 - !private ["Ps28CustomDebugStringConvertible", "fontName"]
 - ["Ps28CustomDebugStringConvertible", "fontNames"]
+- ["Ps28CustomDebugStringConvertible", "forwardSwipeGestureFired"]
 - !private ["Ps28CustomDebugStringConvertible", "frame"]
 - ["Ps28CustomDebugStringConvertible", "heightSlider"]
 - ["Ps28CustomDebugStringConvertible", "heightSliderChanged"]
@@ -533,9 +540,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "translatesAutoresizingMaskIntoConstraints"]
 - ["Ps28CustomDebugStringConvertible", "updateSlidersWithView"]
 - ["Ps28CustomDebugStringConvertible", "updateViewConstraints"]
-- ["Ps28CustomDebugStringConvertible", "updateViewForBoxScale"]
-- ["Ps28CustomDebugStringConvertible", "updateViewForTextFont"]
-- ["Ps28CustomDebugStringConvertible", "updateViewForTextScale"]
 - !private ["Ps28CustomDebugStringConvertible", "userInteractionEnabled"]
 - !private ["Ps28CustomDebugStringConvertible", "value"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
@@ -574,6 +578,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "autoresizesSubviews"]
 - !private ["Ps23CustomStringConvertible", "backgroundColor"]
 - ["Ps23CustomStringConvertible", "backgroundImage"]
+- ["Ps23CustomStringConvertible", "backwardSwipeGestureFired"]
 - ["Ps23CustomStringConvertible", "bottomFontSizeSlider"]
 - ["Ps23CustomStringConvertible", "bottomFontSizeSliderFired"]
 - ["Ps23CustomStringConvertible", "bottomPickerView"]
@@ -586,6 +591,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "constant"]
 - !private ["Ps23CustomStringConvertible", "cornerRadius"]
 - ["Ps23CustomStringConvertible", "currentFontSize"]
+- !private ["Ps23CustomStringConvertible", "direction"]
 - !private ["Ps23CustomStringConvertible", "displayActivityController"]
 - ["Ps23CustomStringConvertible", "drawerMode"]
 - ["Ps23CustomStringConvertible", "drawerView"]
@@ -600,6 +606,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "font"]
 - !private ["Ps23CustomStringConvertible", "fontName"]
 - ["Ps23CustomStringConvertible", "fontNames"]
+- ["Ps23CustomStringConvertible", "forwardSwipeGestureFired"]
 - !private ["Ps23CustomStringConvertible", "frame"]
 - !private ["Ps23CustomStringConvertible", "hashValue"]
 - ["Ps23CustomStringConvertible", "heightSlider"]
@@ -665,9 +672,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "translatesAutoresizingMaskIntoConstraints"]
 - ["Ps23CustomStringConvertible", "updateSlidersWithView"]
 - ["Ps23CustomStringConvertible", "updateViewConstraints"]
-- ["Ps23CustomStringConvertible", "updateViewForBoxScale"]
-- ["Ps23CustomStringConvertible", "updateViewForTextFont"]
-- ["Ps23CustomStringConvertible", "updateViewForTextScale"]
 - !private ["Ps23CustomStringConvertible", "userInteractionEnabled"]
 - !private ["Ps23CustomStringConvertible", "value"]
 - !private ["Ps23CustomStringConvertible", "view"]
@@ -707,6 +711,7 @@ depends-member:
 - ["C4Echo18EchoViewController", "UILabel"]
 - ["C4Echo18EchoViewController", "UIPickerView"]
 - ["C4Echo18EchoViewController", "UISlider"]
+- ["C4Echo18EchoViewController", "UISwipeGestureRecognizer"]
 - ["C4Echo18EchoViewController", "UITapGestureRecognizer"]
 - ["C4Echo18EchoViewController", "UITouch"]
 - ["C4Echo18EchoViewController", "UIView"]
@@ -715,6 +720,7 @@ depends-member:
 - ["C4Echo18EchoViewController", "adjustFrameBasedOnDimension"]
 - !private ["C4Echo18EchoViewController", "animationInterval"]
 - ["C4Echo18EchoViewController", "backgroundImage"]
+- ["C4Echo18EchoViewController", "backwardSwipeGestureFired"]
 - ["C4Echo18EchoViewController", "bottomFontSizeSlider"]
 - ["C4Echo18EchoViewController", "bottomFontSizeSliderFired"]
 - ["C4Echo18EchoViewController", "bottomPickerView"]
@@ -732,6 +738,7 @@ depends-member:
 - !private ["C4Echo18EchoViewController", "extraBufferSpace"]
 - ["C4Echo18EchoViewController", "firstLoad"]
 - ["C4Echo18EchoViewController", "fontNames"]
+- ["C4Echo18EchoViewController", "forwardSwipeGestureFired"]
 - ["C4Echo18EchoViewController", "heightSlider"]
 - ["C4Echo18EchoViewController", "heightSliderChanged"]
 - ["C4Echo18EchoViewController", "hideDrawers"]
@@ -784,9 +791,6 @@ depends-member:
 - ["C4Echo18EchoViewController", "touchesMoved"]
 - ["C4Echo18EchoViewController", "updateSlidersWithView"]
 - ["C4Echo18EchoViewController", "updateViewConstraints"]
-- ["C4Echo18EchoViewController", "updateViewForBoxScale"]
-- ["C4Echo18EchoViewController", "updateViewForTextFont"]
-- ["C4Echo18EchoViewController", "updateViewForTextScale"]
 - !private ["C4Echo18EchoViewController", "view"]
 - ["C4Echo18EchoViewController", "viewDidAppear"]
 - ["C4Echo18EchoViewController", "viewDidLoad"]
@@ -812,7 +816,10 @@ depends-member:
 - !private ["Ps9Equatable", "ImageController"]
 - !private ["Ps9Equatable", "Index"]
 - ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "Left"]
 - !private ["Ps9Equatable", "QuoteController"]
+- !private ["Ps9Equatable", "RawValue"]
+- !private ["Ps9Equatable", "Right"]
 - ["Ps9Equatable", "String"]
 - !private ["Ps9Equatable", "SubSequence"]
 - ["Ps9Equatable", "TextFont"]
@@ -834,6 +841,7 @@ depends-member:
 - !private ["Ps9Equatable", "autoresizesSubviews"]
 - !private ["Ps9Equatable", "backgroundColor"]
 - ["Ps9Equatable", "backgroundImage"]
+- ["Ps9Equatable", "backwardSwipeGestureFired"]
 - ["Ps9Equatable", "bottomFontSizeSlider"]
 - ["Ps9Equatable", "bottomFontSizeSliderFired"]
 - ["Ps9Equatable", "bottomPickerView"]
@@ -846,6 +854,7 @@ depends-member:
 - !private ["Ps9Equatable", "constant"]
 - !private ["Ps9Equatable", "cornerRadius"]
 - ["Ps9Equatable", "currentFontSize"]
+- !private ["Ps9Equatable", "direction"]
 - !private ["Ps9Equatable", "displayActivityController"]
 - ["Ps9Equatable", "drawerMode"]
 - ["Ps9Equatable", "drawerView"]
@@ -860,6 +869,7 @@ depends-member:
 - !private ["Ps9Equatable", "font"]
 - !private ["Ps9Equatable", "fontName"]
 - ["Ps9Equatable", "fontNames"]
+- ["Ps9Equatable", "forwardSwipeGestureFired"]
 - !private ["Ps9Equatable", "frame"]
 - ["Ps9Equatable", "hashValue"]
 - !private ["Ps9Equatable", "height"]
@@ -928,9 +938,6 @@ depends-member:
 - !private ["Ps9Equatable", "translatesAutoresizingMaskIntoConstraints"]
 - ["Ps9Equatable", "updateSlidersWithView"]
 - ["Ps9Equatable", "updateViewConstraints"]
-- ["Ps9Equatable", "updateViewForBoxScale"]
-- ["Ps9Equatable", "updateViewForTextFont"]
-- ["Ps9Equatable", "updateViewForTextScale"]
 - !private ["Ps9Equatable", "userInteractionEnabled"]
 - !private ["Ps9Equatable", "value"]
 - !private ["Ps9Equatable", "view"]
@@ -986,6 +993,7 @@ depends-member:
 - !private ["Ps8Hashable", "autoresizesSubviews"]
 - !private ["Ps8Hashable", "backgroundColor"]
 - ["Ps8Hashable", "backgroundImage"]
+- ["Ps8Hashable", "backwardSwipeGestureFired"]
 - ["Ps8Hashable", "bottomFontSizeSlider"]
 - ["Ps8Hashable", "bottomFontSizeSliderFired"]
 - ["Ps8Hashable", "bottomPickerView"]
@@ -998,6 +1006,7 @@ depends-member:
 - !private ["Ps8Hashable", "constant"]
 - !private ["Ps8Hashable", "cornerRadius"]
 - ["Ps8Hashable", "currentFontSize"]
+- !private ["Ps8Hashable", "direction"]
 - !private ["Ps8Hashable", "displayActivityController"]
 - ["Ps8Hashable", "drawerMode"]
 - ["Ps8Hashable", "drawerView"]
@@ -1012,6 +1021,7 @@ depends-member:
 - !private ["Ps8Hashable", "font"]
 - !private ["Ps8Hashable", "fontName"]
 - ["Ps8Hashable", "fontNames"]
+- ["Ps8Hashable", "forwardSwipeGestureFired"]
 - !private ["Ps8Hashable", "frame"]
 - ["Ps8Hashable", "hashValue"]
 - ["Ps8Hashable", "heightSlider"]
@@ -1076,9 +1086,6 @@ depends-member:
 - !private ["Ps8Hashable", "translatesAutoresizingMaskIntoConstraints"]
 - ["Ps8Hashable", "updateSlidersWithView"]
 - ["Ps8Hashable", "updateViewConstraints"]
-- ["Ps8Hashable", "updateViewForBoxScale"]
-- ["Ps8Hashable", "updateViewForTextFont"]
-- ["Ps8Hashable", "updateViewForTextScale"]
 - !private ["Ps8Hashable", "userInteractionEnabled"]
 - !private ["Ps8Hashable", "value"]
 - !private ["Ps8Hashable", "view"]
@@ -1089,6 +1096,7 @@ depends-member:
 - ["Ps8Hashable", "widthSlider"]
 - ["Ps8Hashable", "widthSliderChanged"]
 - ["Ps8Hashable", ""]
+- !private ["C4Echo15ImageController", "fetchNextImage"]
 - !private ["C4Echo15ImageController", "fetchPreviousImage"]
 - !private ["C4Echo15ImageController", "sharedInstance"]
 - ["SQ", "Some"]
@@ -1154,6 +1162,7 @@ depends-member:
 - !private ["PSo8NSCoding", "autoresizesSubviews"]
 - !private ["PSo8NSCoding", "backgroundColor"]
 - ["PSo8NSCoding", "backgroundImage"]
+- ["PSo8NSCoding", "backwardSwipeGestureFired"]
 - ["PSo8NSCoding", "bottomFontSizeSlider"]
 - ["PSo8NSCoding", "bottomFontSizeSliderFired"]
 - ["PSo8NSCoding", "bottomPickerView"]
@@ -1176,6 +1185,7 @@ depends-member:
 - ["PSo8NSCoding", "firstLoad"]
 - !private ["PSo8NSCoding", "font"]
 - ["PSo8NSCoding", "fontNames"]
+- ["PSo8NSCoding", "forwardSwipeGestureFired"]
 - !private ["PSo8NSCoding", "frame"]
 - ["PSo8NSCoding", "heightSlider"]
 - ["PSo8NSCoding", "heightSliderChanged"]
@@ -1238,9 +1248,6 @@ depends-member:
 - !private ["PSo8NSCoding", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo8NSCoding", "updateSlidersWithView"]
 - ["PSo8NSCoding", "updateViewConstraints"]
-- ["PSo8NSCoding", "updateViewForBoxScale"]
-- ["PSo8NSCoding", "updateViewForTextFont"]
-- ["PSo8NSCoding", "updateViewForTextScale"]
 - !private ["PSo8NSCoding", "userInteractionEnabled"]
 - !private ["PSo8NSCoding", "value"]
 - !private ["PSo8NSCoding", "view"]
@@ -1270,6 +1277,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "adjustFrameBasedOnDimension"]
 - ["PSo26NSExtensionRequestHandling", "animationInterval"]
 - ["PSo26NSExtensionRequestHandling", "backgroundImage"]
+- ["PSo26NSExtensionRequestHandling", "backwardSwipeGestureFired"]
 - ["PSo26NSExtensionRequestHandling", "bottomFontSizeSlider"]
 - ["PSo26NSExtensionRequestHandling", "bottomFontSizeSliderFired"]
 - ["PSo26NSExtensionRequestHandling", "bottomPickerView"]
@@ -1286,6 +1294,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "extraBufferSpace"]
 - ["PSo26NSExtensionRequestHandling", "firstLoad"]
 - ["PSo26NSExtensionRequestHandling", "fontNames"]
+- ["PSo26NSExtensionRequestHandling", "forwardSwipeGestureFired"]
 - ["PSo26NSExtensionRequestHandling", "heightSlider"]
 - ["PSo26NSExtensionRequestHandling", "heightSliderChanged"]
 - ["PSo26NSExtensionRequestHandling", "hideDrawers"]
@@ -1338,9 +1347,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "touchesMoved"]
 - ["PSo26NSExtensionRequestHandling", "updateSlidersWithView"]
 - ["PSo26NSExtensionRequestHandling", "updateViewConstraints"]
-- ["PSo26NSExtensionRequestHandling", "updateViewForBoxScale"]
-- ["PSo26NSExtensionRequestHandling", "updateViewForTextFont"]
-- ["PSo26NSExtensionRequestHandling", "updateViewForTextScale"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
 - ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
@@ -1370,6 +1376,7 @@ depends-member:
 - ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UIPickerView"]
 - ["CSo8NSObject", "UISlider"]
+- ["CSo8NSObject", "UISwipeGestureRecognizer"]
 - ["CSo8NSObject", "UITapGestureRecognizer"]
 - ["CSo8NSObject", "UITouch"]
 - ["CSo8NSObject", "UIView"]
@@ -1383,6 +1390,7 @@ depends-member:
 - !private ["CSo8NSObject", "autoresizesSubviews"]
 - !private ["CSo8NSObject", "backgroundColor"]
 - ["CSo8NSObject", "backgroundImage"]
+- ["CSo8NSObject", "backwardSwipeGestureFired"]
 - ["CSo8NSObject", "bottomFontSizeSlider"]
 - ["CSo8NSObject", "bottomFontSizeSliderFired"]
 - ["CSo8NSObject", "bottomPickerView"]
@@ -1395,6 +1403,7 @@ depends-member:
 - !private ["CSo8NSObject", "constant"]
 - !private ["CSo8NSObject", "cornerRadius"]
 - ["CSo8NSObject", "currentFontSize"]
+- !private ["CSo8NSObject", "direction"]
 - !private ["CSo8NSObject", "displayActivityController"]
 - ["CSo8NSObject", "drawerMode"]
 - ["CSo8NSObject", "drawerView"]
@@ -1408,6 +1417,7 @@ depends-member:
 - !private ["CSo8NSObject", "font"]
 - !private ["CSo8NSObject", "fontName"]
 - ["CSo8NSObject", "fontNames"]
+- ["CSo8NSObject", "forwardSwipeGestureFired"]
 - !private ["CSo8NSObject", "frame"]
 - ["CSo8NSObject", "heightSlider"]
 - ["CSo8NSObject", "heightSliderChanged"]
@@ -1471,9 +1481,6 @@ depends-member:
 - !private ["CSo8NSObject", "translatesAutoresizingMaskIntoConstraints"]
 - ["CSo8NSObject", "updateSlidersWithView"]
 - ["CSo8NSObject", "updateViewConstraints"]
-- ["CSo8NSObject", "updateViewForBoxScale"]
-- ["CSo8NSObject", "updateViewForTextFont"]
-- ["CSo8NSObject", "updateViewForTextScale"]
 - !private ["CSo8NSObject", "userInteractionEnabled"]
 - !private ["CSo8NSObject", "value"]
 - !private ["CSo8NSObject", "view"]
@@ -1503,6 +1510,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "autoresizesSubviews"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - ["PSo16NSObjectProtocol", "backgroundImage"]
+- ["PSo16NSObjectProtocol", "backwardSwipeGestureFired"]
 - ["PSo16NSObjectProtocol", "bottomFontSizeSlider"]
 - ["PSo16NSObjectProtocol", "bottomFontSizeSliderFired"]
 - ["PSo16NSObjectProtocol", "bottomPickerView"]
@@ -1515,6 +1523,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "constant"]
 - !private ["PSo16NSObjectProtocol", "cornerRadius"]
 - ["PSo16NSObjectProtocol", "currentFontSize"]
+- !private ["PSo16NSObjectProtocol", "direction"]
 - !private ["PSo16NSObjectProtocol", "displayActivityController"]
 - ["PSo16NSObjectProtocol", "drawerMode"]
 - ["PSo16NSObjectProtocol", "drawerView"]
@@ -1528,6 +1537,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "font"]
 - !private ["PSo16NSObjectProtocol", "fontName"]
 - ["PSo16NSObjectProtocol", "fontNames"]
+- ["PSo16NSObjectProtocol", "forwardSwipeGestureFired"]
 - !private ["PSo16NSObjectProtocol", "frame"]
 - ["PSo16NSObjectProtocol", "heightSlider"]
 - ["PSo16NSObjectProtocol", "heightSliderChanged"]
@@ -1591,9 +1601,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo16NSObjectProtocol", "updateSlidersWithView"]
 - ["PSo16NSObjectProtocol", "updateViewConstraints"]
-- ["PSo16NSObjectProtocol", "updateViewForBoxScale"]
-- ["PSo16NSObjectProtocol", "updateViewForTextFont"]
-- ["PSo16NSObjectProtocol", "updateViewForTextScale"]
 - !private ["PSo16NSObjectProtocol", "userInteractionEnabled"]
 - !private ["PSo16NSObjectProtocol", "value"]
 - !private ["PSo16NSObjectProtocol", "view"]
@@ -1607,6 +1614,9 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "colorWithAlphaComponent"]
 - !private ["PSo14NSSecureCoding", "init"]
 - ["Ps21NilLiteralConvertible", "Some"]
+- !private ["Ps13OptionSetType", "Left"]
+- !private ["Ps13OptionSetType", "RawValue"]
+- !private ["Ps13OptionSetType", "Right"]
 - ["Sq", "Some"]
 - !private ["C4Echo15QuoteController", "firstLoad"]
 - !private ["C4Echo15QuoteController", "sharedInstance"]
@@ -1619,6 +1629,9 @@ depends-member:
 - ["Ps30RangeReplaceableCollectionType", "_Element"]
 - ["Ps30RangeReplaceableCollectionType", "init"]
 - !private ["Ps30RangeReplaceableCollectionType", "sort"]
+- !private ["Ps16RawRepresentable", "Left"]
+- !private ["Ps16RawRepresentable", "RawValue"]
+- !private ["Ps16RawRepresentable", "Right"]
 - ["Ps12SequenceType", "Element"]
 - ["Ps12SequenceType", "Generator"]
 - ["Ps12SequenceType", "Index"]
@@ -1632,6 +1645,9 @@ depends-member:
 - !private ["Vs3Set", "SubSequence"]
 - !private ["Vs3Set", "_Element"]
 - !private ["Vs3Set", "first"]
+- !private ["Ps14SetAlgebraType", "Left"]
+- !private ["Ps14SetAlgebraType", "RawValue"]
+- !private ["Ps14SetAlgebraType", "Right"]
 - !private ["Vs12SetGenerator", "Element"]
 - !private ["Vs8SetIndex", "Distance"]
 - !private ["Vs8SetIndex", "_DisabledRangeIndex"]
@@ -1710,6 +1726,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "autoresizesSubviews"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - ["PSo21UIAppearanceContainer", "backgroundImage"]
+- ["PSo21UIAppearanceContainer", "backwardSwipeGestureFired"]
 - ["PSo21UIAppearanceContainer", "bottomFontSizeSlider"]
 - ["PSo21UIAppearanceContainer", "bottomFontSizeSliderFired"]
 - ["PSo21UIAppearanceContainer", "bottomPickerView"]
@@ -1730,6 +1747,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "firstLoad"]
 - !private ["PSo21UIAppearanceContainer", "font"]
 - ["PSo21UIAppearanceContainer", "fontNames"]
+- ["PSo21UIAppearanceContainer", "forwardSwipeGestureFired"]
 - !private ["PSo21UIAppearanceContainer", "frame"]
 - ["PSo21UIAppearanceContainer", "heightSlider"]
 - ["PSo21UIAppearanceContainer", "heightSliderChanged"]
@@ -1792,9 +1810,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo21UIAppearanceContainer", "updateSlidersWithView"]
 - ["PSo21UIAppearanceContainer", "updateViewConstraints"]
-- ["PSo21UIAppearanceContainer", "updateViewForBoxScale"]
-- ["PSo21UIAppearanceContainer", "updateViewForTextFont"]
-- ["PSo21UIAppearanceContainer", "updateViewForTextScale"]
 - !private ["PSo21UIAppearanceContainer", "userInteractionEnabled"]
 - !private ["PSo21UIAppearanceContainer", "value"]
 - !private ["PSo21UIAppearanceContainer", "view"]
@@ -1822,6 +1837,7 @@ depends-member:
 - ["PSo18UIContentContainer", "adjustFrameBasedOnDimension"]
 - ["PSo18UIContentContainer", "animationInterval"]
 - ["PSo18UIContentContainer", "backgroundImage"]
+- ["PSo18UIContentContainer", "backwardSwipeGestureFired"]
 - ["PSo18UIContentContainer", "bottomFontSizeSlider"]
 - ["PSo18UIContentContainer", "bottomFontSizeSliderFired"]
 - ["PSo18UIContentContainer", "bottomPickerView"]
@@ -1838,6 +1854,7 @@ depends-member:
 - ["PSo18UIContentContainer", "extraBufferSpace"]
 - ["PSo18UIContentContainer", "firstLoad"]
 - ["PSo18UIContentContainer", "fontNames"]
+- ["PSo18UIContentContainer", "forwardSwipeGestureFired"]
 - ["PSo18UIContentContainer", "heightSlider"]
 - ["PSo18UIContentContainer", "heightSliderChanged"]
 - ["PSo18UIContentContainer", "hideDrawers"]
@@ -1890,9 +1907,6 @@ depends-member:
 - ["PSo18UIContentContainer", "touchesMoved"]
 - ["PSo18UIContentContainer", "updateSlidersWithView"]
 - ["PSo18UIContentContainer", "updateViewConstraints"]
-- ["PSo18UIContentContainer", "updateViewForBoxScale"]
-- ["PSo18UIContentContainer", "updateViewForTextFont"]
-- ["PSo18UIContentContainer", "updateViewForTextScale"]
 - !private ["PSo18UIContentContainer", "view"]
 - ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
@@ -1966,6 +1980,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "autoresizesSubviews"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - ["PSo18UIFocusEnvironment", "backgroundImage"]
+- ["PSo18UIFocusEnvironment", "backwardSwipeGestureFired"]
 - ["PSo18UIFocusEnvironment", "bottomFontSizeSlider"]
 - ["PSo18UIFocusEnvironment", "bottomFontSizeSliderFired"]
 - ["PSo18UIFocusEnvironment", "bottomPickerView"]
@@ -1986,6 +2001,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "firstLoad"]
 - !private ["PSo18UIFocusEnvironment", "font"]
 - ["PSo18UIFocusEnvironment", "fontNames"]
+- ["PSo18UIFocusEnvironment", "forwardSwipeGestureFired"]
 - !private ["PSo18UIFocusEnvironment", "frame"]
 - ["PSo18UIFocusEnvironment", "heightSlider"]
 - ["PSo18UIFocusEnvironment", "heightSliderChanged"]
@@ -2048,9 +2064,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo18UIFocusEnvironment", "updateSlidersWithView"]
 - ["PSo18UIFocusEnvironment", "updateViewConstraints"]
-- ["PSo18UIFocusEnvironment", "updateViewForBoxScale"]
-- ["PSo18UIFocusEnvironment", "updateViewForTextFont"]
-- ["PSo18UIFocusEnvironment", "updateViewForTextScale"]
 - !private ["PSo18UIFocusEnvironment", "userInteractionEnabled"]
 - !private ["PSo18UIFocusEnvironment", "value"]
 - !private ["PSo18UIFocusEnvironment", "view"]
@@ -2064,6 +2077,7 @@ depends-member:
 - !private ["CSo6UIFont", "familyNames"]
 - !private ["CSo6UIFont", "fontName"]
 - !private ["CSo6UIFont", "init"]
+- !private ["CSo19UIGestureRecognizer", "direction"]
 - !private ["CSo11UIImageView", "image"]
 - !private ["CSo11UIImageView", "userInteractionEnabled"]
 - !private ["CSo7UILabel", "adjustsFontSizeToFitWidth"]
@@ -2145,9 +2159,6 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "topWidthSlider"]
 - !private ["PSo22UIPickerViewDataSource", "updateSlidersWithView"]
 - !private ["PSo22UIPickerViewDataSource", "updateViewConstraints"]
-- !private ["PSo22UIPickerViewDataSource", "updateViewForBoxScale"]
-- !private ["PSo22UIPickerViewDataSource", "updateViewForTextFont"]
-- !private ["PSo22UIPickerViewDataSource", "updateViewForTextScale"]
 - !private ["PSo22UIPickerViewDataSource", "view"]
 - !private ["PSo22UIPickerViewDataSource", "viewMode"]
 - !private ["PSo22UIPickerViewDataSource", "widthSlider"]
@@ -2221,9 +2232,6 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "topWidthSlider"]
 - !private ["PSo20UIPickerViewDelegate", "updateSlidersWithView"]
 - !private ["PSo20UIPickerViewDelegate", "updateViewConstraints"]
-- !private ["PSo20UIPickerViewDelegate", "updateViewForBoxScale"]
-- !private ["PSo20UIPickerViewDelegate", "updateViewForTextFont"]
-- !private ["PSo20UIPickerViewDelegate", "updateViewForTextScale"]
 - !private ["PSo20UIPickerViewDelegate", "view"]
 - !private ["PSo20UIPickerViewDelegate", "viewMode"]
 - !private ["PSo20UIPickerViewDelegate", "widthSlider"]
@@ -2247,6 +2255,7 @@ depends-member:
 - ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UIPickerView"]
 - ["CSo11UIResponder", "UISlider"]
+- ["CSo11UIResponder", "UISwipeGestureRecognizer"]
 - ["CSo11UIResponder", "UITapGestureRecognizer"]
 - ["CSo11UIResponder", "UITouch"]
 - ["CSo11UIResponder", "UIView"]
@@ -2260,6 +2269,7 @@ depends-member:
 - !private ["CSo11UIResponder", "autoresizesSubviews"]
 - !private ["CSo11UIResponder", "backgroundColor"]
 - ["CSo11UIResponder", "backgroundImage"]
+- ["CSo11UIResponder", "backwardSwipeGestureFired"]
 - ["CSo11UIResponder", "bottomFontSizeSlider"]
 - ["CSo11UIResponder", "bottomFontSizeSliderFired"]
 - ["CSo11UIResponder", "bottomPickerView"]
@@ -2280,6 +2290,7 @@ depends-member:
 - ["CSo11UIResponder", "firstLoad"]
 - !private ["CSo11UIResponder", "font"]
 - ["CSo11UIResponder", "fontNames"]
+- ["CSo11UIResponder", "forwardSwipeGestureFired"]
 - !private ["CSo11UIResponder", "frame"]
 - ["CSo11UIResponder", "heightSlider"]
 - ["CSo11UIResponder", "heightSliderChanged"]
@@ -2342,9 +2353,6 @@ depends-member:
 - !private ["CSo11UIResponder", "translatesAutoresizingMaskIntoConstraints"]
 - ["CSo11UIResponder", "updateSlidersWithView"]
 - ["CSo11UIResponder", "updateViewConstraints"]
-- ["CSo11UIResponder", "updateViewForBoxScale"]
-- ["CSo11UIResponder", "updateViewForTextFont"]
-- ["CSo11UIResponder", "updateViewForTextScale"]
 - !private ["CSo11UIResponder", "userInteractionEnabled"]
 - !private ["CSo11UIResponder", "value"]
 - !private ["CSo11UIResponder", "view"]
@@ -2372,6 +2380,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "adjustFrameBasedOnDimension"]
 - ["PSo16UIStateRestoring", "animationInterval"]
 - ["PSo16UIStateRestoring", "backgroundImage"]
+- ["PSo16UIStateRestoring", "backwardSwipeGestureFired"]
 - ["PSo16UIStateRestoring", "bottomFontSizeSlider"]
 - ["PSo16UIStateRestoring", "bottomFontSizeSliderFired"]
 - ["PSo16UIStateRestoring", "bottomPickerView"]
@@ -2388,6 +2397,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "extraBufferSpace"]
 - ["PSo16UIStateRestoring", "firstLoad"]
 - ["PSo16UIStateRestoring", "fontNames"]
+- ["PSo16UIStateRestoring", "forwardSwipeGestureFired"]
 - ["PSo16UIStateRestoring", "heightSlider"]
 - ["PSo16UIStateRestoring", "heightSliderChanged"]
 - ["PSo16UIStateRestoring", "hideDrawers"]
@@ -2440,9 +2450,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "touchesMoved"]
 - ["PSo16UIStateRestoring", "updateSlidersWithView"]
 - ["PSo16UIStateRestoring", "updateViewConstraints"]
-- ["PSo16UIStateRestoring", "updateViewForBoxScale"]
-- ["PSo16UIStateRestoring", "updateViewForTextFont"]
-- ["PSo16UIStateRestoring", "updateViewForTextScale"]
 - !private ["PSo16UIStateRestoring", "view"]
 - ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
@@ -2451,6 +2458,11 @@ depends-member:
 - ["PSo16UIStateRestoring", "widthSlider"]
 - ["PSo16UIStateRestoring", "widthSliderChanged"]
 - ["PSo16UIStateRestoring", ""]
+- !private ["CSo24UISwipeGestureRecognizer", "direction"]
+- !private ["VSC33UISwipeGestureRecognizerDirection", "Left"]
+- !private ["VSC33UISwipeGestureRecognizerDirection", "RawValue"]
+- !private ["VSC33UISwipeGestureRecognizerDirection", "Right"]
+- !private ["VSC33UISwipeGestureRecognizerDirection", "deinit"]
 - !private ["CSo7UITouch", "preciseLocationInView"]
 - ["PSo18UITraitEnvironment", "CGFloat"]
 - !private ["PSo18UITraitEnvironment", "Double"]
@@ -2472,6 +2484,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "autoresizesSubviews"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - ["PSo18UITraitEnvironment", "backgroundImage"]
+- ["PSo18UITraitEnvironment", "backwardSwipeGestureFired"]
 - ["PSo18UITraitEnvironment", "bottomFontSizeSlider"]
 - ["PSo18UITraitEnvironment", "bottomFontSizeSliderFired"]
 - ["PSo18UITraitEnvironment", "bottomPickerView"]
@@ -2492,6 +2505,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "firstLoad"]
 - !private ["PSo18UITraitEnvironment", "font"]
 - ["PSo18UITraitEnvironment", "fontNames"]
+- ["PSo18UITraitEnvironment", "forwardSwipeGestureFired"]
 - !private ["PSo18UITraitEnvironment", "frame"]
 - ["PSo18UITraitEnvironment", "heightSlider"]
 - ["PSo18UITraitEnvironment", "heightSliderChanged"]
@@ -2554,9 +2568,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo18UITraitEnvironment", "updateSlidersWithView"]
 - ["PSo18UITraitEnvironment", "updateViewConstraints"]
-- ["PSo18UITraitEnvironment", "updateViewForBoxScale"]
-- ["PSo18UITraitEnvironment", "updateViewForTextFont"]
-- ["PSo18UITraitEnvironment", "updateViewForTextScale"]
 - !private ["PSo18UITraitEnvironment", "userInteractionEnabled"]
 - !private ["PSo18UITraitEnvironment", "value"]
 - !private ["PSo18UITraitEnvironment", "view"]
@@ -2608,6 +2619,7 @@ depends-member:
 - ["CSo16UIViewController", "UILabel"]
 - ["CSo16UIViewController", "UIPickerView"]
 - ["CSo16UIViewController", "UISlider"]
+- ["CSo16UIViewController", "UISwipeGestureRecognizer"]
 - ["CSo16UIViewController", "UITapGestureRecognizer"]
 - ["CSo16UIViewController", "UITouch"]
 - ["CSo16UIViewController", "UIView"]
@@ -2616,6 +2628,7 @@ depends-member:
 - ["CSo16UIViewController", "adjustFrameBasedOnDimension"]
 - ["CSo16UIViewController", "animationInterval"]
 - ["CSo16UIViewController", "backgroundImage"]
+- ["CSo16UIViewController", "backwardSwipeGestureFired"]
 - ["CSo16UIViewController", "bottomFontSizeSlider"]
 - ["CSo16UIViewController", "bottomFontSizeSliderFired"]
 - ["CSo16UIViewController", "bottomPickerView"]
@@ -2632,6 +2645,7 @@ depends-member:
 - ["CSo16UIViewController", "extraBufferSpace"]
 - ["CSo16UIViewController", "firstLoad"]
 - ["CSo16UIViewController", "fontNames"]
+- ["CSo16UIViewController", "forwardSwipeGestureFired"]
 - ["CSo16UIViewController", "heightSlider"]
 - ["CSo16UIViewController", "heightSliderChanged"]
 - ["CSo16UIViewController", "hideDrawers"]
@@ -2684,9 +2698,6 @@ depends-member:
 - ["CSo16UIViewController", "touchesMoved"]
 - ["CSo16UIViewController", "updateSlidersWithView"]
 - ["CSo16UIViewController", "updateViewConstraints"]
-- ["CSo16UIViewController", "updateViewForBoxScale"]
-- ["CSo16UIViewController", "updateViewForTextFont"]
-- ["CSo16UIViewController", "updateViewForTextScale"]
 - !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
@@ -2844,12 +2855,15 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - "Ps21NilLiteralConvertible"
+- !private "Ps13OptionSetType"
 - "Sq"
 - !private "C4Echo15QuoteController"
 - "Ps21RandomAccessIndexType"
 - "Ps30RangeReplaceableCollectionType"
+- !private "Ps16RawRepresentable"
 - "Ps12SequenceType"
 - !private "Vs3Set"
+- !private "Ps14SetAlgebraType"
 - !private "Vs12SetGenerator"
 - !private "Vs8SetIndex"
 - "Ps17SignedIntegerType"
@@ -2866,6 +2880,7 @@ depends-nominal:
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
 - !private "CSo6UIFont"
+- !private "CSo19UIGestureRecognizer"
 - !private "CSo11UIImageView"
 - !private "CSo7UILabel"
 - "PSo22UIPickerViewDataSource"
@@ -2873,6 +2888,8 @@ depends-nominal:
 - "CSo11UIResponder"
 - !private "CSo8UISlider"
 - "PSo16UIStateRestoring"
+- !private "CSo24UISwipeGestureRecognizer"
+- !private "VSC33UISwipeGestureRecognizerDirection"
 - !private "CSo7UITouch"
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
@@ -2903,4 +2920,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-interface-hash: "a1b74b323ec516d50faaea4fc17ea563"
+interface-hash: "b614c9c2c7e0c5f2031fb1d3813709f8"

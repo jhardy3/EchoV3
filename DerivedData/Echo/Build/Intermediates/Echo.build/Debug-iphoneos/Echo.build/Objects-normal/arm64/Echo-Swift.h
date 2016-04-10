@@ -116,6 +116,7 @@ SWIFT_CLASS("_TtC4Echo11AppDelegate")
 @end
 
 @class UIButton;
+@class UISwipeGestureRecognizer;
 @class UISlider;
 @class UITapGestureRecognizer;
 @class UIView;
@@ -176,6 +177,8 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 - (void)hideJunkView;
 - (void)hideDrawers;
 - (void)hidePickerViews;
+- (IBAction)forwardSwipeGestureFired:(UISwipeGestureRecognizer * _Nonnull)sender;
+- (IBAction)backwardSwipeGestureFired:(UISwipeGestureRecognizer * _Nonnull)sender;
 - (IBAction)topFontSizeSliderFired:(UISlider * _Nonnull)sender;
 - (IBAction)bottomFontSizeSliderFired:(UISlider * _Nonnull)sender;
 - (IBAction)widthSliderChanged:(UISlider * _Nonnull)sender;
@@ -188,9 +191,6 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 - (void)layoutViewBasedOnEditMode;
 - (UIView * _Nonnull)returnObjectForManipulation;
 - (void)updateSlidersWithView:(UIView * _Nonnull)view;
-- (void)updateViewForBoxScale;
-- (void)updateViewForTextFont;
-- (void)updateViewForTextScale;
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (void)touchesMoved:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (void)updateViewConstraints;

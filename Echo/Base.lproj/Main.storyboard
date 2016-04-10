@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xf7-I3-CqP">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xf7-I3-CqP">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -39,6 +39,8 @@
                                 </variation>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="QaC-q1-FMw" appends="YES" id="Fzl-5O-fFP"/>
+                                    <outletCollection property="gestureRecognizers" destination="FcH-ul-YVi" appends="YES" id="5Ak-Z5-XnL"/>
+                                    <outletCollection property="gestureRecognizers" destination="pu9-jG-W8v" appends="YES" id="yw5-Yp-tee"/>
                                 </connections>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWd-rH-VXH">
@@ -545,36 +547,36 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KfE-12-5Rr" userLabel="Junk Bar View">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewG-ci-BhZ">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewG-ci-BhZ">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" title="Text">
+                                        <state key="normal" image="TextBoxEditMode">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="textScaleButtonTapped:" destination="Rec-CM-Jmt" eventType="touchUpInside" id="JX7-7m-h2H"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtl-p7-uKy">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtl-p7-uKy">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" title="Font">
+                                        <state key="normal" image="TextEditMode">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="textFontButtonTapped:" destination="Rec-CM-Jmt" eventType="touchUpInside" id="9w9-5G-I9s"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W25-sl-7Yo">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W25-sl-7Yo">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" title="Share">
+                                        <state key="normal" image="ShareMode">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="shareJunkButtonTapped:" destination="Rec-CM-Jmt" eventType="touchUpInside" id="UEL-83-Q2u"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqp-jI-BNj">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqp-jI-BNj">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" title="Square">
+                                        <state key="normal" image="BoxEditMode">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
@@ -949,8 +951,24 @@
                         <action selector="toggleDrawer:" destination="Rec-CM-Jmt" id="G9p-k3-QhB"/>
                     </connections>
                 </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="FcH-ul-YVi" userLabel="Backward Swipe Image">
+                    <connections>
+                        <action selector="backwardSwipeGestureFired:" destination="Rec-CM-Jmt" id="0sR-5b-S2L"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="pu9-jG-W8v" userLabel="Forward Swipe Image">
+                    <connections>
+                        <action selector="forwardSwipeGestureFired:" destination="Rec-CM-Jmt" id="WFt-s0-7bg"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="255" y="308.25"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BoxEditMode" width="40" height="40"/>
+        <image name="ShareMode" width="40" height="40"/>
+        <image name="TextBoxEditMode" width="40" height="40"/>
+        <image name="TextEditMode" width="40" height="40"/>
+    </resources>
 </document>

@@ -114,14 +114,9 @@ class EchoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        updateViewForBoxScale()
-        updateViewConstraints()
+    
         setUpView()
         
-        toggleJunkView()
-        toggleDrawer()
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -136,6 +131,8 @@ class EchoViewController: UIViewController {
     }
     
     func setUpView() {
+        updateViewConstraints()
+        
         quoteLabel.layer.cornerRadius = 7.0
         quoteLabel.clipsToBounds = true
         quoteLabel.adjustsFontSizeToFitWidth = false
@@ -152,6 +149,13 @@ class EchoViewController: UIViewController {
         
         topFontSizeSlider.value = 20
         bottomFontSizeSlider.value = 20
+        
+        toggleJunkView()
+        toggleDrawer()
+        
+        updateSlidersWithView(quoteView)
+        
+        
     }
     
     func firstLoad() {
@@ -161,7 +165,6 @@ class EchoViewController: UIViewController {
     // MARK: IBAction Button Functions
     
     @IBAction func viewScaleButtonTapped(sender: UIButton) {
-        backgroundImage.image = ImageController.sharedInstance.fetchPreviousImage()
         editMode = .BoxScale
     }
     
@@ -314,6 +317,23 @@ class EchoViewController: UIViewController {
         }
     }
     
+    
+    // MARK: - Swipe Functions
+    
+    @IBAction func forwardSwipeGestureFired(sender: UISwipeGestureRecognizer) {
+        if sender.direction == .Left && viewMode == .ViewMode {
+            guard let image = ImageController.sharedInstance.fetchNextImage() else { return }
+            backgroundImage.image = image
+        }
+    }
+    
+    @IBAction func backwardSwipeGestureFired(sender: UISwipeGestureRecognizer) {
+        if sender.direction == .Right && viewMode == .ViewMode {
+            backgroundImage.image = ImageController.sharedInstance.fetchPreviousImage()
+        }
+    }
+    
+    
     @IBAction func topFontSizeSliderFired(sender: UISlider) {
         let colorValue = sender.value / 255
         bottomFontSizeSlider.value = sender.value
@@ -415,19 +435,18 @@ class EchoViewController: UIViewController {
     func layoutViewBasedOnEditMode() {
         switch editMode {
         case .BoxScale:
-            updateViewForBoxScale()
+            updateSlidersWithView(quoteView)
             hidePickerViews()
             toggleDrawer()
             toggleJunkView()
             
         case .TextFont:
-            updateViewForTextFont()
             hideDrawers()
             togglePickerView()
             toggleJunkView()
             
         case.TextScale:
-            updateViewForTextScale()
+            updateSlidersWithView(quoteLabel)
             hidePickerViews()
             toggleDrawer()
             toggleJunkView()
@@ -514,24 +533,12 @@ class EchoViewController: UIViewController {
         }
     }
     
-    func updateViewForBoxScale() {
-        updateSlidersWithView(quoteView)
-    }
-    
-    func updateViewForTextFont() {
-        //        updateSlidersWithView(quoteLabel)
-    }
-    
-    func updateViewForTextScale() {
-        updateSlidersWithView(quoteLabel)
-    }
-    
     // MARK: - Touch Functions
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         guard let location = touches.first?.preciseLocationInView(quoteView) else { return }
         
-        if quoteView.pointInside(location, withEvent: event) {
+        if quoteView.pointInside(location, withEvent: event) && viewMode == .EditMode {
             locationInView = location.y
             isInButton = true
         } else {
