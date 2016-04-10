@@ -10,18 +10,18 @@ provides-member:
 - ["C4Echo17NetworkController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "imageURL"
-- "randomQuoteURL"
-- !private "NSURLSession"
-- "NetworkController"
-- "String"
 - "StringLiteralType"
 - !private "print"
-- "NSData"
-- "Void"
-- "quoteURL"
+- "String"
+- "imageURL"
 - "NSURL"
+- "NSData"
+- "NetworkController"
+- "quoteURL"
 - "UIImage"
+- !private "NSURLSession"
+- "Void"
+- "randomQuoteURL"
 depends-member:
 - !private ["Ps9AnyObject", "NSURL"]
 - !private ["Ps9AnyObject", "NSURLSession"]
@@ -138,4 +138,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-interface-hash: "bf8f6b6f45a1b68c5e0c6f43cb23e902"
+interface-hash: "ab7275972f340515aab87bb4c80d2c5f"

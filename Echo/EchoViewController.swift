@@ -343,11 +343,15 @@ class EchoViewController: UIViewController {
     }
     
     @IBAction func forwardSwipeQuoteFired(sender: UISwipeGestureRecognizer) {
-        QuoteController.sharedInstance.fetchNextQuote()
+        if viewMode != .EditMode {
+            QuoteController.sharedInstance.fetchNextQuote()
+        }
     }
     
     @IBAction func bakcwardSwipeQuoteFired(sender: UISwipeGestureRecognizer) {
-        QuoteController.sharedInstance.fetchPreviousQuote()
+        if viewMode != .EditMode {
+            QuoteController.sharedInstance.fetchPreviousQuote()
+        }
     }
     
     @IBAction func topFontSizeSliderFired(sender: UISlider) {
@@ -436,7 +440,7 @@ class EchoViewController: UIViewController {
             viewMode = .EditMode
         }
         
-        UIView.animateWithDuration(animationInterval) { 
+        UIView.animateWithDuration(animationInterval) {
             self.view.layoutIfNeeded()
         }
         

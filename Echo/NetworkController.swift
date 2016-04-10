@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 let imageURL = "https://unsplash.it/800/1600?random"
-let quoteURL = NSURL(string: "http://quotes.rest/qod.json")!
+let quoteURL = NSURL(string: "http://quotes.rest/qod.json?api_key=5C67osD_v4CRLx_Eb6C4igeF")!
 let randomQuoteURL = NSURL(string: "http://quotes.rest/quote.json?api_key=5C67osD_v4CRLx_Eb6C4igeF")!
 
 class NetworkController {

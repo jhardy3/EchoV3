@@ -24,6 +24,7 @@ class QuoteController {
     var quotes = [(quote: String, author: String, length: String)]()
     var index = 0
     var quoteLabel: UILabel!
+    var view: EchoViewController!
     
     init() {
         fetchQuote(quoteURL) { (quote) in
@@ -35,6 +36,7 @@ class QuoteController {
     
     func firstLoad(view: EchoViewController) {
         quoteLabel = view.quoteLabel
+        self.view = view
         QuoteController.sharedInstance.fetchQuote(quoteURL) { (quote) in
             guard let quote = quote else { return }
             QuoteController.sharedInstance.quotes.insert(quote, atIndex: 0)
@@ -91,6 +93,11 @@ class QuoteController {
         if index < quotes.count {
             let quote = quotes[index]
             quoteLabel.text = "\(quote.quote) \n -\(quote.author)"
+            quoteLabel.frame.size.height = view.view.frame.height
+            
+            view.quoteView.center = view.view.center
+            quoteLabel.center.x = view.quoteView.frame.width / 2
+            quoteLabel.center.y = view.quoteView.frame.height / 2
         }
     }
     
@@ -102,6 +109,11 @@ class QuoteController {
             index = index - 1
             let quote = quotes[index]
             quoteLabel.text = "\(quote.quote) \n -\(quote.author)"
+            quoteLabel.frame.size.height = view.view.frame.height
+            
+            view.quoteView.center = view.view.center
+            quoteLabel.center.x = view.quoteView.frame.width / 2
+            quoteLabel.center.y = view.quoteView.frame.height / 2
         }
     }
     
