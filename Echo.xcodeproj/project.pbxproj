@@ -49,6 +49,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		746D6C4D1CBB00EB00C8A031 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				74F8C8FB1CB5C6D700C02079 /* EchoViewController.swift */,
+				74F8C9231CB8839F00C02079 /* EchoViewPickerExtension.swift */,
+				74F8C9491CB8BD9700C02079 /* EchoViewActivityControllerExtension.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		746D6C4E1CBB00FC00C8A031 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				74F8C8FD1CB5C75D00C02079 /* NetworkController.swift */,
+				74F8C9011CB5C79C00C02079 /* QuoteController.swift */,
+				74F8C9031CB5EAEE00C02079 /* ImageController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		746D6C4F1CBB010200C8A031 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				74F8C9271CB8A4D400C02079 /* ImageUitilies.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		746D6C501CBB010900C8A031 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74F8C8FF1CB5C79300C02079 /* Quote.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		74F8C8DD1CB5BFA000C02079 = {
 			isa = PBXGroup;
 			children = (
@@ -70,14 +106,10 @@
 			children = (
 				74F8C8E91CB5BFA000C02079 /* AppDelegate.swift */,
 				74F8C8F01CB5BFA000C02079 /* Assets.xcassets */,
-				74F8C8FB1CB5C6D700C02079 /* EchoViewController.swift */,
-				74F8C9231CB8839F00C02079 /* EchoViewPickerExtension.swift */,
-				74F8C9491CB8BD9700C02079 /* EchoViewActivityControllerExtension.swift */,
-				74F8C8FD1CB5C75D00C02079 /* NetworkController.swift */,
-				74F8C8FF1CB5C79300C02079 /* Quote.swift */,
-				74F8C9011CB5C79C00C02079 /* QuoteController.swift */,
-				74F8C9031CB5EAEE00C02079 /* ImageController.swift */,
-				74F8C9271CB8A4D400C02079 /* ImageUitilies.swift */,
+				746D6C4D1CBB00EB00C8A031 /* Views */,
+				746D6C4E1CBB00FC00C8A031 /* Controllers */,
+				746D6C501CBB010900C8A031 /* Model */,
+				746D6C4F1CBB010200C8A031 /* Utilities */,
 				74F8C8F21CB5BFA000C02079 /* LaunchScreen.storyboard */,
 				74F8C8F51CB5BFA000C02079 /* Info.plist */,
 				74F8C8ED1CB5BFA000C02079 /* Main.storyboard */,

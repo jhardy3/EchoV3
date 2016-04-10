@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
 
-
+let QUOTE_KEY = "5C67osD_v4CRLx_Eb6C4igeF"
 let kContentKey = "contents"
 let kQuotesKey = "quotes"
 let kLengthKey = "length"
@@ -20,10 +21,12 @@ class QuoteController {
     
     static let sharedInstance = QuoteController()
     
-    var quotes = [(String, String, String)]()
+    var quotes = [(quote: String, author: String, length: String)]()
+    var index = 0
+    var quoteLabel: UILabel!
     
     init() {
-        fetchQuote { (quote) in
+        fetchQuote(quoteURL) { (quote) in
             if let quote = quote {
                 self.quotes.append(quote)
             }
@@ -31,7 +34,8 @@ class QuoteController {
     }
     
     func firstLoad(view: EchoViewController) {
-        QuoteController.sharedInstance.fetchQuote { (quote) in
+        quoteLabel = view.quoteLabel
+        QuoteController.sharedInstance.fetchQuote(quoteURL) { (quote) in
             guard let quote = quote else { return }
             QuoteController.sharedInstance.quotes.insert(quote, atIndex: 0)
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
@@ -39,6 +43,7 @@ class QuoteController {
             })
             
         }
+        
         NetworkController.fetchImageAtURL(imageURL) { (image) in
             guard let image = image else { return }
             ImageController.sharedInstance.images.insert(image, atIndex: 0)
@@ -48,10 +53,60 @@ class QuoteController {
             
         }
     }
-
     
-    func fetchQuote(completion: (quote: (quote: String, author: String, length: String)?) -> Void) {
-        NetworkController.dataAtURL(quoteURL) { (returnedData) in
+    func fetchQuotes() {
+        for _ in 0...10 {
+            fetchRandomQuote(randomQuoteURL) { (quote) in
+                if let quote = quote {
+                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                      self.quotes.append(quote)
+                    })
+                }
+            }
+        }
+    }
+    
+    func fetchOneQuote() {
+        fetchRandomQuote(randomQuoteURL) { (quote) in
+            if let quote = quote {
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    self.quotes.append(quote)
+                })
+            }
+        }
+    }
+    
+    func indexNearEnd(index: Int) {
+        if index == quotes.count - 5 {
+            fetchQuotes()
+        } else {
+            fetchOneQuote()
+        }
+    }
+    
+    func fetchNextQuote() {
+        indexNearEnd(index)
+        index = index + 1
+        
+        if index < quotes.count {
+            let quote = quotes[index]
+            quoteLabel.text = "\(quote.quote) \n -\(quote.author)"
+        }
+    }
+    
+    func fetchPreviousQuote() {
+        if index == 0 {
+            let quote = quotes[index]
+            quoteLabel.text = "\(quote.quote) \n -\(quote.author)"
+        } else {
+            index = index - 1
+            let quote = quotes[index]
+            quoteLabel.text = "\(quote.quote) \n -\(quote.author)"
+        }
+    }
+    
+    func fetchQuote(url: NSURL, completion: (quote: (quote: String, author: String, length: String)?) -> Void) {
+        NetworkController.dataAtURL(url) { (returnedData) in
             guard let quoteData = returnedData,
                 let quoteJSON = try? NSJSONSerialization.JSONObjectWithData(quoteData, options: .AllowFragments)
                 else { return }
@@ -63,6 +118,22 @@ class QuoteController {
             guard let author = quoteFinalDictionary[0][kAuthorKey] as? String else { completion(quote: nil) ; return }
             
             completion(quote: (quote: quote, author: author, length: length))
+            
+        }
+    }
+    
+    func fetchRandomQuote(url: NSURL, completion: (quote: (quote: String, author: String, length: String)?) -> Void) {
+        NetworkController.dataAtURL(url) { (returnedData) in
+            guard let quoteData = returnedData,
+                let quoteJSON = try? NSJSONSerialization.JSONObjectWithData(quoteData, options: .AllowFragments)
+                else { return }
+            guard let quoteDictionary = quoteJSON as? [String : AnyObject] else { completion(quote: nil) ; return }
+            guard let quoteContentDictionary = quoteDictionary[kContentKey] as? [String : AnyObject] else { completion(quote: nil) ; return }
+            
+            guard let quote = quoteContentDictionary[kQuoteKey] as? String  else { completion(quote: nil) ; return }
+            guard let author = quoteContentDictionary[kAuthorKey] as? String else { completion(quote: nil) ; return }
+            
+            completion(quote: (quote: quote, author: author, length: "100"))
             
         }
     }

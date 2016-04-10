@@ -179,6 +179,8 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 - (void)hidePickerViews;
 - (IBAction)forwardSwipeGestureFired:(UISwipeGestureRecognizer * _Nonnull)sender;
 - (IBAction)backwardSwipeGestureFired:(UISwipeGestureRecognizer * _Nonnull)sender;
+- (IBAction)forwardSwipeQuoteFired:(UISwipeGestureRecognizer * _Nonnull)sender;
+- (IBAction)bakcwardSwipeQuoteFired:(UISwipeGestureRecognizer * _Nonnull)sender;
 - (IBAction)topFontSizeSliderFired:(UISlider * _Nonnull)sender;
 - (IBAction)bottomFontSizeSliderFired:(UISlider * _Nonnull)sender;
 - (IBAction)widthSliderChanged:(UISlider * _Nonnull)sender;
@@ -190,6 +192,7 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 - (IBAction)toggleViewModeInQuoteView:(UITapGestureRecognizer * _Nonnull)sender;
 - (IBAction)toggleDrawer:(UITapGestureRecognizer * _Nonnull)sender;
 - (void)layoutViewBasedOnEditMode;
+- (void)layoutViewBasedOnViewMode;
 - (UIView * _Nonnull)returnObjectForManipulation;
 - (void)updateSlidersWithView:(UIView * _Nonnull)view;
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;

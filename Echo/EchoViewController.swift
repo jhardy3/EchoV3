@@ -70,15 +70,7 @@ class EchoViewController: UIViewController {
     
     var viewMode = ViewMode.EditMode {
         didSet {
-            switch viewMode {
-            case .ViewMode:
-                hidePickerViews()
-                hideDrawers()
-                hideJunkView()
-                
-            case .EditMode:
-                layoutViewBasedOnEditMode()
-            }
+            layoutViewBasedOnViewMode()
         }
     }
     
@@ -350,6 +342,13 @@ class EchoViewController: UIViewController {
         }
     }
     
+    @IBAction func forwardSwipeQuoteFired(sender: UISwipeGestureRecognizer) {
+        QuoteController.sharedInstance.fetchNextQuote()
+    }
+    
+    @IBAction func bakcwardSwipeQuoteFired(sender: UISwipeGestureRecognizer) {
+        QuoteController.sharedInstance.fetchPreviousQuote()
+    }
     
     @IBAction func topFontSizeSliderFired(sender: UISlider) {
         let colorValue = sender.value / 255
@@ -478,6 +477,18 @@ class EchoViewController: UIViewController {
             hidePickerViews()
             toggleDrawer()
             toggleJunkView()
+        }
+    }
+    
+    func layoutViewBasedOnViewMode() {
+        switch viewMode {
+        case .ViewMode:
+            hidePickerViews()
+            hideDrawers()
+            hideJunkView()
+            
+        case .EditMode:
+            layoutViewBasedOnEditMode()
         }
     }
     
