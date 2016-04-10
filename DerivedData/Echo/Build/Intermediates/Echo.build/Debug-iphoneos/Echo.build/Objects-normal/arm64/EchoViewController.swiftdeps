@@ -18,106 +18,107 @@ provides-member:
 - ["O4Echo9Dimension", ""]
 - ["C4Echo18EchoViewController", ""]
 provides-dynamic-lookup:
-- "updateViewConstraints"
-- "moveDrawersBasedOnView"
-- "quoteViewHeight"
-- "hideJunkView"
-- "junkbarYConstraint"
-- "topFontSizeSliderFired"
-- "togglePickerView"
 - "topDrawerView"
+- "setUpView"
+- "touchesBegan"
+- "quoteLabel"
+- "topJunkbarYConstraint"
+- "quoteViewHeight"
+- "topWidthSlider"
+- "topWidthSlider"
+- "bottomFontSizeSliderFired"
+- "viewDidAppear"
+- "backgroundImage"
+- "junkBarView"
+- "hideDrawers"
+- "hideJunkView"
+- "isInButton"
+- "textFontButtonTapped"
+- "touchesMoved"
+- "shareJunkButtonTapped"
+- "topDrawerYConstraint"
+- "viewScaleButtonTapped"
+- "junkbarYConstraint"
+- "topHeightSlider"
+- "topHeightSlider"
+- "topPickerView"
+- "quoteLabelWidth"
+- "fontNames"
+- "topPickerViewYConstraint"
+- "bottomPickerView"
+- "moveDrawersBasedOnView"
+- "hidePickerViews"
+- "toggleJunkView"
 - "quoteViewLocation"
 - "forwardSwipeGestureFired"
-- "topHeightSlider"
-- "topHeightSlider"
-- "backgroundImage"
 - "toggleDrawer"
 - "toggleDrawer"
-- "firstLoad"
-- "updateSlidersWithView"
-- "junkBarView"
-- "viewDidLoad"
-- "touchesBegan"
-- "currentFontSize"
-- "widthSliderChanged"
-- "topPickerView"
-- "quoteView"
-- "topDrawerYConstraint"
-- "shareJunkButtonTapped"
-- "touchesMoved"
-- "backwardSwipeGestureFired"
-- "topWidthSlider"
-- "topWidthSlider"
-- "topJunkbarYConstraint"
-- "textScaleButtonTapped"
-- "hideDrawers"
-- "quoteLabelWidth"
-- "junkSliderChanged"
-- "returnObjectForManipulation"
-- "topFontSizeSlider"
-- "bottomPickerView"
-- "topPickerViewYConstraint"
-- "setUpView"
-- "heightSliderChanged"
 - "widthSlider"
-- "viewDidAppear"
-- "quoteLabel"
-- "bottomFontSizeSlider"
+- "quoteView"
+- "firstLoad"
+- "togglePickerView"
+- "topFontSizeSliderFired"
+- "junkSliderChanged"
 - "quoteLabelHeight"
-- "isInButton"
-- "bottomPickerViewYConstraint"
-- "junkSlider"
 - "topJunkSlider"
 - "topJunkSlider"
-- "drawerYConstraint"
 - "quoteViewWidth"
-- "toggleJunkView"
-- "layoutViewBasedOnEditMode"
-- "bottomFontSizeSliderFired"
-- "hidePickerViews"
-- "viewScaleButtonTapped"
-- "textFontButtonTapped"
-- "topJunkBarView"
-- "heightSlider"
-- "fontNames"
+- "widthSliderChanged"
+- "bottomFontSizeSlider"
+- "junkSlider"
+- "bottomPickerViewYConstraint"
+- "drawerYConstraint"
+- "currentFontSize"
+- "textScaleButtonTapped"
+- "viewDidLoad"
+- "heightSliderChanged"
+- "backwardSwipeGestureFired"
 - "drawerView"
+- "updateViewConstraints"
+- "toggleViewModeInQuoteView"
+- "returnObjectForManipulation"
+- "heightSlider"
+- "updateSlidersWithView"
+- "topJunkBarView"
+- "topFontSizeSlider"
+- "layoutViewBasedOnEditMode"
 depends-top-level:
+- !private "ImageController"
 - "UIImageView"
+- "UITapGestureRecognizer"
+- "Float"
+- "UISlider"
+- !private "UIFont"
+- "Bool"
+- "UIButton"
+- "DrawerMode"
+- "UIEvent"
+- "UIPickerView"
 - !private "Double"
+- "CGFloat"
+- "ViewMode"
+- "String"
+- !private "<"
+- "Set"
+- "UIView"
+- !private "UIColor"
 - "=="
 - !private ">="
-- "BooleanLiteralType"
-- !private "&&"
-- !private "ImageController"
-- !private "+"
-- "Bool"
-- "ViewMode"
-- "CGFloat"
-- "UITouch"
-- !private "QuoteController"
-- "DrawerMode"
-- "Set"
-- "String"
-- "UISwipeGestureRecognizer"
-- "UIView"
-- "EditMode"
 - !private "/"
-- !private "-"
-- "UILabel"
-- "Float"
-- "EchoViewController"
-- !private "Void"
-- !private "UIFont"
-- "UIPickerView"
-- !private "UIColor"
-- "UITapGestureRecognizer"
-- "NSLayoutConstraint"
+- !private "QuoteController"
 - "UIViewController"
-- "UIEvent"
+- "EchoViewController"
 - "Dimension"
-- !private "<"
-- "UIButton"
-- "UISlider"
+- "EditMode"
+- "UILabel"
+- "NSLayoutConstraint"
+- "BooleanLiteralType"
+- !private "+"
+- "UISwipeGestureRecognizer"
+- !private "-"
+- !private "Void"
+- !private "&&"
+- "UITouch"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]
@@ -217,6 +218,7 @@ depends-member:
 - ["Ps9AnyObject", "toggleDrawer"]
 - ["Ps9AnyObject", "toggleJunkView"]
 - ["Ps9AnyObject", "togglePickerView"]
+- ["Ps9AnyObject", "toggleViewModeInQuoteView"]
 - ["Ps9AnyObject", "topDrawerView"]
 - ["Ps9AnyObject", "topDrawerYConstraint"]
 - ["Ps9AnyObject", "topFontSizeSlider"]
@@ -383,6 +385,7 @@ depends-member:
 - ["Ps11CVarArgType", "toggleDrawer"]
 - ["Ps11CVarArgType", "toggleJunkView"]
 - ["Ps11CVarArgType", "togglePickerView"]
+- ["Ps11CVarArgType", "toggleViewModeInQuoteView"]
 - ["Ps11CVarArgType", "topDrawerView"]
 - ["Ps11CVarArgType", "topDrawerYConstraint"]
 - ["Ps11CVarArgType", "topFontSizeSlider"]
@@ -523,6 +526,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "toggleDrawer"]
 - ["Ps28CustomDebugStringConvertible", "toggleJunkView"]
 - ["Ps28CustomDebugStringConvertible", "togglePickerView"]
+- ["Ps28CustomDebugStringConvertible", "toggleViewModeInQuoteView"]
 - ["Ps28CustomDebugStringConvertible", "topDrawerView"]
 - ["Ps28CustomDebugStringConvertible", "topDrawerYConstraint"]
 - ["Ps28CustomDebugStringConvertible", "topFontSizeSlider"]
@@ -655,6 +659,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "toggleDrawer"]
 - ["Ps23CustomStringConvertible", "toggleJunkView"]
 - ["Ps23CustomStringConvertible", "togglePickerView"]
+- ["Ps23CustomStringConvertible", "toggleViewModeInQuoteView"]
 - ["Ps23CustomStringConvertible", "topDrawerView"]
 - ["Ps23CustomStringConvertible", "topDrawerYConstraint"]
 - ["Ps23CustomStringConvertible", "topFontSizeSlider"]
@@ -776,6 +781,7 @@ depends-member:
 - ["C4Echo18EchoViewController", "toggleDrawer"]
 - ["C4Echo18EchoViewController", "toggleJunkView"]
 - ["C4Echo18EchoViewController", "togglePickerView"]
+- ["C4Echo18EchoViewController", "toggleViewModeInQuoteView"]
 - ["C4Echo18EchoViewController", "topDrawerView"]
 - ["C4Echo18EchoViewController", "topDrawerYConstraint"]
 - ["C4Echo18EchoViewController", "topFontSizeSlider"]
@@ -921,6 +927,7 @@ depends-member:
 - ["Ps9Equatable", "toggleDrawer"]
 - ["Ps9Equatable", "toggleJunkView"]
 - ["Ps9Equatable", "togglePickerView"]
+- ["Ps9Equatable", "toggleViewModeInQuoteView"]
 - ["Ps9Equatable", "topDrawerView"]
 - ["Ps9Equatable", "topDrawerYConstraint"]
 - ["Ps9Equatable", "topFontSizeSlider"]
@@ -1069,6 +1076,7 @@ depends-member:
 - ["Ps8Hashable", "toggleDrawer"]
 - ["Ps8Hashable", "toggleJunkView"]
 - ["Ps8Hashable", "togglePickerView"]
+- ["Ps8Hashable", "toggleViewModeInQuoteView"]
 - ["Ps8Hashable", "topDrawerView"]
 - ["Ps8Hashable", "topDrawerYConstraint"]
 - ["Ps8Hashable", "topFontSizeSlider"]
@@ -1231,6 +1239,7 @@ depends-member:
 - ["PSo8NSCoding", "toggleDrawer"]
 - ["PSo8NSCoding", "toggleJunkView"]
 - ["PSo8NSCoding", "togglePickerView"]
+- ["PSo8NSCoding", "toggleViewModeInQuoteView"]
 - ["PSo8NSCoding", "topDrawerView"]
 - ["PSo8NSCoding", "topDrawerYConstraint"]
 - ["PSo8NSCoding", "topFontSizeSlider"]
@@ -1332,6 +1341,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "toggleDrawer"]
 - ["PSo26NSExtensionRequestHandling", "toggleJunkView"]
 - ["PSo26NSExtensionRequestHandling", "togglePickerView"]
+- ["PSo26NSExtensionRequestHandling", "toggleViewModeInQuoteView"]
 - ["PSo26NSExtensionRequestHandling", "topDrawerView"]
 - ["PSo26NSExtensionRequestHandling", "topDrawerYConstraint"]
 - ["PSo26NSExtensionRequestHandling", "topFontSizeSlider"]
@@ -1464,6 +1474,7 @@ depends-member:
 - ["CSo8NSObject", "toggleDrawer"]
 - ["CSo8NSObject", "toggleJunkView"]
 - ["CSo8NSObject", "togglePickerView"]
+- ["CSo8NSObject", "toggleViewModeInQuoteView"]
 - ["CSo8NSObject", "topDrawerView"]
 - ["CSo8NSObject", "topDrawerYConstraint"]
 - ["CSo8NSObject", "topFontSizeSlider"]
@@ -1584,6 +1595,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "toggleDrawer"]
 - ["PSo16NSObjectProtocol", "toggleJunkView"]
 - ["PSo16NSObjectProtocol", "togglePickerView"]
+- ["PSo16NSObjectProtocol", "toggleViewModeInQuoteView"]
 - ["PSo16NSObjectProtocol", "topDrawerView"]
 - ["PSo16NSObjectProtocol", "topDrawerYConstraint"]
 - ["PSo16NSObjectProtocol", "topFontSizeSlider"]
@@ -1793,6 +1805,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "toggleDrawer"]
 - ["PSo21UIAppearanceContainer", "toggleJunkView"]
 - ["PSo21UIAppearanceContainer", "togglePickerView"]
+- ["PSo21UIAppearanceContainer", "toggleViewModeInQuoteView"]
 - ["PSo21UIAppearanceContainer", "topDrawerView"]
 - ["PSo21UIAppearanceContainer", "topDrawerYConstraint"]
 - ["PSo21UIAppearanceContainer", "topFontSizeSlider"]
@@ -1892,6 +1905,7 @@ depends-member:
 - ["PSo18UIContentContainer", "toggleDrawer"]
 - ["PSo18UIContentContainer", "toggleJunkView"]
 - ["PSo18UIContentContainer", "togglePickerView"]
+- ["PSo18UIContentContainer", "toggleViewModeInQuoteView"]
 - ["PSo18UIContentContainer", "topDrawerView"]
 - ["PSo18UIContentContainer", "topDrawerYConstraint"]
 - ["PSo18UIContentContainer", "topFontSizeSlider"]
@@ -2047,6 +2061,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "toggleDrawer"]
 - ["PSo18UIFocusEnvironment", "toggleJunkView"]
 - ["PSo18UIFocusEnvironment", "togglePickerView"]
+- ["PSo18UIFocusEnvironment", "toggleViewModeInQuoteView"]
 - ["PSo18UIFocusEnvironment", "topDrawerView"]
 - ["PSo18UIFocusEnvironment", "topDrawerYConstraint"]
 - ["PSo18UIFocusEnvironment", "topFontSizeSlider"]
@@ -2336,6 +2351,7 @@ depends-member:
 - ["CSo11UIResponder", "toggleDrawer"]
 - ["CSo11UIResponder", "toggleJunkView"]
 - ["CSo11UIResponder", "togglePickerView"]
+- ["CSo11UIResponder", "toggleViewModeInQuoteView"]
 - ["CSo11UIResponder", "topDrawerView"]
 - ["CSo11UIResponder", "topDrawerYConstraint"]
 - ["CSo11UIResponder", "topFontSizeSlider"]
@@ -2435,6 +2451,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "toggleDrawer"]
 - ["PSo16UIStateRestoring", "toggleJunkView"]
 - ["PSo16UIStateRestoring", "togglePickerView"]
+- ["PSo16UIStateRestoring", "toggleViewModeInQuoteView"]
 - ["PSo16UIStateRestoring", "topDrawerView"]
 - ["PSo16UIStateRestoring", "topDrawerYConstraint"]
 - ["PSo16UIStateRestoring", "topFontSizeSlider"]
@@ -2551,6 +2568,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "toggleDrawer"]
 - ["PSo18UITraitEnvironment", "toggleJunkView"]
 - ["PSo18UITraitEnvironment", "togglePickerView"]
+- ["PSo18UITraitEnvironment", "toggleViewModeInQuoteView"]
 - ["PSo18UITraitEnvironment", "topDrawerView"]
 - ["PSo18UITraitEnvironment", "topDrawerYConstraint"]
 - ["PSo18UITraitEnvironment", "topFontSizeSlider"]
@@ -2683,6 +2701,7 @@ depends-member:
 - ["CSo16UIViewController", "toggleDrawer"]
 - ["CSo16UIViewController", "toggleJunkView"]
 - ["CSo16UIViewController", "togglePickerView"]
+- ["CSo16UIViewController", "toggleViewModeInQuoteView"]
 - ["CSo16UIViewController", "topDrawerView"]
 - ["CSo16UIViewController", "topDrawerYConstraint"]
 - ["CSo16UIViewController", "topFontSizeSlider"]
@@ -2920,4 +2939,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-interface-hash: "b614c9c2c7e0c5f2031fb1d3813709f8"
+interface-hash: "eaeab31536015ba1ef42bffd9bedd9d5"

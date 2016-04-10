@@ -68,7 +68,19 @@ class EchoViewController: UIViewController {
     @IBOutlet weak var quoteViewHeight: NSLayoutConstraint!
     @IBOutlet weak var quoteViewWidth: NSLayoutConstraint!
     
-    var viewMode = ViewMode.EditMode
+    var viewMode = ViewMode.EditMode {
+        didSet {
+            switch viewMode {
+            case .ViewMode:
+                hidePickerViews()
+                hideDrawers()
+                hideJunkView()
+                
+            case .EditMode:
+                layoutViewBasedOnEditMode()
+            }
+        }
+    }
     
     var drawerMode = DrawerMode.Bottom {
         didSet {
@@ -114,7 +126,7 @@ class EchoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         setUpView()
         
     }
@@ -139,6 +151,7 @@ class EchoViewController: UIViewController {
         quoteLabel.autoresizesSubviews = true
         
         backgroundImage.userInteractionEnabled = true
+        quoteView.userInteractionEnabled = true
         
         hidePickerViews()
         
@@ -410,18 +423,24 @@ class EchoViewController: UIViewController {
             return
         }
     }
+    @IBAction func toggleViewModeInQuoteView(sender: UITapGestureRecognizer) {
+        if viewMode == .EditMode {
+            viewMode = .ViewMode
+        }
+        
+        UIView.animateWithDuration(animationInterval) { 
+            self.view.layoutIfNeeded()
+        }
+        
+    }
     
     @IBAction func toggleDrawer(sender: UITapGestureRecognizer) {
         
         switch viewMode {
         case .EditMode:
-            hidePickerViews()
-            hideDrawers()
-            hideJunkView()
             viewMode = .ViewMode
             
         case .ViewMode:
-            layoutViewBasedOnEditMode()
             viewMode = .EditMode
         }
         
@@ -499,7 +518,7 @@ class EchoViewController: UIViewController {
         
         topWidthSlider.minimumValue = 30
         topHeightSlider.minimumValue = 30
-    
+        
         topFontSizeSlider.maximumValue = 255.0
         topFontSizeSlider.minimumValue = 0.0
         

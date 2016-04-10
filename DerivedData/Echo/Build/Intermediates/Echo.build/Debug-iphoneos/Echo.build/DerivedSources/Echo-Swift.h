@@ -187,6 +187,7 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 - (IBAction)topHeightSlider:(UISlider * _Nonnull)sender;
 - (IBAction)junkSliderChanged:(UISlider * _Nonnull)sender;
 - (IBAction)topJunkSlider:(UISlider * _Nonnull)sender;
+- (IBAction)toggleViewModeInQuoteView:(UITapGestureRecognizer * _Nonnull)sender;
 - (IBAction)toggleDrawer:(UITapGestureRecognizer * _Nonnull)sender;
 - (void)layoutViewBasedOnEditMode;
 - (UIView * _Nonnull)returnObjectForManipulation;
