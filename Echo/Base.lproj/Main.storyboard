@@ -46,21 +46,21 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWd-rH-VXH">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <subviews>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="iXN-u1-DBS">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="H" translatesAutoresizingMaskIntoConstraints="NO" id="iXN-u1-DBS">
                                         <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="0.34812721631205673" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="heightSliderChanged:" destination="Rec-CM-Jmt" eventType="valueChanged" id="Vzv-dm-vjV"/>
                                         </connections>
                                     </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="sty-1Y-4xR">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="W" translatesAutoresizingMaskIntoConstraints="NO" id="sty-1Y-4xR">
                                         <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="0.34812721631205673" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="widthSliderChanged:" destination="Rec-CM-Jmt" eventType="valueChanged" id="OxU-tu-QZg"/>
                                         </connections>
                                     </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cF5-0h-8Kx">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="O" translatesAutoresizingMaskIntoConstraints="NO" id="cF5-0h-8Kx">
                                         <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="0.34812721631205673" colorSpace="calibratedRGB"/>
                                         <connections>
@@ -89,11 +89,11 @@
                                     </constraint>
                                     <constraint firstItem="sty-1Y-4xR" firstAttribute="top" secondItem="XWd-rH-VXH" secondAttribute="top" constant="8" id="Mbf-8G-9XT"/>
                                     <constraint firstItem="cF5-0h-8Kx" firstAttribute="leading" secondItem="XWd-rH-VXH" secondAttribute="leading" constant="8" id="Q3g-iE-X4m">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="24"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="26"/>
                                     </constraint>
                                     <constraint firstItem="cF5-0h-8Kx" firstAttribute="top" secondItem="iXN-u1-DBS" secondAttribute="bottom" constant="8" id="Qpx-Hm-nNX"/>
                                     <constraint firstItem="sty-1Y-4xR" firstAttribute="leading" secondItem="XWd-rH-VXH" secondAttribute="leading" constant="8" id="TbR-dv-my5">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="24"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="22"/>
                                     </constraint>
                                     <constraint firstAttribute="bottom" secondItem="cF5-0h-8Kx" secondAttribute="bottom" constant="8" id="av7-Vi-6lY"/>
                                     <constraint firstItem="iXN-u1-DBS" firstAttribute="leading" secondItem="XWd-rH-VXH" secondAttribute="leadingMargin" constant="8" id="bNf-7b-Ekh">
@@ -303,10 +303,10 @@
                                     <constraint firstItem="b6M-l5-HBz" firstAttribute="top" secondItem="xcv-HJ-BAT" secondAttribute="bottom" constant="11" id="ayq-QV-u9L"/>
                                     <constraint firstAttribute="bottom" secondItem="b6M-l5-HBz" secondAttribute="bottom" constant="10" id="dfM-WI-te2"/>
                                     <constraint firstItem="khc-Um-rfD" firstAttribute="leading" secondItem="K9P-2L-g82" secondAttribute="leading" constant="8" id="p49-Wb-yGK">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="24"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="22"/>
                                     </constraint>
                                     <constraint firstItem="b6M-l5-HBz" firstAttribute="leading" secondItem="K9P-2L-g82" secondAttribute="leading" constant="8" id="qRF-gE-3xg">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="24"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="26"/>
                                     </constraint>
                                     <constraint firstItem="khc-Um-rfD" firstAttribute="leading" secondItem="K9P-2L-g82" secondAttribute="leading" constant="8" id="vBr-Ft-cA2"/>
                                     <constraint firstAttribute="trailing" secondItem="khc-Um-rfD" secondAttribute="trailing" constant="8" id="vtr-ej-wVT">
@@ -976,8 +976,11 @@
     </scenes>
     <resources>
         <image name="BoxEditMode" width="40" height="40"/>
+        <image name="H" width="19" height="18"/>
+        <image name="O" width="15" height="18"/>
         <image name="ShareMode" width="40" height="40"/>
         <image name="TextBoxEditMode" width="40" height="40"/>
         <image name="TextEditMode" width="40" height="40"/>
+        <image name="W" width="24" height="18"/>
     </resources>
 </document>

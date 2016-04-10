@@ -221,6 +221,12 @@ SWIFT_CLASS("_TtC4Echo13ImageUitilies")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIColor;
+
+@interface UIImage (SWIFT_EXTENSION(Echo))
+- (UIImage * _Nonnull)imageWithColor:(UIColor * _Nonnull)color1;
+@end
+
 
 @interface UIImageView (SWIFT_EXTENSION(Echo))
 - (void)downloadImageFromLink:(NSString * _Nonnull)link contentMode:(UIViewContentMode)contentMode;

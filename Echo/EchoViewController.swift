@@ -166,6 +166,10 @@ class EchoViewController: UIViewController {
         toggleJunkView()
         toggleDrawer()
         
+        topFontSizeSlider.minimumValueImage = UIImage(named: "C")?.imageWithColor(UIColor.whiteColor())
+        bottomFontSizeSlider.minimumValueImage = UIImage(named: "C")?.imageWithColor(UIColor.whiteColor())
+        
+        
         updateSlidersWithView(quoteView)
         
         
@@ -424,8 +428,13 @@ class EchoViewController: UIViewController {
         }
     }
     @IBAction func toggleViewModeInQuoteView(sender: UITapGestureRecognizer) {
-        if viewMode == .EditMode {
+        
+        switch viewMode {
+        case .EditMode:
             viewMode = .ViewMode
+            
+        case .ViewMode:
+            viewMode = .EditMode
         }
         
         UIView.animateWithDuration(animationInterval) { 
@@ -510,10 +519,17 @@ class EchoViewController: UIViewController {
         widthSlider.minimumValue = 30
         heightSlider.minimumValue = 30
         
+        widthSlider.minimumValueImage = UIImage(named: "W")?.imageWithColor(UIColor.whiteColor())
+        heightSlider.minimumValueImage = UIImage(named: "H")?.imageWithColor(UIColor.whiteColor())
+        
         topWidthSlider.maximumValue = Float(self.view.frame.width) + extraBufferSpace
         topWidthSlider.value = Float(view.frame.width)
         topHeightSlider.maximumValue = Float(self.view.frame.height) + extraBufferSpace
         topHeightSlider.value = Float(view.frame.height)
+        
+        topWidthSlider.minimumValueImage = UIImage(named: "W")?.imageWithColor(UIColor.whiteColor())
+        topHeightSlider.minimumValueImage = UIImage(named: "H")?.imageWithColor(UIColor.whiteColor())
+        
         
         
         topWidthSlider.minimumValue = 30
@@ -528,6 +544,8 @@ class EchoViewController: UIViewController {
         topFontSizeSlider.value = 254.0
         bottomFontSizeSlider.value = 254.0
         
+        
+        
         switch editMode {
         case .BoxScale:
             junkSlider.maximumValue = 1.0
@@ -538,6 +556,9 @@ class EchoViewController: UIViewController {
             topJunkSlider.value = Float(view.alpha)
             topJunkSlider.minimumValue = 0.0
             
+            junkSlider.minimumValueImage = UIImage(named: "O")?.imageWithColor(UIColor.whiteColor())
+            topJunkSlider.minimumValueImage = UIImage(named: "O")?.imageWithColor(UIColor.whiteColor())
+            
         case .TextScale:
             junkSlider.maximumValue = 60
             junkSlider.minimumValue = 6
@@ -546,6 +567,9 @@ class EchoViewController: UIViewController {
             topJunkSlider.maximumValue = 60
             topJunkSlider.minimumValue = 6
             topJunkSlider.value = 20
+            
+            junkSlider.minimumValueImage = UIImage(named: "S")?.imageWithColor(UIColor.whiteColor())
+            topJunkSlider.minimumValueImage = UIImage(named: "S")?.imageWithColor(UIColor.whiteColor())
             
         default:
             break
