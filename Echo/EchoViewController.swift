@@ -32,6 +32,18 @@ enum Dimension {
 
 class EchoViewController: UIViewController {
     
+    
+    
+    @IBOutlet weak var bottomBoxSquareButton: UIButton!
+    @IBOutlet weak var bottomTextEditBoxButton: UIButton!
+    @IBOutlet weak var bottomTextEditButton: UIButton!
+    @IBOutlet weak var bottomShareButton: UIButton!
+    
+    @IBOutlet weak var topBoxSquareButton: UIButton!
+    @IBOutlet weak var topTextEditBoxButton: UIButton!
+    @IBOutlet weak var topTextEditButton: UIButton!
+    @IBOutlet weak var topShareButton: UIButton!
+    
     @IBOutlet weak var topPickerView: UIPickerView!
     @IBOutlet weak var bottomPickerView: UIPickerView!
     
@@ -164,6 +176,17 @@ class EchoViewController: UIViewController {
         
         updateSlidersWithView(quoteView)
         
+        topBoxSquareButton.setImage(UIImage(named: "BoxEditMode")?.imageWithColor(UIColor.whiteColor()), forState: .Normal)
+        bottomBoxSquareButton.setImage(UIImage(named: "BoxEditMode")?.imageWithColor(UIColor.whiteColor()), forState: .Normal)
+        
+        topTextEditBoxButton.setImage(UIImage(named: "TextBoxEditMode")?.imageWithColor(UIColor.whiteColor()), forState: .Normal)
+        bottomTextEditBoxButton.setImage(UIImage(named: "TextBoxEditMode")?.imageWithColor(UIColor.whiteColor()), forState: .Normal)
+        
+        topTextEditButton.setImage(UIImage(named: "TextEditMode")?.imageWithColor(UIColor.whiteColor()), forState: .Normal)
+        bottomTextEditButton.setImage(UIImage(named: "TextEditMode")?.imageWithColor(UIColor.whiteColor()), forState: .Normal)
+        
+        topShareButton.setImage(UIImage(named: "ShareMode")?.imageWithColor(UIColor.whiteColor()), forState: .Normal)
+        bottomShareButton.setImage(UIImage(named: "ShareMode")?.imageWithColor(UIColor.whiteColor()), forState: .Normal)
         
     }
     

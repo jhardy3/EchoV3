@@ -555,6 +555,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewG-ci-BhZ">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="16"/>
                                         <state key="normal" image="TextBoxEditMode">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
                                         </state>
@@ -564,6 +565,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtl-p7-uKy">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="16"/>
                                         <state key="normal" image="TextEditMode">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
                                         </state>
@@ -573,6 +575,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W25-sl-7Yo">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="16"/>
                                         <state key="normal" image="ShareMode">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
                                         </state>
@@ -582,6 +585,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqp-jI-BNj">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="16"/>
                                         <state key="normal" image="BoxEditMode">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
                                         </state>
@@ -681,40 +685,40 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSu-VE-q2P" userLabel="Top Junk Bar View">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfP-05-cMl">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfP-05-cMl">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" title="Square">
+                                        <state key="normal" image="BoxEditMode">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="viewScaleButtonTapped:" destination="Rec-CM-Jmt" eventType="touchUpInside" id="Odz-nw-I8l"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1h-2h-4oP">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1h-2h-4oP">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" title="Text">
+                                        <state key="normal" image="TextBoxEditMode">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="textScaleButtonTapped:" destination="Rec-CM-Jmt" eventType="touchUpInside" id="6fx-XA-Ahk"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8j-Dx-8Ot">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuN-mL-BhY">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" title="Font">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="textFontButtonTapped:" destination="Rec-CM-Jmt" eventType="touchUpInside" id="8Jm-0U-nR3"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuN-mL-BhY">
-                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" title="Share">
+                                        <state key="normal" image="ShareMode">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="shareJunkButtonTapped:" destination="Rec-CM-Jmt" eventType="touchUpInside" id="cdn-N8-WuD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8j-Dx-8Ot">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" image="TextEditMode">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="textFontButtonTapped:" destination="Rec-CM-Jmt" eventType="touchUpInside" id="8Jm-0U-nR3"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -753,8 +757,8 @@
                                     <mask key="subviews">
                                         <exclude reference="bfP-05-cMl"/>
                                         <exclude reference="H1h-2h-4oP"/>
-                                        <exclude reference="y8j-Dx-8Ot"/>
                                         <exclude reference="GuN-mL-BhY"/>
+                                        <exclude reference="y8j-Dx-8Ot"/>
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="jWt-y8-52T"/>
@@ -781,8 +785,8 @@
                                     <mask key="subviews">
                                         <include reference="bfP-05-cMl"/>
                                         <include reference="H1h-2h-4oP"/>
-                                        <include reference="y8j-Dx-8Ot"/>
                                         <include reference="GuN-mL-BhY"/>
+                                        <include reference="y8j-Dx-8Ot"/>
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="jWt-y8-52T"/>
@@ -929,9 +933,13 @@
                     </view>
                     <connections>
                         <outlet property="backgroundImage" destination="xf7-I3-CqP" id="xtc-3e-SuG"/>
+                        <outlet property="bottomBoxSquareButton" destination="jqp-jI-BNj" id="oWL-ab-OXL"/>
                         <outlet property="bottomFontSizeSlider" destination="Cf8-WH-mL0" id="GBU-PH-d2q"/>
                         <outlet property="bottomPickerView" destination="2EU-dv-Wr5" id="X8y-Xt-1YJ"/>
                         <outlet property="bottomPickerViewYConstraint" destination="Y2q-qU-9VF" id="t2H-da-GjL"/>
+                        <outlet property="bottomShareButton" destination="W25-sl-7Yo" id="apQ-YU-cr1"/>
+                        <outlet property="bottomTextEditBoxButton" destination="ewG-ci-BhZ" id="FEJ-is-Qiw"/>
+                        <outlet property="bottomTextEditButton" destination="qtl-p7-uKy" id="BZc-Hz-qhg"/>
                         <outlet property="drawerView" destination="XWd-rH-VXH" id="Ou8-o9-KZ6"/>
                         <outlet property="drawerYConstraint" destination="xlW-xw-e3U" id="Qan-o2-R5i"/>
                         <outlet property="heightSlider" destination="iXN-u1-DBS" id="oHF-N0-S1S"/>
@@ -944,6 +952,7 @@
                         <outlet property="quoteView" destination="3gD-It-Yp7" id="aCK-YZ-vpY"/>
                         <outlet property="quoteViewHeight" destination="X6r-3m-nPL" id="Dc3-pf-yua"/>
                         <outlet property="quoteViewWidth" destination="rQG-a7-R3K" id="obD-7s-SSQ"/>
+                        <outlet property="topBoxSquareButton" destination="bfP-05-cMl" id="1Al-3P-hXV"/>
                         <outlet property="topDrawerView" destination="K9P-2L-g82" id="dRt-28-shL"/>
                         <outlet property="topDrawerYConstraint" destination="S6O-ye-MND" id="9FX-YQ-r0v"/>
                         <outlet property="topFontSizeSlider" destination="DQu-zS-qMW" id="rfS-RU-LXg"/>
@@ -953,12 +962,15 @@
                         <outlet property="topJunkbarYConstraint" destination="kuU-Ou-I0k" id="1AO-Jy-zdX"/>
                         <outlet property="topPickerView" destination="G85-pf-JdE" id="Btr-RA-2Hn"/>
                         <outlet property="topPickerViewYConstraint" destination="dSM-Zx-QAd" id="tyG-gX-8pk"/>
+                        <outlet property="topShareButton" destination="GuN-mL-BhY" id="sMh-Sx-kGa"/>
+                        <outlet property="topTextEditBoxButton" destination="H1h-2h-4oP" id="kuZ-TS-ur2"/>
+                        <outlet property="topTextEditButton" destination="y8j-Dx-8Ot" id="VTu-1t-pXR"/>
                         <outlet property="topWidthSlider" destination="khc-Um-rfD" id="g9B-Nj-Nmy"/>
                         <outlet property="widthSlider" destination="sty-1Y-4xR" id="wnZ-Rv-dJf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ysc-pg-Vj0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="QaC-q1-FMw" userLabel="Toggle View Mode Tap Gesture">
+                <tapGestureRecognizer numberOfTapsRequired="2" id="QaC-q1-FMw" userLabel="Toggle View Mode Tap Gesture">
                     <connections>
                         <action selector="toggleDrawer:" destination="Rec-CM-Jmt" id="G9p-k3-QhB"/>
                     </connections>
@@ -973,7 +985,7 @@
                         <action selector="forwardSwipeGestureFired:" destination="Rec-CM-Jmt" id="WFt-s0-7bg"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <tapGestureRecognizer id="qN7-Q3-gPi" userLabel="Toggle View In Quote View">
+                <tapGestureRecognizer numberOfTapsRequired="2" id="qN7-Q3-gPi" userLabel="Toggle View In Quote View">
                     <connections>
                         <action selector="toggleViewModeInQuoteView:" destination="Rec-CM-Jmt" id="VeF-vg-rTK"/>
                     </connections>
@@ -998,7 +1010,7 @@
         <image name="O" width="15" height="18"/>
         <image name="ShareMode" width="40" height="40"/>
         <image name="TextBoxEditMode" width="40" height="40"/>
-        <image name="TextEditMode" width="40" height="40"/>
+        <image name="TextEditMode" width="36" height="36"/>
         <image name="W" width="24" height="18"/>
     </resources>
 </document>

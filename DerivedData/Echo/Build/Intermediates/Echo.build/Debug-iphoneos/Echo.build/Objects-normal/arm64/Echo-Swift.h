@@ -131,6 +131,14 @@ SWIFT_CLASS("_TtC4Echo11AppDelegate")
 
 SWIFT_CLASS("_TtC4Echo18EchoViewController")
 @interface EchoViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified bottomBoxSquareButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified bottomTextEditBoxButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified bottomTextEditButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified bottomShareButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified topBoxSquareButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified topTextEditBoxButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified topTextEditButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified topShareButton;
 @property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified topPickerView;
 @property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified bottomPickerView;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified topJunkBarView;

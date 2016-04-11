@@ -7,11 +7,11 @@ provides-member:
 provides-dynamic-lookup:
 - "displayActivityController"
 depends-top-level:
-- !private "UIActivityViewController"
-- !private "Array"
-- "EchoViewController"
-- !private "ImageUitilies"
 - !private "BooleanLiteralType"
+- !private "ImageUitilies"
+- "EchoViewController"
+- !private "Array"
+- !private "UIActivityViewController"
 depends-member:
 - !private ["Ps9AnyObject", "ImageUitilies"]
 - !private ["Ps9AnyObject", "UIActivityViewController"]

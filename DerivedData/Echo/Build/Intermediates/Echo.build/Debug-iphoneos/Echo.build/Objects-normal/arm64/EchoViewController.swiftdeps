@@ -18,114 +18,122 @@ provides-member:
 - ["O4Echo9Dimension", ""]
 - ["C4Echo18EchoViewController", ""]
 provides-dynamic-lookup:
-- "topDrawerYConstraint"
-- "updateSlidersWithView"
-- "quoteViewLocation"
-- "widthSlider"
-- "layoutViewBasedOnEditMode"
-- "bottomPickerViewYConstraint"
-- "firstLoad"
-- "toggleViewModeInQuoteView"
-- "hidePickerViews"
-- "heightSlider"
-- "backwardSwipeGestureFired"
-- "topPickerViewYConstraint"
-- "bottomFontSizeSlider"
-- "returnObjectForManipulation"
-- "quoteLabel"
-- "topJunkBarView"
-- "viewDidAppear"
-- "bottomFontSizeSliderFired"
-- "drawerYConstraint"
-- "viewScaleButtonTapped"
-- "bottomPickerView"
-- "setUpView"
-- "bakcwardSwipeQuoteFired"
-- "topDrawerView"
-- "topJunkbarYConstraint"
-- "shareJunkButtonTapped"
-- "topPickerView"
-- "junkbarYConstraint"
-- "junkSliderChanged"
-- "layoutViewBasedOnViewMode"
-- "hideDrawers"
-- "quoteView"
-- "textScaleButtonTapped"
-- "toggleDrawer"
-- "toggleDrawer"
-- "quoteViewWidth"
-- "viewDidLoad"
-- "togglePickerView"
-- "topJunkSlider"
-- "topJunkSlider"
-- "toggleJunkView"
 - "forwardSwipeGestureFired"
-- "updateViewConstraints"
-- "junkBarView"
-- "widthSliderChanged"
-- "touchesBegan"
-- "topFontSizeSlider"
-- "backgroundImage"
-- "fontNames"
-- "forwardSwipeQuoteFired"
-- "touchesMoved"
-- "quoteLabelHeight"
-- "junkSlider"
-- "drawerView"
-- "textFontButtonTapped"
-- "isInButton"
-- "topWidthSlider"
-- "topWidthSlider"
-- "heightSliderChanged"
-- "currentFontSize"
-- "quoteLabelWidth"
-- "moveDrawersBasedOnView"
-- "topFontSizeSliderFired"
-- "quoteViewHeight"
-- "topHeightSlider"
-- "topHeightSlider"
+- "widthSlider"
+- "quoteView"
 - "hideJunkView"
+- "widthSliderChanged"
+- "topPickerViewYConstraint"
+- "topPickerView"
+- "togglePickerView"
+- "topDrawerYConstraint"
+- "quoteLabelHeight"
+- "updateSlidersWithView"
+- "topDrawerView"
+- "topShareButton"
+- "textScaleButtonTapped"
+- "forwardSwipeQuoteFired"
+- "quoteLabelWidth"
+- "layoutViewBasedOnEditMode"
+- "topTextEditButton"
+- "touchesBegan"
+- "hideDrawers"
+- "quoteLabel"
+- "drawerYConstraint"
+- "quoteViewHeight"
+- "fontNames"
+- "bakcwardSwipeQuoteFired"
+- "moveDrawersBasedOnView"
+- "topTextEditBoxButton"
+- "drawerView"
+- "toggleViewModeInQuoteView"
+- "topBoxSquareButton"
+- "quoteViewWidth"
+- "isInButton"
+- "junkSliderChanged"
+- "viewScaleButtonTapped"
+- "bottomShareButton"
+- "topJunkSlider"
+- "topJunkSlider"
+- "topFontSizeSlider"
+- "firstLoad"
+- "heightSliderChanged"
+- "touchesMoved"
+- "bottomTextEditButton"
+- "topHeightSlider"
+- "topHeightSlider"
+- "bottomFontSizeSliderFired"
+- "currentFontSize"
+- "bottomFontSizeSlider"
+- "shareJunkButtonTapped"
+- "returnObjectForManipulation"
+- "viewDidLoad"
+- "toggleDrawer"
+- "toggleDrawer"
+- "updateViewConstraints"
+- "toggleJunkView"
+- "topWidthSlider"
+- "topWidthSlider"
+- "backwardSwipeGestureFired"
+- "topJunkbarYConstraint"
+- "junkBarView"
+- "layoutViewBasedOnViewMode"
+- "topFontSizeSliderFired"
+- "hidePickerViews"
+- "junkSlider"
+- "bottomTextEditBoxButton"
+- "quoteViewLocation"
+- "junkbarYConstraint"
+- "textFontButtonTapped"
+- "heightSlider"
+- "topJunkBarView"
+- "setUpView"
+- "bottomPickerView"
+- "bottomPickerViewYConstraint"
+- "bottomBoxSquareButton"
+- "backgroundImage"
+- "viewDidAppear"
 depends-top-level:
-- "UIPickerView"
-- !private "StringLiteralType"
-- "UIButton"
-- "UISlider"
-- "ViewMode"
-- !private "UIFont"
-- "UIEvent"
-- !private ">="
-- "UISwipeGestureRecognizer"
-- "DrawerMode"
-- !private "ImageController"
-- !private "&&"
-- "=="
-- !private "Void"
+- !private "Double"
+- "Bool"
+- "UITapGestureRecognizer"
 - !private "QuoteController"
-- "UIImageView"
-- !private "+"
 - "UIViewController"
 - "CGFloat"
-- "EchoViewController"
 - "UIView"
-- !private "UIColor"
-- !private "/"
-- "Bool"
+- !private ">="
 - "BooleanLiteralType"
-- "String"
-- "UITouch"
-- "UILabel"
 - !private "<"
-- !private "!="
-- "UITapGestureRecognizer"
-- "NSLayoutConstraint"
-- !private "-"
 - "Float"
-- !private "UIImage"
-- !private "Double"
+- !private "UIColor"
+- "DrawerMode"
+- !private "/"
+- !private "!="
+- "UIImageView"
+- !private "&&"
+- !private "+"
+- !private "StringLiteralType"
+- !private "Void"
+- "UIEvent"
+- "UISlider"
+- "UIButton"
+- "ViewMode"
+- "UIPickerView"
+- "UISwipeGestureRecognizer"
 - !private "UnicodeScalarType"
+- "EchoViewController"
+- "Dimension"
+- !private "-"
+- "NSLayoutConstraint"
 - "Set"
 - "EditMode"
-- "Dimension"
+- "String"
+- "UILabel"
+- !private "UIFont"
+- "=="
+- !private "UIImage"
+- !private "ImageController"
+- "UITouch"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]
@@ -151,10 +159,14 @@ depends-member:
 - ["Ps9AnyObject", "backgroundImage"]
 - ["Ps9AnyObject", "backwardSwipeGestureFired"]
 - ["Ps9AnyObject", "bakcwardSwipeQuoteFired"]
+- ["Ps9AnyObject", "bottomBoxSquareButton"]
 - ["Ps9AnyObject", "bottomFontSizeSlider"]
 - ["Ps9AnyObject", "bottomFontSizeSliderFired"]
 - ["Ps9AnyObject", "bottomPickerView"]
 - ["Ps9AnyObject", "bottomPickerViewYConstraint"]
+- ["Ps9AnyObject", "bottomShareButton"]
+- ["Ps9AnyObject", "bottomTextEditBoxButton"]
+- ["Ps9AnyObject", "bottomTextEditButton"]
 - !private ["Ps9AnyObject", "bringSubviewToFront"]
 - ["Ps9AnyObject", "buttonY"]
 - !private ["Ps9AnyObject", "center"]
@@ -224,6 +236,7 @@ depends-member:
 - ["Ps9AnyObject", "returnConstraints"]
 - ["Ps9AnyObject", "returnDimensions"]
 - ["Ps9AnyObject", "returnObjectForManipulation"]
+- !private ["Ps9AnyObject", "setImage"]
 - ["Ps9AnyObject", "setUpView"]
 - ["Ps9AnyObject", "shareJunkButtonTapped"]
 - !private ["Ps9AnyObject", "sharedInstance"]
@@ -234,6 +247,7 @@ depends-member:
 - ["Ps9AnyObject", "toggleJunkView"]
 - ["Ps9AnyObject", "togglePickerView"]
 - ["Ps9AnyObject", "toggleViewModeInQuoteView"]
+- ["Ps9AnyObject", "topBoxSquareButton"]
 - ["Ps9AnyObject", "topDrawerView"]
 - ["Ps9AnyObject", "topDrawerYConstraint"]
 - ["Ps9AnyObject", "topFontSizeSlider"]
@@ -244,6 +258,9 @@ depends-member:
 - ["Ps9AnyObject", "topJunkbarYConstraint"]
 - ["Ps9AnyObject", "topPickerView"]
 - ["Ps9AnyObject", "topPickerViewYConstraint"]
+- ["Ps9AnyObject", "topShareButton"]
+- ["Ps9AnyObject", "topTextEditBoxButton"]
+- ["Ps9AnyObject", "topTextEditButton"]
 - ["Ps9AnyObject", "topWidthSlider"]
 - ["Ps9AnyObject", "touchesBegan"]
 - ["Ps9AnyObject", "touchesMoved"]
@@ -271,6 +288,7 @@ depends-member:
 - ["Ps23ArrayLiteralConvertible", "Generator"]
 - ["Ps23ArrayLiteralConvertible", "Index"]
 - !private ["Ps23ArrayLiteralConvertible", "Left"]
+- !private ["Ps23ArrayLiteralConvertible", "Normal"]
 - !private ["Ps23ArrayLiteralConvertible", "RawValue"]
 - !private ["Ps23ArrayLiteralConvertible", "Right"]
 - ["Ps23ArrayLiteralConvertible", "SubSequence"]
@@ -329,10 +347,14 @@ depends-member:
 - ["Ps11CVarArgType", "backgroundImage"]
 - ["Ps11CVarArgType", "backwardSwipeGestureFired"]
 - ["Ps11CVarArgType", "bakcwardSwipeQuoteFired"]
+- ["Ps11CVarArgType", "bottomBoxSquareButton"]
 - ["Ps11CVarArgType", "bottomFontSizeSlider"]
 - ["Ps11CVarArgType", "bottomFontSizeSliderFired"]
 - ["Ps11CVarArgType", "bottomPickerView"]
 - ["Ps11CVarArgType", "bottomPickerViewYConstraint"]
+- ["Ps11CVarArgType", "bottomShareButton"]
+- ["Ps11CVarArgType", "bottomTextEditBoxButton"]
+- ["Ps11CVarArgType", "bottomTextEditButton"]
 - !private ["Ps11CVarArgType", "bringSubviewToFront"]
 - ["Ps11CVarArgType", "buttonY"]
 - !private ["Ps11CVarArgType", "center"]
@@ -399,6 +421,7 @@ depends-member:
 - ["Ps11CVarArgType", "returnConstraints"]
 - ["Ps11CVarArgType", "returnDimensions"]
 - ["Ps11CVarArgType", "returnObjectForManipulation"]
+- !private ["Ps11CVarArgType", "setImage"]
 - ["Ps11CVarArgType", "setUpView"]
 - ["Ps11CVarArgType", "shareJunkButtonTapped"]
 - !private ["Ps11CVarArgType", "textColor"]
@@ -408,6 +431,7 @@ depends-member:
 - ["Ps11CVarArgType", "toggleJunkView"]
 - ["Ps11CVarArgType", "togglePickerView"]
 - ["Ps11CVarArgType", "toggleViewModeInQuoteView"]
+- ["Ps11CVarArgType", "topBoxSquareButton"]
 - ["Ps11CVarArgType", "topDrawerView"]
 - ["Ps11CVarArgType", "topDrawerYConstraint"]
 - ["Ps11CVarArgType", "topFontSizeSlider"]
@@ -418,6 +442,9 @@ depends-member:
 - ["Ps11CVarArgType", "topJunkbarYConstraint"]
 - ["Ps11CVarArgType", "topPickerView"]
 - ["Ps11CVarArgType", "topPickerViewYConstraint"]
+- ["Ps11CVarArgType", "topShareButton"]
+- ["Ps11CVarArgType", "topTextEditBoxButton"]
+- ["Ps11CVarArgType", "topTextEditButton"]
 - ["Ps11CVarArgType", "topWidthSlider"]
 - ["Ps11CVarArgType", "touchesBegan"]
 - ["Ps11CVarArgType", "touchesMoved"]
@@ -476,10 +503,14 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "backgroundImage"]
 - ["Ps28CustomDebugStringConvertible", "backwardSwipeGestureFired"]
 - ["Ps28CustomDebugStringConvertible", "bakcwardSwipeQuoteFired"]
+- ["Ps28CustomDebugStringConvertible", "bottomBoxSquareButton"]
 - ["Ps28CustomDebugStringConvertible", "bottomFontSizeSlider"]
 - ["Ps28CustomDebugStringConvertible", "bottomFontSizeSliderFired"]
 - ["Ps28CustomDebugStringConvertible", "bottomPickerView"]
 - ["Ps28CustomDebugStringConvertible", "bottomPickerViewYConstraint"]
+- ["Ps28CustomDebugStringConvertible", "bottomShareButton"]
+- ["Ps28CustomDebugStringConvertible", "bottomTextEditBoxButton"]
+- ["Ps28CustomDebugStringConvertible", "bottomTextEditButton"]
 - !private ["Ps28CustomDebugStringConvertible", "bringSubviewToFront"]
 - ["Ps28CustomDebugStringConvertible", "buttonY"]
 - !private ["Ps28CustomDebugStringConvertible", "center"]
@@ -546,6 +577,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "returnConstraints"]
 - ["Ps28CustomDebugStringConvertible", "returnDimensions"]
 - ["Ps28CustomDebugStringConvertible", "returnObjectForManipulation"]
+- !private ["Ps28CustomDebugStringConvertible", "setImage"]
 - ["Ps28CustomDebugStringConvertible", "setUpView"]
 - ["Ps28CustomDebugStringConvertible", "shareJunkButtonTapped"]
 - !private ["Ps28CustomDebugStringConvertible", "sort"]
@@ -556,6 +588,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "toggleJunkView"]
 - ["Ps28CustomDebugStringConvertible", "togglePickerView"]
 - ["Ps28CustomDebugStringConvertible", "toggleViewModeInQuoteView"]
+- ["Ps28CustomDebugStringConvertible", "topBoxSquareButton"]
 - ["Ps28CustomDebugStringConvertible", "topDrawerView"]
 - ["Ps28CustomDebugStringConvertible", "topDrawerYConstraint"]
 - ["Ps28CustomDebugStringConvertible", "topFontSizeSlider"]
@@ -566,6 +599,9 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "topJunkbarYConstraint"]
 - ["Ps28CustomDebugStringConvertible", "topPickerView"]
 - ["Ps28CustomDebugStringConvertible", "topPickerViewYConstraint"]
+- ["Ps28CustomDebugStringConvertible", "topShareButton"]
+- ["Ps28CustomDebugStringConvertible", "topTextEditBoxButton"]
+- ["Ps28CustomDebugStringConvertible", "topTextEditButton"]
 - ["Ps28CustomDebugStringConvertible", "topWidthSlider"]
 - ["Ps28CustomDebugStringConvertible", "touchesBegan"]
 - ["Ps28CustomDebugStringConvertible", "touchesMoved"]
@@ -615,10 +651,14 @@ depends-member:
 - ["Ps23CustomStringConvertible", "backgroundImage"]
 - ["Ps23CustomStringConvertible", "backwardSwipeGestureFired"]
 - ["Ps23CustomStringConvertible", "bakcwardSwipeQuoteFired"]
+- ["Ps23CustomStringConvertible", "bottomBoxSquareButton"]
 - ["Ps23CustomStringConvertible", "bottomFontSizeSlider"]
 - ["Ps23CustomStringConvertible", "bottomFontSizeSliderFired"]
 - ["Ps23CustomStringConvertible", "bottomPickerView"]
 - ["Ps23CustomStringConvertible", "bottomPickerViewYConstraint"]
+- ["Ps23CustomStringConvertible", "bottomShareButton"]
+- ["Ps23CustomStringConvertible", "bottomTextEditBoxButton"]
+- ["Ps23CustomStringConvertible", "bottomTextEditButton"]
 - !private ["Ps23CustomStringConvertible", "bringSubviewToFront"]
 - ["Ps23CustomStringConvertible", "buttonY"]
 - !private ["Ps23CustomStringConvertible", "center"]
@@ -686,6 +726,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "returnConstraints"]
 - ["Ps23CustomStringConvertible", "returnDimensions"]
 - ["Ps23CustomStringConvertible", "returnObjectForManipulation"]
+- !private ["Ps23CustomStringConvertible", "setImage"]
 - ["Ps23CustomStringConvertible", "setUpView"]
 - ["Ps23CustomStringConvertible", "shareJunkButtonTapped"]
 - !private ["Ps23CustomStringConvertible", "sort"]
@@ -696,6 +737,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "toggleJunkView"]
 - ["Ps23CustomStringConvertible", "togglePickerView"]
 - ["Ps23CustomStringConvertible", "toggleViewModeInQuoteView"]
+- ["Ps23CustomStringConvertible", "topBoxSquareButton"]
 - ["Ps23CustomStringConvertible", "topDrawerView"]
 - ["Ps23CustomStringConvertible", "topDrawerYConstraint"]
 - ["Ps23CustomStringConvertible", "topFontSizeSlider"]
@@ -706,6 +748,9 @@ depends-member:
 - ["Ps23CustomStringConvertible", "topJunkbarYConstraint"]
 - ["Ps23CustomStringConvertible", "topPickerView"]
 - ["Ps23CustomStringConvertible", "topPickerViewYConstraint"]
+- ["Ps23CustomStringConvertible", "topShareButton"]
+- ["Ps23CustomStringConvertible", "topTextEditBoxButton"]
+- ["Ps23CustomStringConvertible", "topTextEditButton"]
 - ["Ps23CustomStringConvertible", "topWidthSlider"]
 - ["Ps23CustomStringConvertible", "touchesBegan"]
 - ["Ps23CustomStringConvertible", "touchesMoved"]
@@ -765,10 +810,14 @@ depends-member:
 - ["C4Echo18EchoViewController", "backgroundImage"]
 - ["C4Echo18EchoViewController", "backwardSwipeGestureFired"]
 - ["C4Echo18EchoViewController", "bakcwardSwipeQuoteFired"]
+- ["C4Echo18EchoViewController", "bottomBoxSquareButton"]
 - ["C4Echo18EchoViewController", "bottomFontSizeSlider"]
 - ["C4Echo18EchoViewController", "bottomFontSizeSliderFired"]
 - ["C4Echo18EchoViewController", "bottomPickerView"]
 - ["C4Echo18EchoViewController", "bottomPickerViewYConstraint"]
+- ["C4Echo18EchoViewController", "bottomShareButton"]
+- ["C4Echo18EchoViewController", "bottomTextEditBoxButton"]
+- ["C4Echo18EchoViewController", "bottomTextEditButton"]
 - ["C4Echo18EchoViewController", "buttonY"]
 - ["C4Echo18EchoViewController", "currentFontSize"]
 - ["C4Echo18EchoViewController", "deinit"]
@@ -823,6 +872,7 @@ depends-member:
 - ["C4Echo18EchoViewController", "toggleJunkView"]
 - ["C4Echo18EchoViewController", "togglePickerView"]
 - ["C4Echo18EchoViewController", "toggleViewModeInQuoteView"]
+- ["C4Echo18EchoViewController", "topBoxSquareButton"]
 - ["C4Echo18EchoViewController", "topDrawerView"]
 - ["C4Echo18EchoViewController", "topDrawerYConstraint"]
 - ["C4Echo18EchoViewController", "topFontSizeSlider"]
@@ -833,6 +883,9 @@ depends-member:
 - ["C4Echo18EchoViewController", "topJunkbarYConstraint"]
 - ["C4Echo18EchoViewController", "topPickerView"]
 - ["C4Echo18EchoViewController", "topPickerViewYConstraint"]
+- ["C4Echo18EchoViewController", "topShareButton"]
+- ["C4Echo18EchoViewController", "topTextEditBoxButton"]
+- ["C4Echo18EchoViewController", "topTextEditButton"]
 - ["C4Echo18EchoViewController", "topWidthSlider"]
 - ["C4Echo18EchoViewController", "touchesBegan"]
 - ["C4Echo18EchoViewController", "touchesMoved"]
@@ -864,6 +917,7 @@ depends-member:
 - !private ["Ps9Equatable", "Index"]
 - ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "Left"]
+- !private ["Ps9Equatable", "Normal"]
 - !private ["Ps9Equatable", "QuoteController"]
 - !private ["Ps9Equatable", "RawValue"]
 - !private ["Ps9Equatable", "Right"]
@@ -891,10 +945,14 @@ depends-member:
 - ["Ps9Equatable", "backgroundImage"]
 - ["Ps9Equatable", "backwardSwipeGestureFired"]
 - ["Ps9Equatable", "bakcwardSwipeQuoteFired"]
+- ["Ps9Equatable", "bottomBoxSquareButton"]
 - ["Ps9Equatable", "bottomFontSizeSlider"]
 - ["Ps9Equatable", "bottomFontSizeSliderFired"]
 - ["Ps9Equatable", "bottomPickerView"]
 - ["Ps9Equatable", "bottomPickerViewYConstraint"]
+- ["Ps9Equatable", "bottomShareButton"]
+- ["Ps9Equatable", "bottomTextEditBoxButton"]
+- ["Ps9Equatable", "bottomTextEditButton"]
 - !private ["Ps9Equatable", "bringSubviewToFront"]
 - ["Ps9Equatable", "buttonY"]
 - !private ["Ps9Equatable", "center"]
@@ -965,6 +1023,7 @@ depends-member:
 - ["Ps9Equatable", "returnConstraints"]
 - ["Ps9Equatable", "returnDimensions"]
 - ["Ps9Equatable", "returnObjectForManipulation"]
+- !private ["Ps9Equatable", "setImage"]
 - ["Ps9Equatable", "setUpView"]
 - ["Ps9Equatable", "shareJunkButtonTapped"]
 - !private ["Ps9Equatable", "size"]
@@ -975,6 +1034,7 @@ depends-member:
 - ["Ps9Equatable", "toggleJunkView"]
 - ["Ps9Equatable", "togglePickerView"]
 - ["Ps9Equatable", "toggleViewModeInQuoteView"]
+- ["Ps9Equatable", "topBoxSquareButton"]
 - ["Ps9Equatable", "topDrawerView"]
 - ["Ps9Equatable", "topDrawerYConstraint"]
 - ["Ps9Equatable", "topFontSizeSlider"]
@@ -985,6 +1045,9 @@ depends-member:
 - ["Ps9Equatable", "topJunkbarYConstraint"]
 - ["Ps9Equatable", "topPickerView"]
 - ["Ps9Equatable", "topPickerViewYConstraint"]
+- ["Ps9Equatable", "topShareButton"]
+- ["Ps9Equatable", "topTextEditBoxButton"]
+- ["Ps9Equatable", "topTextEditButton"]
 - ["Ps9Equatable", "topWidthSlider"]
 - ["Ps9Equatable", "touchesBegan"]
 - ["Ps9Equatable", "touchesMoved"]
@@ -1051,10 +1114,14 @@ depends-member:
 - ["Ps8Hashable", "backgroundImage"]
 - ["Ps8Hashable", "backwardSwipeGestureFired"]
 - ["Ps8Hashable", "bakcwardSwipeQuoteFired"]
+- ["Ps8Hashable", "bottomBoxSquareButton"]
 - ["Ps8Hashable", "bottomFontSizeSlider"]
 - ["Ps8Hashable", "bottomFontSizeSliderFired"]
 - ["Ps8Hashable", "bottomPickerView"]
 - ["Ps8Hashable", "bottomPickerViewYConstraint"]
+- ["Ps8Hashable", "bottomShareButton"]
+- ["Ps8Hashable", "bottomTextEditBoxButton"]
+- ["Ps8Hashable", "bottomTextEditButton"]
 - !private ["Ps8Hashable", "bringSubviewToFront"]
 - ["Ps8Hashable", "buttonY"]
 - !private ["Ps8Hashable", "center"]
@@ -1122,6 +1189,7 @@ depends-member:
 - ["Ps8Hashable", "returnConstraints"]
 - ["Ps8Hashable", "returnDimensions"]
 - ["Ps8Hashable", "returnObjectForManipulation"]
+- !private ["Ps8Hashable", "setImage"]
 - ["Ps8Hashable", "setUpView"]
 - ["Ps8Hashable", "shareJunkButtonTapped"]
 - !private ["Ps8Hashable", "textColor"]
@@ -1131,6 +1199,7 @@ depends-member:
 - ["Ps8Hashable", "toggleJunkView"]
 - ["Ps8Hashable", "togglePickerView"]
 - ["Ps8Hashable", "toggleViewModeInQuoteView"]
+- ["Ps8Hashable", "topBoxSquareButton"]
 - ["Ps8Hashable", "topDrawerView"]
 - ["Ps8Hashable", "topDrawerYConstraint"]
 - ["Ps8Hashable", "topFontSizeSlider"]
@@ -1141,6 +1210,9 @@ depends-member:
 - ["Ps8Hashable", "topJunkbarYConstraint"]
 - ["Ps8Hashable", "topPickerView"]
 - ["Ps8Hashable", "topPickerViewYConstraint"]
+- ["Ps8Hashable", "topShareButton"]
+- ["Ps8Hashable", "topTextEditBoxButton"]
+- ["Ps8Hashable", "topTextEditButton"]
 - ["Ps8Hashable", "topWidthSlider"]
 - ["Ps8Hashable", "touchesBegan"]
 - ["Ps8Hashable", "touchesMoved"]
@@ -1228,10 +1300,14 @@ depends-member:
 - ["PSo8NSCoding", "backgroundImage"]
 - ["PSo8NSCoding", "backwardSwipeGestureFired"]
 - ["PSo8NSCoding", "bakcwardSwipeQuoteFired"]
+- ["PSo8NSCoding", "bottomBoxSquareButton"]
 - ["PSo8NSCoding", "bottomFontSizeSlider"]
 - ["PSo8NSCoding", "bottomFontSizeSliderFired"]
 - ["PSo8NSCoding", "bottomPickerView"]
 - ["PSo8NSCoding", "bottomPickerViewYConstraint"]
+- ["PSo8NSCoding", "bottomShareButton"]
+- ["PSo8NSCoding", "bottomTextEditBoxButton"]
+- ["PSo8NSCoding", "bottomTextEditButton"]
 - !private ["PSo8NSCoding", "bringSubviewToFront"]
 - ["PSo8NSCoding", "buttonY"]
 - !private ["PSo8NSCoding", "center"]
@@ -1292,6 +1368,7 @@ depends-member:
 - ["PSo8NSCoding", "returnConstraints"]
 - ["PSo8NSCoding", "returnDimensions"]
 - ["PSo8NSCoding", "returnObjectForManipulation"]
+- !private ["PSo8NSCoding", "setImage"]
 - ["PSo8NSCoding", "setUpView"]
 - ["PSo8NSCoding", "shareJunkButtonTapped"]
 - !private ["PSo8NSCoding", "textColor"]
@@ -1301,6 +1378,7 @@ depends-member:
 - ["PSo8NSCoding", "toggleJunkView"]
 - ["PSo8NSCoding", "togglePickerView"]
 - ["PSo8NSCoding", "toggleViewModeInQuoteView"]
+- ["PSo8NSCoding", "topBoxSquareButton"]
 - ["PSo8NSCoding", "topDrawerView"]
 - ["PSo8NSCoding", "topDrawerYConstraint"]
 - ["PSo8NSCoding", "topFontSizeSlider"]
@@ -1311,6 +1389,9 @@ depends-member:
 - ["PSo8NSCoding", "topJunkbarYConstraint"]
 - ["PSo8NSCoding", "topPickerView"]
 - ["PSo8NSCoding", "topPickerViewYConstraint"]
+- ["PSo8NSCoding", "topShareButton"]
+- ["PSo8NSCoding", "topTextEditBoxButton"]
+- ["PSo8NSCoding", "topTextEditButton"]
 - ["PSo8NSCoding", "topWidthSlider"]
 - ["PSo8NSCoding", "touchesBegan"]
 - ["PSo8NSCoding", "touchesMoved"]
@@ -1352,10 +1433,14 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "backgroundImage"]
 - ["PSo26NSExtensionRequestHandling", "backwardSwipeGestureFired"]
 - ["PSo26NSExtensionRequestHandling", "bakcwardSwipeQuoteFired"]
+- ["PSo26NSExtensionRequestHandling", "bottomBoxSquareButton"]
 - ["PSo26NSExtensionRequestHandling", "bottomFontSizeSlider"]
 - ["PSo26NSExtensionRequestHandling", "bottomFontSizeSliderFired"]
 - ["PSo26NSExtensionRequestHandling", "bottomPickerView"]
 - ["PSo26NSExtensionRequestHandling", "bottomPickerViewYConstraint"]
+- ["PSo26NSExtensionRequestHandling", "bottomShareButton"]
+- ["PSo26NSExtensionRequestHandling", "bottomTextEditBoxButton"]
+- ["PSo26NSExtensionRequestHandling", "bottomTextEditButton"]
 - ["PSo26NSExtensionRequestHandling", "buttonY"]
 - ["PSo26NSExtensionRequestHandling", "currentFontSize"]
 - !private ["PSo26NSExtensionRequestHandling", "displayActivityController"]
@@ -1409,6 +1494,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "toggleJunkView"]
 - ["PSo26NSExtensionRequestHandling", "togglePickerView"]
 - ["PSo26NSExtensionRequestHandling", "toggleViewModeInQuoteView"]
+- ["PSo26NSExtensionRequestHandling", "topBoxSquareButton"]
 - ["PSo26NSExtensionRequestHandling", "topDrawerView"]
 - ["PSo26NSExtensionRequestHandling", "topDrawerYConstraint"]
 - ["PSo26NSExtensionRequestHandling", "topFontSizeSlider"]
@@ -1419,6 +1505,9 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "topJunkbarYConstraint"]
 - ["PSo26NSExtensionRequestHandling", "topPickerView"]
 - ["PSo26NSExtensionRequestHandling", "topPickerViewYConstraint"]
+- ["PSo26NSExtensionRequestHandling", "topShareButton"]
+- ["PSo26NSExtensionRequestHandling", "topTextEditBoxButton"]
+- ["PSo26NSExtensionRequestHandling", "topTextEditButton"]
 - ["PSo26NSExtensionRequestHandling", "topWidthSlider"]
 - ["PSo26NSExtensionRequestHandling", "touchesBegan"]
 - ["PSo26NSExtensionRequestHandling", "touchesMoved"]
@@ -1470,10 +1559,14 @@ depends-member:
 - ["CSo8NSObject", "backgroundImage"]
 - ["CSo8NSObject", "backwardSwipeGestureFired"]
 - ["CSo8NSObject", "bakcwardSwipeQuoteFired"]
+- ["CSo8NSObject", "bottomBoxSquareButton"]
 - ["CSo8NSObject", "bottomFontSizeSlider"]
 - ["CSo8NSObject", "bottomFontSizeSliderFired"]
 - ["CSo8NSObject", "bottomPickerView"]
 - ["CSo8NSObject", "bottomPickerViewYConstraint"]
+- ["CSo8NSObject", "bottomShareButton"]
+- ["CSo8NSObject", "bottomTextEditBoxButton"]
+- ["CSo8NSObject", "bottomTextEditButton"]
 - !private ["CSo8NSObject", "bringSubviewToFront"]
 - ["CSo8NSObject", "buttonY"]
 - !private ["CSo8NSObject", "center"]
@@ -1539,6 +1632,7 @@ depends-member:
 - ["CSo8NSObject", "returnConstraints"]
 - ["CSo8NSObject", "returnDimensions"]
 - ["CSo8NSObject", "returnObjectForManipulation"]
+- !private ["CSo8NSObject", "setImage"]
 - ["CSo8NSObject", "setUpView"]
 - ["CSo8NSObject", "shareJunkButtonTapped"]
 - !private ["CSo8NSObject", "textColor"]
@@ -1548,6 +1642,7 @@ depends-member:
 - ["CSo8NSObject", "toggleJunkView"]
 - ["CSo8NSObject", "togglePickerView"]
 - ["CSo8NSObject", "toggleViewModeInQuoteView"]
+- ["CSo8NSObject", "topBoxSquareButton"]
 - ["CSo8NSObject", "topDrawerView"]
 - ["CSo8NSObject", "topDrawerYConstraint"]
 - ["CSo8NSObject", "topFontSizeSlider"]
@@ -1558,6 +1653,9 @@ depends-member:
 - ["CSo8NSObject", "topJunkbarYConstraint"]
 - ["CSo8NSObject", "topPickerView"]
 - ["CSo8NSObject", "topPickerViewYConstraint"]
+- ["CSo8NSObject", "topShareButton"]
+- ["CSo8NSObject", "topTextEditBoxButton"]
+- ["CSo8NSObject", "topTextEditButton"]
 - ["CSo8NSObject", "topWidthSlider"]
 - ["CSo8NSObject", "touchesBegan"]
 - ["CSo8NSObject", "touchesMoved"]
@@ -1598,10 +1696,14 @@ depends-member:
 - ["PSo16NSObjectProtocol", "backgroundImage"]
 - ["PSo16NSObjectProtocol", "backwardSwipeGestureFired"]
 - ["PSo16NSObjectProtocol", "bakcwardSwipeQuoteFired"]
+- ["PSo16NSObjectProtocol", "bottomBoxSquareButton"]
 - ["PSo16NSObjectProtocol", "bottomFontSizeSlider"]
 - ["PSo16NSObjectProtocol", "bottomFontSizeSliderFired"]
 - ["PSo16NSObjectProtocol", "bottomPickerView"]
 - ["PSo16NSObjectProtocol", "bottomPickerViewYConstraint"]
+- ["PSo16NSObjectProtocol", "bottomShareButton"]
+- ["PSo16NSObjectProtocol", "bottomTextEditBoxButton"]
+- ["PSo16NSObjectProtocol", "bottomTextEditButton"]
 - !private ["PSo16NSObjectProtocol", "bringSubviewToFront"]
 - ["PSo16NSObjectProtocol", "buttonY"]
 - !private ["PSo16NSObjectProtocol", "center"]
@@ -1667,6 +1769,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "returnConstraints"]
 - ["PSo16NSObjectProtocol", "returnDimensions"]
 - ["PSo16NSObjectProtocol", "returnObjectForManipulation"]
+- !private ["PSo16NSObjectProtocol", "setImage"]
 - ["PSo16NSObjectProtocol", "setUpView"]
 - ["PSo16NSObjectProtocol", "shareJunkButtonTapped"]
 - !private ["PSo16NSObjectProtocol", "textColor"]
@@ -1676,6 +1779,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "toggleJunkView"]
 - ["PSo16NSObjectProtocol", "togglePickerView"]
 - ["PSo16NSObjectProtocol", "toggleViewModeInQuoteView"]
+- ["PSo16NSObjectProtocol", "topBoxSquareButton"]
 - ["PSo16NSObjectProtocol", "topDrawerView"]
 - ["PSo16NSObjectProtocol", "topDrawerYConstraint"]
 - ["PSo16NSObjectProtocol", "topFontSizeSlider"]
@@ -1686,6 +1790,9 @@ depends-member:
 - ["PSo16NSObjectProtocol", "topJunkbarYConstraint"]
 - ["PSo16NSObjectProtocol", "topPickerView"]
 - ["PSo16NSObjectProtocol", "topPickerViewYConstraint"]
+- ["PSo16NSObjectProtocol", "topShareButton"]
+- ["PSo16NSObjectProtocol", "topTextEditBoxButton"]
+- ["PSo16NSObjectProtocol", "topTextEditButton"]
 - ["PSo16NSObjectProtocol", "topWidthSlider"]
 - ["PSo16NSObjectProtocol", "touchesBegan"]
 - ["PSo16NSObjectProtocol", "touchesMoved"]
@@ -1711,6 +1818,7 @@ depends-member:
 - !private ["Ps21NilLiteralConvertible", "EditMode"]
 - ["Ps21NilLiteralConvertible", "Some"]
 - !private ["Ps13OptionSetType", "Left"]
+- !private ["Ps13OptionSetType", "Normal"]
 - !private ["Ps13OptionSetType", "RawValue"]
 - !private ["Ps13OptionSetType", "Right"]
 - !private ["Sq", "EditMode"]
@@ -1729,6 +1837,7 @@ depends-member:
 - ["Ps30RangeReplaceableCollectionType", "init"]
 - !private ["Ps30RangeReplaceableCollectionType", "sort"]
 - !private ["Ps16RawRepresentable", "Left"]
+- !private ["Ps16RawRepresentable", "Normal"]
 - !private ["Ps16RawRepresentable", "RawValue"]
 - !private ["Ps16RawRepresentable", "Right"]
 - ["Ps12SequenceType", "Element"]
@@ -1745,6 +1854,7 @@ depends-member:
 - !private ["Vs3Set", "_Element"]
 - !private ["Vs3Set", "first"]
 - !private ["Ps14SetAlgebraType", "Left"]
+- !private ["Ps14SetAlgebraType", "Normal"]
 - !private ["Ps14SetAlgebraType", "RawValue"]
 - !private ["Ps14SetAlgebraType", "Right"]
 - !private ["Vs12SetGenerator", "Element"]
@@ -1782,6 +1892,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "minimumValue"]
 - !private ["PSo29UIAccessibilityIdentification", "minimumValueImage"]
 - !private ["PSo29UIAccessibilityIdentification", "pointInside"]
+- !private ["PSo29UIAccessibilityIdentification", "setImage"]
 - !private ["PSo29UIAccessibilityIdentification", "textColor"]
 - !private ["PSo29UIAccessibilityIdentification", "transform"]
 - !private ["PSo29UIAccessibilityIdentification", "translatesAutoresizingMaskIntoConstraints"]
@@ -1804,6 +1915,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "minimumValue"]
 - !private ["PSo12UIAppearance", "minimumValueImage"]
 - !private ["PSo12UIAppearance", "pointInside"]
+- !private ["PSo12UIAppearance", "setImage"]
 - !private ["PSo12UIAppearance", "textColor"]
 - !private ["PSo12UIAppearance", "transform"]
 - !private ["PSo12UIAppearance", "translatesAutoresizingMaskIntoConstraints"]
@@ -1832,10 +1944,14 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "backgroundImage"]
 - ["PSo21UIAppearanceContainer", "backwardSwipeGestureFired"]
 - ["PSo21UIAppearanceContainer", "bakcwardSwipeQuoteFired"]
+- ["PSo21UIAppearanceContainer", "bottomBoxSquareButton"]
 - ["PSo21UIAppearanceContainer", "bottomFontSizeSlider"]
 - ["PSo21UIAppearanceContainer", "bottomFontSizeSliderFired"]
 - ["PSo21UIAppearanceContainer", "bottomPickerView"]
 - ["PSo21UIAppearanceContainer", "bottomPickerViewYConstraint"]
+- ["PSo21UIAppearanceContainer", "bottomShareButton"]
+- ["PSo21UIAppearanceContainer", "bottomTextEditBoxButton"]
+- ["PSo21UIAppearanceContainer", "bottomTextEditButton"]
 - !private ["PSo21UIAppearanceContainer", "bringSubviewToFront"]
 - ["PSo21UIAppearanceContainer", "buttonY"]
 - !private ["PSo21UIAppearanceContainer", "center"]
@@ -1893,6 +2009,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "returnConstraints"]
 - ["PSo21UIAppearanceContainer", "returnDimensions"]
 - ["PSo21UIAppearanceContainer", "returnObjectForManipulation"]
+- !private ["PSo21UIAppearanceContainer", "setImage"]
 - ["PSo21UIAppearanceContainer", "setUpView"]
 - ["PSo21UIAppearanceContainer", "shareJunkButtonTapped"]
 - !private ["PSo21UIAppearanceContainer", "textColor"]
@@ -1902,6 +2019,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "toggleJunkView"]
 - ["PSo21UIAppearanceContainer", "togglePickerView"]
 - ["PSo21UIAppearanceContainer", "toggleViewModeInQuoteView"]
+- ["PSo21UIAppearanceContainer", "topBoxSquareButton"]
 - ["PSo21UIAppearanceContainer", "topDrawerView"]
 - ["PSo21UIAppearanceContainer", "topDrawerYConstraint"]
 - ["PSo21UIAppearanceContainer", "topFontSizeSlider"]
@@ -1912,6 +2030,9 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "topJunkbarYConstraint"]
 - ["PSo21UIAppearanceContainer", "topPickerView"]
 - ["PSo21UIAppearanceContainer", "topPickerViewYConstraint"]
+- ["PSo21UIAppearanceContainer", "topShareButton"]
+- ["PSo21UIAppearanceContainer", "topTextEditBoxButton"]
+- ["PSo21UIAppearanceContainer", "topTextEditButton"]
 - ["PSo21UIAppearanceContainer", "topWidthSlider"]
 - ["PSo21UIAppearanceContainer", "touchesBegan"]
 - ["PSo21UIAppearanceContainer", "touchesMoved"]
@@ -1929,6 +2050,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "widthSlider"]
 - ["PSo21UIAppearanceContainer", "widthSliderChanged"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo8UIButton", "setImage"]
 - !private ["CSo7UIColor", "colorWithAlphaComponent"]
 - !private ["CSo7UIColor", "init"]
 - !private ["CSo7UIColor", "whiteColor"]
@@ -1950,10 +2072,14 @@ depends-member:
 - ["PSo18UIContentContainer", "backgroundImage"]
 - ["PSo18UIContentContainer", "backwardSwipeGestureFired"]
 - ["PSo18UIContentContainer", "bakcwardSwipeQuoteFired"]
+- ["PSo18UIContentContainer", "bottomBoxSquareButton"]
 - ["PSo18UIContentContainer", "bottomFontSizeSlider"]
 - ["PSo18UIContentContainer", "bottomFontSizeSliderFired"]
 - ["PSo18UIContentContainer", "bottomPickerView"]
 - ["PSo18UIContentContainer", "bottomPickerViewYConstraint"]
+- ["PSo18UIContentContainer", "bottomShareButton"]
+- ["PSo18UIContentContainer", "bottomTextEditBoxButton"]
+- ["PSo18UIContentContainer", "bottomTextEditButton"]
 - ["PSo18UIContentContainer", "buttonY"]
 - ["PSo18UIContentContainer", "currentFontSize"]
 - !private ["PSo18UIContentContainer", "displayActivityController"]
@@ -2007,6 +2133,7 @@ depends-member:
 - ["PSo18UIContentContainer", "toggleJunkView"]
 - ["PSo18UIContentContainer", "togglePickerView"]
 - ["PSo18UIContentContainer", "toggleViewModeInQuoteView"]
+- ["PSo18UIContentContainer", "topBoxSquareButton"]
 - ["PSo18UIContentContainer", "topDrawerView"]
 - ["PSo18UIContentContainer", "topDrawerYConstraint"]
 - ["PSo18UIContentContainer", "topFontSizeSlider"]
@@ -2017,6 +2144,9 @@ depends-member:
 - ["PSo18UIContentContainer", "topJunkbarYConstraint"]
 - ["PSo18UIContentContainer", "topPickerView"]
 - ["PSo18UIContentContainer", "topPickerViewYConstraint"]
+- ["PSo18UIContentContainer", "topShareButton"]
+- ["PSo18UIContentContainer", "topTextEditBoxButton"]
+- ["PSo18UIContentContainer", "topTextEditButton"]
 - ["PSo18UIContentContainer", "topWidthSlider"]
 - ["PSo18UIContentContainer", "touchesBegan"]
 - ["PSo18UIContentContainer", "touchesMoved"]
@@ -2033,7 +2163,9 @@ depends-member:
 - !private ["CSo9UIControl", "maximumValue"]
 - !private ["CSo9UIControl", "minimumValue"]
 - !private ["CSo9UIControl", "minimumValueImage"]
+- !private ["CSo9UIControl", "setImage"]
 - !private ["CSo9UIControl", "value"]
+- !private ["VSC14UIControlState", "Normal"]
 - !private ["PSo17UICoordinateSpace", "adjustsFontSizeToFitWidth"]
 - !private ["PSo17UICoordinateSpace", "alpha"]
 - !private ["PSo17UICoordinateSpace", "animateWithDuration"]
@@ -2051,6 +2183,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "minimumValue"]
 - !private ["PSo17UICoordinateSpace", "minimumValueImage"]
 - !private ["PSo17UICoordinateSpace", "pointInside"]
+- !private ["PSo17UICoordinateSpace", "setImage"]
 - !private ["PSo17UICoordinateSpace", "textColor"]
 - !private ["PSo17UICoordinateSpace", "transform"]
 - !private ["PSo17UICoordinateSpace", "translatesAutoresizingMaskIntoConstraints"]
@@ -2073,6 +2206,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "minimumValue"]
 - !private ["PSo13UIDynamicItem", "minimumValueImage"]
 - !private ["PSo13UIDynamicItem", "pointInside"]
+- !private ["PSo13UIDynamicItem", "setImage"]
 - !private ["PSo13UIDynamicItem", "textColor"]
 - !private ["PSo13UIDynamicItem", "transform"]
 - !private ["PSo13UIDynamicItem", "translatesAutoresizingMaskIntoConstraints"]
@@ -2101,10 +2235,14 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "backgroundImage"]
 - ["PSo18UIFocusEnvironment", "backwardSwipeGestureFired"]
 - ["PSo18UIFocusEnvironment", "bakcwardSwipeQuoteFired"]
+- ["PSo18UIFocusEnvironment", "bottomBoxSquareButton"]
 - ["PSo18UIFocusEnvironment", "bottomFontSizeSlider"]
 - ["PSo18UIFocusEnvironment", "bottomFontSizeSliderFired"]
 - ["PSo18UIFocusEnvironment", "bottomPickerView"]
 - ["PSo18UIFocusEnvironment", "bottomPickerViewYConstraint"]
+- ["PSo18UIFocusEnvironment", "bottomShareButton"]
+- ["PSo18UIFocusEnvironment", "bottomTextEditBoxButton"]
+- ["PSo18UIFocusEnvironment", "bottomTextEditButton"]
 - !private ["PSo18UIFocusEnvironment", "bringSubviewToFront"]
 - ["PSo18UIFocusEnvironment", "buttonY"]
 - !private ["PSo18UIFocusEnvironment", "center"]
@@ -2162,6 +2300,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "returnConstraints"]
 - ["PSo18UIFocusEnvironment", "returnDimensions"]
 - ["PSo18UIFocusEnvironment", "returnObjectForManipulation"]
+- !private ["PSo18UIFocusEnvironment", "setImage"]
 - ["PSo18UIFocusEnvironment", "setUpView"]
 - ["PSo18UIFocusEnvironment", "shareJunkButtonTapped"]
 - !private ["PSo18UIFocusEnvironment", "textColor"]
@@ -2171,6 +2310,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "toggleJunkView"]
 - ["PSo18UIFocusEnvironment", "togglePickerView"]
 - ["PSo18UIFocusEnvironment", "toggleViewModeInQuoteView"]
+- ["PSo18UIFocusEnvironment", "topBoxSquareButton"]
 - ["PSo18UIFocusEnvironment", "topDrawerView"]
 - ["PSo18UIFocusEnvironment", "topDrawerYConstraint"]
 - ["PSo18UIFocusEnvironment", "topFontSizeSlider"]
@@ -2181,6 +2321,9 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "topJunkbarYConstraint"]
 - ["PSo18UIFocusEnvironment", "topPickerView"]
 - ["PSo18UIFocusEnvironment", "topPickerViewYConstraint"]
+- ["PSo18UIFocusEnvironment", "topShareButton"]
+- ["PSo18UIFocusEnvironment", "topTextEditBoxButton"]
+- ["PSo18UIFocusEnvironment", "topTextEditButton"]
 - ["PSo18UIFocusEnvironment", "topWidthSlider"]
 - ["PSo18UIFocusEnvironment", "touchesBegan"]
 - ["PSo18UIFocusEnvironment", "touchesMoved"]
@@ -2231,9 +2374,13 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "adjustFrameBasedOnDimension"]
 - !private ["PSo22UIPickerViewDataSource", "animationInterval"]
 - !private ["PSo22UIPickerViewDataSource", "backgroundImage"]
+- !private ["PSo22UIPickerViewDataSource", "bottomBoxSquareButton"]
 - !private ["PSo22UIPickerViewDataSource", "bottomFontSizeSlider"]
 - !private ["PSo22UIPickerViewDataSource", "bottomPickerView"]
 - !private ["PSo22UIPickerViewDataSource", "bottomPickerViewYConstraint"]
+- !private ["PSo22UIPickerViewDataSource", "bottomShareButton"]
+- !private ["PSo22UIPickerViewDataSource", "bottomTextEditBoxButton"]
+- !private ["PSo22UIPickerViewDataSource", "bottomTextEditButton"]
 - !private ["PSo22UIPickerViewDataSource", "currentFontSize"]
 - !private ["PSo22UIPickerViewDataSource", "displayActivityController"]
 - !private ["PSo22UIPickerViewDataSource", "drawerMode"]
@@ -2275,6 +2422,7 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "toggleDrawer"]
 - !private ["PSo22UIPickerViewDataSource", "toggleJunkView"]
 - !private ["PSo22UIPickerViewDataSource", "togglePickerView"]
+- !private ["PSo22UIPickerViewDataSource", "topBoxSquareButton"]
 - !private ["PSo22UIPickerViewDataSource", "topDrawerView"]
 - !private ["PSo22UIPickerViewDataSource", "topDrawerYConstraint"]
 - !private ["PSo22UIPickerViewDataSource", "topFontSizeSlider"]
@@ -2284,6 +2432,9 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "topJunkbarYConstraint"]
 - !private ["PSo22UIPickerViewDataSource", "topPickerView"]
 - !private ["PSo22UIPickerViewDataSource", "topPickerViewYConstraint"]
+- !private ["PSo22UIPickerViewDataSource", "topShareButton"]
+- !private ["PSo22UIPickerViewDataSource", "topTextEditBoxButton"]
+- !private ["PSo22UIPickerViewDataSource", "topTextEditButton"]
 - !private ["PSo22UIPickerViewDataSource", "topWidthSlider"]
 - !private ["PSo22UIPickerViewDataSource", "updateSlidersWithView"]
 - !private ["PSo22UIPickerViewDataSource", "updateViewConstraints"]
@@ -2306,9 +2457,13 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "adjustFrameBasedOnDimension"]
 - !private ["PSo20UIPickerViewDelegate", "animationInterval"]
 - !private ["PSo20UIPickerViewDelegate", "backgroundImage"]
+- !private ["PSo20UIPickerViewDelegate", "bottomBoxSquareButton"]
 - !private ["PSo20UIPickerViewDelegate", "bottomFontSizeSlider"]
 - !private ["PSo20UIPickerViewDelegate", "bottomPickerView"]
 - !private ["PSo20UIPickerViewDelegate", "bottomPickerViewYConstraint"]
+- !private ["PSo20UIPickerViewDelegate", "bottomShareButton"]
+- !private ["PSo20UIPickerViewDelegate", "bottomTextEditBoxButton"]
+- !private ["PSo20UIPickerViewDelegate", "bottomTextEditButton"]
 - !private ["PSo20UIPickerViewDelegate", "currentFontSize"]
 - !private ["PSo20UIPickerViewDelegate", "displayActivityController"]
 - !private ["PSo20UIPickerViewDelegate", "drawerMode"]
@@ -2350,6 +2505,7 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "toggleDrawer"]
 - !private ["PSo20UIPickerViewDelegate", "toggleJunkView"]
 - !private ["PSo20UIPickerViewDelegate", "togglePickerView"]
+- !private ["PSo20UIPickerViewDelegate", "topBoxSquareButton"]
 - !private ["PSo20UIPickerViewDelegate", "topDrawerView"]
 - !private ["PSo20UIPickerViewDelegate", "topDrawerYConstraint"]
 - !private ["PSo20UIPickerViewDelegate", "topFontSizeSlider"]
@@ -2359,6 +2515,9 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "topJunkbarYConstraint"]
 - !private ["PSo20UIPickerViewDelegate", "topPickerView"]
 - !private ["PSo20UIPickerViewDelegate", "topPickerViewYConstraint"]
+- !private ["PSo20UIPickerViewDelegate", "topShareButton"]
+- !private ["PSo20UIPickerViewDelegate", "topTextEditBoxButton"]
+- !private ["PSo20UIPickerViewDelegate", "topTextEditButton"]
 - !private ["PSo20UIPickerViewDelegate", "topWidthSlider"]
 - !private ["PSo20UIPickerViewDelegate", "updateSlidersWithView"]
 - !private ["PSo20UIPickerViewDelegate", "updateViewConstraints"]
@@ -2402,10 +2561,14 @@ depends-member:
 - ["CSo11UIResponder", "backgroundImage"]
 - ["CSo11UIResponder", "backwardSwipeGestureFired"]
 - ["CSo11UIResponder", "bakcwardSwipeQuoteFired"]
+- ["CSo11UIResponder", "bottomBoxSquareButton"]
 - ["CSo11UIResponder", "bottomFontSizeSlider"]
 - ["CSo11UIResponder", "bottomFontSizeSliderFired"]
 - ["CSo11UIResponder", "bottomPickerView"]
 - ["CSo11UIResponder", "bottomPickerViewYConstraint"]
+- ["CSo11UIResponder", "bottomShareButton"]
+- ["CSo11UIResponder", "bottomTextEditBoxButton"]
+- ["CSo11UIResponder", "bottomTextEditButton"]
 - !private ["CSo11UIResponder", "bringSubviewToFront"]
 - ["CSo11UIResponder", "buttonY"]
 - !private ["CSo11UIResponder", "center"]
@@ -2463,6 +2626,7 @@ depends-member:
 - ["CSo11UIResponder", "returnConstraints"]
 - ["CSo11UIResponder", "returnDimensions"]
 - ["CSo11UIResponder", "returnObjectForManipulation"]
+- !private ["CSo11UIResponder", "setImage"]
 - ["CSo11UIResponder", "setUpView"]
 - ["CSo11UIResponder", "shareJunkButtonTapped"]
 - !private ["CSo11UIResponder", "textColor"]
@@ -2472,6 +2636,7 @@ depends-member:
 - ["CSo11UIResponder", "toggleJunkView"]
 - ["CSo11UIResponder", "togglePickerView"]
 - ["CSo11UIResponder", "toggleViewModeInQuoteView"]
+- ["CSo11UIResponder", "topBoxSquareButton"]
 - ["CSo11UIResponder", "topDrawerView"]
 - ["CSo11UIResponder", "topDrawerYConstraint"]
 - ["CSo11UIResponder", "topFontSizeSlider"]
@@ -2482,6 +2647,9 @@ depends-member:
 - ["CSo11UIResponder", "topJunkbarYConstraint"]
 - ["CSo11UIResponder", "topPickerView"]
 - ["CSo11UIResponder", "topPickerViewYConstraint"]
+- ["CSo11UIResponder", "topShareButton"]
+- ["CSo11UIResponder", "topTextEditBoxButton"]
+- ["CSo11UIResponder", "topTextEditButton"]
 - ["CSo11UIResponder", "topWidthSlider"]
 - ["CSo11UIResponder", "touchesBegan"]
 - ["CSo11UIResponder", "touchesMoved"]
@@ -2520,10 +2688,14 @@ depends-member:
 - ["PSo16UIStateRestoring", "backgroundImage"]
 - ["PSo16UIStateRestoring", "backwardSwipeGestureFired"]
 - ["PSo16UIStateRestoring", "bakcwardSwipeQuoteFired"]
+- ["PSo16UIStateRestoring", "bottomBoxSquareButton"]
 - ["PSo16UIStateRestoring", "bottomFontSizeSlider"]
 - ["PSo16UIStateRestoring", "bottomFontSizeSliderFired"]
 - ["PSo16UIStateRestoring", "bottomPickerView"]
 - ["PSo16UIStateRestoring", "bottomPickerViewYConstraint"]
+- ["PSo16UIStateRestoring", "bottomShareButton"]
+- ["PSo16UIStateRestoring", "bottomTextEditBoxButton"]
+- ["PSo16UIStateRestoring", "bottomTextEditButton"]
 - ["PSo16UIStateRestoring", "buttonY"]
 - ["PSo16UIStateRestoring", "currentFontSize"]
 - !private ["PSo16UIStateRestoring", "displayActivityController"]
@@ -2577,6 +2749,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "toggleJunkView"]
 - ["PSo16UIStateRestoring", "togglePickerView"]
 - ["PSo16UIStateRestoring", "toggleViewModeInQuoteView"]
+- ["PSo16UIStateRestoring", "topBoxSquareButton"]
 - ["PSo16UIStateRestoring", "topDrawerView"]
 - ["PSo16UIStateRestoring", "topDrawerYConstraint"]
 - ["PSo16UIStateRestoring", "topFontSizeSlider"]
@@ -2587,6 +2760,9 @@ depends-member:
 - ["PSo16UIStateRestoring", "topJunkbarYConstraint"]
 - ["PSo16UIStateRestoring", "topPickerView"]
 - ["PSo16UIStateRestoring", "topPickerViewYConstraint"]
+- ["PSo16UIStateRestoring", "topShareButton"]
+- ["PSo16UIStateRestoring", "topTextEditBoxButton"]
+- ["PSo16UIStateRestoring", "topTextEditButton"]
 - ["PSo16UIStateRestoring", "topWidthSlider"]
 - ["PSo16UIStateRestoring", "touchesBegan"]
 - ["PSo16UIStateRestoring", "touchesMoved"]
@@ -2629,10 +2805,14 @@ depends-member:
 - ["PSo18UITraitEnvironment", "backgroundImage"]
 - ["PSo18UITraitEnvironment", "backwardSwipeGestureFired"]
 - ["PSo18UITraitEnvironment", "bakcwardSwipeQuoteFired"]
+- ["PSo18UITraitEnvironment", "bottomBoxSquareButton"]
 - ["PSo18UITraitEnvironment", "bottomFontSizeSlider"]
 - ["PSo18UITraitEnvironment", "bottomFontSizeSliderFired"]
 - ["PSo18UITraitEnvironment", "bottomPickerView"]
 - ["PSo18UITraitEnvironment", "bottomPickerViewYConstraint"]
+- ["PSo18UITraitEnvironment", "bottomShareButton"]
+- ["PSo18UITraitEnvironment", "bottomTextEditBoxButton"]
+- ["PSo18UITraitEnvironment", "bottomTextEditButton"]
 - !private ["PSo18UITraitEnvironment", "bringSubviewToFront"]
 - ["PSo18UITraitEnvironment", "buttonY"]
 - !private ["PSo18UITraitEnvironment", "center"]
@@ -2690,6 +2870,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "returnConstraints"]
 - ["PSo18UITraitEnvironment", "returnDimensions"]
 - ["PSo18UITraitEnvironment", "returnObjectForManipulation"]
+- !private ["PSo18UITraitEnvironment", "setImage"]
 - ["PSo18UITraitEnvironment", "setUpView"]
 - ["PSo18UITraitEnvironment", "shareJunkButtonTapped"]
 - !private ["PSo18UITraitEnvironment", "textColor"]
@@ -2699,6 +2880,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "toggleJunkView"]
 - ["PSo18UITraitEnvironment", "togglePickerView"]
 - ["PSo18UITraitEnvironment", "toggleViewModeInQuoteView"]
+- ["PSo18UITraitEnvironment", "topBoxSquareButton"]
 - ["PSo18UITraitEnvironment", "topDrawerView"]
 - ["PSo18UITraitEnvironment", "topDrawerYConstraint"]
 - ["PSo18UITraitEnvironment", "topFontSizeSlider"]
@@ -2709,6 +2891,9 @@ depends-member:
 - ["PSo18UITraitEnvironment", "topJunkbarYConstraint"]
 - ["PSo18UITraitEnvironment", "topPickerView"]
 - ["PSo18UITraitEnvironment", "topPickerViewYConstraint"]
+- ["PSo18UITraitEnvironment", "topShareButton"]
+- ["PSo18UITraitEnvironment", "topTextEditBoxButton"]
+- ["PSo18UITraitEnvironment", "topTextEditButton"]
 - ["PSo18UITraitEnvironment", "topWidthSlider"]
 - ["PSo18UITraitEnvironment", "touchesBegan"]
 - ["PSo18UITraitEnvironment", "touchesMoved"]
@@ -2743,6 +2928,7 @@ depends-member:
 - !private ["CSo6UIView", "minimumValue"]
 - !private ["CSo6UIView", "minimumValueImage"]
 - !private ["CSo6UIView", "pointInside"]
+- !private ["CSo6UIView", "setImage"]
 - !private ["CSo6UIView", "textColor"]
 - !private ["CSo6UIView", "transform"]
 - !private ["CSo6UIView", "translatesAutoresizingMaskIntoConstraints"]
@@ -2780,10 +2966,14 @@ depends-member:
 - ["CSo16UIViewController", "backgroundImage"]
 - ["CSo16UIViewController", "backwardSwipeGestureFired"]
 - ["CSo16UIViewController", "bakcwardSwipeQuoteFired"]
+- ["CSo16UIViewController", "bottomBoxSquareButton"]
 - ["CSo16UIViewController", "bottomFontSizeSlider"]
 - ["CSo16UIViewController", "bottomFontSizeSliderFired"]
 - ["CSo16UIViewController", "bottomPickerView"]
 - ["CSo16UIViewController", "bottomPickerViewYConstraint"]
+- ["CSo16UIViewController", "bottomShareButton"]
+- ["CSo16UIViewController", "bottomTextEditBoxButton"]
+- ["CSo16UIViewController", "bottomTextEditButton"]
 - ["CSo16UIViewController", "buttonY"]
 - ["CSo16UIViewController", "currentFontSize"]
 - !private ["CSo16UIViewController", "displayActivityController"]
@@ -2837,6 +3027,7 @@ depends-member:
 - ["CSo16UIViewController", "toggleJunkView"]
 - ["CSo16UIViewController", "togglePickerView"]
 - ["CSo16UIViewController", "toggleViewModeInQuoteView"]
+- ["CSo16UIViewController", "topBoxSquareButton"]
 - ["CSo16UIViewController", "topDrawerView"]
 - ["CSo16UIViewController", "topDrawerYConstraint"]
 - ["CSo16UIViewController", "topFontSizeSlider"]
@@ -2847,6 +3038,9 @@ depends-member:
 - ["CSo16UIViewController", "topJunkbarYConstraint"]
 - ["CSo16UIViewController", "topPickerView"]
 - ["CSo16UIViewController", "topPickerViewYConstraint"]
+- ["CSo16UIViewController", "topShareButton"]
+- ["CSo16UIViewController", "topTextEditBoxButton"]
+- ["CSo16UIViewController", "topTextEditButton"]
 - ["CSo16UIViewController", "topWidthSlider"]
 - ["CSo16UIViewController", "touchesBegan"]
 - ["CSo16UIViewController", "touchesMoved"]
@@ -2947,6 +3141,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "minimumValue"]
 - !private ["Ps12_Reflectable", "minimumValueImage"]
 - !private ["Ps12_Reflectable", "pointInside"]
+- !private ["Ps12_Reflectable", "setImage"]
 - !private ["Ps12_Reflectable", "size"]
 - !private ["Ps12_Reflectable", "sort"]
 - !private ["Ps12_Reflectable", "textColor"]
@@ -3033,9 +3228,11 @@ depends-nominal:
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- !private "CSo8UIButton"
 - !private "CSo7UIColor"
 - "PSo18UIContentContainer"
 - !private "CSo9UIControl"
+- !private "VSC14UIControlState"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
@@ -3083,4 +3280,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-interface-hash: "93e0ab4e862e8b3fbbe1528fc041d317"
+interface-hash: "6d84346de7fa6e62e3df1c04795a6d8d"
