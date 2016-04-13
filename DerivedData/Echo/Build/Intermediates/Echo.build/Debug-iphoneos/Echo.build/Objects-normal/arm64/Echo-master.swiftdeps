@@ -1,8 +1,8 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
 options: "9fd48e5534d3ae2a4f8fae2747f67fa2"
-build_time: [513656862, 474347000]
+build_time: [513760421, 50020000]
 inputs:
-  "/Users/JLH/Desktop/Personal Projects/Echo/Echo/QuoteController.swift": [513643257, 0]
+  "/Users/JLH/Desktop/Personal Projects/Echo/Echo/QuoteController.swift": [513735728, 0]
   "/Users/JLH/Desktop/Personal Projects/Echo/Echo/ImageUitilies.swift": [513632768, 0]
   "/Users/JLH/Desktop/Personal Projects/Echo/Echo/EchoViewActivityControllerExtension.swift": [513491829, 0]
   "/Users/JLH/Desktop/Personal Projects/Echo/Echo/Quote.swift": [513300283, 0]
