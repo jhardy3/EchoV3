@@ -116,6 +116,7 @@ SWIFT_CLASS("_TtC4Echo11AppDelegate")
 @end
 
 @class UIButton;
+@class UISwipeGestureRecognizer;
 @class UISlider;
 @class UITapGestureRecognizer;
 @class UIView;
@@ -130,6 +131,14 @@ SWIFT_CLASS("_TtC4Echo11AppDelegate")
 
 SWIFT_CLASS("_TtC4Echo18EchoViewController")
 @interface EchoViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified bottomBoxSquareButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified bottomTextEditBoxButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified bottomTextEditButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified bottomShareButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified topBoxSquareButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified topTextEditBoxButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified topTextEditButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified topShareButton;
 @property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified topPickerView;
 @property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified bottomPickerView;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified topJunkBarView;
@@ -157,6 +166,7 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified quoteLabelWidth;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified quoteViewHeight;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified quoteViewWidth;
+@property (nonatomic) double currentFontSize;
 @property (nonatomic, readonly) CGFloat quoteViewLocation;
 @property (nonatomic) BOOL isInButton;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull fontNames;
@@ -175,6 +185,10 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 - (void)hideJunkView;
 - (void)hideDrawers;
 - (void)hidePickerViews;
+- (IBAction)forwardSwipeGestureFired:(UISwipeGestureRecognizer * _Nonnull)sender;
+- (IBAction)backwardSwipeGestureFired:(UISwipeGestureRecognizer * _Nonnull)sender;
+- (IBAction)forwardSwipeQuoteFired:(UISwipeGestureRecognizer * _Nonnull)sender;
+- (IBAction)bakcwardSwipeQuoteFired:(UISwipeGestureRecognizer * _Nonnull)sender;
 - (IBAction)topFontSizeSliderFired:(UISlider * _Nonnull)sender;
 - (IBAction)bottomFontSizeSliderFired:(UISlider * _Nonnull)sender;
 - (IBAction)widthSliderChanged:(UISlider * _Nonnull)sender;
@@ -183,13 +197,12 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 - (IBAction)topHeightSlider:(UISlider * _Nonnull)sender;
 - (IBAction)junkSliderChanged:(UISlider * _Nonnull)sender;
 - (IBAction)topJunkSlider:(UISlider * _Nonnull)sender;
+- (IBAction)toggleViewModeInQuoteView:(UITapGestureRecognizer * _Nonnull)sender;
 - (IBAction)toggleDrawer:(UITapGestureRecognizer * _Nonnull)sender;
 - (void)layoutViewBasedOnEditMode;
+- (void)layoutViewBasedOnViewMode;
 - (UIView * _Nonnull)returnObjectForManipulation;
 - (void)updateSlidersWithView:(UIView * _Nonnull)view;
-- (void)updateViewForBoxScale;
-- (void)updateViewForTextFont;
-- (void)updateViewForTextScale;
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (void)touchesMoved:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (void)updateViewConstraints;
@@ -200,6 +213,11 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 
 @interface EchoViewController (SWIFT_EXTENSION(Echo))
 - (void)displayActivityController;
+@end
+
+
+@interface EchoViewController (SWIFT_EXTENSION(Echo))
+- (void)setUpSWView;
 @end
 
 
@@ -217,6 +235,12 @@ SWIFT_CLASS("_TtC4Echo13ImageUitilies")
 + (UIImage * _Nonnull)cropToSquareWithImage:(UIImage * _Nonnull)originalImage;
 + (UIImage * _Nullable)createImageWithViewOnTopWithBackgroundImage:(UIImageView * _Nonnull)image view:(UIView * _Nonnull)view;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIColor;
+
+@interface UIImage (SWIFT_EXTENSION(Echo))
+- (UIImage * _Nonnull)imageWithColor:(UIColor * _Nonnull)color1;
 @end
 
 

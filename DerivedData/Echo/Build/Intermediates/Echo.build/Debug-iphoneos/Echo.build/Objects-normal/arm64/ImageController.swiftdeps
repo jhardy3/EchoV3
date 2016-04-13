@@ -7,19 +7,19 @@ provides-member:
 - ["C4Echo15ImageController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "NetworkController"
-- !private "+"
 - "ImageController"
-- !private "..."
 - !private "imageURL"
+- !private "=="
 - !private "<"
+- !private "..."
+- !private "Void"
+- !private "+"
 - !private "dispatch_get_main_queue"
 - !private "dispatch_async"
-- "UIImage"
-- !private "-"
-- !private "Void"
 - "Int"
-- !private "=="
+- "UIImage"
+- !private "NetworkController"
+- !private "-"
 depends-member:
 - ["Ps9AnyObject", "ImageController"]
 - !private ["Ps9AnyObject", "NetworkController"]
@@ -335,11 +335,13 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/JLH/Desktop/Personal Projects/Echo/Echo/Echo-Bridging-Header.h"
+- "/Users/JLH/Desktop/Personal Projects/Echo/Echo/SWRevealViewController.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 interface-hash: "2c895bc268f4e64e8b91c9cce79ff4f9"
