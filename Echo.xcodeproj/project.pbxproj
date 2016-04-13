@@ -10,6 +10,7 @@
 		74C4573C1CBDE4D900B363AA /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C4573B1CBDE4D900B363AA /* SWRevealViewController.m */; };
 		74C4573E1CBDE56F00B363AA /* EchoViewSWViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4573D1CBDE56F00B363AA /* EchoViewSWViewExtension.swift */; };
 		74C457401CBDFFE100B363AA /* AddQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4573F1CBDFFE100B363AA /* AddQuoteViewController.swift */; };
+		74C457441CBE05DB00B363AA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C457431CBE05DB00B363AA /* NotificationController.swift */; };
 		74F8C8EA1CB5BFA000C02079 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F8C8E91CB5BFA000C02079 /* AppDelegate.swift */; };
 		74F8C8EF1CB5BFA000C02079 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F8C8ED1CB5BFA000C02079 /* Main.storyboard */; };
 		74F8C8F11CB5BFA000C02079 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74F8C8F01CB5BFA000C02079 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		74C4573B1CBDE4D900B363AA /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		74C4573D1CBDE56F00B363AA /* EchoViewSWViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EchoViewSWViewExtension.swift; sourceTree = "<group>"; };
 		74C4573F1CBDFFE100B363AA /* AddQuoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddQuoteViewController.swift; sourceTree = "<group>"; };
+		74C457431CBE05DB00B363AA /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		74F8C8E61CB5BFA000C02079 /* Echo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Echo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F8C8E91CB5BFA000C02079 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74F8C8EE1CB5BFA000C02079 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				74F8C8FD1CB5C75D00C02079 /* NetworkController.swift */,
 				74F8C9011CB5C79C00C02079 /* QuoteController.swift */,
 				74F8C9031CB5EAEE00C02079 /* ImageController.swift */,
+				74C457431CBE05DB00B363AA /* NotificationController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				74F8C8FC1CB5C6D700C02079 /* EchoViewController.swift in Sources */,
 				74F8C9241CB8839F00C02079 /* EchoViewPickerExtension.swift in Sources */,
 				74C4573C1CBDE4D900B363AA /* SWRevealViewController.m in Sources */,
+				74C457441CBE05DB00B363AA /* NotificationController.swift in Sources */,
 				74C4573E1CBDE56F00B363AA /* EchoViewSWViewExtension.swift in Sources */,
 				74F8C8FE1CB5C75D00C02079 /* NetworkController.swift in Sources */,
 				74F8C9041CB5EAEE00C02079 /* ImageController.swift in Sources */,

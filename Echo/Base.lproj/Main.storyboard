@@ -18,6 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="TYg-lj-wzy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5ih-ih-Jjb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1033,6 +1034,7 @@
                         <viewControllerLayoutGuide type="bottom" id="B38-11-UMB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QNE-Zw-HKI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG1x" translatesAutoresizingMaskIntoConstraints="NO" id="tgf-mn-UF3">
@@ -1135,10 +1137,15 @@
                                 <exclude reference="3XY-KM-SqS"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="4oY-nT-S2g"/>
-                                <exclude reference="PXc-vT-hbd"/>
-                                <exclude reference="QEe-Br-434"/>
-                                <exclude reference="jnp-cG-Bf8"/>
+                                <exclude reference="BLb-zs-SoR"/>
+                                <exclude reference="Zor-N3-xqu"/>
+                                <exclude reference="gAL-YP-6pJ"/>
+                                <exclude reference="5fd-DD-2FT"/>
+                                <exclude reference="G6A-mR-eJJ"/>
+                                <exclude reference="zsQ-bm-4mf"/>
+                                <exclude reference="2T7-0w-Dal"/>
+                                <exclude reference="8sm-Pm-8i7"/>
+                                <exclude reference="Vqf-Wk-Gh8"/>
                                 <exclude reference="Mkk-L6-XrM"/>
                                 <exclude reference="TnP-8R-9ub"/>
                                 <exclude reference="glM-Vy-1Qr"/>
@@ -1148,15 +1155,10 @@
                                 <exclude reference="qRz-a2-4Z8"/>
                                 <exclude reference="qkR-7I-4JG"/>
                                 <exclude reference="v6w-ml-IHJ"/>
-                                <exclude reference="5fd-DD-2FT"/>
-                                <exclude reference="G6A-mR-eJJ"/>
-                                <exclude reference="zsQ-bm-4mf"/>
-                                <exclude reference="2T7-0w-Dal"/>
-                                <exclude reference="8sm-Pm-8i7"/>
-                                <exclude reference="Vqf-Wk-Gh8"/>
-                                <exclude reference="BLb-zs-SoR"/>
-                                <exclude reference="Zor-N3-xqu"/>
-                                <exclude reference="gAL-YP-6pJ"/>
+                                <exclude reference="4oY-nT-S2g"/>
+                                <exclude reference="PXc-vT-hbd"/>
+                                <exclude reference="QEe-Br-434"/>
+                                <exclude reference="jnp-cG-Bf8"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -1169,10 +1171,15 @@
                                 <include reference="3XY-KM-SqS"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="4oY-nT-S2g"/>
-                                <include reference="PXc-vT-hbd"/>
-                                <include reference="QEe-Br-434"/>
-                                <include reference="jnp-cG-Bf8"/>
+                                <include reference="BLb-zs-SoR"/>
+                                <include reference="Zor-N3-xqu"/>
+                                <include reference="gAL-YP-6pJ"/>
+                                <include reference="5fd-DD-2FT"/>
+                                <include reference="G6A-mR-eJJ"/>
+                                <include reference="zsQ-bm-4mf"/>
+                                <include reference="2T7-0w-Dal"/>
+                                <include reference="8sm-Pm-8i7"/>
+                                <include reference="Vqf-Wk-Gh8"/>
                                 <include reference="Mkk-L6-XrM"/>
                                 <include reference="TnP-8R-9ub"/>
                                 <include reference="glM-Vy-1Qr"/>
@@ -1182,15 +1189,10 @@
                                 <include reference="qRz-a2-4Z8"/>
                                 <include reference="qkR-7I-4JG"/>
                                 <include reference="v6w-ml-IHJ"/>
-                                <include reference="5fd-DD-2FT"/>
-                                <include reference="G6A-mR-eJJ"/>
-                                <include reference="zsQ-bm-4mf"/>
-                                <include reference="2T7-0w-Dal"/>
-                                <include reference="8sm-Pm-8i7"/>
-                                <include reference="Vqf-Wk-Gh8"/>
-                                <include reference="BLb-zs-SoR"/>
-                                <include reference="Zor-N3-xqu"/>
-                                <include reference="gAL-YP-6pJ"/>
+                                <include reference="4oY-nT-S2g"/>
+                                <include reference="PXc-vT-hbd"/>
+                                <include reference="QEe-Br-434"/>
+                                <include reference="jnp-cG-Bf8"/>
                             </mask>
                         </variation>
                     </view>

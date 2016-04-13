@@ -113,6 +113,7 @@ SWIFT_CLASS("_TtC4Echo22AddQuoteViewController")
 - (void)didReceiveMemoryWarning;
 - (IBAction)viewQuoteButtonTapped:(UIButton * _Nonnull)sender;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
+- (void)setupView;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

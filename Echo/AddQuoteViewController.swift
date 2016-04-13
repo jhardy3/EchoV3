@@ -15,6 +15,8 @@ class AddQuoteViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
+//        self.quoteTextView.becomeFirstResponder()
 
         // Do any additional setup after loading the view.
     }
@@ -35,6 +37,11 @@ class AddQuoteViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
+    }
+    
+    func setupView() {
+        quoteTextView.layer.cornerRadius = 7.0
+        quoteTextView.clipsToBounds = true
     }
 
     /*

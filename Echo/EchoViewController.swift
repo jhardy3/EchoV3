@@ -149,6 +149,8 @@ class EchoViewController: UIViewController {
     func setUpView() {
         updateViewConstraints()
         
+        NotificationController.createNotification("Check out the quote of the day!", alertTitle: "Echo", timeIntervalInSeconds: 86400)
+        
         quoteLabel.layer.cornerRadius = 7.0
         quoteLabel.clipsToBounds = true
         quoteLabel.adjustsFontSizeToFitWidth = false
