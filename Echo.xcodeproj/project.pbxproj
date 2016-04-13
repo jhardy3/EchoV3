@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		74C4573C1CBDE4D900B363AA /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C4573B1CBDE4D900B363AA /* SWRevealViewController.m */; };
 		74C4573E1CBDE56F00B363AA /* EchoViewSWViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4573D1CBDE56F00B363AA /* EchoViewSWViewExtension.swift */; };
+		74C457401CBDFFE100B363AA /* AddQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4573F1CBDFFE100B363AA /* AddQuoteViewController.swift */; };
 		74F8C8EA1CB5BFA000C02079 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F8C8E91CB5BFA000C02079 /* AppDelegate.swift */; };
 		74F8C8EF1CB5BFA000C02079 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F8C8ED1CB5BFA000C02079 /* Main.storyboard */; };
 		74F8C8F11CB5BFA000C02079 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74F8C8F01CB5BFA000C02079 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		74C4573A1CBDE4D900B363AA /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		74C4573B1CBDE4D900B363AA /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		74C4573D1CBDE56F00B363AA /* EchoViewSWViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EchoViewSWViewExtension.swift; sourceTree = "<group>"; };
+		74C4573F1CBDFFE100B363AA /* AddQuoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddQuoteViewController.swift; sourceTree = "<group>"; };
 		74F8C8E61CB5BFA000C02079 /* Echo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Echo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F8C8E91CB5BFA000C02079 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74F8C8EE1CB5BFA000C02079 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		746D6C4D1CBB00EB00C8A031 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				74C4573F1CBDFFE100B363AA /* AddQuoteViewController.swift */,
 				74F8C8FB1CB5C6D700C02079 /* EchoViewController.swift */,
 				74F8C9231CB8839F00C02079 /* EchoViewPickerExtension.swift */,
 				74F8C9491CB8BD9700C02079 /* EchoViewActivityControllerExtension.swift */,
@@ -199,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74F8C9021CB5C79C00C02079 /* QuoteController.swift in Sources */,
+				74C457401CBDFFE100B363AA /* AddQuoteViewController.swift in Sources */,
 				74F8C9281CB8A4D400C02079 /* ImageUitilies.swift in Sources */,
 				74F8C94A1CB8BD9700C02079 /* EchoViewActivityControllerExtension.swift in Sources */,
 				74F8C9001CB5C79300C02079 /* Quote.swift in Sources */,

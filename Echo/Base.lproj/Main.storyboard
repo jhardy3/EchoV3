@@ -1024,10 +1024,10 @@
             </objects>
             <point key="canvasLocation" x="255" y="308.25"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Quote View Controller-->
         <scene sceneID="ML9-6h-mAt">
             <objects>
-                <viewController id="lNq-DX-hMq" sceneMemberID="viewController">
+                <viewController id="lNq-DX-hMq" customClass="AddQuoteViewController" customModule="Echo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4NM-BQ-cDm"/>
                         <viewControllerLayoutGuide type="bottom" id="B38-11-UMB"/>
@@ -1037,6 +1037,8 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG1x" translatesAutoresizingMaskIntoConstraints="NO" id="tgf-mn-UF3">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="800" id="Dla-QK-nm2"/>
                                 </constraints>
@@ -1051,39 +1053,42 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What worlds are these, who am I?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="obP-z7-T6t">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.83724640052356025" green="0.83724640052356025" blue="0.83724640052356025" alpha="0.34812721631205673" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFM-hR-AKU">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQa-2l-Ub3">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="23"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="giA-SK-oH9">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.34812721631205673" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.34812721631205673" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3XY-KM-SqS">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="14"/>
                                 <state key="normal" title="View Quote">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="viewQuoteButtonTapped:" destination="lNq-DX-hMq" eventType="touchUpInside" id="brH-PR-fol"/>
+                                </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What worlds are these, who am I?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="obP-z7-T6t">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.34812721631205673" colorSpace="calibratedRGB"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1123,11 +1128,11 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="tgf-mn-UF3"/>
+                                <exclude reference="obP-z7-T6t"/>
                                 <exclude reference="RFM-hR-AKU"/>
                                 <exclude reference="LQa-2l-Ub3"/>
                                 <exclude reference="giA-SK-oH9"/>
                                 <exclude reference="3XY-KM-SqS"/>
-                                <exclude reference="obP-z7-T6t"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="4oY-nT-S2g"/>
@@ -1157,11 +1162,11 @@
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="tgf-mn-UF3"/>
+                                <include reference="obP-z7-T6t"/>
                                 <include reference="RFM-hR-AKU"/>
                                 <include reference="LQa-2l-Ub3"/>
                                 <include reference="giA-SK-oH9"/>
                                 <include reference="3XY-KM-SqS"/>
-                                <include reference="obP-z7-T6t"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="4oY-nT-S2g"/>
@@ -1189,6 +1194,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="authorTextLabel" destination="giA-SK-oH9" id="bmu-Kx-VVq"/>
+                        <outlet property="quoteTextView" destination="obP-z7-T6t" id="rZC-qK-O8G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WDl-Xn-eO7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

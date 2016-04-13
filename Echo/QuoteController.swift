@@ -34,6 +34,20 @@ class QuoteController {
         }
     }
     
+    func addQuote(quote: String, author: String) {
+        let length = String(quote.characters.count)
+        self.quotes.insert((quote: quote, author: author, length: length), atIndex: index)
+        
+        let quote = quotes[index]
+        quoteLabel.text = "\(quote.quote) \n - \(quote.author)"
+        quoteLabel.frame.size.height = view.view.frame.height
+        
+        view.quoteView.center = view.view.center
+        quoteLabel.center.x = view.quoteView.frame.width / 2
+        quoteLabel.center.y = view.quoteView.frame.height / 2
+
+    }
+    
     func firstLoad(view: EchoViewController) {
         quoteLabel = view.quoteLabel
         self.view = view

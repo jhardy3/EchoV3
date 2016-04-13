@@ -10,16 +10,16 @@ provides-dynamic-lookup:
 - "pickerView"
 - "pickerView"
 depends-top-level:
-- "UIView"
-- "EchoViewController"
-- !private "CGFloat"
 - !private "UIColor"
-- "UIPickerViewDelegate"
-- "UIPickerViewDataSource"
-- "UIPickerView"
-- "Int"
 - !private "UILabel"
+- "UIPickerViewDataSource"
+- "UIPickerViewDelegate"
+- "UIView"
 - !private "UIFont"
+- !private "CGFloat"
+- "Int"
+- "EchoViewController"
+- "UIPickerView"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]

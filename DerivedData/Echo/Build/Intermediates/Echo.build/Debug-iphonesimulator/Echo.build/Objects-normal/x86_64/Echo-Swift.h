@@ -99,6 +99,23 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+@class UIButton;
+@class UITextView;
+@class UITextField;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC4Echo22AddQuoteViewController")
+@interface AddQuoteViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified quoteTextView;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified authorTextLabel;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (IBAction)viewQuoteButtonTapped:(UIButton * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIWindow;
 @class UIApplication;
 @class NSObject;
@@ -115,7 +132,6 @@ SWIFT_CLASS("_TtC4Echo11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIButton;
 @class UISwipeGestureRecognizer;
 @class UISlider;
 @class UITapGestureRecognizer;
@@ -126,8 +142,6 @@ SWIFT_CLASS("_TtC4Echo11AppDelegate")
 @class UIImageView;
 @class UILabel;
 @class NSLayoutConstraint;
-@class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC4Echo18EchoViewController")
 @interface EchoViewController : UIViewController
