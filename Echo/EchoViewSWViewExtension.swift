@@ -12,6 +12,12 @@ import UIKit
 extension EchoViewController {
     
     func setUpSWView() {
-        backgroundImage.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        switch viewMode {
+        case .EditMode:
+            backgroundImage.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        case .ViewMode:
+            backgroundImage.removeGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+        
     }
 }

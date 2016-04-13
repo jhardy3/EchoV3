@@ -172,8 +172,6 @@ class EchoViewController: UIViewController {
         toggleJunkView()
         toggleDrawer()
         
-        setUpSWView()
-        
         topFontSizeSlider.minimumValueImage = UIImage(named: "C")?.imageWithColor(UIColor.whiteColor())
         bottomFontSizeSlider.minimumValueImage = UIImage(named: "C")?.imageWithColor(UIColor.whiteColor())
         
@@ -191,6 +189,8 @@ class EchoViewController: UIViewController {
         
         topShareButton.setImage(UIImage(named: "ShareMode")?.imageWithColor(UIColor.whiteColor()), forState: .Normal)
         bottomShareButton.setImage(UIImage(named: "ShareMode")?.imageWithColor(UIColor.whiteColor()), forState: .Normal)
+        
+        setUpSWView()
     
     }
     
@@ -521,6 +521,7 @@ class EchoViewController: UIViewController {
         case .EditMode:
             layoutViewBasedOnEditMode()
         }
+        setUpSWView()
     }
     
     func returnConstraints() -> (constraintX: NSLayoutConstraint, constraintY: NSLayoutConstraint)? {
