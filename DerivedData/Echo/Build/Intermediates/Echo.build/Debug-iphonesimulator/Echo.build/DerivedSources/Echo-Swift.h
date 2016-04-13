@@ -100,18 +100,19 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @class UIButton;
-@class UITextView;
 @class UITextField;
+@class UITextView;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC4Echo22AddQuoteViewController")
-@interface AddQuoteViewController : UIViewController
+@interface AddQuoteViewController : UIViewController <UITextFieldDelegate>
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified quoteTextView;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified authorTextLabel;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)viewQuoteButtonTapped:(UIButton * _Nonnull)sender;
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

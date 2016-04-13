@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddQuoteViewController: UIViewController {
+class AddQuoteViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var quoteTextView: UITextView!
     @IBOutlet weak var authorTextLabel: UITextField!
@@ -28,7 +28,13 @@ class AddQuoteViewController: UIViewController {
         guard let quote = quoteTextView.text, author = authorTextLabel.text
             where quote.isEmpty == false && author.isEmpty == false else { return }
         QuoteController.sharedInstance.addQuote(quote, author: author)
+        textFieldShouldReturn(authorTextLabel)
         self.revealViewController().revealToggle(self)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 
     /*
