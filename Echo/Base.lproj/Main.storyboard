@@ -408,7 +408,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p6m-Pp-Zni" userLabel="Top Picker View">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <subviews>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="DQu-zS-qMW">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="C" translatesAutoresizingMaskIntoConstraints="NO" id="DQu-zS-qMW">
                                         <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="0.34812721631205673" colorSpace="calibratedRGB"/>
                                         <connections>
@@ -490,7 +490,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qMx-lA-7iw" userLabel="Bottom Picker View">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <subviews>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Cf8-WH-mL0">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="C" translatesAutoresizingMaskIntoConstraints="NO" id="Cf8-WH-mL0">
                                         <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="0.34812721631205673" colorSpace="calibratedRGB"/>
                                         <connections>
@@ -532,6 +532,7 @@
                                     <constraint firstItem="Cf8-WH-mL0" firstAttribute="leading" secondItem="qMx-lA-7iw" secondAttribute="leading" constant="8" id="eSD-Fa-1lX">
                                         <variation key="heightClass=regular-widthClass=compact" constant="34"/>
                                     </constraint>
+                                    <constraint firstAttribute="width" secondItem="2EU-dv-Wr5" secondAttribute="height" multiplier="5:2" id="hdd-Xn-S1l"/>
                                     <constraint firstAttribute="bottom" secondItem="Cf8-WH-mL0" secondAttribute="bottom" constant="8" id="wxd-In-aW7"/>
                                     <constraint firstAttribute="width" constant="400" id="yrf-3P-seL"/>
                                 </constraints>
@@ -547,6 +548,7 @@
                                         <exclude reference="OwE-gG-XmI"/>
                                         <exclude reference="SaJ-BF-V8r"/>
                                         <exclude reference="Vwb-VK-1zn"/>
+                                        <exclude reference="hdd-Xn-S1l"/>
                                         <exclude reference="6Sg-u3-C4M"/>
                                         <exclude reference="PTk-WM-qS5"/>
                                         <exclude reference="eSD-Fa-1lX"/>
@@ -562,9 +564,10 @@
                                         <include reference="yrf-3P-seL"/>
                                         <include reference="3fW-0i-L3I"/>
                                         <include reference="Ovv-5g-nZH"/>
-                                        <include reference="OwE-gG-XmI"/>
+                                        <exclude reference="OwE-gG-XmI"/>
                                         <include reference="SaJ-BF-V8r"/>
                                         <exclude reference="Vwb-VK-1zn"/>
+                                        <include reference="hdd-Xn-S1l"/>
                                         <include reference="6Sg-u3-C4M"/>
                                         <include reference="PTk-WM-qS5"/>
                                         <include reference="eSD-Fa-1lX"/>
@@ -577,7 +580,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewG-ci-BhZ">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="16"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
                                         <state key="normal" image="TextBoxEditMode">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
                                         </state>
@@ -587,7 +590,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtl-p7-uKy">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="16"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
                                         <state key="normal" image="TextEditMode">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
                                         </state>
@@ -597,7 +600,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W25-sl-7Yo">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="16"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
                                         <state key="normal" image="ShareMode">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
                                         </state>
@@ -607,7 +610,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqp-jI-BNj">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="16"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
                                         <state key="normal" image="BoxEditMode">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
                                         </state>
@@ -707,17 +710,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSu-VE-q2P" userLabel="Top Junk Bar View">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfP-05-cMl">
-                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" image="BoxEditMode">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="viewScaleButtonTapped:" destination="Rec-CM-Jmt" eventType="touchUpInside" id="Odz-nw-I8l"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1h-2h-4oP">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-15"/>
                                         <state key="normal" image="TextBoxEditMode">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
                                         </state>
@@ -727,6 +722,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuN-mL-BhY">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-15"/>
                                         <state key="normal" image="ShareMode">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
                                         </state>
@@ -736,11 +732,22 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8j-Dx-8Ot">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-15"/>
                                         <state key="normal" image="TextEditMode">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="textFontButtonTapped:" destination="Rec-CM-Jmt" eventType="touchUpInside" id="8Jm-0U-nR3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfP-05-cMl">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-15"/>
+                                        <state key="normal" image="BoxEditMode">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="0.8446642287234043" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="viewScaleButtonTapped:" destination="Rec-CM-Jmt" eventType="touchUpInside" id="Odz-nw-I8l"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -777,10 +784,10 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="subviews">
-                                        <exclude reference="bfP-05-cMl"/>
                                         <exclude reference="H1h-2h-4oP"/>
                                         <exclude reference="GuN-mL-BhY"/>
                                         <exclude reference="y8j-Dx-8Ot"/>
+                                        <exclude reference="bfP-05-cMl"/>
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="jWt-y8-52T"/>
@@ -805,10 +812,10 @@
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="subviews">
-                                        <include reference="bfP-05-cMl"/>
                                         <include reference="H1h-2h-4oP"/>
                                         <include reference="GuN-mL-BhY"/>
                                         <include reference="y8j-Dx-8Ot"/>
+                                        <include reference="bfP-05-cMl"/>
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="jWt-y8-52T"/>
@@ -842,7 +849,7 @@
                             <constraint firstItem="G85-pf-JdE" firstAttribute="height" secondItem="W3w-2M-KEE" secondAttribute="height" multiplier="0.15" id="8cN-9C-fmc"/>
                             <constraint firstItem="xf7-I3-CqP" firstAttribute="width" secondItem="W3w-2M-KEE" secondAttribute="width" id="AAv-ET-bnq"/>
                             <constraint firstItem="xf7-I3-CqP" firstAttribute="leading" secondItem="W3w-2M-KEE" secondAttribute="leading" id="BbU-QR-ZUa"/>
-                            <constraint firstItem="2EU-dv-Wr5" firstAttribute="height" secondItem="W3w-2M-KEE" secondAttribute="height" multiplier="0.1" id="C7E-Xt-jmx"/>
+                            <constraint firstItem="2EU-dv-Wr5" firstAttribute="height" secondItem="W3w-2M-KEE" secondAttribute="height" multiplier="0.2" id="C7E-Xt-jmx"/>
                             <constraint firstItem="3gD-It-Yp7" firstAttribute="centerY" secondItem="W3w-2M-KEE" secondAttribute="centerY" id="DMp-ji-nyh"/>
                             <constraint firstItem="3gD-It-Yp7" firstAttribute="centerX" secondItem="W3w-2M-KEE" secondAttribute="centerX" id="KI1-Bw-H4g"/>
                             <constraint firstItem="qMx-lA-7iw" firstAttribute="centerX" secondItem="W3w-2M-KEE" secondAttribute="centerX" id="KXR-kL-cMj"/>
@@ -1208,6 +1215,7 @@
     </scenes>
     <resources>
         <image name="BoxEditMode" width="40" height="40"/>
+        <image name="C" width="14" height="18"/>
         <image name="H" width="19" height="18"/>
         <image name="IMG1x" width="468" height="818"/>
         <image name="O" width="15" height="18"/>
