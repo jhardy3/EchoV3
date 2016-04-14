@@ -18,123 +18,123 @@ provides-member:
 - ["O4Echo9Dimension", ""]
 - ["C4Echo18EchoViewController", ""]
 provides-dynamic-lookup:
-- "topDrawerView"
+- "returnObjectForManipulation"
+- "updateSlidersWithView"
+- "topFontSizeSlider"
+- "hidePickerViews"
+- "bottomShareButton"
+- "viewScaleButtonTapped"
+- "bottomTextEditButton"
+- "firstLoad"
+- "quoteLabel"
+- "bottomFontSizeSlider"
+- "hideJunkView"
+- "toggleViewModeInQuoteView"
+- "quoteViewLocation"
+- "junkSliderChanged"
 - "topTextEditButton"
-- "togglePickerView"
-- "bakcwardSwipeQuoteFired"
-- "junkbarYConstraint"
-- "topShareButton"
-- "topJunkbarYConstraint"
-- "isInButton"
-- "layoutViewBasedOnEditMode"
-- "bottomFontSizeSliderFired"
+- "viewDidAppear"
+- "hideDrawers"
+- "moveDrawersBasedOnView"
+- "quoteLabelWidth"
+- "topWidthSlider"
+- "topWidthSlider"
+- "widthSliderChanged"
+- "forwardSwipeGestureFired"
+- "drawerYConstraint"
+- "currentFontSize"
+- "touchesBegan"
+- "topHeightSlider"
+- "topHeightSlider"
+- "textScaleButtonTapped"
 - "topTextEditBoxButton"
-- "backgroundImage"
+- "drawerView"
+- "quoteViewHeight"
+- "forwardSwipeQuoteFired"
+- "topBoxSquareButton"
+- "quoteViewWidth"
+- "setUpView"
+- "togglePickerView"
+- "topJunkSlider"
+- "topJunkSlider"
+- "toggleDrawer"
+- "toggleDrawer"
+- "topFontSizeSliderFired"
+- "viewDidLoad"
+- "toggleJunkView"
+- "topPickerView"
+- "heightSlider"
+- "topPickerViewYConstraint"
+- "quoteView"
+- "quoteLabelHeight"
+- "fontNames"
+- "topShareButton"
+- "junkSlider"
+- "updateViewConstraints"
+- "touchesMoved"
+- "textFontButtonTapped"
+- "isInButton"
+- "junkBarView"
+- "topDrawerView"
+- "bottomTextEditBoxButton"
+- "topJunkbarYConstraint"
 - "heightSliderChanged"
 - "layoutViewBasedOnViewMode"
-- "bottomPickerViewYConstraint"
+- "junkbarYConstraint"
+- "bakcwardSwipeQuoteFired"
+- "backgroundImage"
 - "topDrawerYConstraint"
-- "topPickerView"
-- "textScaleButtonTapped"
+- "shareJunkButtonTapped"
+- "topJunkBarView"
+- "bottomBoxSquareButton"
+- "bottomFontSizeSliderFired"
+- "bottomPickerViewYConstraint"
+- "layoutViewBasedOnEditMode"
+- "bottomPickerView"
 - "backwardSwipeGestureFired"
 - "widthSlider"
-- "toggleJunkView"
-- "topBoxSquareButton"
-- "toggleDrawer"
-- "toggleDrawer"
-- "hideDrawers"
-- "bottomPickerView"
-- "topPickerViewYConstraint"
-- "viewDidLoad"
-- "touchesBegan"
-- "topFontSizeSliderFired"
-- "bottomShareButton"
-- "quoteView"
-- "topJunkBarView"
-- "heightSlider"
-- "updateViewConstraints"
-- "junkSlider"
-- "viewScaleButtonTapped"
-- "hideJunkView"
-- "bottomTextEditButton"
-- "junkBarView"
-- "quoteLabelHeight"
-- "moveDrawersBasedOnView"
-- "bottomTextEditBoxButton"
-- "topWidthSlider"
-- "topWidthSlider"
-- "fontNames"
-- "returnObjectForManipulation"
-- "touchesMoved"
-- "quoteLabelWidth"
-- "forwardSwipeGestureFired"
-- "viewDidAppear"
-- "forwardSwipeQuoteFired"
-- "toggleViewModeInQuoteView"
-- "bottomBoxSquareButton"
-- "currentFontSize"
-- "shareJunkButtonTapped"
-- "topHeightSlider"
-- "topHeightSlider"
-- "setUpView"
-- "quoteViewWidth"
-- "updateSlidersWithView"
-- "quoteViewHeight"
-- "topJunkSlider"
-- "topJunkSlider"
-- "widthSliderChanged"
-- "drawerView"
-- "hidePickerViews"
-- "topFontSizeSlider"
-- "bottomFontSizeSlider"
-- "quoteLabel"
-- "firstLoad"
-- "junkSliderChanged"
-- "textFontButtonTapped"
-- "quoteViewLocation"
-- "drawerYConstraint"
 depends-top-level:
-- "DrawerMode"
+- "UIView"
+- "CGFloat"
 - "UIButton"
-- "Set"
-- "String"
-- !private "&&"
-- !private "QuoteController"
-- "UISlider"
-- "Bool"
-- !private "<"
-- "=="
-- !private "UIFont"
-- "UIEvent"
-- "EchoViewController"
-- "UIPickerView"
-- !private "Void"
-- !private "+"
-- "UILabel"
-- !private "!="
-- "UIImageView"
-- !private "UIColor"
-- !private "ImageController"
-- "UIViewController"
-- !private "StringLiteralType"
-- !private "/"
-- !private "NotificationController"
-- !private ">="
-- "EditMode"
-- "Float"
-- "Dimension"
-- "NSLayoutConstraint"
-- "UISwipeGestureRecognizer"
 - "BooleanLiteralType"
 - "UITapGestureRecognizer"
-- "UITouch"
-- "UIView"
+- !private "!="
+- "EchoViewController"
+- "UISlider"
 - !private "Double"
-- !private "UIImage"
-- !private "-"
-- "CGFloat"
+- !private "<"
+- !private "Void"
+- "Set"
+- "DrawerMode"
+- !private "UIColor"
+- "UIViewController"
+- !private "+"
+- !private "/"
+- "UILabel"
+- "Float"
+- "UIImageView"
 - "ViewMode"
+- "Dimension"
+- "NSLayoutConstraint"
+- !private "StringLiteralType"
+- "UISwipeGestureRecognizer"
+- !private "ImageController"
+- "UIPickerView"
+- !private "NotificationController"
+- "EditMode"
+- !private "UIFont"
+- "UIEvent"
+- !private "-"
+- "Bool"
+- !private "QuoteController"
+- !private ">="
+- "=="
+- !private "&&"
+- "String"
+- "UITouch"
 - !private "UnicodeScalarType"
+- !private "UIImage"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]
@@ -161,6 +161,7 @@ depends-member:
 - ["Ps9AnyObject", "backgroundImage"]
 - ["Ps9AnyObject", "backwardSwipeGestureFired"]
 - ["Ps9AnyObject", "bakcwardSwipeQuoteFired"]
+- !private ["Ps9AnyObject", "blueColor"]
 - ["Ps9AnyObject", "bottomBoxSquareButton"]
 - ["Ps9AnyObject", "bottomFontSizeSlider"]
 - ["Ps9AnyObject", "bottomFontSizeSliderFired"]
@@ -205,6 +206,7 @@ depends-member:
 - ["Ps9AnyObject", "hideJunkView"]
 - ["Ps9AnyObject", "hidePickerViews"]
 - !private ["Ps9AnyObject", "image"]
+- !private ["Ps9AnyObject", "imageView"]
 - !private ["Ps9AnyObject", "imageWithColor"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "isInButton"]
@@ -352,6 +354,7 @@ depends-member:
 - ["Ps11CVarArgType", "backgroundImage"]
 - ["Ps11CVarArgType", "backwardSwipeGestureFired"]
 - ["Ps11CVarArgType", "bakcwardSwipeQuoteFired"]
+- !private ["Ps11CVarArgType", "blueColor"]
 - ["Ps11CVarArgType", "bottomBoxSquareButton"]
 - ["Ps11CVarArgType", "bottomFontSizeSlider"]
 - ["Ps11CVarArgType", "bottomFontSizeSliderFired"]
@@ -392,6 +395,7 @@ depends-member:
 - ["Ps11CVarArgType", "hideJunkView"]
 - ["Ps11CVarArgType", "hidePickerViews"]
 - !private ["Ps11CVarArgType", "image"]
+- !private ["Ps11CVarArgType", "imageView"]
 - !private ["Ps11CVarArgType", "imageWithColor"]
 - ["Ps11CVarArgType", "init"]
 - ["Ps11CVarArgType", "isInButton"]
@@ -510,6 +514,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "backgroundImage"]
 - ["Ps28CustomDebugStringConvertible", "backwardSwipeGestureFired"]
 - ["Ps28CustomDebugStringConvertible", "bakcwardSwipeQuoteFired"]
+- !private ["Ps28CustomDebugStringConvertible", "blueColor"]
 - ["Ps28CustomDebugStringConvertible", "bottomBoxSquareButton"]
 - ["Ps28CustomDebugStringConvertible", "bottomFontSizeSlider"]
 - ["Ps28CustomDebugStringConvertible", "bottomFontSizeSliderFired"]
@@ -550,6 +555,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "hideJunkView"]
 - ["Ps28CustomDebugStringConvertible", "hidePickerViews"]
 - !private ["Ps28CustomDebugStringConvertible", "image"]
+- !private ["Ps28CustomDebugStringConvertible", "imageView"]
 - !private ["Ps28CustomDebugStringConvertible", "imageWithColor"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "isInButton"]
@@ -660,6 +666,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "backgroundImage"]
 - ["Ps23CustomStringConvertible", "backwardSwipeGestureFired"]
 - ["Ps23CustomStringConvertible", "bakcwardSwipeQuoteFired"]
+- !private ["Ps23CustomStringConvertible", "blueColor"]
 - ["Ps23CustomStringConvertible", "bottomBoxSquareButton"]
 - ["Ps23CustomStringConvertible", "bottomFontSizeSlider"]
 - ["Ps23CustomStringConvertible", "bottomFontSizeSliderFired"]
@@ -701,6 +708,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "hideJunkView"]
 - ["Ps23CustomStringConvertible", "hidePickerViews"]
 - !private ["Ps23CustomStringConvertible", "image"]
+- !private ["Ps23CustomStringConvertible", "imageView"]
 - !private ["Ps23CustomStringConvertible", "imageWithColor"]
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "isInButton"]
@@ -958,6 +966,7 @@ depends-member:
 - ["Ps9Equatable", "backgroundImage"]
 - ["Ps9Equatable", "backwardSwipeGestureFired"]
 - ["Ps9Equatable", "bakcwardSwipeQuoteFired"]
+- !private ["Ps9Equatable", "blueColor"]
 - ["Ps9Equatable", "bottomBoxSquareButton"]
 - ["Ps9Equatable", "bottomFontSizeSlider"]
 - ["Ps9Equatable", "bottomFontSizeSliderFired"]
@@ -1000,6 +1009,7 @@ depends-member:
 - ["Ps9Equatable", "hideJunkView"]
 - ["Ps9Equatable", "hidePickerViews"]
 - !private ["Ps9Equatable", "image"]
+- !private ["Ps9Equatable", "imageView"]
 - !private ["Ps9Equatable", "imageWithColor"]
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "isInButton"]
@@ -1129,6 +1139,7 @@ depends-member:
 - ["Ps8Hashable", "backgroundImage"]
 - ["Ps8Hashable", "backwardSwipeGestureFired"]
 - ["Ps8Hashable", "bakcwardSwipeQuoteFired"]
+- !private ["Ps8Hashable", "blueColor"]
 - ["Ps8Hashable", "bottomBoxSquareButton"]
 - ["Ps8Hashable", "bottomFontSizeSlider"]
 - ["Ps8Hashable", "bottomFontSizeSliderFired"]
@@ -1170,6 +1181,7 @@ depends-member:
 - ["Ps8Hashable", "hideJunkView"]
 - ["Ps8Hashable", "hidePickerViews"]
 - !private ["Ps8Hashable", "image"]
+- !private ["Ps8Hashable", "imageView"]
 - !private ["Ps8Hashable", "imageWithColor"]
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "isInButton"]
@@ -1317,6 +1329,7 @@ depends-member:
 - ["PSo8NSCoding", "backgroundImage"]
 - ["PSo8NSCoding", "backwardSwipeGestureFired"]
 - ["PSo8NSCoding", "bakcwardSwipeQuoteFired"]
+- !private ["PSo8NSCoding", "blueColor"]
 - ["PSo8NSCoding", "bottomBoxSquareButton"]
 - ["PSo8NSCoding", "bottomFontSizeSlider"]
 - ["PSo8NSCoding", "bottomFontSizeSliderFired"]
@@ -1352,6 +1365,7 @@ depends-member:
 - ["PSo8NSCoding", "hideJunkView"]
 - ["PSo8NSCoding", "hidePickerViews"]
 - !private ["PSo8NSCoding", "image"]
+- !private ["PSo8NSCoding", "imageView"]
 - !private ["PSo8NSCoding", "imageWithColor"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "isInButton"]
@@ -1428,6 +1442,7 @@ depends-member:
 - ["PSo8NSCoding", "widthSlider"]
 - ["PSo8NSCoding", "widthSliderChanged"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "blueColor"]
 - !private ["PSo9NSCopying", "colorWithAlphaComponent"]
 - !private ["PSo9NSCopying", "familyNames"]
 - !private ["PSo9NSCopying", "fontName"]
@@ -1580,6 +1595,7 @@ depends-member:
 - ["CSo8NSObject", "backgroundImage"]
 - ["CSo8NSObject", "backwardSwipeGestureFired"]
 - ["CSo8NSObject", "bakcwardSwipeQuoteFired"]
+- !private ["CSo8NSObject", "blueColor"]
 - ["CSo8NSObject", "bottomBoxSquareButton"]
 - ["CSo8NSObject", "bottomFontSizeSlider"]
 - ["CSo8NSObject", "bottomFontSizeSliderFired"]
@@ -1619,6 +1635,7 @@ depends-member:
 - ["CSo8NSObject", "hideJunkView"]
 - ["CSo8NSObject", "hidePickerViews"]
 - !private ["CSo8NSObject", "image"]
+- !private ["CSo8NSObject", "imageView"]
 - !private ["CSo8NSObject", "imageWithColor"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "isInButton"]
@@ -1719,6 +1736,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "backgroundImage"]
 - ["PSo16NSObjectProtocol", "backwardSwipeGestureFired"]
 - ["PSo16NSObjectProtocol", "bakcwardSwipeQuoteFired"]
+- !private ["PSo16NSObjectProtocol", "blueColor"]
 - ["PSo16NSObjectProtocol", "bottomBoxSquareButton"]
 - ["PSo16NSObjectProtocol", "bottomFontSizeSlider"]
 - ["PSo16NSObjectProtocol", "bottomFontSizeSliderFired"]
@@ -1758,6 +1776,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "hideJunkView"]
 - ["PSo16NSObjectProtocol", "hidePickerViews"]
 - !private ["PSo16NSObjectProtocol", "image"]
+- !private ["PSo16NSObjectProtocol", "imageView"]
 - !private ["PSo16NSObjectProtocol", "imageWithColor"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "isInButton"]
@@ -1835,6 +1854,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "widthSlider"]
 - ["PSo16NSObjectProtocol", "widthSliderChanged"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "blueColor"]
 - !private ["PSo14NSSecureCoding", "colorWithAlphaComponent"]
 - !private ["PSo14NSSecureCoding", "imageWithColor"]
 - !private ["PSo14NSSecureCoding", "init"]
@@ -1909,6 +1929,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "font"]
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
 - !private ["PSo29UIAccessibilityIdentification", "image"]
+- !private ["PSo29UIAccessibilityIdentification", "imageView"]
 - !private ["PSo29UIAccessibilityIdentification", "imageWithColor"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
@@ -1934,6 +1955,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "font"]
 - !private ["PSo12UIAppearance", "frame"]
 - !private ["PSo12UIAppearance", "image"]
+- !private ["PSo12UIAppearance", "imageView"]
 - !private ["PSo12UIAppearance", "layer"]
 - !private ["PSo12UIAppearance", "layoutIfNeeded"]
 - !private ["PSo12UIAppearance", "maximumValue"]
@@ -2003,6 +2025,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "hideJunkView"]
 - ["PSo21UIAppearanceContainer", "hidePickerViews"]
 - !private ["PSo21UIAppearanceContainer", "image"]
+- !private ["PSo21UIAppearanceContainer", "imageView"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "isInButton"]
 - ["PSo21UIAppearanceContainer", "junkBarDisplay"]
@@ -2077,7 +2100,9 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "widthSlider"]
 - ["PSo21UIAppearanceContainer", "widthSliderChanged"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo8UIButton", "imageView"]
 - !private ["CSo8UIButton", "setImage"]
+- !private ["CSo7UIColor", "blueColor"]
 - !private ["CSo7UIColor", "colorWithAlphaComponent"]
 - !private ["CSo7UIColor", "init"]
 - !private ["CSo7UIColor", "whiteColor"]
@@ -2189,6 +2214,7 @@ depends-member:
 - ["PSo18UIContentContainer", "widthSlider"]
 - ["PSo18UIContentContainer", "widthSliderChanged"]
 - ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "imageView"]
 - !private ["CSo9UIControl", "maximumValue"]
 - !private ["CSo9UIControl", "minimumValue"]
 - !private ["CSo9UIControl", "minimumValueImage"]
@@ -2206,6 +2232,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "font"]
 - !private ["PSo17UICoordinateSpace", "frame"]
 - !private ["PSo17UICoordinateSpace", "image"]
+- !private ["PSo17UICoordinateSpace", "imageView"]
 - !private ["PSo17UICoordinateSpace", "layer"]
 - !private ["PSo17UICoordinateSpace", "layoutIfNeeded"]
 - !private ["PSo17UICoordinateSpace", "maximumValue"]
@@ -2229,6 +2256,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "font"]
 - !private ["PSo13UIDynamicItem", "frame"]
 - !private ["PSo13UIDynamicItem", "image"]
+- !private ["PSo13UIDynamicItem", "imageView"]
 - !private ["PSo13UIDynamicItem", "layer"]
 - !private ["PSo13UIDynamicItem", "layoutIfNeeded"]
 - !private ["PSo13UIDynamicItem", "maximumValue"]
@@ -2298,6 +2326,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "hideJunkView"]
 - ["PSo18UIFocusEnvironment", "hidePickerViews"]
 - !private ["PSo18UIFocusEnvironment", "image"]
+- !private ["PSo18UIFocusEnvironment", "imageView"]
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "isInButton"]
 - ["PSo18UIFocusEnvironment", "junkBarDisplay"]
@@ -2630,6 +2659,7 @@ depends-member:
 - ["CSo11UIResponder", "hideJunkView"]
 - ["CSo11UIResponder", "hidePickerViews"]
 - !private ["CSo11UIResponder", "image"]
+- !private ["CSo11UIResponder", "imageView"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "isInButton"]
 - ["CSo11UIResponder", "junkBarDisplay"]
@@ -2878,6 +2908,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "hideJunkView"]
 - ["PSo18UITraitEnvironment", "hidePickerViews"]
 - !private ["PSo18UITraitEnvironment", "image"]
+- !private ["PSo18UITraitEnvironment", "imageView"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "isInButton"]
 - ["PSo18UITraitEnvironment", "junkBarDisplay"]
@@ -2963,6 +2994,7 @@ depends-member:
 - !private ["CSo6UIView", "font"]
 - !private ["CSo6UIView", "frame"]
 - !private ["CSo6UIView", "image"]
+- !private ["CSo6UIView", "imageView"]
 - !private ["CSo6UIView", "layer"]
 - !private ["CSo6UIView", "layoutIfNeeded"]
 - !private ["CSo6UIView", "maximumValue"]
@@ -3115,6 +3147,7 @@ depends-member:
 - ["Ps33_BuiltinIntegerLiteralConvertible", "init"]
 - ["Ps19_CVarArgAlignedType", "init"]
 - ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps24_ColorLiteralConvertible", "blueColor"]
 - !private ["Ps24_ColorLiteralConvertible", "colorWithAlphaComponent"]
 - !private ["Ps24_ColorLiteralConvertible", "init"]
 - !private ["Ps24_ColorLiteralConvertible", "whiteColor"]
@@ -3175,6 +3208,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "hashValue"]
 - !private ["Ps12_Reflectable", "height"]
 - !private ["Ps12_Reflectable", "image"]
+- !private ["Ps12_Reflectable", "imageView"]
 - ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "layer"]
 - !private ["Ps12_Reflectable", "layoutIfNeeded"]
