@@ -23,7 +23,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="Rec-CM-Jmt" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="snM-zt-OML"/>
+                        <segue destination="SN0-z4-zT7" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="snM-zt-OML"/>
                         <segue destination="lNq-DX-hMq" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="QM2-xa-l60"/>
                     </connections>
                 </viewController>
@@ -522,15 +522,16 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="2EU-dv-Wr5" secondAttribute="trailing" id="3fW-0i-L3I"/>
                                     <constraint firstAttribute="trailing" secondItem="Cf8-WH-mL0" secondAttribute="trailing" constant="8" id="6Sg-u3-C4M">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="34"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="50"/>
                                     </constraint>
                                     <constraint firstItem="2EU-dv-Wr5" firstAttribute="leading" secondItem="qMx-lA-7iw" secondAttribute="leading" id="Ovv-5g-nZH"/>
                                     <constraint firstAttribute="width" secondItem="2EU-dv-Wr5" secondAttribute="height" multiplier="5:1" id="OwE-gG-XmI"/>
                                     <constraint firstItem="Cf8-WH-mL0" firstAttribute="top" secondItem="2EU-dv-Wr5" secondAttribute="bottom" constant="14" id="PTk-WM-qS5"/>
                                     <constraint firstItem="2EU-dv-Wr5" firstAttribute="top" secondItem="qMx-lA-7iw" secondAttribute="top" id="SaJ-BF-V8r"/>
+                                    <constraint firstItem="Cf8-WH-mL0" firstAttribute="width" secondItem="2EU-dv-Wr5" secondAttribute="height" multiplier="83:40" id="VNg-0h-5c5"/>
                                     <constraint firstAttribute="width" secondItem="2EU-dv-Wr5" secondAttribute="height" multiplier="10:3" id="Vwb-VK-1zn"/>
                                     <constraint firstItem="Cf8-WH-mL0" firstAttribute="leading" secondItem="qMx-lA-7iw" secondAttribute="leading" constant="8" id="eSD-Fa-1lX">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="34"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="50"/>
                                     </constraint>
                                     <constraint firstAttribute="width" secondItem="2EU-dv-Wr5" secondAttribute="height" multiplier="5:2" id="hdd-Xn-S1l"/>
                                     <constraint firstAttribute="bottom" secondItem="Cf8-WH-mL0" secondAttribute="bottom" constant="8" id="wxd-In-aW7"/>
@@ -551,6 +552,7 @@
                                         <exclude reference="hdd-Xn-S1l"/>
                                         <exclude reference="6Sg-u3-C4M"/>
                                         <exclude reference="PTk-WM-qS5"/>
+                                        <exclude reference="VNg-0h-5c5"/>
                                         <exclude reference="eSD-Fa-1lX"/>
                                         <exclude reference="wxd-In-aW7"/>
                                     </mask>
@@ -570,6 +572,7 @@
                                         <include reference="hdd-Xn-S1l"/>
                                         <include reference="6Sg-u3-C4M"/>
                                         <include reference="PTk-WM-qS5"/>
+                                        <exclude reference="VNg-0h-5c5"/>
                                         <include reference="eSD-Fa-1lX"/>
                                         <include reference="wxd-In-aW7"/>
                                     </mask>
@@ -960,6 +963,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="q1q-Ur-Myu"/>
                     <connections>
                         <outlet property="backgroundImage" destination="xf7-I3-CqP" id="xtc-3e-SuG"/>
                         <outlet property="bottomBoxSquareButton" destination="jqp-jI-BNj" id="oWL-ab-OXL"/>
@@ -1030,7 +1034,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="255" y="308.25"/>
+            <point key="canvasLocation" x="1173" y="308.25"/>
         </scene>
         <!--Add Quote View Controller-->
         <scene sceneID="ML9-6h-mAt">
@@ -1187,7 +1191,7 @@
                                 <include reference="2T7-0w-Dal"/>
                                 <include reference="8sm-Pm-8i7"/>
                                 <include reference="Vqf-Wk-Gh8"/>
-                                <include reference="Mkk-L6-XrM"/>
+                                <exclude reference="Mkk-L6-XrM"/>
                                 <include reference="TnP-8R-9ub"/>
                                 <include reference="glM-Vy-1Qr"/>
                                 <include reference="HQE-TG-MQo"/>
@@ -1206,11 +1210,30 @@
                     <connections>
                         <outlet property="authorTextLabel" destination="giA-SK-oH9" id="bmu-Kx-VVq"/>
                         <outlet property="quoteTextView" destination="obP-z7-T6t" id="rZC-qK-O8G"/>
+                        <outlet property="viewQuoteButton" destination="3XY-KM-SqS" id="HGb-pE-C30"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WDl-Xn-eO7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="255" y="999"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hS3-4c-P8T">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="SN0-z4-zT7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vhb-Xg-ElB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Rec-CM-Jmt" kind="relationship" relationship="rootViewController" id="qFy-1M-eV7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aYB-OQ-QV9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="308.25"/>
         </scene>
     </scenes>
     <resources>

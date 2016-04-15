@@ -131,6 +131,7 @@ class EchoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         setUpView()
         
     }
@@ -144,12 +145,14 @@ class EchoViewController: UIViewController {
         UIView.animateWithDuration(animationInterval) {
             self.view.layoutIfNeeded()
         }
+        setupWalkthrough()
     }
     
     func setUpView() {
         updateViewConstraints()
         
         NotificationController.createNotification("Check out the quote of the day!", alertTitle: "Echo", timeIntervalInSeconds: 86400)
+        
         
         quoteLabel.layer.cornerRadius = 7.0
         quoteLabel.clipsToBounds = true
@@ -191,6 +194,8 @@ class EchoViewController: UIViewController {
         bottomShareButton.setImage(UIImage(named: "ShareMode")?.imageWithColor(UIColor.whiteColor()), forState: .Normal)
         
         setUpSWView()
+        
+        viewMode = .ViewMode
     
     }
     

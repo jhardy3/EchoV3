@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74B58DC01CC0609800AD9B75 /* LAWalkthroughViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B58DBF1CC0609800AD9B75 /* LAWalkthroughViewController.m */; };
 		74C4573C1CBDE4D900B363AA /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C4573B1CBDE4D900B363AA /* SWRevealViewController.m */; };
 		74C4573E1CBDE56F00B363AA /* EchoViewSWViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4573D1CBDE56F00B363AA /* EchoViewSWViewExtension.swift */; };
 		74C457401CBDFFE100B363AA /* AddQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4573F1CBDFFE100B363AA /* AddQuoteViewController.swift */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74B58DBE1CC0609800AD9B75 /* LAWalkthroughViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAWalkthroughViewController.h; sourceTree = "<group>"; };
+		74B58DBF1CC0609800AD9B75 /* LAWalkthroughViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAWalkthroughViewController.m; sourceTree = "<group>"; };
 		74C457391CBDE4D900B363AA /* Echo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Echo-Bridging-Header.h"; sourceTree = "<group>"; };
 		74C4573A1CBDE4D900B363AA /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		74C4573B1CBDE4D900B363AA /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -85,8 +88,8 @@
 		746D6C4F1CBB010200C8A031 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				74C4573A1CBDE4D900B363AA /* SWRevealViewController.h */,
-				74C4573B1CBDE4D900B363AA /* SWRevealViewController.m */,
+				74B58DC11CC0609E00AD9B75 /* LAWalkThrough */,
+				74B58DC21CC060B100AD9B75 /* RevealView */,
 				74C457391CBDE4D900B363AA /* Echo-Bridging-Header.h */,
 				74F8C9271CB8A4D400C02079 /* ImageUitilies.swift */,
 			);
@@ -99,6 +102,24 @@
 				74F8C8FF1CB5C79300C02079 /* Quote.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		74B58DC11CC0609E00AD9B75 /* LAWalkThrough */ = {
+			isa = PBXGroup;
+			children = (
+				74B58DBE1CC0609800AD9B75 /* LAWalkthroughViewController.h */,
+				74B58DBF1CC0609800AD9B75 /* LAWalkthroughViewController.m */,
+			);
+			name = LAWalkThrough;
+			sourceTree = "<group>";
+		};
+		74B58DC21CC060B100AD9B75 /* RevealView */ = {
+			isa = PBXGroup;
+			children = (
+				74C4573A1CBDE4D900B363AA /* SWRevealViewController.h */,
+				74C4573B1CBDE4D900B363AA /* SWRevealViewController.m */,
+			);
+			name = RevealView;
 			sourceTree = "<group>";
 		};
 		74F8C8DD1CB5BFA000C02079 = {
@@ -206,6 +227,7 @@
 			files = (
 				74F8C9021CB5C79C00C02079 /* QuoteController.swift in Sources */,
 				74C457401CBDFFE100B363AA /* AddQuoteViewController.swift in Sources */,
+				74B58DC01CC0609800AD9B75 /* LAWalkthroughViewController.m in Sources */,
 				74F8C9281CB8A4D400C02079 /* ImageUitilies.swift in Sources */,
 				74F8C94A1CB8BD9700C02079 /* EchoViewActivityControllerExtension.swift in Sources */,
 				74F8C9001CB5C79300C02079 /* Quote.swift in Sources */,

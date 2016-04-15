@@ -5,21 +5,21 @@ provides-nominal:
 provides-member:
 - ["C4Echo18EchoViewController", ""]
 provides-dynamic-lookup:
+- "pickerView"
+- "pickerView"
+- "pickerView"
 - "numberOfComponentsInPickerView"
-- "pickerView"
-- "pickerView"
-- "pickerView"
 depends-top-level:
+- !private "CGFloat"
 - "UIPickerViewDataSource"
 - "UIPickerView"
-- "UIPickerViewDelegate"
-- "Int"
-- !private "UILabel"
-- !private "CGFloat"
 - !private "UIFont"
+- "Int"
 - "EchoViewController"
+- !private "UILabel"
 - "UIView"
 - !private "UIColor"
+- "UIPickerViewDelegate"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -580,4 +580,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/JLH/Desktop/Personal Projects/Echo/Echo/LAWalkthroughViewController.h"
 interface-hash: "a5d74c9249e5293f88dd7dbe52ad469b"

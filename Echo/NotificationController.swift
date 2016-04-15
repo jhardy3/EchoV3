@@ -16,6 +16,7 @@ class NotificationController {
         notif.alertBody = alertBody
         notif.alertTitle = alertTitle
         notif.fireDate = NSDate().dateByAddingTimeInterval(timeIntervalInSeconds)
+        UIApplication.sharedApplication().cancelAllLocalNotifications()
         UIApplication.sharedApplication().scheduleLocalNotification(notif)
     }
     

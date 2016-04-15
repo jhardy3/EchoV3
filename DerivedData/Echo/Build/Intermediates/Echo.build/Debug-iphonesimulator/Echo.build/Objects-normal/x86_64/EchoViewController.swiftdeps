@@ -18,123 +18,123 @@ provides-member:
 - ["O4Echo9Dimension", ""]
 - ["C4Echo18EchoViewController", ""]
 provides-dynamic-lookup:
+- "updateViewConstraints"
+- "topPickerView"
+- "heightSlider"
+- "topPickerViewYConstraint"
+- "bottomFontSizeSliderFired"
+- "topJunkBarView"
+- "layoutViewBasedOnEditMode"
+- "toggleDrawer"
+- "toggleDrawer"
+- "bottomBoxSquareButton"
+- "bakcwardSwipeQuoteFired"
+- "backgroundImage"
+- "toggleJunkView"
+- "bottomPickerViewYConstraint"
+- "bottomPickerView"
+- "widthSlider"
+- "textFontButtonTapped"
+- "topFontSizeSliderFired"
+- "bottomTextEditBoxButton"
+- "topWidthSlider"
+- "topWidthSlider"
+- "quoteLabelWidth"
+- "quoteLabel"
+- "junkBarView"
 - "currentFontSize"
-- "junkSlider"
-- "setUpView"
-- "bottomShareButton"
+- "widthSliderChanged"
+- "quoteViewHeight"
+- "firstLoad"
+- "touchesBegan"
+- "viewDidLoad"
+- "isInButton"
+- "topHeightSlider"
+- "topHeightSlider"
+- "returnObjectForManipulation"
+- "backwardSwipeGestureFired"
 - "quoteLabelHeight"
 - "touchesMoved"
+- "junkSlider"
+- "textScaleButtonTapped"
+- "togglePickerView"
+- "fontNames"
 - "bottomTextEditButton"
-- "viewDidAppear"
-- "quoteLabelWidth"
-- "topWidthSlider"
-- "topWidthSlider"
-- "widthSliderChanged"
 - "junkSliderChanged"
-- "heightSlider"
-- "topBoxSquareButton"
-- "topPickerViewYConstraint"
-- "textFontButtonTapped"
+- "topFontSizeSlider"
+- "updateSlidersWithView"
+- "bottomShareButton"
+- "drawerView"
+- "forwardSwipeGestureFired"
+- "hideDrawers"
 - "toggleViewModeInQuoteView"
-- "hideJunkView"
-- "backgroundImage"
 - "topTextEditBoxButton"
 - "quoteViewWidth"
-- "updateViewConstraints"
+- "hideJunkView"
+- "topBoxSquareButton"
 - "topJunkSlider"
 - "topJunkSlider"
-- "viewDidLoad"
-- "quoteView"
-- "topFontSizeSliderFired"
-- "forwardSwipeQuoteFired"
-- "togglePickerView"
-- "textScaleButtonTapped"
-- "touchesBegan"
-- "toggleDrawer"
-- "toggleDrawer"
-- "forwardSwipeGestureFired"
-- "topHeightSlider"
-- "topHeightSlider"
-- "hideDrawers"
-- "toggleJunkView"
-- "topTextEditButton"
-- "moveDrawersBasedOnView"
-- "quoteViewHeight"
-- "drawerYConstraint"
-- "topPickerView"
-- "bottomFontSizeSlider"
-- "bakcwardSwipeQuoteFired"
-- "layoutViewBasedOnViewMode"
-- "topShareButton"
-- "topJunkbarYConstraint"
 - "viewScaleButtonTapped"
-- "isInButton"
-- "topDrawerView"
-- "bottomPickerView"
-- "drawerView"
-- "heightSliderChanged"
-- "topFontSizeSlider"
-- "fontNames"
-- "quoteLabel"
-- "quoteViewLocation"
-- "topJunkBarView"
-- "bottomPickerViewYConstraint"
-- "returnObjectForManipulation"
-- "widthSlider"
-- "firstLoad"
-- "updateSlidersWithView"
-- "layoutViewBasedOnEditMode"
-- "bottomBoxSquareButton"
-- "shareJunkButtonTapped"
-- "backwardSwipeGestureFired"
-- "bottomTextEditBoxButton"
-- "bottomFontSizeSliderFired"
-- "topDrawerYConstraint"
-- "junkbarYConstraint"
 - "hidePickerViews"
-- "junkBarView"
+- "moveDrawersBasedOnView"
+- "viewDidAppear"
+- "topDrawerView"
+- "topJunkbarYConstraint"
+- "heightSliderChanged"
+- "topTextEditButton"
+- "setUpView"
+- "junkbarYConstraint"
+- "topDrawerYConstraint"
+- "quoteView"
+- "bottomFontSizeSlider"
+- "shareJunkButtonTapped"
+- "layoutViewBasedOnViewMode"
+- "forwardSwipeQuoteFired"
+- "drawerYConstraint"
+- "topShareButton"
+- "quoteViewLocation"
 depends-top-level:
-- "UISwipeGestureRecognizer"
-- "Dimension"
-- !private "+"
 - "CGFloat"
-- !private "UIImage"
-- !private ">="
-- !private "/"
-- !private "Void"
-- "EditMode"
-- "=="
 - !private "NotificationController"
-- !private "<"
-- !private "&&"
-- "UIPickerView"
-- "Bool"
-- "UIImageView"
-- !private "ImageController"
-- "UIButton"
+- "NSLayoutConstraint"
+- "UILabel"
 - !private "UIColor"
 - !private "StringLiteralType"
-- "UILabel"
-- "ViewMode"
-- "UITouch"
 - "DrawerMode"
-- !private "UnicodeScalarType"
-- "NSLayoutConstraint"
-- "UIViewController"
-- !private "-"
-- "UISlider"
-- "EchoViewController"
-- "UIEvent"
+- !private "Void"
 - !private "Double"
-- !private "UIFont"
+- "UITouch"
+- !private ">="
+- "Bool"
+- "UIViewController"
+- "UISlider"
+- "UIView"
+- "UIButton"
 - "String"
-- "Set"
-- "UITapGestureRecognizer"
+- "=="
+- "UISwipeGestureRecognizer"
 - !private "QuoteController"
 - !private "!="
-- "BooleanLiteralType"
+- "UITapGestureRecognizer"
+- !private "UnicodeScalarType"
+- "Set"
+- "ViewMode"
+- !private "+"
 - "Float"
-- "UIView"
+- "BooleanLiteralType"
+- "Dimension"
+- !private "UIFont"
+- "EchoViewController"
+- !private "ImageController"
+- "EditMode"
+- "UIImageView"
+- !private "/"
+- "UIEvent"
+- !private "<"
+- !private "UIImage"
+- !private "-"
+- !private "&&"
+- "UIPickerView"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]
@@ -242,6 +242,7 @@ depends-member:
 - !private ["Ps9AnyObject", "setImage"]
 - !private ["Ps9AnyObject", "setUpSWView"]
 - ["Ps9AnyObject", "setUpView"]
+- !private ["Ps9AnyObject", "setupWalkthrough"]
 - ["Ps9AnyObject", "shareJunkButtonTapped"]
 - !private ["Ps9AnyObject", "sharedInstance"]
 - !private ["Ps9AnyObject", "textColor"]
@@ -429,6 +430,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "setImage"]
 - !private ["Ps11CVarArgType", "setUpSWView"]
 - ["Ps11CVarArgType", "setUpView"]
+- !private ["Ps11CVarArgType", "setupWalkthrough"]
 - ["Ps11CVarArgType", "shareJunkButtonTapped"]
 - !private ["Ps11CVarArgType", "textColor"]
 - ["Ps11CVarArgType", "textFontButtonTapped"]
@@ -587,6 +589,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "setImage"]
 - !private ["Ps28CustomDebugStringConvertible", "setUpSWView"]
 - ["Ps28CustomDebugStringConvertible", "setUpView"]
+- !private ["Ps28CustomDebugStringConvertible", "setupWalkthrough"]
 - ["Ps28CustomDebugStringConvertible", "shareJunkButtonTapped"]
 - !private ["Ps28CustomDebugStringConvertible", "sort"]
 - !private ["Ps28CustomDebugStringConvertible", "textColor"]
@@ -738,6 +741,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "setImage"]
 - !private ["Ps23CustomStringConvertible", "setUpSWView"]
 - ["Ps23CustomStringConvertible", "setUpView"]
+- !private ["Ps23CustomStringConvertible", "setupWalkthrough"]
 - ["Ps23CustomStringConvertible", "shareJunkButtonTapped"]
 - !private ["Ps23CustomStringConvertible", "sort"]
 - !private ["Ps23CustomStringConvertible", "textColor"]
@@ -877,6 +881,7 @@ depends-member:
 - ["C4Echo18EchoViewController", "returnObjectForManipulation"]
 - !private ["C4Echo18EchoViewController", "setUpSWView"]
 - ["C4Echo18EchoViewController", "setUpView"]
+- !private ["C4Echo18EchoViewController", "setupWalkthrough"]
 - ["C4Echo18EchoViewController", "shareJunkButtonTapped"]
 - ["C4Echo18EchoViewController", "textFontButtonTapped"]
 - ["C4Echo18EchoViewController", "textScaleButtonTapped"]
@@ -1039,6 +1044,7 @@ depends-member:
 - !private ["Ps9Equatable", "setImage"]
 - !private ["Ps9Equatable", "setUpSWView"]
 - ["Ps9Equatable", "setUpView"]
+- !private ["Ps9Equatable", "setupWalkthrough"]
 - ["Ps9Equatable", "shareJunkButtonTapped"]
 - !private ["Ps9Equatable", "size"]
 - !private ["Ps9Equatable", "textColor"]
@@ -1207,6 +1213,7 @@ depends-member:
 - !private ["Ps8Hashable", "setImage"]
 - !private ["Ps8Hashable", "setUpSWView"]
 - ["Ps8Hashable", "setUpView"]
+- !private ["Ps8Hashable", "setupWalkthrough"]
 - ["Ps8Hashable", "shareJunkButtonTapped"]
 - !private ["Ps8Hashable", "textColor"]
 - ["Ps8Hashable", "textFontButtonTapped"]
@@ -1388,6 +1395,7 @@ depends-member:
 - !private ["PSo8NSCoding", "setImage"]
 - !private ["PSo8NSCoding", "setUpSWView"]
 - ["PSo8NSCoding", "setUpView"]
+- !private ["PSo8NSCoding", "setupWalkthrough"]
 - ["PSo8NSCoding", "shareJunkButtonTapped"]
 - !private ["PSo8NSCoding", "textColor"]
 - ["PSo8NSCoding", "textFontButtonTapped"]
@@ -1507,6 +1515,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "returnObjectForManipulation"]
 - !private ["PSo26NSExtensionRequestHandling", "setUpSWView"]
 - ["PSo26NSExtensionRequestHandling", "setUpView"]
+- !private ["PSo26NSExtensionRequestHandling", "setupWalkthrough"]
 - ["PSo26NSExtensionRequestHandling", "shareJunkButtonTapped"]
 - ["PSo26NSExtensionRequestHandling", "textFontButtonTapped"]
 - ["PSo26NSExtensionRequestHandling", "textScaleButtonTapped"]
@@ -1656,6 +1665,7 @@ depends-member:
 - !private ["CSo8NSObject", "setImage"]
 - !private ["CSo8NSObject", "setUpSWView"]
 - ["CSo8NSObject", "setUpView"]
+- !private ["CSo8NSObject", "setupWalkthrough"]
 - ["CSo8NSObject", "shareJunkButtonTapped"]
 - !private ["CSo8NSObject", "textColor"]
 - ["CSo8NSObject", "textFontButtonTapped"]
@@ -1795,6 +1805,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "setImage"]
 - !private ["PSo16NSObjectProtocol", "setUpSWView"]
 - ["PSo16NSObjectProtocol", "setUpView"]
+- !private ["PSo16NSObjectProtocol", "setupWalkthrough"]
 - ["PSo16NSObjectProtocol", "shareJunkButtonTapped"]
 - !private ["PSo16NSObjectProtocol", "textColor"]
 - ["PSo16NSObjectProtocol", "textFontButtonTapped"]
@@ -2038,6 +2049,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "setImage"]
 - !private ["PSo21UIAppearanceContainer", "setUpSWView"]
 - ["PSo21UIAppearanceContainer", "setUpView"]
+- !private ["PSo21UIAppearanceContainer", "setupWalkthrough"]
 - ["PSo21UIAppearanceContainer", "shareJunkButtonTapped"]
 - !private ["PSo21UIAppearanceContainer", "textColor"]
 - ["PSo21UIAppearanceContainer", "textFontButtonTapped"]
@@ -2155,6 +2167,7 @@ depends-member:
 - ["PSo18UIContentContainer", "returnObjectForManipulation"]
 - !private ["PSo18UIContentContainer", "setUpSWView"]
 - ["PSo18UIContentContainer", "setUpView"]
+- !private ["PSo18UIContentContainer", "setupWalkthrough"]
 - ["PSo18UIContentContainer", "shareJunkButtonTapped"]
 - ["PSo18UIContentContainer", "textFontButtonTapped"]
 - ["PSo18UIContentContainer", "textScaleButtonTapped"]
@@ -2333,6 +2346,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "setImage"]
 - !private ["PSo18UIFocusEnvironment", "setUpSWView"]
 - ["PSo18UIFocusEnvironment", "setUpView"]
+- !private ["PSo18UIFocusEnvironment", "setupWalkthrough"]
 - ["PSo18UIFocusEnvironment", "shareJunkButtonTapped"]
 - !private ["PSo18UIFocusEnvironment", "textColor"]
 - ["PSo18UIFocusEnvironment", "textFontButtonTapped"]
@@ -2452,6 +2466,7 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "returnObjectForManipulation"]
 - !private ["PSo22UIPickerViewDataSource", "setUpSWView"]
 - !private ["PSo22UIPickerViewDataSource", "setUpView"]
+- !private ["PSo22UIPickerViewDataSource", "setupWalkthrough"]
 - !private ["PSo22UIPickerViewDataSource", "toggleDrawer"]
 - !private ["PSo22UIPickerViewDataSource", "toggleJunkView"]
 - !private ["PSo22UIPickerViewDataSource", "togglePickerView"]
@@ -2537,6 +2552,7 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "returnObjectForManipulation"]
 - !private ["PSo20UIPickerViewDelegate", "setUpSWView"]
 - !private ["PSo20UIPickerViewDelegate", "setUpView"]
+- !private ["PSo20UIPickerViewDelegate", "setupWalkthrough"]
 - !private ["PSo20UIPickerViewDelegate", "toggleDrawer"]
 - !private ["PSo20UIPickerViewDelegate", "toggleJunkView"]
 - !private ["PSo20UIPickerViewDelegate", "togglePickerView"]
@@ -2665,6 +2681,7 @@ depends-member:
 - !private ["CSo11UIResponder", "setImage"]
 - !private ["CSo11UIResponder", "setUpSWView"]
 - ["CSo11UIResponder", "setUpView"]
+- !private ["CSo11UIResponder", "setupWalkthrough"]
 - ["CSo11UIResponder", "shareJunkButtonTapped"]
 - !private ["CSo11UIResponder", "textColor"]
 - ["CSo11UIResponder", "textFontButtonTapped"]
@@ -2781,6 +2798,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "returnObjectForManipulation"]
 - !private ["PSo16UIStateRestoring", "setUpSWView"]
 - ["PSo16UIStateRestoring", "setUpView"]
+- !private ["PSo16UIStateRestoring", "setupWalkthrough"]
 - ["PSo16UIStateRestoring", "shareJunkButtonTapped"]
 - ["PSo16UIStateRestoring", "textFontButtonTapped"]
 - ["PSo16UIStateRestoring", "textScaleButtonTapped"]
@@ -2913,6 +2931,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "setImage"]
 - !private ["PSo18UITraitEnvironment", "setUpSWView"]
 - ["PSo18UITraitEnvironment", "setUpView"]
+- !private ["PSo18UITraitEnvironment", "setupWalkthrough"]
 - ["PSo18UITraitEnvironment", "shareJunkButtonTapped"]
 - !private ["PSo18UITraitEnvironment", "textColor"]
 - ["PSo18UITraitEnvironment", "textFontButtonTapped"]
@@ -3063,6 +3082,7 @@ depends-member:
 - ["CSo16UIViewController", "returnObjectForManipulation"]
 - !private ["CSo16UIViewController", "setUpSWView"]
 - ["CSo16UIViewController", "setUpView"]
+- !private ["CSo16UIViewController", "setupWalkthrough"]
 - ["CSo16UIViewController", "shareJunkButtonTapped"]
 - ["CSo16UIViewController", "textFontButtonTapped"]
 - ["CSo16UIViewController", "textScaleButtonTapped"]
@@ -3326,4 +3346,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/JLH/Desktop/Personal Projects/Echo/Echo/LAWalkthroughViewController.h"
 interface-hash: "6d84346de7fa6e62e3df1c04795a6d8d"

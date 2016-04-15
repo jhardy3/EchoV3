@@ -107,6 +107,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC4Echo22AddQuoteViewController")
 @interface AddQuoteViewController : UIViewController <UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified viewQuoteButton;
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified quoteTextView;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified authorTextLabel;
 - (void)viewDidLoad;
@@ -228,12 +229,13 @@ SWIFT_CLASS("_TtC4Echo18EchoViewController")
 
 
 @interface EchoViewController (SWIFT_EXTENSION(Echo))
-- (void)displayActivityController;
+- (void)setUpSWView;
 @end
 
 
 @interface EchoViewController (SWIFT_EXTENSION(Echo))
-- (void)setUpSWView;
+- (void)displayActivityController;
+- (void)setupWalkthrough;
 @end
 
 

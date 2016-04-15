@@ -39,7 +39,7 @@ class QuoteController {
         self.quotes.insert((quote: quote, author: author, length: length), atIndex: index)
         
         let quote = quotes[index]
-        quoteLabel.text = "\(quote.quote) \n - \(quote.author)"
+        quoteLabel.text = "\(quote.quote) \n \(quote.author)"
         quoteLabel.frame.size.height = view.view.frame.height
         
         view.quoteView.center = view.view.center

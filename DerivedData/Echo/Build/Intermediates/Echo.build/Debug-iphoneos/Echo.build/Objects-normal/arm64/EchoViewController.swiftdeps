@@ -18,123 +18,123 @@ provides-member:
 - ["O4Echo9Dimension", ""]
 - ["C4Echo18EchoViewController", ""]
 provides-dynamic-lookup:
-- "returnObjectForManipulation"
 - "updateSlidersWithView"
-- "topFontSizeSlider"
+- "drawerView"
 - "hidePickerViews"
+- "bottomFontSizeSlider"
+- "backgroundImage"
+- "topBoxSquareButton"
+- "topFontSizeSlider"
+- "topTextEditBoxButton"
+- "touchesBegan"
+- "junkSliderChanged"
+- "topJunkbarYConstraint"
 - "bottomShareButton"
-- "viewScaleButtonTapped"
+- "hideJunkView"
+- "forwardSwipeGestureFired"
+- "topJunkSlider"
+- "topJunkSlider"
+- "layoutViewBasedOnViewMode"
+- "bottomFontSizeSliderFired"
+- "bakcwardSwipeQuoteFired"
+- "junkbarYConstraint"
+- "topHeightSlider"
+- "topHeightSlider"
 - "bottomTextEditButton"
+- "touchesMoved"
+- "isInButton"
+- "layoutViewBasedOnEditMode"
+- "viewScaleButtonTapped"
+- "bottomPickerViewYConstraint"
+- "quoteView"
+- "topWidthSlider"
+- "topWidthSlider"
+- "heightSliderChanged"
+- "junkBarView"
+- "fontNames"
+- "shareJunkButtonTapped"
+- "topPickerViewYConstraint"
+- "junkSlider"
+- "bottomTextEditBoxButton"
+- "topJunkBarView"
+- "heightSlider"
+- "toggleJunkView"
+- "quoteLabelHeight"
+- "bottomBoxSquareButton"
+- "bottomPickerView"
+- "textScaleButtonTapped"
+- "toggleDrawer"
+- "toggleDrawer"
+- "backwardSwipeGestureFired"
+- "topFontSizeSliderFired"
+- "updateViewConstraints"
+- "returnObjectForManipulation"
+- "quoteLabelWidth"
+- "widthSlider"
 - "firstLoad"
 - "quoteLabel"
-- "bottomFontSizeSlider"
-- "hideJunkView"
-- "toggleViewModeInQuoteView"
-- "quoteViewLocation"
-- "junkSliderChanged"
-- "topTextEditButton"
-- "viewDidAppear"
-- "hideDrawers"
-- "moveDrawersBasedOnView"
-- "quoteLabelWidth"
-- "topWidthSlider"
-- "topWidthSlider"
-- "widthSliderChanged"
-- "forwardSwipeGestureFired"
-- "drawerYConstraint"
-- "currentFontSize"
-- "touchesBegan"
-- "topHeightSlider"
-- "topHeightSlider"
-- "textScaleButtonTapped"
-- "topTextEditBoxButton"
-- "drawerView"
 - "quoteViewHeight"
-- "forwardSwipeQuoteFired"
-- "topBoxSquareButton"
-- "quoteViewWidth"
-- "setUpView"
-- "togglePickerView"
-- "topJunkSlider"
-- "topJunkSlider"
-- "toggleDrawer"
-- "toggleDrawer"
-- "topFontSizeSliderFired"
-- "viewDidLoad"
-- "toggleJunkView"
+- "currentFontSize"
 - "topPickerView"
-- "heightSlider"
-- "topPickerViewYConstraint"
-- "quoteView"
-- "quoteLabelHeight"
-- "fontNames"
-- "topShareButton"
-- "junkSlider"
-- "updateViewConstraints"
-- "touchesMoved"
-- "textFontButtonTapped"
-- "isInButton"
-- "junkBarView"
-- "topDrawerView"
-- "bottomTextEditBoxButton"
-- "topJunkbarYConstraint"
-- "heightSliderChanged"
-- "layoutViewBasedOnViewMode"
-- "junkbarYConstraint"
-- "bakcwardSwipeQuoteFired"
-- "backgroundImage"
+- "viewDidAppear"
 - "topDrawerYConstraint"
-- "shareJunkButtonTapped"
-- "topJunkBarView"
-- "bottomBoxSquareButton"
-- "bottomFontSizeSliderFired"
-- "bottomPickerViewYConstraint"
-- "layoutViewBasedOnEditMode"
-- "bottomPickerView"
-- "backwardSwipeGestureFired"
-- "widthSlider"
+- "moveDrawersBasedOnView"
+- "quoteViewWidth"
+- "hideDrawers"
+- "setUpView"
+- "viewDidLoad"
+- "textFontButtonTapped"
+- "topShareButton"
+- "topDrawerView"
+- "forwardSwipeQuoteFired"
+- "topTextEditButton"
+- "togglePickerView"
+- "quoteViewLocation"
+- "drawerYConstraint"
+- "widthSliderChanged"
+- "toggleViewModeInQuoteView"
 depends-top-level:
-- "UIView"
-- "CGFloat"
-- "UIButton"
-- "BooleanLiteralType"
-- "UITapGestureRecognizer"
-- !private "!="
-- "EchoViewController"
-- "UISlider"
-- !private "Double"
-- !private "<"
-- !private "Void"
-- "Set"
-- "DrawerMode"
 - !private "UIColor"
 - "UIViewController"
-- !private "+"
-- !private "/"
-- "UILabel"
-- "Float"
-- "UIImageView"
-- "ViewMode"
-- "Dimension"
-- "NSLayoutConstraint"
-- !private "StringLiteralType"
-- "UISwipeGestureRecognizer"
-- !private "ImageController"
-- "UIPickerView"
-- !private "NotificationController"
-- "EditMode"
-- !private "UIFont"
-- "UIEvent"
-- !private "-"
-- "Bool"
-- !private "QuoteController"
-- !private ">="
-- "=="
-- !private "&&"
-- "String"
-- "UITouch"
+- !private "<"
+- "Set"
 - !private "UnicodeScalarType"
+- "BooleanLiteralType"
+- "ViewMode"
+- "NSLayoutConstraint"
+- "EchoViewController"
+- !private "QuoteController"
+- !private "/"
+- "Dimension"
+- "CGFloat"
+- "UITapGestureRecognizer"
+- "UISwipeGestureRecognizer"
 - !private "UIImage"
+- "UITouch"
+- "UIEvent"
+- !private "UIFont"
+- "EditMode"
+- "UIView"
+- !private "!="
+- !private "+"
+- !private ">="
+- !private "StringLiteralType"
+- "UIButton"
+- !private "Void"
+- !private "Double"
+- "DrawerMode"
+- "Bool"
+- "UIPickerView"
+- !private "-"
+- !private "ImageController"
+- !private "NotificationController"
+- !private "&&"
+- "UILabel"
+- "UISlider"
+- "UIImageView"
+- "=="
+- "String"
+- "Float"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]
@@ -161,7 +161,6 @@ depends-member:
 - ["Ps9AnyObject", "backgroundImage"]
 - ["Ps9AnyObject", "backwardSwipeGestureFired"]
 - ["Ps9AnyObject", "bakcwardSwipeQuoteFired"]
-- !private ["Ps9AnyObject", "blueColor"]
 - ["Ps9AnyObject", "bottomBoxSquareButton"]
 - ["Ps9AnyObject", "bottomFontSizeSlider"]
 - ["Ps9AnyObject", "bottomFontSizeSliderFired"]
@@ -206,7 +205,6 @@ depends-member:
 - ["Ps9AnyObject", "hideJunkView"]
 - ["Ps9AnyObject", "hidePickerViews"]
 - !private ["Ps9AnyObject", "image"]
-- !private ["Ps9AnyObject", "imageView"]
 - !private ["Ps9AnyObject", "imageWithColor"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "isInButton"]
@@ -244,6 +242,7 @@ depends-member:
 - !private ["Ps9AnyObject", "setImage"]
 - !private ["Ps9AnyObject", "setUpSWView"]
 - ["Ps9AnyObject", "setUpView"]
+- !private ["Ps9AnyObject", "setupWalkthrough"]
 - ["Ps9AnyObject", "shareJunkButtonTapped"]
 - !private ["Ps9AnyObject", "sharedInstance"]
 - !private ["Ps9AnyObject", "textColor"]
@@ -354,7 +353,6 @@ depends-member:
 - ["Ps11CVarArgType", "backgroundImage"]
 - ["Ps11CVarArgType", "backwardSwipeGestureFired"]
 - ["Ps11CVarArgType", "bakcwardSwipeQuoteFired"]
-- !private ["Ps11CVarArgType", "blueColor"]
 - ["Ps11CVarArgType", "bottomBoxSquareButton"]
 - ["Ps11CVarArgType", "bottomFontSizeSlider"]
 - ["Ps11CVarArgType", "bottomFontSizeSliderFired"]
@@ -395,7 +393,6 @@ depends-member:
 - ["Ps11CVarArgType", "hideJunkView"]
 - ["Ps11CVarArgType", "hidePickerViews"]
 - !private ["Ps11CVarArgType", "image"]
-- !private ["Ps11CVarArgType", "imageView"]
 - !private ["Ps11CVarArgType", "imageWithColor"]
 - ["Ps11CVarArgType", "init"]
 - ["Ps11CVarArgType", "isInButton"]
@@ -433,6 +430,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "setImage"]
 - !private ["Ps11CVarArgType", "setUpSWView"]
 - ["Ps11CVarArgType", "setUpView"]
+- !private ["Ps11CVarArgType", "setupWalkthrough"]
 - ["Ps11CVarArgType", "shareJunkButtonTapped"]
 - !private ["Ps11CVarArgType", "textColor"]
 - ["Ps11CVarArgType", "textFontButtonTapped"]
@@ -514,7 +512,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "backgroundImage"]
 - ["Ps28CustomDebugStringConvertible", "backwardSwipeGestureFired"]
 - ["Ps28CustomDebugStringConvertible", "bakcwardSwipeQuoteFired"]
-- !private ["Ps28CustomDebugStringConvertible", "blueColor"]
 - ["Ps28CustomDebugStringConvertible", "bottomBoxSquareButton"]
 - ["Ps28CustomDebugStringConvertible", "bottomFontSizeSlider"]
 - ["Ps28CustomDebugStringConvertible", "bottomFontSizeSliderFired"]
@@ -555,7 +552,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "hideJunkView"]
 - ["Ps28CustomDebugStringConvertible", "hidePickerViews"]
 - !private ["Ps28CustomDebugStringConvertible", "image"]
-- !private ["Ps28CustomDebugStringConvertible", "imageView"]
 - !private ["Ps28CustomDebugStringConvertible", "imageWithColor"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "isInButton"]
@@ -593,6 +589,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "setImage"]
 - !private ["Ps28CustomDebugStringConvertible", "setUpSWView"]
 - ["Ps28CustomDebugStringConvertible", "setUpView"]
+- !private ["Ps28CustomDebugStringConvertible", "setupWalkthrough"]
 - ["Ps28CustomDebugStringConvertible", "shareJunkButtonTapped"]
 - !private ["Ps28CustomDebugStringConvertible", "sort"]
 - !private ["Ps28CustomDebugStringConvertible", "textColor"]
@@ -666,7 +663,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "backgroundImage"]
 - ["Ps23CustomStringConvertible", "backwardSwipeGestureFired"]
 - ["Ps23CustomStringConvertible", "bakcwardSwipeQuoteFired"]
-- !private ["Ps23CustomStringConvertible", "blueColor"]
 - ["Ps23CustomStringConvertible", "bottomBoxSquareButton"]
 - ["Ps23CustomStringConvertible", "bottomFontSizeSlider"]
 - ["Ps23CustomStringConvertible", "bottomFontSizeSliderFired"]
@@ -708,7 +704,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "hideJunkView"]
 - ["Ps23CustomStringConvertible", "hidePickerViews"]
 - !private ["Ps23CustomStringConvertible", "image"]
-- !private ["Ps23CustomStringConvertible", "imageView"]
 - !private ["Ps23CustomStringConvertible", "imageWithColor"]
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "isInButton"]
@@ -746,6 +741,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "setImage"]
 - !private ["Ps23CustomStringConvertible", "setUpSWView"]
 - ["Ps23CustomStringConvertible", "setUpView"]
+- !private ["Ps23CustomStringConvertible", "setupWalkthrough"]
 - ["Ps23CustomStringConvertible", "shareJunkButtonTapped"]
 - !private ["Ps23CustomStringConvertible", "sort"]
 - !private ["Ps23CustomStringConvertible", "textColor"]
@@ -885,6 +881,7 @@ depends-member:
 - ["C4Echo18EchoViewController", "returnObjectForManipulation"]
 - !private ["C4Echo18EchoViewController", "setUpSWView"]
 - ["C4Echo18EchoViewController", "setUpView"]
+- !private ["C4Echo18EchoViewController", "setupWalkthrough"]
 - ["C4Echo18EchoViewController", "shareJunkButtonTapped"]
 - ["C4Echo18EchoViewController", "textFontButtonTapped"]
 - ["C4Echo18EchoViewController", "textScaleButtonTapped"]
@@ -966,7 +963,6 @@ depends-member:
 - ["Ps9Equatable", "backgroundImage"]
 - ["Ps9Equatable", "backwardSwipeGestureFired"]
 - ["Ps9Equatable", "bakcwardSwipeQuoteFired"]
-- !private ["Ps9Equatable", "blueColor"]
 - ["Ps9Equatable", "bottomBoxSquareButton"]
 - ["Ps9Equatable", "bottomFontSizeSlider"]
 - ["Ps9Equatable", "bottomFontSizeSliderFired"]
@@ -1009,7 +1005,6 @@ depends-member:
 - ["Ps9Equatable", "hideJunkView"]
 - ["Ps9Equatable", "hidePickerViews"]
 - !private ["Ps9Equatable", "image"]
-- !private ["Ps9Equatable", "imageView"]
 - !private ["Ps9Equatable", "imageWithColor"]
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "isInButton"]
@@ -1049,6 +1044,7 @@ depends-member:
 - !private ["Ps9Equatable", "setImage"]
 - !private ["Ps9Equatable", "setUpSWView"]
 - ["Ps9Equatable", "setUpView"]
+- !private ["Ps9Equatable", "setupWalkthrough"]
 - ["Ps9Equatable", "shareJunkButtonTapped"]
 - !private ["Ps9Equatable", "size"]
 - !private ["Ps9Equatable", "textColor"]
@@ -1139,7 +1135,6 @@ depends-member:
 - ["Ps8Hashable", "backgroundImage"]
 - ["Ps8Hashable", "backwardSwipeGestureFired"]
 - ["Ps8Hashable", "bakcwardSwipeQuoteFired"]
-- !private ["Ps8Hashable", "blueColor"]
 - ["Ps8Hashable", "bottomBoxSquareButton"]
 - ["Ps8Hashable", "bottomFontSizeSlider"]
 - ["Ps8Hashable", "bottomFontSizeSliderFired"]
@@ -1181,7 +1176,6 @@ depends-member:
 - ["Ps8Hashable", "hideJunkView"]
 - ["Ps8Hashable", "hidePickerViews"]
 - !private ["Ps8Hashable", "image"]
-- !private ["Ps8Hashable", "imageView"]
 - !private ["Ps8Hashable", "imageWithColor"]
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "isInButton"]
@@ -1219,6 +1213,7 @@ depends-member:
 - !private ["Ps8Hashable", "setImage"]
 - !private ["Ps8Hashable", "setUpSWView"]
 - ["Ps8Hashable", "setUpView"]
+- !private ["Ps8Hashable", "setupWalkthrough"]
 - ["Ps8Hashable", "shareJunkButtonTapped"]
 - !private ["Ps8Hashable", "textColor"]
 - ["Ps8Hashable", "textFontButtonTapped"]
@@ -1329,7 +1324,6 @@ depends-member:
 - ["PSo8NSCoding", "backgroundImage"]
 - ["PSo8NSCoding", "backwardSwipeGestureFired"]
 - ["PSo8NSCoding", "bakcwardSwipeQuoteFired"]
-- !private ["PSo8NSCoding", "blueColor"]
 - ["PSo8NSCoding", "bottomBoxSquareButton"]
 - ["PSo8NSCoding", "bottomFontSizeSlider"]
 - ["PSo8NSCoding", "bottomFontSizeSliderFired"]
@@ -1365,7 +1359,6 @@ depends-member:
 - ["PSo8NSCoding", "hideJunkView"]
 - ["PSo8NSCoding", "hidePickerViews"]
 - !private ["PSo8NSCoding", "image"]
-- !private ["PSo8NSCoding", "imageView"]
 - !private ["PSo8NSCoding", "imageWithColor"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "isInButton"]
@@ -1402,6 +1395,7 @@ depends-member:
 - !private ["PSo8NSCoding", "setImage"]
 - !private ["PSo8NSCoding", "setUpSWView"]
 - ["PSo8NSCoding", "setUpView"]
+- !private ["PSo8NSCoding", "setupWalkthrough"]
 - ["PSo8NSCoding", "shareJunkButtonTapped"]
 - !private ["PSo8NSCoding", "textColor"]
 - ["PSo8NSCoding", "textFontButtonTapped"]
@@ -1442,7 +1436,6 @@ depends-member:
 - ["PSo8NSCoding", "widthSlider"]
 - ["PSo8NSCoding", "widthSliderChanged"]
 - ["PSo8NSCoding", ""]
-- !private ["PSo9NSCopying", "blueColor"]
 - !private ["PSo9NSCopying", "colorWithAlphaComponent"]
 - !private ["PSo9NSCopying", "familyNames"]
 - !private ["PSo9NSCopying", "fontName"]
@@ -1522,6 +1515,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "returnObjectForManipulation"]
 - !private ["PSo26NSExtensionRequestHandling", "setUpSWView"]
 - ["PSo26NSExtensionRequestHandling", "setUpView"]
+- !private ["PSo26NSExtensionRequestHandling", "setupWalkthrough"]
 - ["PSo26NSExtensionRequestHandling", "shareJunkButtonTapped"]
 - ["PSo26NSExtensionRequestHandling", "textFontButtonTapped"]
 - ["PSo26NSExtensionRequestHandling", "textScaleButtonTapped"]
@@ -1595,7 +1589,6 @@ depends-member:
 - ["CSo8NSObject", "backgroundImage"]
 - ["CSo8NSObject", "backwardSwipeGestureFired"]
 - ["CSo8NSObject", "bakcwardSwipeQuoteFired"]
-- !private ["CSo8NSObject", "blueColor"]
 - ["CSo8NSObject", "bottomBoxSquareButton"]
 - ["CSo8NSObject", "bottomFontSizeSlider"]
 - ["CSo8NSObject", "bottomFontSizeSliderFired"]
@@ -1635,7 +1628,6 @@ depends-member:
 - ["CSo8NSObject", "hideJunkView"]
 - ["CSo8NSObject", "hidePickerViews"]
 - !private ["CSo8NSObject", "image"]
-- !private ["CSo8NSObject", "imageView"]
 - !private ["CSo8NSObject", "imageWithColor"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "isInButton"]
@@ -1673,6 +1665,7 @@ depends-member:
 - !private ["CSo8NSObject", "setImage"]
 - !private ["CSo8NSObject", "setUpSWView"]
 - ["CSo8NSObject", "setUpView"]
+- !private ["CSo8NSObject", "setupWalkthrough"]
 - ["CSo8NSObject", "shareJunkButtonTapped"]
 - !private ["CSo8NSObject", "textColor"]
 - ["CSo8NSObject", "textFontButtonTapped"]
@@ -1736,7 +1729,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "backgroundImage"]
 - ["PSo16NSObjectProtocol", "backwardSwipeGestureFired"]
 - ["PSo16NSObjectProtocol", "bakcwardSwipeQuoteFired"]
-- !private ["PSo16NSObjectProtocol", "blueColor"]
 - ["PSo16NSObjectProtocol", "bottomBoxSquareButton"]
 - ["PSo16NSObjectProtocol", "bottomFontSizeSlider"]
 - ["PSo16NSObjectProtocol", "bottomFontSizeSliderFired"]
@@ -1776,7 +1768,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "hideJunkView"]
 - ["PSo16NSObjectProtocol", "hidePickerViews"]
 - !private ["PSo16NSObjectProtocol", "image"]
-- !private ["PSo16NSObjectProtocol", "imageView"]
 - !private ["PSo16NSObjectProtocol", "imageWithColor"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "isInButton"]
@@ -1814,6 +1805,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "setImage"]
 - !private ["PSo16NSObjectProtocol", "setUpSWView"]
 - ["PSo16NSObjectProtocol", "setUpView"]
+- !private ["PSo16NSObjectProtocol", "setupWalkthrough"]
 - ["PSo16NSObjectProtocol", "shareJunkButtonTapped"]
 - !private ["PSo16NSObjectProtocol", "textColor"]
 - ["PSo16NSObjectProtocol", "textFontButtonTapped"]
@@ -1854,7 +1846,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "widthSlider"]
 - ["PSo16NSObjectProtocol", "widthSliderChanged"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["PSo14NSSecureCoding", "blueColor"]
 - !private ["PSo14NSSecureCoding", "colorWithAlphaComponent"]
 - !private ["PSo14NSSecureCoding", "imageWithColor"]
 - !private ["PSo14NSSecureCoding", "init"]
@@ -1929,7 +1920,6 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "font"]
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
 - !private ["PSo29UIAccessibilityIdentification", "image"]
-- !private ["PSo29UIAccessibilityIdentification", "imageView"]
 - !private ["PSo29UIAccessibilityIdentification", "imageWithColor"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
@@ -1955,7 +1945,6 @@ depends-member:
 - !private ["PSo12UIAppearance", "font"]
 - !private ["PSo12UIAppearance", "frame"]
 - !private ["PSo12UIAppearance", "image"]
-- !private ["PSo12UIAppearance", "imageView"]
 - !private ["PSo12UIAppearance", "layer"]
 - !private ["PSo12UIAppearance", "layoutIfNeeded"]
 - !private ["PSo12UIAppearance", "maximumValue"]
@@ -2025,7 +2014,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "hideJunkView"]
 - ["PSo21UIAppearanceContainer", "hidePickerViews"]
 - !private ["PSo21UIAppearanceContainer", "image"]
-- !private ["PSo21UIAppearanceContainer", "imageView"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "isInButton"]
 - ["PSo21UIAppearanceContainer", "junkBarDisplay"]
@@ -2061,6 +2049,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "setImage"]
 - !private ["PSo21UIAppearanceContainer", "setUpSWView"]
 - ["PSo21UIAppearanceContainer", "setUpView"]
+- !private ["PSo21UIAppearanceContainer", "setupWalkthrough"]
 - ["PSo21UIAppearanceContainer", "shareJunkButtonTapped"]
 - !private ["PSo21UIAppearanceContainer", "textColor"]
 - ["PSo21UIAppearanceContainer", "textFontButtonTapped"]
@@ -2100,9 +2089,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "widthSlider"]
 - ["PSo21UIAppearanceContainer", "widthSliderChanged"]
 - ["PSo21UIAppearanceContainer", ""]
-- !private ["CSo8UIButton", "imageView"]
 - !private ["CSo8UIButton", "setImage"]
-- !private ["CSo7UIColor", "blueColor"]
 - !private ["CSo7UIColor", "colorWithAlphaComponent"]
 - !private ["CSo7UIColor", "init"]
 - !private ["CSo7UIColor", "whiteColor"]
@@ -2180,6 +2167,7 @@ depends-member:
 - ["PSo18UIContentContainer", "returnObjectForManipulation"]
 - !private ["PSo18UIContentContainer", "setUpSWView"]
 - ["PSo18UIContentContainer", "setUpView"]
+- !private ["PSo18UIContentContainer", "setupWalkthrough"]
 - ["PSo18UIContentContainer", "shareJunkButtonTapped"]
 - ["PSo18UIContentContainer", "textFontButtonTapped"]
 - ["PSo18UIContentContainer", "textScaleButtonTapped"]
@@ -2214,7 +2202,6 @@ depends-member:
 - ["PSo18UIContentContainer", "widthSlider"]
 - ["PSo18UIContentContainer", "widthSliderChanged"]
 - ["PSo18UIContentContainer", ""]
-- !private ["CSo9UIControl", "imageView"]
 - !private ["CSo9UIControl", "maximumValue"]
 - !private ["CSo9UIControl", "minimumValue"]
 - !private ["CSo9UIControl", "minimumValueImage"]
@@ -2232,7 +2219,6 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "font"]
 - !private ["PSo17UICoordinateSpace", "frame"]
 - !private ["PSo17UICoordinateSpace", "image"]
-- !private ["PSo17UICoordinateSpace", "imageView"]
 - !private ["PSo17UICoordinateSpace", "layer"]
 - !private ["PSo17UICoordinateSpace", "layoutIfNeeded"]
 - !private ["PSo17UICoordinateSpace", "maximumValue"]
@@ -2256,7 +2242,6 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "font"]
 - !private ["PSo13UIDynamicItem", "frame"]
 - !private ["PSo13UIDynamicItem", "image"]
-- !private ["PSo13UIDynamicItem", "imageView"]
 - !private ["PSo13UIDynamicItem", "layer"]
 - !private ["PSo13UIDynamicItem", "layoutIfNeeded"]
 - !private ["PSo13UIDynamicItem", "maximumValue"]
@@ -2326,7 +2311,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "hideJunkView"]
 - ["PSo18UIFocusEnvironment", "hidePickerViews"]
 - !private ["PSo18UIFocusEnvironment", "image"]
-- !private ["PSo18UIFocusEnvironment", "imageView"]
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "isInButton"]
 - ["PSo18UIFocusEnvironment", "junkBarDisplay"]
@@ -2362,6 +2346,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "setImage"]
 - !private ["PSo18UIFocusEnvironment", "setUpSWView"]
 - ["PSo18UIFocusEnvironment", "setUpView"]
+- !private ["PSo18UIFocusEnvironment", "setupWalkthrough"]
 - ["PSo18UIFocusEnvironment", "shareJunkButtonTapped"]
 - !private ["PSo18UIFocusEnvironment", "textColor"]
 - ["PSo18UIFocusEnvironment", "textFontButtonTapped"]
@@ -2481,6 +2466,7 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "returnObjectForManipulation"]
 - !private ["PSo22UIPickerViewDataSource", "setUpSWView"]
 - !private ["PSo22UIPickerViewDataSource", "setUpView"]
+- !private ["PSo22UIPickerViewDataSource", "setupWalkthrough"]
 - !private ["PSo22UIPickerViewDataSource", "toggleDrawer"]
 - !private ["PSo22UIPickerViewDataSource", "toggleJunkView"]
 - !private ["PSo22UIPickerViewDataSource", "togglePickerView"]
@@ -2566,6 +2552,7 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "returnObjectForManipulation"]
 - !private ["PSo20UIPickerViewDelegate", "setUpSWView"]
 - !private ["PSo20UIPickerViewDelegate", "setUpView"]
+- !private ["PSo20UIPickerViewDelegate", "setupWalkthrough"]
 - !private ["PSo20UIPickerViewDelegate", "toggleDrawer"]
 - !private ["PSo20UIPickerViewDelegate", "toggleJunkView"]
 - !private ["PSo20UIPickerViewDelegate", "togglePickerView"]
@@ -2659,7 +2646,6 @@ depends-member:
 - ["CSo11UIResponder", "hideJunkView"]
 - ["CSo11UIResponder", "hidePickerViews"]
 - !private ["CSo11UIResponder", "image"]
-- !private ["CSo11UIResponder", "imageView"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "isInButton"]
 - ["CSo11UIResponder", "junkBarDisplay"]
@@ -2695,6 +2681,7 @@ depends-member:
 - !private ["CSo11UIResponder", "setImage"]
 - !private ["CSo11UIResponder", "setUpSWView"]
 - ["CSo11UIResponder", "setUpView"]
+- !private ["CSo11UIResponder", "setupWalkthrough"]
 - ["CSo11UIResponder", "shareJunkButtonTapped"]
 - !private ["CSo11UIResponder", "textColor"]
 - ["CSo11UIResponder", "textFontButtonTapped"]
@@ -2811,6 +2798,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "returnObjectForManipulation"]
 - !private ["PSo16UIStateRestoring", "setUpSWView"]
 - ["PSo16UIStateRestoring", "setUpView"]
+- !private ["PSo16UIStateRestoring", "setupWalkthrough"]
 - ["PSo16UIStateRestoring", "shareJunkButtonTapped"]
 - ["PSo16UIStateRestoring", "textFontButtonTapped"]
 - ["PSo16UIStateRestoring", "textScaleButtonTapped"]
@@ -2908,7 +2896,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "hideJunkView"]
 - ["PSo18UITraitEnvironment", "hidePickerViews"]
 - !private ["PSo18UITraitEnvironment", "image"]
-- !private ["PSo18UITraitEnvironment", "imageView"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "isInButton"]
 - ["PSo18UITraitEnvironment", "junkBarDisplay"]
@@ -2944,6 +2931,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "setImage"]
 - !private ["PSo18UITraitEnvironment", "setUpSWView"]
 - ["PSo18UITraitEnvironment", "setUpView"]
+- !private ["PSo18UITraitEnvironment", "setupWalkthrough"]
 - ["PSo18UITraitEnvironment", "shareJunkButtonTapped"]
 - !private ["PSo18UITraitEnvironment", "textColor"]
 - ["PSo18UITraitEnvironment", "textFontButtonTapped"]
@@ -2994,7 +2982,6 @@ depends-member:
 - !private ["CSo6UIView", "font"]
 - !private ["CSo6UIView", "frame"]
 - !private ["CSo6UIView", "image"]
-- !private ["CSo6UIView", "imageView"]
 - !private ["CSo6UIView", "layer"]
 - !private ["CSo6UIView", "layoutIfNeeded"]
 - !private ["CSo6UIView", "maximumValue"]
@@ -3095,6 +3082,7 @@ depends-member:
 - ["CSo16UIViewController", "returnObjectForManipulation"]
 - !private ["CSo16UIViewController", "setUpSWView"]
 - ["CSo16UIViewController", "setUpView"]
+- !private ["CSo16UIViewController", "setupWalkthrough"]
 - ["CSo16UIViewController", "shareJunkButtonTapped"]
 - ["CSo16UIViewController", "textFontButtonTapped"]
 - ["CSo16UIViewController", "textScaleButtonTapped"]
@@ -3147,7 +3135,6 @@ depends-member:
 - ["Ps33_BuiltinIntegerLiteralConvertible", "init"]
 - ["Ps19_CVarArgAlignedType", "init"]
 - ["Ps22_CVarArgPassedAsDouble", "init"]
-- !private ["Ps24_ColorLiteralConvertible", "blueColor"]
 - !private ["Ps24_ColorLiteralConvertible", "colorWithAlphaComponent"]
 - !private ["Ps24_ColorLiteralConvertible", "init"]
 - !private ["Ps24_ColorLiteralConvertible", "whiteColor"]
@@ -3208,7 +3195,6 @@ depends-member:
 - !private ["Ps12_Reflectable", "hashValue"]
 - !private ["Ps12_Reflectable", "height"]
 - !private ["Ps12_Reflectable", "image"]
-- !private ["Ps12_Reflectable", "imageView"]
 - ["Ps12_Reflectable", "init"]
 - !private ["Ps12_Reflectable", "layer"]
 - !private ["Ps12_Reflectable", "layoutIfNeeded"]
@@ -3360,4 +3346,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/JLH/Desktop/Personal Projects/Echo/Echo/LAWalkthroughViewController.h"
 interface-hash: "6d84346de7fa6e62e3df1c04795a6d8d"

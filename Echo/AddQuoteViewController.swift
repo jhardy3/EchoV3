@@ -10,6 +10,7 @@ import UIKit
 
 class AddQuoteViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var viewQuoteButton: UIButton!
     @IBOutlet weak var quoteTextView: UITextView!
     @IBOutlet weak var authorTextLabel: UITextField!
     
@@ -42,6 +43,8 @@ class AddQuoteViewController: UIViewController, UITextFieldDelegate {
     func setupView() {
         quoteTextView.layer.cornerRadius = 7.0
         quoteTextView.clipsToBounds = true
+        viewQuoteButton.tintColor = UIColor.whiteColor()
+        viewQuoteButton.setImage(UIImage(named: "arrow")?.imageWithColor(UIColor.whiteColor()), forState: .Normal)
     }
 
     /*
